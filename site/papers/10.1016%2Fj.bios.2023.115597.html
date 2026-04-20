@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RaMALDI: Enabling simultaneous Raman and MALDI imaging of the same tissue section · Mixz Archive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Noto Serif SC', 'Noto Serif Simplified Chinese', 'Source Han Serif SC', 'Songti SC', 'STSong', 'ui-serif', 'Georgia', 'serif'],
+            en: ['Libre Baskerville', 'Times New Roman', 'Georgia', 'serif'],
+          },
+          colors: {
+            slateui: {
+              50: '#f8f9fb',
+              100: '#f2f4f7',
+              200: '#e6eaf0',
+              300: '#d7dde6',
+              400: '#b7c2d0',
+              500: '#8a97a8',
+              600: '#647488',
+              700: '#4b5a6d',
+              800: '#2f3d4e',
+              900: '#1b2735',
+            },
+            accentui: {
+              100: '#e8f1f8',
+              300: '#a9c3da',
+              500: '#5a87b0',
+              700: '#2b5f8b',
+            },
+          },
+          maxWidth: {
+            'layout-main': '1120px',
+            'layout-wide': '1240px',
+            'layout-read': '760px',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --font-zh: 'Noto Serif SC', 'Noto Serif Simplified Chinese', 'Source Han Serif SC', 'Songti SC', 'STSong', serif;
+      --font-en: 'Libre Baskerville', 'Times New Roman', 'Georgia', serif;
+
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-5: 20px;
+      --space-6: 24px;
+      --space-8: 32px;
+      --space-10: 40px;
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.04);
+      --shadow-md: 0 4px 14px rgba(16, 24, 40, 0.06);
+
+      --bg-page: #f3f5f7;
+      --bg-page-alt: #eef2f6;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f8fafc;
+      --bg-soft: #f2f5f9;
+
+      --line: #d8dee6;
+      --line-strong: #c5ced9;
+
+      --text-main: #1d2a39;
+      --text-sub: #5e7185;
+      --text-soft: #78889a;
+      --accent: #2b5f8b;
+      --accent-soft: #e8f1f8;
+
+      --container-main: 1120px;
+      --container-wide: 1240px;
+      --container-read: 760px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-zh);
+      background: linear-gradient(180deg, var(--bg-page) 0%, var(--bg-page-alt) 260px, var(--bg-page) 100%);
+      min-height: 100vh;
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .app-shell {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .shell-container {
+      width: min(calc(100% - 32px), var(--container-main));
+      margin: 0 auto;
+    }
+
+    .shell-container-wide {
+      width: min(calc(100% - 32px), var(--container-wide));
+      margin: 0 auto;
+    }
+
+    .read-container {
+      width: min(100%, var(--container-read));
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(243, 245, 247, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .site-header-inner {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      padding: var(--space-3) 0;
+    }
+
+    .brand {
+      display: grid;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .brand-title {
+      font-family: var(--font-en);
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.03em;
+      color: var(--text-main);
+      white-space: nowrap;
+    }
+
+    .brand-sub {
+      font-size: 12px;
+      color: var(--text-soft);
+      line-height: 1.3;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      padding: 0 var(--space-3);
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      color: var(--text-sub);
+      font-size: 13px;
+      line-height: 1;
+      transition: border-color 0.16s ease, background-color 0.16s ease, color 0.16s ease;
+    }
+
+    .nav-link:hover {
+      border-color: var(--line-strong);
+      background: var(--bg-surface);
+      color: var(--text-main);
+    }
+
+    [data-page='home'] .nav-home,
+    [data-page='archive'] .nav-archive,
+    [data-page='paper-detail'] .nav-archive {
+      border-color: var(--line-strong);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .main-content {
+      padding: var(--space-8) 0 var(--space-10);
+      flex: 1;
+    }
+
+    .section-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-panel-subtle {
+      background: var(--bg-subtle);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+    }
+
+    .section-inner {
+      padding: var(--space-6);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      height: 24px;
+      padding: 0 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--line);
+      background: var(--bg-soft);
+      color: var(--text-sub);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: clamp(26px, 3.2vw, 38px);
+      line-height: 1.2;
+      color: var(--text-main);
+    }
+
+    .sub-title {
+      margin: 0;
+      font-size: clamp(20px, 2.4vw, 28px);
+      line-height: 1.25;
+      color: var(--text-main);
+    }
+
+    .section-desc {
+      margin: 0;
+      color: var(--text-sub);
+      font-size: 14px;
+      line-height: 1.75;
+      max-width: 72ch;
+    }
+
+    .button-base {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      height: 36px;
+      padding: 0 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--line-strong);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1;
+      transition: background-color 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #f8fbff;
+    }
+
+    .button-primary:hover {
+      background: #234f75;
+      border-color: #234f75;
+    }
+
+    .button-secondary {
+      background: var(--bg-surface);
+      color: var(--text-main);
+    }
+
+    .button-secondary:hover {
+      background: var(--bg-subtle);
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 28px;
+      padding: 0 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--line);
+      background: var(--bg-surface);
+      color: var(--text-sub);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1;
+      transition: background-color 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+    }
+
+    .chip-active {
+      background: var(--accent-soft);
+      border-color: #bfd2e3;
+      color: #234f75;
+    }
+
+    .control-input {
+      width: 100%;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--line-strong);
+      background: #fff;
+      padding: 0 12px;
+      color: var(--text-main);
+      font-size: 14px;
+      line-height: 1;
+      transition: border-color 0.16s ease, box-shadow 0.16s ease;
+    }
+
+    .control-input:focus {
+      border-color: #8aa8c4;
+      box-shadow: 0 0 0 3px rgba(90, 135, 176, 0.16);
+      outline: 0;
+    }
+
+    .meta-text {
+      color: var(--text-soft);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .muted-text {
+      color: var(--text-sub);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .latin-ui,
+    [lang='en'],
+    :lang(en) {
+      font-family: var(--font-en);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    [x-cloak] {
+      display: none !important;
+    }
+
+    @media (max-width: 900px) {
+      .main-content {
+        padding-top: var(--space-6);
+      }
+
+      .section-inner {
+        padding: var(--space-5);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell-container,
+      .shell-container-wide {
+        width: min(calc(100% - 20px), var(--container-main));
+      }
+
+      .site-header-inner {
+        min-height: auto;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .site-nav {
+        justify-content: flex-start;
+      }
+
+      .section-inner {
+        padding: var(--space-4);
+      }
+    }
+  </style>
+</head>
+<body class="app-shell antialiased" data-page="paper-detail">
+  <header class="site-header" role="banner">
+    <div class="shell-container-wide">
+      <div class="site-header-inner">
+        <a href="/" class="brand" aria-label="Mixz 首页">
+          <span lang="en" class="brand-title">Mixz Notes</span>
+          <span class="brand-sub">Research Archive & Editorial Index</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary Navigation">
+          <a class="nav-link nav-home" href="/">首页</a>
+          <a class="nav-link nav-archive" href="/archive.html">Archive</a>
+          <a class="nav-link" href="/#protocol-library">Protocols</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content" role="main">
+    <div class="shell-container">
+      
+<div class="space-y-5 md:space-y-6">
+
+  <section class="section-panel">
+    <div class="section-inner space-y-4">
+      <div class="flex flex-wrap items-center gap-2 text-[13px] text-[var(--text-sub)]">
+        <a href="/" class="hover:text-[var(--accent)]">首页</a>
+        <span>/</span>
+        <a href="/archive.html" class="hover:text-[var(--accent)]">Archive</a>
+        <span>/</span>
+        <span class="text-[var(--text-main)]">论文详情</span>
+      </div>
+
+      <h1 class="section-title text-[32px] md:text-[38px] leading-[1.28]">RaMALDI: Enabling simultaneous Raman and MALDI imaging of the same tissue section</h1>
+
+      <div class="flex flex-wrap items-center gap-2 text-[12px] text-[var(--text-sub)]">
+        <span class="chip">Biosensors and Bioelectronics</span>
+        <span>Yang et al.</span>
+        <span aria-hidden="true">·</span>
+        <span>2023-11-01</span>
+        <span aria-hidden="true">·</span>
+        <span>摘要来源 missing</span>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2">
+        <a href="/archive.html" class="button-base button-secondary">返回 Archive</a>
+        <a href="https://doi.org/10.1016/j.bios.2023.115597" target="_blank" rel="noopener noreferrer" class="button-base button-primary">打开 DOI</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="grid gap-5 lg:grid-cols-[minmax(0,1.65fr)_minmax(280px,1fr)]">
+    <article class="section-panel read-container">
+      <div class="section-inner space-y-4">
+        <h2 class="sub-title" lang="en">Abstract</h2>
+        <p class="m-0 text-[15px] leading-8 text-slateui-800 whitespace-pre-wrap">暂无公开摘要</p>
+      </div>
+    </article>
+
+    <aside class="section-panel-subtle p-4 md:p-5 space-y-4 h-fit">
+      <h2 class="sub-title text-[20px]" lang="en">Metadata</h2>
+      <dl class="space-y-3 text-[14px]">
+        <div>
+          <dt class="meta-text">DOI</dt>
+          <dd class="mt-1 break-all text-slateui-900">10.1016/j.bios.2023.115597</dd>
+        </div>
+        <div>
+          <dt class="meta-text">Journal</dt>
+          <dd class="mt-1 text-slateui-900">Biosensors and Bioelectronics</dd>
+        </div>
+        <div>
+          <dt class="meta-text">Publication Date</dt>
+          <dd class="mt-1 text-slateui-900">2023-11-01</dd>
+        </div>
+        <div>
+          <dt class="meta-text">Author</dt>
+          <dd class="mt-1 text-slateui-900">Yang et al.</dd>
+        </div>
+        <div>
+          <dt class="meta-text">Latest Batch</dt>
+          <dd class="mt-1 text-slateui-900 break-all">2026-04-20 17:21:24</dd>
+        </div>
+        
+        <div>
+          <dt class="meta-text">First Seen</dt>
+          <dd class="mt-1 text-slateui-900 break-all">2026-04-20T09:22:15.273446+00:00</dd>
+        </div>
+        
+        
+        <div>
+          <dt class="meta-text">Last Seen</dt>
+          <dd class="mt-1 text-slateui-900 break-all">2026-04-20T09:22:15.273446+00:00</dd>
+        </div>
+        
+      </dl>
+    </aside>
+  </div>
+
+  <section class="section-panel">
+    <div class="section-inner space-y-4">
+      <h2 class="sub-title" lang="en">Batch History</h2>
+
+      
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-[14px]">
+          <thead>
+            <tr class="text-left text-[var(--text-sub)] border-b border-[var(--line)]">
+              <th class="py-2 pr-3 font-medium">Batch ID</th>
+              <th class="py-2 pr-3 font-medium">Crawl Time</th>
+              <th class="py-2 pr-3 font-medium">Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-[var(--line)]/70 last:border-b-0">
+              <td class="py-2 pr-3 break-all text-slateui-900">2026-04-20 17:21:24</td>
+              <td class="py-2 pr-3 text-slateui-800">2026-04-20 17:21:24</td>
+              <td class="py-2 pr-3 text-slateui-800">30</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+  </section>
+
+  
+  <section class="section-panel">
+    <div class="section-inner space-y-4">
+      <h2 class="sub-title" lang="en">Related In Same Journal</h2>
+      <div class="divide-y divide-[var(--line)]">
+        
+        <article class="py-3">
+          <h3 class="m-0 text-[16px] leading-7 font-semibold text-slateui-900">
+            <a href="/papers/10.1016%2Fj.bios.2025.117374.html" class="hover:text-accentui-700 transition-colors">Advancing biosensing through super-resolution fluorescence microscopy</a>
+          </h3>
+          <p class="m-0 mt-1 meta-text">Go et al. · 2025-06-01</p>
+        </article>
+        
+        <article class="py-3">
+          <h3 class="m-0 text-[16px] leading-7 font-semibold text-slateui-900">
+            <a href="/papers/10.1016%2Fj.bios.2023.115809.html" class="hover:text-accentui-700 transition-colors">Fluorescence lifetime imaging microscopy for early diagnosis and severity prediction of preeclampsia with Nile Blue probe</a>
+          </h3>
+          <p class="m-0 mt-1 meta-text">Zhu et al. · 2024-01-01</p>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+  
+
+</div>
+
+    </div>
+  </main>
+</body>
+</html>

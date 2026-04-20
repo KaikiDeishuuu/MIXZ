@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %}{{ paper.title }} · Mixz Archive{% endblock %}
+{% block page_id %}paper-detail{% endblock %}
+
+{% block content %}
+<div class="space-y-5 md:space-y-6">
+
+  <section class="section-panel">
+    <div class="section-inner space-y-4">
+      <div class="flex flex-wrap items-center gap-2 text-[13px] text-[var(--text-sub)]">
+        <a href="/" class="hover:text-[var(--accent)]">首页</a>
+        <span>/</span>
+        <a href="/archive.html" class="hover:text-[var(--accent)]">Archive</a>
+        <span>/</span>
+        <span class="text-[var(--text-main)]">论文详情</span>
+      </div>
+
+      <h1 class="section-title text-[32px] md:text-[38px] leading-[1.28]">{{ paper.title }}</h1>
+
+      <div class="flex flex-wrap items-center gap-2 text-[12px] text-[var(--text-sub)]">
+        <span class="chip">{{ paper.journal or '未知期刊' }}</span>
+        <span>{{ paper.author }}</span>
+        <span aria-hidden="true">·</span>
+        <span>{{ paper.pub_date or '日期待补' }}</span>
+        <span aria-hidden="true">·</span>
+        <span>摘要来源 {{ paper.source }}</span>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2">
+        <a href="/archive.html" class="button-base button-secondary">返回 Archive</a>
+        <a href="{{ paper.doi_url }}" target="_blank" rel="noopener noreferrer" class="button-base button-primary">打开 DOI</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="grid gap-5 lg:grid-cols-[minmax(0,1.65fr)_minmax(280px,1fr)]">
+    <article class="section-panel read-container">
+      <div class="section-inner space-y-4">
+        <h2 class="sub-title" lang="en">Abstract</h2>
+        <p class="m-0 text-[15px] leading-8 text-slateui-800 whitespace-pre-wrap">{{ paper.full_abstract }}</p>
+      </div>
+    </article>
+
+    <aside class="section-panel-subtle p-4 md:p-5 space-y-4 h-fit">
+      <h2 class="sub-title text-[20px]" lang="en">Metadata</h2>
+      <dl class="space-y-3 text-[14px]">
+        <div>
+          <dt class="meta-text">DOI</dt>
+          <dd class="mt-1 break-all text-slateui-900">{{ paper.doi_value or 'N/A' }}</dd>
+        </div>
+        <div>
+          <dt class="meta-text">Journal</dt>
+          <dd class="mt-1 text-slateui-900">{{ paper.journal or '未知期刊' }}</dd>
+        </div>
+        <div>
+          <dt class="meta-text">Publication Date</dt>
+          <dd class="mt-1 text-slateui-900">{{ paper.pub_date or '日期待补' }}</dd>
+        </div>
+        <div>
+          <dt class="meta-text">Author</dt>
+          <dd class="mt-1 text-slateui-900">{{ paper.author }}</dd>
+        </div>
+        <div>
+          <dt class="meta-text">Latest Batch</dt>
+          <dd class="mt-1 text-slateui-900 break-all">{{ latest_batch }}</dd>
+        </div>
+        {% if paper.first_seen_at %}
+        <div>
+          <dt class="meta-text">First Seen</dt>
+          <dd class="mt-1 text-slateui-900 break-all">{{ paper.first_seen_at }}</dd>
+        </div>
+        {% endif %}
+        {% if paper.last_seen_at %}
+        <div>
+          <dt class="meta-text">Last Seen</dt>
+          <dd class="mt-1 text-slateui-900 break-all">{{ paper.last_seen_at }}</dd>
+        </div>
+        {% endif %}
+      </dl>
+    </aside>
+  </div>
+
+  <section class="section-panel">
+    <div class="section-inner space-y-4">
+      <h2 class="sub-title" lang="en">Batch History</h2>
+
+      {% if batch_history %}
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-[14px]">
+          <thead>
+            <tr class="text-left text-[var(--text-sub)] border-b border-[var(--line)]">
+              <th class="py-2 pr-3 font-medium">Batch ID</th>
+              <th class="py-2 pr-3 font-medium">Crawl Time</th>
+              <th class="py-2 pr-3 font-medium">Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in batch_history %}
+            <tr class="border-b border-[var(--line)]/70 last:border-b-0">
+              <td class="py-2 pr-3 break-all text-slateui-900">{{ item.batch_id }}</td>
+              <td class="py-2 pr-3 text-slateui-800">{{ item.crawl_time }}</td>
+              <td class="py-2 pr-3 text-slateui-800">{{ item.rank_in_batch }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% else %}
+      <div class="section-panel-subtle p-5 text-[14px] text-[var(--text-sub)]">
+        没有可用的批次历史记录。
+      </div>
+      {% endif %}
+    </div>
+  </section>
+
+  {% if related_rows %}
+  <section class="section-panel">
+    <div class="section-inner space-y-4">
+      <h2 class="sub-title" lang="en">Related In Same Journal</h2>
+      <div class="divide-y divide-[var(--line)]">
+        {% for item in related_rows %}
+        <article class="py-3">
+          <h3 class="m-0 text-[16px] leading-7 font-semibold text-slateui-900">
+            <a href="{{ item.detail_href }}" class="hover:text-accentui-700 transition-colors">{{ item.title }}</a>
+          </h3>
+          <p class="m-0 mt-1 meta-text">{{ item.author }} · {{ item.pub_date or '日期待补' }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+</div>
+{% endblock %}

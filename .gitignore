@@ -38,3 +38,21 @@ Thumbs.db
 .idea/
 *.swp
 *~
+
+# Env and local runtime config
+.env
+.env.*
+!.env.example
+docker-compose.override.yml
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Notebook / temp
+.ipynb_checkpoints/
+tmp/
+*.tmp

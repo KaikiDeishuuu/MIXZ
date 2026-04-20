@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block title %}Mixz Archive{% endblock %}
+{% block page_id %}archive{% endblock %}
+
+{% block content %}
+<div
+  x-data="{
+    activeJournal: 'all',
+    search: '',
+    visibleCount: 24,
+    step: 24,
+    loadMore() { this.visibleCount += this.step; },
+    resetLimit() { this.visibleCount = this.step; },
+    hasVisibleRows() {
+      const rows = this.$el.querySelectorAll('[data-archive-row="true"]');
+      const keyword = this.search.trim().toLowerCase();
+      for (const row of rows) {
+        const textMatch = keyword === '' || row.dataset.search.includes(keyword);
+        const journalMatch = this.activeJournal === 'all' || row.dataset.journalSlug === this.activeJournal;
+        const rangeMatch = Number(row.dataset.index) < this.visibleCount;
+        if (textMatch && journalMatch && rangeMatch) {
+          return true;
+        }
+      }
+      return false;
+    }
+  }"
+  class="space-y-5 md:space-y-6">
+
+  <section class="section-panel">
+    <div class="section-inner grid gap-5 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,1fr)]">
+      <div class="space-y-4">
+        <span lang="en" class="eyebrow">Mixz Archive</span>
+        <h1 class="section-title">全量文献归档</h1>
+        <p class="section-desc">
+          Archive 保留全部去重文献条目。建议先用期刊筛选，再结合关键词检索，以“索引式阅读”方式快速定位目标内容。
+        </p>
+        <div class="flex flex-wrap items-center gap-2">
+          <a href="/" class="button-base button-secondary">返回首页</a>
+        </div>
+      </div>
+
+      <aside class="section-panel-subtle p-4 md:p-5">
+        <dl class="grid grid-cols-2 gap-3">
+          <div>
+            <dt class="meta-text" lang="en">Total Papers</dt>
+            <dd class="text-[20px] font-semibold mt-1">{{ stats['total_papers'] }}</dd>
+          </div>
+          <div>
+            <dt class="meta-text" lang="en">Batches</dt>
+            <dd class="text-[20px] font-semibold mt-1">{{ stats['total_batches'] }}</dd>
+          </div>
+          <div>
+            <dt class="meta-text" lang="en">Coverage</dt>
+            <dd class="text-[20px] font-semibold mt-1">{{ stats['abstract_coverage_pct'] }}%</dd>
+          </div>
+          <div>
+            <dt class="meta-text" lang="en">Generated</dt>
+            <dd class="text-[13px] text-[var(--text-sub)] mt-1 leading-5 break-all">{{ generated_at }}</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section-panel-subtle">
+    <div class="section-inner space-y-4">
+      <div class="grid gap-3 lg:grid-cols-[minmax(0,1fr)_minmax(0,300px)] lg:items-center">
+        <div class="flex flex-wrap gap-2 items-center">
+          <button
+            @click="activeJournal = 'all'; resetLimit()"
+            :class="activeJournal === 'all' ? 'chip-active' : ''"
+            class="chip">
+            全部期刊
+          </button>
+          {% for filter in filters %}
+          <button
+            @click="activeJournal = '{{ filter.slug }}'; resetLimit()"
+            :class="activeJournal === '{{ filter.slug }}' ? 'chip-active' : ''"
+            class="chip">
+            {{ filter.label }} · {{ filter.count }}
+          </button>
+          {% endfor %}
+        </div>
+
+        <div>
+          <label class="sr-only" for="archive-search">搜索归档</label>
+          <input
+            id="archive-search"
+            x-model="search"
+            @input="resetLimit()"
+            class="control-input"
+            placeholder="搜索标题 / 期刊 / 作者 / 摘要" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-panel">
+    <div class="section-inner space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <h2 class="sub-title" lang="en">Archive Entries</h2>
+        <p class="meta-text">共 {{ total_rows }} 条，当前最多展示 <span x-text="visibleCount"></span> 条</p>
+      </div>
+
+      <div class="divide-y divide-[var(--line)]">
+        {% for p in rows %}
+          {% set idx = loop.index0 %}
+          {% include 'components/archive_entry.html' %}
+        {% endfor %}
+      </div>
+
+      <div class="pt-2 flex flex-wrap items-center justify-between gap-2">
+        <p class="meta-text">继续加载可查看更早条目。</p>
+        <button
+          x-show="visibleCount < {{ total_rows }}"
+          x-cloak
+          @click="loadMore()"
+          class="button-base button-secondary">
+          加载更多
+        </button>
+      </div>
+
+      <div
+        x-show="!hasVisibleRows()"
+        x-cloak
+        class="section-panel-subtle p-5 text-[14px] text-[var(--text-sub)]">
+        当前筛选条件没有匹配结果，请调整关键词或期刊标签。
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}

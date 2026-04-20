@@ -6,23 +6,23 @@
   <title>细胞培养与免疫荧光染色 Protocol | Mixz Notes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-    :root { --bg:#f6f1e8; --card:#fffdf8; --card-strong:#fffaf2; --text:#171513; --muted:#6b655d; --line:#e6dfd2; --soft:#f8f3ea; --accent:#8a7352; --accent-soft:#efe4d0; --shadow:0 20px 45px rgba(74,58,35,.08); }
+    :root { --bg:#f6f1e8; --card:#fffdf8; --card-strong:#fffaf2; --text:#171513; --muted:#6b655d; --line:#e6dfd2; --soft:#f8f3ea; --accent:#8a7352; --accent-soft:#efe4d0; --shadow:0 20px 45px rgba(74,58,35,.08); --font-zh:"Noto Serif SC","Noto Serif Simplified Chinese","Source Han Serif SC","Songti SC",serif; --font-en:"Libre Baskerville","Times New Roman","Georgia",serif; }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:linear-gradient(180deg,#f5efe4 0%,#f8f4ec 220px,#f6f1e8 100%);color:var(--text);font-family:"Libre Baskerville","Noto Serif SC","Source Han Serif SC","Songti SC",serif;font-variant-numeric:lining-nums tabular-nums;}
+    body{margin:0;background:linear-gradient(180deg,#f5efe4 0%,#f8f4ec 220px,#f6f1e8 100%);color:var(--text);font-family:var(--font-zh);font-variant-numeric:lining-nums tabular-nums;}
     .progress-bar{position:fixed;top:0;left:0;height:3px;width:var(--progress,0%);background:linear-gradient(90deg,#8a7352,#b59563);z-index:80;box-shadow:0 0 18px rgba(138,115,82,.35)}
     .wrap{max-width:1280px;margin:0 auto;padding:34px 20px 76px;}
     .hero{padding:24px;border:1px solid var(--line);border-radius:30px;background:rgba(255,251,245,.94);box-shadow:var(--shadow)}
     .top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;flex-wrap:wrap}
     .hero-copy{max-width:760px}
-    h1{margin:14px 0 10px;font-family:"Cormorant Garamond","Libre Baskerville","Noto Serif SC",serif;font-size:48px;font-weight:600;letter-spacing:.3px;line-height:1.08}
+    h1{margin:14px 0 10px;font-family:var(--font-en),var(--font-zh);font-size:48px;font-weight:700;letter-spacing:.3px;line-height:1.08}
     .sub{margin-top:12px;color:var(--muted);font-size:15px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;line-height:1.8}
     .sub::before{content:"";width:28px;height:1px;background:#cdbfa8;display:inline-block}
     .kicker{display:inline-flex;align-items:center;padding:6px 12px;border:1px solid #eadbc4;border-radius:999px;background:var(--accent-soft);font-size:12px;color:#5d5244;letter-spacing:.08em;text-transform:uppercase}
     .hero-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-    .back,.action-btn{font-size:14px;color:#2f281f;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:#fff;display:inline-flex;align-items:center;gap:6px;font-family:"Libre Baskerville","Noto Serif SC",serif;cursor:pointer}
+    .back,.action-btn{font-size:14px;color:#2f281f;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:#fff;display:inline-flex;align-items:center;gap:6px;font-family:var(--font-en),var(--font-zh);font-weight:700;cursor:pointer}
     .action-btn.primary{background:#2f261d;color:#fff;border-color:#2f261d}
     .hero-meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
     .meta-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 16px;min-height:86px;display:flex;flex-direction:column;gap:6px}
@@ -31,11 +31,11 @@
     .layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start;margin-top:24px}
     .doc{margin-top:0;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:34px 38px 40px;line-height:2.02;box-shadow:0 16px 38px rgba(74,58,35,.06)}
     .doc > *:first-child{margin-top:0 !important}
-    .doc h1,.doc h2,.doc h3{font-family:"Cormorant Garamond","Libre Baskerville","Noto Serif SC",serif;line-height:1.25;color:#1f1b16;letter-spacing:.01em}
+    .doc h1,.doc h2,.doc h3{font-family:var(--font-en),var(--font-zh);line-height:1.25;color:#1f1b16;letter-spacing:.01em;font-weight:700}
     .doc h1{font-size:2.45rem;margin:0 0 .72em;} .doc h2{font-size:1.86rem;margin:1.55em 0 .58em;} .doc h3{font-size:1.42rem;margin:1.12em 0 .5em;}
     .doc blockquote{margin:1.15em 0;padding:1.05em 1.12em;border-left:3px solid #8a7352;background:var(--soft);border-radius:14px;color:#38322c;box-shadow:inset 0 0 0 1px rgba(234,223,210,.55)}
     .doc hr{border:0;border-top:1px solid var(--line);margin:1.95em 0}
-    .doc code{background:#f5efe5;border:1px solid #e7dcc8;border-radius:7px;padding:.14em .45em;font-family:"Libre Baskerville","Noto Serif SC",serif;color:#5f4e3a}
+    .doc code{background:#f5efe5;border:1px solid #e7dcc8;border-radius:7px;padding:.14em .45em;font-family:var(--font-en),var(--font-zh);font-weight:700;color:#5f4e3a}
     .doc pre{background:#fbf8f2;border:1px solid #ece4d6;border-radius:14px;padding:16px 17px;overflow:auto}
     .doc p{margin:.82em 0;color:#2b2722}
     .doc ul,.doc ol{padding-left:1.5em;margin:.78em 0 1.05em}
@@ -48,11 +48,11 @@
     .doc th{background:#faf6ef;font-weight:600}
     .doc h2[id], .doc h3[id]{scroll-margin-top:24px}
     .doc,.doc p,.doc li,.doc td,.doc th,.doc strong,.doc code,.doc pre,.doc table,.doc blockquote,.toc,.toc-link,.step-label,.meta-card,.action-btn{font-variant-numeric:lining-nums tabular-nums}
-    .doc .math,.doc mjx-container,.doc mjx-container *{font-family:"Libre Baskerville","Noto Serif SC","Source Han Serif SC","Songti SC",serif !important}
+    .doc .math,.doc mjx-container,.doc mjx-container *{font-family:var(--font-en),var(--font-zh) !important;font-weight:700}
     .toc-shell{position:sticky;top:18px;display:grid;gap:14px}
     .toc,.utility-card{background:#fffdfa;border:1px solid var(--line);border-radius:20px;padding:16px 16px 14px;box-shadow:0 8px 28px rgba(74,58,35,.04)}
     .toc-kicker,.utility-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8a7352;margin-bottom:8px}
-    .toc-title,.utility-title{font-family:"Cormorant Garamond","Libre Baskerville","Noto Serif SC",serif;font-size:24px;line-height:1.1;margin:0 0 10px;color:#1f1a15}
+    .toc-title,.utility-title{font-family:var(--font-en),var(--font-zh);font-size:24px;line-height:1.1;margin:0 0 10px;color:#1f1a15;font-weight:700}
     .toc-list{display:flex;flex-direction:column;gap:6px;max-height:54vh;overflow:auto;padding-right:2px}
     .toc-link{display:block;text-decoration:none;color:#403931;font-size:13px;line-height:1.5;padding:6px 8px;border-radius:10px;transition:background .15s ease,color .15s ease}
     .toc-link:hover{background:#f7f1e7}
@@ -104,7 +104,7 @@
       .doc blockquote,.callout,.step-block,pre,table{page-break-inside:avoid}
       a{text-decoration:none;color:#000}
     }
-    .back-to-top{position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.92);color:#2a241d;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(17,17,17,.08);cursor:pointer;z-index:60;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .18s ease,transform .18s ease,background .18s ease,border-color .18s ease;font-family:"Libre Baskerville","Noto Serif SC",serif}
+    .back-to-top{position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.92);color:#2a241d;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(17,17,17,.08);cursor:pointer;z-index:60;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .18s ease,transform .18s ease,background .18s ease,border-color .18s ease;font-family:var(--font-en),var(--font-zh);font-weight:700}
     .back-to-top.visible{opacity:1;transform:translateY(0);pointer-events:auto}
     .back-to-top:hover{background:#fff;border-color:#d8d1c5}
     .back-to-top:focus-visible{outline:2px solid #8a7352;outline-offset:2px}

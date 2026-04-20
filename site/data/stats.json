@@ -1,50 +1,20 @@
 {
-  "generated_at": "2026-04-20T06:47:54.497167+00:00",
+  "generated_at": "2026-04-20T17:22:25.895257+08:00",
   "stats": {
-    "total_papers": 53,
-    "total_batches": 7,
-    "papers_with_abstract": 52,
-    "abstract_coverage_pct": 98.11
+    "total_papers": 30,
+    "total_batches": 1,
+    "papers_with_abstract": 27,
+    "abstract_coverage_pct": 90.0
   },
   "crawl": {
-    "batch_id": "render-only",
-    "fetched": 0,
-    "new": 0,
+    "batch_id": "2026-04-20 17:21:24",
+    "fetched": 30,
+    "new": 30,
     "updated": 0,
     "abstract_backfill": {
-      "checked": 0,
-      "filled": 0,
-      "skipped": true
+      "checked": 3,
+      "filled": 0
     },
-    "prune": {
-      "kept": 7,
-      "removed": 6,
-      "removed_items": [
-        [
-          "2026-04-19 19:00:02",
-          "duplicate_signature_no_change"
-        ],
-        [
-          "2026-04-19 09:00:01",
-          "duplicate_signature_no_change"
-        ],
-        [
-          "2026-04-18 19:00:01",
-          "duplicate_signature_no_change"
-        ],
-        [
-          "2026-04-18 09:00:02",
-          "duplicate_signature_no_change"
-        ],
-        [
-          "2026-04-17 19:00:01",
-          "duplicate_signature_no_change"
-        ],
-        [
-          "2026-04-16 19:00:02",
-          "duplicate_signature_no_change"
-        ]
-      ]
-    }
+    "prune": null
   }
 }

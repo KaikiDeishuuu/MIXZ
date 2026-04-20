@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% block title %}Mixz Notes · Literature{% endblock %}
+{% block page_id %}home{% endblock %}
+
+{% block content %}
+<div x-data="{ currentTab: 'literature', activeJournal: 'all', search: '' }" class="space-y-5 md:space-y-6">
+
+  <section class="section-panel">
+    <div class="section-inner grid gap-6 lg:grid-cols-[minmax(0,1.35fr)_minmax(300px,1fr)] lg:gap-8">
+      <div class="space-y-4">
+        <span lang="en" class="eyebrow">Mixz Notes</span>
+        <h1 lang="en" class="section-title latin-ui">Research Literature Digest</h1>
+        <p class="section-desc">
+          面向显微与生物影像方向的文献归档索引。你可以先看最新批次，再按期刊筛选和进入详情页深读。
+          页面强调可扫描性，适合日常追踪和回溯检索。
+        </p>
+        <div class="flex flex-wrap items-center gap-2">
+          <a href="#content" class="button-base button-primary">进入文献区</a>
+          <a href="/archive.html" class="button-base button-secondary">打开全量 Archive</a>
+        </div>
+      </div>
+
+      <aside class="section-panel-subtle p-4 md:p-5 space-y-4">
+        <div>
+          <h2 class="sub-title text-[20px]">今日快照</h2>
+          <p class="section-desc mt-2">最新批次 {{ latest_id or 'N/A' }}，共 {{ latest_batch_size }} 篇。</p>
+        </div>
+        <dl class="grid grid-cols-2 gap-3">
+          <div>
+            <dt class="meta-text" lang="en">Total Papers</dt>
+            <dd class="text-[20px] font-semibold mt-1">{{ stats['total_papers'] }}</dd>
+          </div>
+          <div>
+            <dt class="meta-text" lang="en">Coverage</dt>
+            <dd class="text-[20px] font-semibold mt-1">{{ stats['abstract_coverage_pct'] }}%</dd>
+          </div>
+          <div>
+            <dt class="meta-text" lang="en">Generated</dt>
+            <dd class="text-[13px] text-[var(--text-sub)] mt-1 leading-5 break-all">{{ generated_at }}</dd>
+          </div>
+          <div>
+            <dt class="meta-text" lang="en">Latest Size</dt>
+            <dd class="text-[20px] font-semibold mt-1">{{ latest_batch_size }}</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+    <article class="section-panel-subtle p-4">
+      <p class="meta-text" lang="en">Total papers</p>
+      <p class="m-0 text-[22px] font-semibold mt-2">{{ stats['total_papers'] }}</p>
+    </article>
+    <article class="section-panel-subtle p-4">
+      <p class="meta-text" lang="en">Visible batches</p>
+      <p class="m-0 text-[22px] font-semibold mt-2">{{ history_batches|length + (1 if latest_id else 0) }}</p>
+    </article>
+    <article class="section-panel-subtle p-4">
+      <p class="meta-text" lang="en">Abstract coverage</p>
+      <p class="m-0 text-[22px] font-semibold mt-2">{{ stats['abstract_coverage_pct'] }}%</p>
+    </article>
+    <article class="section-panel-subtle p-4">
+      <p class="meta-text" lang="en">Latest batch</p>
+      <p class="m-0 text-[14px] font-semibold mt-2 leading-6 break-all">{{ latest_id or 'N/A' }}</p>
+    </article>
+  </section>
+
+  <section id="content" class="section-panel-subtle">
+    <div class="section-inner flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+      <div class="flex flex-wrap items-center gap-2">
+        <button
+          lang="en"
+          @click="currentTab = 'literature'"
+          :class="currentTab === 'literature' ? 'button-primary' : 'button-secondary'"
+          class="button-base latin-ui">
+          Literature
+        </button>
+        <button
+          lang="en"
+          @click="currentTab = 'protocols'"
+          :class="currentTab === 'protocols' ? 'button-primary' : 'button-secondary'"
+          class="button-base latin-ui">
+          Protocol Library
+        </button>
+      </div>
+
+      <div x-show="currentTab === 'literature'" x-cloak class="w-full md:w-[340px]">
+        <label class="sr-only" for="search-input">搜索文献</label>
+        <input id="search-input" x-model="search" class="control-input" placeholder="搜索标题 / 期刊 / 作者 / 摘要" />
+      </div>
+    </div>
+  </section>
+
+  <div x-show="currentTab === 'literature'" x-transition:enter="transition ease-out duration-200" class="space-y-5">
+
+    <section class="section-panel">
+      <div class="section-inner space-y-4">
+        <div class="flex flex-wrap items-start justify-between gap-3">
+          <div class="space-y-1">
+            <h2 class="sub-title" lang="en">Latest Batch</h2>
+            <p class="section-desc">优先展示当前批次，便于快速浏览当日新增文献。</p>
+          </div>
+          <span class="chip" lang="en">Batch {{ latest_id or 'N/A' }}</span>
+        </div>
+
+        <div class="flex flex-wrap gap-2 items-center">
+          <button
+            @click="activeJournal = 'all'"
+            :class="activeJournal === 'all' ? 'chip-active' : ''"
+            class="chip">
+            全部期刊
+          </button>
+          {% for filter in filters %}
+          <button
+            @click="activeJournal = '{{ filter.slug }}'"
+            :class="activeJournal === '{{ filter.slug }}' ? 'chip-active' : ''"
+            class="chip">
+            {{ filter.label }} · {{ filter.count }}
+          </button>
+          {% endfor %}
+        </div>
+
+        {% if latest_rows %}
+        <div class="grid gap-4 md:grid-cols-2">
+          {% for p in latest_rows %}
+            {% include 'components/card.html' %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="section-panel-subtle p-5 text-[14px] text-[var(--text-sub)]">
+          当前没有可展示的最新批次，请稍后刷新或进入 Archive 查看历史归档。
+        </div>
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="section-panel">
+      <div class="section-inner space-y-4">
+        <div class="flex flex-wrap items-start justify-between gap-3">
+          <div class="space-y-1">
+            <h2 class="sub-title" lang="en">Recent Papers</h2>
+            <p class="section-desc">从历史批次中提取近期条目，适合作为补读入口。</p>
+          </div>
+          <a href="/archive.html" class="button-base button-secondary">进入 Archive</a>
+        </div>
+
+        {% if recent_rows %}
+        <div class="grid gap-4 md:grid-cols-2">
+          {% for p in recent_rows %}
+            {% include 'components/card.html' %}
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="section-panel-subtle p-5 text-[14px] text-[var(--text-sub)]">
+          目前没有可展示的历史文献记录。
+        </div>
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="section-panel-subtle">
+      <div class="section-inner space-y-3">
+        <div>
+          <h2 class="sub-title" lang="en">Journal Navigation</h2>
+          <p class="section-desc mt-1">快速进入 Archive 后按期刊定位阅读。</p>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          {% for item in journal_nav %}
+          <a href="/archive.html" class="chip hover:border-[var(--line-strong)]">{{ item.label }} · {{ item.count }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="protocol-library" x-show="currentTab === 'protocols'" x-cloak x-transition:enter="transition ease-out duration-200">
+    <section class="section-panel">
+      <div class="section-inner space-y-4">
+        <div class="space-y-1">
+          <h2 class="sub-title" lang="en">Protocol Library</h2>
+          <p class="section-desc">实验流程页保持独立入口，适合从文献条目跳转到操作参考。</p>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {% for item in protocols %}
+            {% include 'components/protocol_card.html' %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </div>
+
+</div>
+{% endblock %}

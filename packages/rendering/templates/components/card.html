@@ -1,0 +1,33 @@
+<article
+  x-data="{ get isMatch() { return (search === '' || this.$refs.root.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || this.$refs.root.dataset.journalSlug === activeJournal) } }"
+  x-ref="root"
+  x-show="isMatch"
+  data-search="{{ p.search_blob|escape }}"
+  data-journal-slug="{{ p.journal_slug }}"
+  class="section-panel-subtle p-4 md:p-5 flex flex-col gap-3"
+  x-transition>
+
+  <div class="flex items-start justify-between gap-3">
+    <span class="chip">{{ p.journal or '未知期刊' }}</span>
+    <span class="meta-text whitespace-nowrap">{{ p.pub_date or '日期待补' }}</span>
+  </div>
+
+  <h3 class="m-0 text-[17px] md:text-[18px] leading-7 font-semibold text-slateui-900">
+    <a href="{{ p.detail_href }}" class="hover:text-accentui-700 transition-colors">
+      {{ p.title }}
+    </a>
+  </h3>
+
+  <div class="meta-text flex flex-wrap items-center gap-x-2 gap-y-1">
+    <span>{{ p.author }}</span>
+    <span aria-hidden="true">·</span>
+    <span>摘要来源 {{ p.source }}</span>
+  </div>
+
+  <p class="muted-text m-0 line-clamp-4">{{ p.snippet }}</p>
+
+  <div class="pt-3 mt-auto border-t border-[var(--line)] flex flex-wrap items-center gap-3">
+    <a href="{{ p.detail_href }}" class="button-base button-secondary h-[32px] px-3">阅读条目</a>
+    <a href="{{ p.doi_url }}" target="_blank" rel="noopener noreferrer" class="text-[13px] text-[var(--accent)] hover:underline">查看 DOI</a>
+  </div>
+</article>
