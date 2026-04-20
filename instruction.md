@@ -26,9 +26,14 @@ curl -i http://127.0.0.1:8000/stats
 ### 2.4 一键自检（自动拉起 + 健康检查）
 
 ```bash
-export MIXZ_POSTGRES_DSN='postgresql+psycopg://user:password@host:5432/db'
+# 使用 psycopg DSN；若密码含特殊字符（如 /），先 URL 编码
+export MIXZ_POSTGRES_DSN='postgresql+psycopg://user:password@host:5432/db?sslmode=require'
 bash scripts/mixz_self_check.sh
 ```
+
+提示：
+- Supabase 建议追加 `sslmode=require`
+- 例如密码 `abc/def` 应写为 `abc%2Fdef`
 
 脚本会自动检查：`/health`、`/meta`、`/papers`、`/batches`、`/archive`、`/stats`，并输出 PASS/FAIL 汇总。
 

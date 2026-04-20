@@ -165,9 +165,12 @@ Key files:
 Run migration:
 
 ```bash
-export MIXZ_POSTGRES_DSN='postgresql+psycopg://user:password@localhost:5432/mixz'
+# 推荐 psycopg DSN；Supabase 等托管库建议启用 SSL
+export MIXZ_POSTGRES_DSN='postgresql+psycopg://user:password@localhost:5432/mixz?sslmode=require'
 alembic upgrade head
 ```
+
+注意：如果密码包含 `/`、`@`、`:` 等特殊字符，需要 URL 编码（例如 `/` -> `%2F`）。
 
 Backfill legacy SQLite data into PostgreSQL:
 
