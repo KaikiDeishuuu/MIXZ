@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>提取缓冲液（Extraction Buffer）配置 Protocol | Mixz Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+    :root { --bg:#f6f1e8; --card:#fffdf8; --card-strong:#fffaf2; --text:#171513; --muted:#6b655d; --line:#e6dfd2; --soft:#f8f3ea; --accent:#8a7352; --accent-soft:#efe4d0; --shadow:0 20px 45px rgba(74,58,35,.08); }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:linear-gradient(180deg,#f5efe4 0%,#f8f4ec 220px,#f6f1e8 100%);color:var(--text);font-family:"Libre Baskerville","Noto Serif SC","Source Han Serif SC","Songti SC",serif;font-variant-numeric:lining-nums tabular-nums;}
+    .progress-bar{position:fixed;top:0;left:0;height:3px;width:var(--progress,0%);background:linear-gradient(90deg,#8a7352,#b59563);z-index:80;box-shadow:0 0 18px rgba(138,115,82,.35)}
+    .wrap{max-width:1280px;margin:0 auto;padding:34px 20px 76px;}
+    .hero{padding:24px;border:1px solid var(--line);border-radius:30px;background:rgba(255,251,245,.94);box-shadow:var(--shadow)}
+    .top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;flex-wrap:wrap}
+    .hero-copy{max-width:760px}
+    h1{margin:14px 0 10px;font-family:"Cormorant Garamond","Libre Baskerville","Noto Serif SC",serif;font-size:48px;font-weight:600;letter-spacing:.3px;line-height:1.08}
+    .sub{margin-top:12px;color:var(--muted);font-size:15px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;line-height:1.8}
+    .sub::before{content:"";width:28px;height:1px;background:#cdbfa8;display:inline-block}
+    .kicker{display:inline-flex;align-items:center;padding:6px 12px;border:1px solid #eadbc4;border-radius:999px;background:var(--accent-soft);font-size:12px;color:#5d5244;letter-spacing:.08em;text-transform:uppercase}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .back,.action-btn{font-size:14px;color:#2f281f;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:#fff;display:inline-flex;align-items:center;gap:6px;font-family:"Libre Baskerville","Noto Serif SC",serif;cursor:pointer}
+    .action-btn.primary{background:#2f261d;color:#fff;border-color:#2f261d}
+    .hero-meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
+    .meta-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 16px;min-height:86px;display:flex;flex-direction:column;gap:6px}
+    .meta-label{font-size:12px;color:#877866;letter-spacing:.08em;text-transform:uppercase}
+    .meta-value{font-size:17px;line-height:1.5;color:#231b13}
+    .layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start;margin-top:24px}
+    .doc{margin-top:0;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:34px 38px 40px;line-height:2.02;box-shadow:0 16px 38px rgba(74,58,35,.06)}
+    .doc > *:first-child{margin-top:0 !important}
+    .doc h1,.doc h2,.doc h3{font-family:"Cormorant Garamond","Libre Baskerville","Noto Serif SC",serif;line-height:1.25;color:#1f1b16;letter-spacing:.01em}
+    .doc h1{font-size:2.45rem;margin:0 0 .72em;} .doc h2{font-size:1.86rem;margin:1.55em 0 .58em;} .doc h3{font-size:1.42rem;margin:1.12em 0 .5em;}
+    .doc blockquote{margin:1.15em 0;padding:1.05em 1.12em;border-left:3px solid #8a7352;background:var(--soft);border-radius:14px;color:#38322c;box-shadow:inset 0 0 0 1px rgba(234,223,210,.55)}
+    .doc hr{border:0;border-top:1px solid var(--line);margin:1.95em 0}
+    .doc code{background:#f5efe5;border:1px solid #e7dcc8;border-radius:7px;padding:.14em .45em;font-family:"Libre Baskerville","Noto Serif SC",serif;color:#5f4e3a}
+    .doc pre{background:#fbf8f2;border:1px solid #ece4d6;border-radius:14px;padding:16px 17px;overflow:auto}
+    .doc p{margin:.82em 0;color:#2b2722}
+    .doc ul,.doc ol{padding-left:1.5em;margin:.78em 0 1.05em}
+    .doc li{margin:.45em 0;color:#2e2924}
+    .doc strong{color:#1f1a15}
+    .doc table{width:100%;border-collapse:collapse;margin:1.15em 0;background:#fffdf9;border-radius:14px;overflow:hidden;display:block;overflow-x:auto}
+    .doc tbody,.doc thead{width:100%;display:table}
+    .doc table tr{display:table-row}
+    .doc th,.doc td{border:1px solid var(--line);padding:11px 13px;text-align:left}
+    .doc th{background:#faf6ef;font-weight:600}
+    .doc h2[id], .doc h3[id]{scroll-margin-top:24px}
+    .doc,.doc p,.doc li,.doc td,.doc th,.doc strong,.doc code,.doc pre,.doc table,.doc blockquote,.toc,.toc-link,.step-label,.meta-card,.action-btn{font-variant-numeric:lining-nums tabular-nums}
+    .doc .math,.doc mjx-container,.doc mjx-container *{font-family:"Libre Baskerville","Noto Serif SC","Source Han Serif SC","Songti SC",serif !important}
+    .toc-shell{position:sticky;top:18px;display:grid;gap:14px}
+    .toc,.utility-card{background:#fffdfa;border:1px solid var(--line);border-radius:20px;padding:16px 16px 14px;box-shadow:0 8px 28px rgba(74,58,35,.04)}
+    .toc-kicker,.utility-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8a7352;margin-bottom:8px}
+    .toc-title,.utility-title{font-family:"Cormorant Garamond","Libre Baskerville","Noto Serif SC",serif;font-size:24px;line-height:1.1;margin:0 0 10px;color:#1f1a15}
+    .toc-list{display:flex;flex-direction:column;gap:6px;max-height:54vh;overflow:auto;padding-right:2px}
+    .toc-link{display:block;text-decoration:none;color:#403931;font-size:13px;line-height:1.5;padding:6px 8px;border-radius:10px;transition:background .15s ease,color .15s ease}
+    .toc-link:hover{background:#f7f1e7}
+    .toc-link.active{background:#f4ebdc;color:#1f1a15;font-weight:600;box-shadow:inset 2px 0 0 #8a7352}
+    .toc-link.sub{padding-left:18px;color:#61584d;font-size:12px}
+    .toc-link.sub.active{color:#3a332c}
+    .toc-toggle{display:none}
+    .utility-copy{color:#6d6152;font-size:14px;line-height:1.8}
+    .utility-actions{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+    .callout{margin:1.05em 0;padding:1em 1.05em;border:1px solid #eadfc9;border-radius:14px;background:#fbf7ef;color:#352f28}
+    .callout-title{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#8a7352;margin-bottom:6px}
+    .callout.warning{background:#fbf4ea;border-color:#e7d5b7}
+    .callout.tip{background:#f7f5ef;border-color:#ddd8c9}
+    .callout.note{background:#faf7f2;border-color:#e7dfd0}
+    .step-block{margin:1.25em 0;padding:1.05em 1.08em;border:1px solid #e6ddce;border-radius:16px;background:linear-gradient(180deg,#fffdf9 0%,#faf6ef 100%)}
+    .step-label{display:inline-flex;align-items:center;padding:4px 10px;border:1px solid #e5dac7;border-radius:999px;background:#fff;color:#7a6545;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.6em}
+    .step-block > h2, .step-block > h3{margin-top:0 !important}
+    @media (max-width: 1080px) {
+      .hero-meta{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .layout{grid-template-columns:1fr}
+      .toc-shell{position:static}
+      .toc{order:-1;padding:12px 12px 10px;border-radius:16px}
+      .toc-toggle{display:flex;justify-content:space-between;align-items:center;width:100%;appearance:none;border:0;background:transparent;padding:2px 0 8px;font:inherit;color:#1f1a15;cursor:pointer}
+      .toc-body{display:none}
+      .toc.open .toc-body{display:block}
+    }
+    @media (max-width: 720px) {
+      .wrap{padding:24px 14px 54px}
+      .hero{padding:18px 16px}
+      h1{font-size:35px}
+      .hero-meta{grid-template-columns:1fr}
+      .top{align-items:flex-start}
+      .sub{gap:8px}
+      .doc{padding:20px 18px 24px;line-height:1.9;border-radius:18px}
+      .doc h1{font-size:1.98rem}
+      .doc h2{font-size:1.58rem}
+      .doc h3{font-size:1.24rem}
+      .back,.action-btn{font-size:13px}
+      .hero-actions{width:100%}
+    }
+    @media print {
+      body{background:#fff;color:#000}
+      .progress-bar,.hero-actions,.toc-shell,.back-to-top{display:none !important}
+      .wrap{max-width:none;padding:0}
+      .hero{box-shadow:none;border:0;padding:0;background:#fff}
+      .layout{display:block}
+      .doc{box-shadow:none;border:0;padding:0;background:#fff}
+      .doc h1,.doc h2,.doc h3{page-break-after:avoid}
+      .doc blockquote,.callout,.step-block,pre,table{page-break-inside:avoid}
+      a{text-decoration:none;color:#000}
+    }
+    .back-to-top{position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.92);color:#2a241d;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(17,17,17,.08);cursor:pointer;z-index:60;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .18s ease,transform .18s ease,background .18s ease,border-color .18s ease;font-family:"Libre Baskerville","Noto Serif SC",serif}
+    .back-to-top.visible{opacity:1;transform:translateY(0);pointer-events:auto}
+    .back-to-top:hover{background:#fff;border-color:#d8d1c5}
+    .back-to-top:focus-visible{outline:2px solid #8a7352;outline-offset:2px}
+    @media (max-width:720px){.back-to-top{right:14px;bottom:18px;width:40px;height:40px}}
+  </style>
+  <link rel="alternate" type="application/rss+xml" title="Mixz Notes Feed" href="https://mixz.wulab.tech/feed.xml" />
+</head>
+<body>
+  <div class="progress-bar" id="progress-bar"></div>
+  <div class="wrap">
+    <section class="hero">
+      <div class="top">
+        <div class="hero-copy">
+          <div class="kicker">Protocol Note</div>
+          <h1>提取缓冲液（Extraction Buffer）配置 Protocol</h1>
+          <div class="sub">实验文档详情页 · by Hikki · 更适合打印、实验台边查看和手机快速跳转</div>
+        </div>
+        <div class="hero-actions">
+          <a class="back" href="/">← 返回菜单</a>
+          <button class="action-btn" id="copy-link" type="button">复制链接</button>
+          <button class="action-btn primary" id="print-page" type="button">打印 / 导出 PDF</button>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-card"><span class="meta-label">文档类型</span><span class="meta-value">实验 Protocol / 可长期维护</span></div>
+        <div class="meta-card"><span class="meta-label">阅读模式</span><span class="meta-value">长文舒展排版 + 粘性目录</span></div>
+        <div class="meta-card"><span class="meta-label">快速操作</span><span class="meta-value">复制链接、打印、目录跳转</span></div>
+        <div class="meta-card"><span class="meta-label">当前状态</span><span class="meta-value" id="reading-meta">加载中…</span></div>
+      </div>
+    </section>
+    <div class="layout">
+      <article id="doc" class="doc"></article>
+      <aside class="toc-shell">
+        <section class="utility-card">
+          <div class="utility-label">Quick use</div>
+          <h2 class="utility-title">使用提示</h2>
+          <div class="utility-copy">右侧目录会跟随当前位置高亮；手机端可折叠。打印按钮适合直接导出实验台版本。</div>
+          <div class="utility-actions">
+            <button class="action-btn" id="copy-title" type="button">复制标题</button>
+            <button class="action-btn" id="scroll-first-step" type="button">跳到正文</button>
+          </div>
+        </section>
+        <aside class="toc" id="toc">
+          <button class="toc-toggle" id="toc-toggle" type="button"><span><span class="toc-kicker">On this page</span><strong>目录导航</strong></span><span>▾</span></button>
+          <div class="toc-body"><div class="toc-kicker">On this page</div><h2 class="toc-title">目录导航</h2><nav class="toc-list" id="toc-list"></nav></div>
+        </aside>
+      </aside>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    const md = "# 提取缓冲液（Extraction Buffer）配置 Protocol  \n**pH：7.0–7.2 | 终体积：50 mL**\n\n---\n\n## 1. 试剂准备\n\n### 1.1 所需储备液（Stock）\n\n| 试剂         | 储备液浓度 |\n| ------------ | ---------- |\n| PIPES        | 1 M        |\n| EGTA         | 1 M      |\n| MgCl₂·6H₂O   | 1 M        |\n| Triton X-100 | 10%（v/v） |\n\n---\n\n## 2. 储备液（Stock）配置\n\n### 2.1 PIPES（1 M，5 mL）\n\n- 分子量：302.37 g/mol  \n\n- 计算：\n  \n  m = C × MW × V  \n  = 1 × 302.37 × 0.005 = **1.51185 g**\n\n- 配制步骤：\n  1. 称取 1.51185 g PIPES\n  2. 加入约 3 mL ddH₂O 溶解\n  3. 用 NaOH 调节 pH 至约 7.0\n  4. 定容至 5 mL\n\n---\n\n### 2.2 EGTA（1 M，1 mL）\n\n- 分子量：380.35 g/mol  \n\n- 计算：\n\n  m = 1 × 380.35 × 0.001 = **0.38035 g（约 380 mg）**\n\n- 配制步骤：\n  1. 称取 380 mg EGTA\n  2. 加入少量 NaOH 促进溶解\n  3. 加 ddH₂O 定容至 1 mL\n\n---\n\n### 2.3 MgCl₂·6H₂O（1 M，5 mL）\n\n- 分子量：203.3 g/mol  \n\n- 计算：\n\n  m = 1 × 203.3 × 0.005 = **1.0165 g**\n\n- 配制步骤：\n  1. 称取 1.0165 g MgCl₂·6H₂O\n  2. 溶于 ddH₂O\n  3. 定容至 5 mL\n\n---\n\n## 3. 提取缓冲液（50 mL）配置\n\n### 3.1 配方\n\n| 组分         | 储备液浓度 | 终浓度 | 加入体积     |\n| ------------ | ---------- | ------ | ------------ |\n| PIPES        | 1 M        | 0.1 M  | 5 mL         |\n| EGTA         | 1 M      | 1 mM   | 0.05 mL       |\n| MgCl₂        | 1 M        | 1 mM   | 50 μL        |\n| Triton X-100 | 10%        | 0.2%   | 1 mL         |\n| ddH₂O        | —          | —      | 补足至 50 mL |\n\n---\n\n### 3.2 配制步骤\n\n1. 在 50 mL 离心管中依次加入：\n   - 5 mL PIPES（1 M）\n   - 0.05 mL EGTA（1 M）\n   - 50 μL MgCl₂（1 M）\n   - 1 mL Triton X-100（10%）\n\n2. 加入 ddH₂O 至约 45 mL\n\n3. 充分混匀\n\n4. 调节 pH 至 7.0–7.2\n\n5. 定容至 50 mL\n\n6. 再次混匀\n\n---\n\n## 4. 保存条件\n\n- 短期保存：4°C（建议 ≤1 周）\n- 长期保存：分装后 −20°C（避免反复冻融）\n\n---\n\n## 5. 各组分作用\n\n| 成分         | 功能                      |\n| ------------ | ------------------------- |\n| PIPES        | 缓冲体系，维持 pH 稳定    |\n| EGTA         | 螯合 Ca²⁺，抑制钙依赖反应 |\n| MgCl₂        | 稳定蛋白/细胞骨架结构     |\n| Triton X-100 | 破膜（非离子去垢剂）      |\n\n---\n\n## 6. 注意事项\n\n### 6.1 溶解问题\n- PIPES 需调 pH 才能完全溶解\n- EGTA 溶解较慢，建议加入 NaOH\n\n### 6.2 Triton X-100\n- 粘度较高，建议预润湿枪头再吸取\n\n### 6.3 MgCl₂·6H₂O\n- 易吸湿，称量时尽量快速\n\n### 6.4 精度要求\n- μL 级体积建议使用校准过的移液器\n\n---\n\n## 7. 可选添加（根据实验需求）\n\n| 添加物       | 作用               |\n| ------------ | ------------------ |\n| 蛋白酶抑制剂 | 防止蛋白降解       |\n| 磷酸酶抑制剂 | 保持蛋白磷酸化状态 |\n\n---\n\n## 8. 计算公式参考\n\n### 稀释公式：\nC₁V₁ = C₂V₂  \n\n### 质量计算：\nm = C × MW × V  \n\n---\n\n## 9. 应用场景\n\n该缓冲液常用于：\n\n- 免疫荧光实验（IF）中的细胞提取\n- 细胞膜通透处理（permeabilization）\n- 细胞骨架结构研究\n\n---\n";
+    marked.setOptions({ gfm: true, breaks: true });
+    document.getElementById('doc').innerHTML = marked.parse(md);
+  </script>
+    <script>
+    const docEl = document.getElementById('doc');
+    const tocList = document.getElementById('toc-list');
+    const toc = document.getElementById('toc');
+    const tocToggle = document.getElementById('toc-toggle');
+    const progressBar = document.getElementById('progress-bar');
+    const readingMeta = document.getElementById('reading-meta');
+    const slugify = (text) => text.toLowerCase().trim().replace(/[^\w\u4e00-\u9fa5]+/g, '-').replace(/^-+|-+$/g, '');
+    const headings = Array.from(docEl.querySelectorAll('h2, h3'));
+    const tocLinks = [];
+
+    headings.forEach((h, i) => {
+      if (!h.id) h.id = `${slugify(h.textContent || 'section') || 'section'}-${i+1}`;
+      const a = document.createElement('a');
+      a.href = `#${h.id}`;
+      a.className = `toc-link ${h.tagName === 'H3' ? 'sub' : ''}`;
+      a.textContent = h.textContent;
+      tocList?.appendChild(a);
+      tocLinks.push(a);
+    });
+
+    const words = (docEl.innerText || '').trim().split(/\s+/).filter(Boolean).length;
+    const approxMinutes = Math.max(1, Math.round(words / 220));
+    readingMeta.textContent = `${headings.length} 个章节节点 · 约 ${approxMinutes} 分钟读完`;
+
+    const markActive = () => {
+      let current = headings[0];
+      headings.forEach((h) => {
+        const top = h.getBoundingClientRect().top;
+        if (top <= 140) current = h;
+      });
+      tocLinks.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === `#${current?.id}`));
+    };
+
+    const updateProgress = () => {
+      const scrollTop = window.scrollY;
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = maxScroll > 0 ? Math.min(100, Math.max(0, (scrollTop / maxScroll) * 100)) : 0;
+      progressBar?.style.setProperty('--progress', `${pct}%`);
+    };
+
+    Array.from(docEl.querySelectorAll('blockquote')).forEach((el) => {
+      const text = (el.textContent || '').trim();
+      let type = 'note';
+      let label = 'Note';
+      if (/注意|警告|避免|必须|务必/i.test(text)) { type = 'warning'; label = 'Warning'; }
+      else if (/建议|可选|推荐|提示|Tip/i.test(text)) { type = 'tip'; label = 'Tip'; }
+      el.classList.add('callout', type);
+      if (!el.querySelector('.callout-title')) {
+        const title = document.createElement('div');
+        title.className = 'callout-title';
+        title.textContent = label;
+        el.prepend(title);
+      }
+    });
+
+    Array.from(docEl.querySelectorAll('h2, h3')).forEach((h) => {
+      const text = (h.textContent || '').trim();
+      if (/^step\s*\d+/i.test(text)) {
+        const wrap = document.createElement('section');
+        wrap.className = 'step-block';
+        const label = document.createElement('div');
+        label.className = 'step-label';
+        const m = text.match(/^step\s*\d+/i);
+        label.textContent = m ? m[0] : 'Step';
+        h.parentNode.insertBefore(wrap, h);
+        wrap.appendChild(label);
+        wrap.appendChild(h);
+        let next = wrap.nextSibling;
+        while (next && !(next.nodeType === 1 && /H[23]/.test(next.tagName))) {
+          const current = next;
+          next = next.nextSibling;
+          wrap.appendChild(current);
+        }
+      }
+    });
+
+    tocLinks.forEach((a) => a.addEventListener('click', () => {
+      if (window.innerWidth <= 1080) toc?.classList.remove('open');
+    }));
+    tocToggle?.addEventListener('click', () => toc?.classList.toggle('open'));
+    if (window.innerWidth > 1080) toc?.classList.add('open');
+
+    document.getElementById('print-page')?.addEventListener('click', () => window.print());
+    document.getElementById('copy-link')?.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(window.location.href); } catch (_) {}
+    });
+    document.getElementById('copy-title')?.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(document.title.replace(' | Mixz Notes', '')); } catch (_) {}
+    });
+    document.getElementById('scroll-first-step')?.addEventListener('click', () => {
+      (headings[0] || docEl).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    markActive();
+    updateProgress();
+    window.addEventListener('scroll', () => { markActive(); updateProgress(); }, { passive: true });
+  </script>
+  <script>
+    window.MathJax = { tex: { inlineMath: [['\(','\)']], displayMath: [['$$','$$']] }, svg: { fontCache: 'global' } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<button class="back-to-top" id="back-to-top" type="button" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+  (() => {
+    const btn = document.getElementById('back-to-top');
+    if (!btn) return;
+    const toggle = () => btn.classList.toggle('visible', window.scrollY > 280);
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    window.addEventListener('scroll', toggle, { passive: true });
+    toggle();
+  })();
+</script>
+</body>
+</html>
