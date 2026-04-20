@@ -1,9 +1,10 @@
 <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="{{ p.search_blob|escape }}"
   data-journal-slug="{{ p.journal_slug }}"
   data-index="{{ idx }}"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -24,7 +25,20 @@
       <span>摘要来源 {{ p.source }}</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">{{ p.snippet }}</p>
+    {% if p.abstract_truncated %}
+    <p x-show="!expanded" class="m-0 muted-text">{{ p.snippet }}</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">{{ p.full_abstract }}</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    {% else %}
+    <p class="m-0 muted-text">{{ p.full_abstract }}</p>
+    {% endif %}
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="{{ p.detail_href }}" class="button-base button-secondary h-[32px] px-3">查看详情</a>

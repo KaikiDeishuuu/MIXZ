@@ -10,20 +10,129 @@
     search: '',
     visibleCount: 24,
     step: 24,
+    archiveRoot: null,
+    refreshVersion: 0,
+    journalOptions: [{% for item in filters %}{ slug: '{{ item.slug }}', label: '{{ item.label|replace("'", "\\'") }}' }{% if not loop.last %}, {% endif %}{% endfor %}],
+    syncingFromUrl: false,
+    init() {
+      this.archiveRoot = this.$el;
+      this.syncFromUrl();
+      window.addEventListener('popstate', () => this.syncFromUrl());
+      this.$nextTick(() => {
+        this.refreshVersion += 1;
+      });
+    },
+    normalizeValue(value) {
+      return (value || '').trim().toLowerCase();
+    },
+    journalParamToSlug(rawValue) {
+      const normalized = this.normalizeValue(rawValue);
+      if (!normalized) {
+        return 'all';
+      }
+      const bySlug = this.journalOptions.find((item) => this.normalizeValue(item.slug) === normalized);
+      if (bySlug) {
+        return bySlug.slug;
+      }
+      const byLabel = this.journalOptions.find((item) => this.normalizeValue(item.label) === normalized);
+      if (byLabel) {
+        return byLabel.slug;
+      }
+      return 'all';
+    },
+    slugToJournalParam(slug) {
+      const item = this.journalOptions.find((entry) => entry.slug === slug);
+      return item ? item.label : slug;
+    },
+    syncFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const journalParam = params.get('journal');
+      const searchParam = params.get('q') || '';
+      this.syncingFromUrl = true;
+      this.activeJournal = this.journalParamToSlug(journalParam);
+      this.search = searchParam;
+      this.resetLimit();
+      this.syncingFromUrl = false;
+    },
+    writeUrl(mode = 'replace') {
+      if (this.syncingFromUrl) {
+        return;
+      }
+      const params = new URLSearchParams(window.location.search);
+      if (this.activeJournal !== 'all') {
+        params.set('journal', this.slugToJournalParam(this.activeJournal));
+      } else {
+        params.delete('journal');
+      }
+      const normalizedSearch = this.search.trim();
+      if (normalizedSearch) {
+        params.set('q', normalizedSearch);
+      } else {
+        params.delete('q');
+      }
+      const query = params.toString();
+      const target = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+      if (mode === 'push') {
+        window.history.pushState({}, '', target);
+      } else {
+        window.history.replaceState({}, '', target);
+      }
+    },
+    setJournal(slug) {
+      this.activeJournal = slug;
+      this.resetLimit();
+      this.writeUrl('push');
+    },
+    onSearchInput() {
+      this.resetLimit();
+      this.writeUrl('replace');
+    },
+    rowMatches(row) {
+      const keyword = this.search.trim().toLowerCase();
+      const textMatch = keyword === '' || row.dataset.search.includes(keyword);
+      const journalMatch = this.activeJournal === 'all' || row.dataset.journalSlug === this.activeJournal;
+      return textMatch && journalMatch;
+    },
+    rowFilteredIndex(targetRow) {
+      this.refreshVersion;
+      const rows = (this.archiveRoot || this.$el).querySelectorAll('[data-archive-row=true]');
+      let filteredIndex = 0;
+      for (const row of rows) {
+        if (!this.rowMatches(row)) {
+          continue;
+        }
+        if (row === targetRow) {
+          return filteredIndex;
+        }
+        filteredIndex += 1;
+      }
+      return -1;
+    },
+    isRowVisible(row) {
+      const filteredIndex = this.rowFilteredIndex(row);
+      return filteredIndex >= 0 && filteredIndex < this.visibleCount;
+    },
+    matchingCount() {
+      this.refreshVersion;
+      const rows = (this.archiveRoot || this.$el).querySelectorAll('[data-archive-row=true]');
+      let count = 0;
+      for (const row of rows) {
+        if (this.rowMatches(row)) {
+          count += 1;
+        }
+      }
+      return count;
+    },
+    visibleCountActual() {
+      return Math.min(this.visibleCount, this.matchingCount());
+    },
+    canLoadMore() {
+      return this.visibleCount < this.matchingCount();
+    },
     loadMore() { this.visibleCount += this.step; },
     resetLimit() { this.visibleCount = this.step; },
     hasVisibleRows() {
-      const rows = this.$el.querySelectorAll('[data-archive-row="true"]');
-      const keyword = this.search.trim().toLowerCase();
-      for (const row of rows) {
-        const textMatch = keyword === '' || row.dataset.search.includes(keyword);
-        const journalMatch = this.activeJournal === 'all' || row.dataset.journalSlug === this.activeJournal;
-        const rangeMatch = Number(row.dataset.index) < this.visibleCount;
-        if (textMatch && journalMatch && rangeMatch) {
-          return true;
-        }
-      }
-      return false;
+      return this.matchingCount() > 0;
     }
   }"
   class="space-y-5 md:space-y-6">
@@ -69,14 +178,14 @@
       <div class="grid gap-3 lg:grid-cols-[minmax(0,1fr)_minmax(0,300px)] lg:items-center">
         <div class="flex flex-wrap gap-2 items-center">
           <button
-            @click="activeJournal = 'all'; resetLimit()"
+            @click="setJournal('all')"
             :class="activeJournal === 'all' ? 'chip-active' : ''"
             class="chip">
             全部期刊
           </button>
           {% for filter in filters %}
           <button
-            @click="activeJournal = '{{ filter.slug }}'; resetLimit()"
+            @click="setJournal('{{ filter.slug }}')"
             :class="activeJournal === '{{ filter.slug }}' ? 'chip-active' : ''"
             class="chip">
             {{ filter.label }} · {{ filter.count }}
@@ -89,7 +198,7 @@
           <input
             id="archive-search"
             x-model="search"
-            @input="resetLimit()"
+            @input="onSearchInput()"
             class="control-input"
             placeholder="搜索标题 / 期刊 / 作者 / 摘要" />
         </div>
@@ -101,7 +210,7 @@
     <div class="section-inner space-y-4">
       <div class="flex flex-wrap items-center justify-between gap-2">
         <h2 class="sub-title" lang="en">Archive Entries</h2>
-        <p class="meta-text">共 {{ total_rows }} 条，当前最多展示 <span x-text="visibleCount"></span> 条</p>
+        <p class="meta-text">总计 {{ total_rows }} 条；当前匹配 <span x-text="matchingCount()"></span> 条；当前显示 <span x-text="visibleCountActual()"></span> 条</p>
       </div>
 
       <div class="divide-y divide-[var(--line)]">
@@ -114,7 +223,7 @@
       <div class="pt-2 flex flex-wrap items-center justify-between gap-2">
         <p class="meta-text">继续加载可查看更早条目。</p>
         <button
-          x-show="visibleCount < {{ total_rows }}"
+          x-show="canLoadMore()"
           x-cloak
           @click="loadMore()"
           class="button-base button-secondary">

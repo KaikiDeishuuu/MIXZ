@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20T17:22:25.895257+08:00",
+  "generated_at": "2026-04-20T18:27:42.629036+08:00",
   "stats": {
     "total_papers": 30,
     "total_batches": 1,
@@ -7,13 +7,14 @@
     "abstract_coverage_pct": 90.0
   },
   "crawl": {
-    "batch_id": "2026-04-20 17:21:24",
-    "fetched": 30,
-    "new": 30,
+    "batch_id": "render-only",
+    "fetched": 0,
+    "new": 0,
     "updated": 0,
     "abstract_backfill": {
-      "checked": 3,
-      "filled": 0
+      "checked": 0,
+      "filled": 0,
+      "skipped": true
     },
     "prune": null
   }

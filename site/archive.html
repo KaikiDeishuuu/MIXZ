@@ -429,20 +429,129 @@
     search: '',
     visibleCount: 24,
     step: 24,
+    archiveRoot: null,
+    refreshVersion: 0,
+    journalOptions: [{ slug: 'acs-nano', label: 'ACS Nano' }, { slug: 'analytical-chemistry', label: 'Analytical Chemistry' }, { slug: 'nature-communications', label: 'Nature Communications' }, { slug: 'science-advances', label: 'Science Advances' }, { slug: 'biosensors-and-bioelectronics', label: 'Biosensors and Bioelectronics' }, { slug: 'ieee-transactions-on-biomedical-engineering', label: 'IEEE Transactions on Biomedical Engineering' }],
+    syncingFromUrl: false,
+    init() {
+      this.archiveRoot = this.$el;
+      this.syncFromUrl();
+      window.addEventListener('popstate', () => this.syncFromUrl());
+      this.$nextTick(() => {
+        this.refreshVersion += 1;
+      });
+    },
+    normalizeValue(value) {
+      return (value || '').trim().toLowerCase();
+    },
+    journalParamToSlug(rawValue) {
+      const normalized = this.normalizeValue(rawValue);
+      if (!normalized) {
+        return 'all';
+      }
+      const bySlug = this.journalOptions.find((item) => this.normalizeValue(item.slug) === normalized);
+      if (bySlug) {
+        return bySlug.slug;
+      }
+      const byLabel = this.journalOptions.find((item) => this.normalizeValue(item.label) === normalized);
+      if (byLabel) {
+        return byLabel.slug;
+      }
+      return 'all';
+    },
+    slugToJournalParam(slug) {
+      const item = this.journalOptions.find((entry) => entry.slug === slug);
+      return item ? item.label : slug;
+    },
+    syncFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const journalParam = params.get('journal');
+      const searchParam = params.get('q') || '';
+      this.syncingFromUrl = true;
+      this.activeJournal = this.journalParamToSlug(journalParam);
+      this.search = searchParam;
+      this.resetLimit();
+      this.syncingFromUrl = false;
+    },
+    writeUrl(mode = 'replace') {
+      if (this.syncingFromUrl) {
+        return;
+      }
+      const params = new URLSearchParams(window.location.search);
+      if (this.activeJournal !== 'all') {
+        params.set('journal', this.slugToJournalParam(this.activeJournal));
+      } else {
+        params.delete('journal');
+      }
+      const normalizedSearch = this.search.trim();
+      if (normalizedSearch) {
+        params.set('q', normalizedSearch);
+      } else {
+        params.delete('q');
+      }
+      const query = params.toString();
+      const target = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+      if (mode === 'push') {
+        window.history.pushState({}, '', target);
+      } else {
+        window.history.replaceState({}, '', target);
+      }
+    },
+    setJournal(slug) {
+      this.activeJournal = slug;
+      this.resetLimit();
+      this.writeUrl('push');
+    },
+    onSearchInput() {
+      this.resetLimit();
+      this.writeUrl('replace');
+    },
+    rowMatches(row) {
+      const keyword = this.search.trim().toLowerCase();
+      const textMatch = keyword === '' || row.dataset.search.includes(keyword);
+      const journalMatch = this.activeJournal === 'all' || row.dataset.journalSlug === this.activeJournal;
+      return textMatch && journalMatch;
+    },
+    rowFilteredIndex(targetRow) {
+      this.refreshVersion;
+      const rows = (this.archiveRoot || this.$el).querySelectorAll('[data-archive-row=true]');
+      let filteredIndex = 0;
+      for (const row of rows) {
+        if (!this.rowMatches(row)) {
+          continue;
+        }
+        if (row === targetRow) {
+          return filteredIndex;
+        }
+        filteredIndex += 1;
+      }
+      return -1;
+    },
+    isRowVisible(row) {
+      const filteredIndex = this.rowFilteredIndex(row);
+      return filteredIndex >= 0 && filteredIndex < this.visibleCount;
+    },
+    matchingCount() {
+      this.refreshVersion;
+      const rows = (this.archiveRoot || this.$el).querySelectorAll('[data-archive-row=true]');
+      let count = 0;
+      for (const row of rows) {
+        if (this.rowMatches(row)) {
+          count += 1;
+        }
+      }
+      return count;
+    },
+    visibleCountActual() {
+      return Math.min(this.visibleCount, this.matchingCount());
+    },
+    canLoadMore() {
+      return this.visibleCount < this.matchingCount();
+    },
     loadMore() { this.visibleCount += this.step; },
     resetLimit() { this.visibleCount = this.step; },
     hasVisibleRows() {
-      const rows = this.$el.querySelectorAll('[data-archive-row="true"]');
-      const keyword = this.search.trim().toLowerCase();
-      for (const row of rows) {
-        const textMatch = keyword === '' || row.dataset.search.includes(keyword);
-        const journalMatch = this.activeJournal === 'all' || row.dataset.journalSlug === this.activeJournal;
-        const rangeMatch = Number(row.dataset.index) < this.visibleCount;
-        if (textMatch && journalMatch && rangeMatch) {
-          return true;
-        }
-      }
-      return false;
+      return this.matchingCount() > 0;
     }
   }"
   class="space-y-5 md:space-y-6">
@@ -476,7 +585,7 @@
           </div>
           <div>
             <dt class="meta-text" lang="en">Generated</dt>
-            <dd class="text-[13px] text-[var(--text-sub)] mt-1 leading-5 break-all">2026-04-20T17:22:25.836428+08:00</dd>
+            <dd class="text-[13px] text-[var(--text-sub)] mt-1 leading-5 break-all">2026-04-20T18:27:42.604571+08:00</dd>
           </div>
         </dl>
       </aside>
@@ -488,49 +597,49 @@
       <div class="grid gap-3 lg:grid-cols-[minmax(0,1fr)_minmax(0,300px)] lg:items-center">
         <div class="flex flex-wrap gap-2 items-center">
           <button
-            @click="activeJournal = 'all'; resetLimit()"
+            @click="setJournal('all')"
             :class="activeJournal === 'all' ? 'chip-active' : ''"
             class="chip">
             全部期刊
           </button>
           
           <button
-            @click="activeJournal = 'acs-nano'; resetLimit()"
+            @click="setJournal('acs-nano')"
             :class="activeJournal === 'acs-nano' ? 'chip-active' : ''"
             class="chip">
             ACS Nano · 6
           </button>
           
           <button
-            @click="activeJournal = 'analytical-chemistry'; resetLimit()"
+            @click="setJournal('analytical-chemistry')"
             :class="activeJournal === 'analytical-chemistry' ? 'chip-active' : ''"
             class="chip">
             Analytical Chemistry · 6
           </button>
           
           <button
-            @click="activeJournal = 'nature-communications'; resetLimit()"
+            @click="setJournal('nature-communications')"
             :class="activeJournal === 'nature-communications' ? 'chip-active' : ''"
             class="chip">
             Nature Communications · 6
           </button>
           
           <button
-            @click="activeJournal = 'science-advances'; resetLimit()"
+            @click="setJournal('science-advances')"
             :class="activeJournal === 'science-advances' ? 'chip-active' : ''"
             class="chip">
             Science Advances · 6
           </button>
           
           <button
-            @click="activeJournal = 'biosensors-and-bioelectronics'; resetLimit()"
+            @click="setJournal('biosensors-and-bioelectronics')"
             :class="activeJournal === 'biosensors-and-bioelectronics' ? 'chip-active' : ''"
             class="chip">
             Biosensors and Bioelectronics · 3
           </button>
           
           <button
-            @click="activeJournal = 'ieee-transactions-on-biomedical-engineering'; resetLimit()"
+            @click="setJournal('ieee-transactions-on-biomedical-engineering')"
             :class="activeJournal === 'ieee-transactions-on-biomedical-engineering' ? 'chip-active' : ''"
             class="chip">
             IEEE Transactions on Biomedical Engineering · 3
@@ -543,7 +652,7 @@
           <input
             id="archive-search"
             x-model="search"
-            @input="resetLimit()"
+            @input="onSearchInput()"
             class="control-input"
             placeholder="搜索标题 / 期刊 / 作者 / 摘要" />
         </div>
@@ -555,18 +664,19 @@
     <div class="section-inner space-y-4">
       <div class="flex flex-wrap items-center justify-between gap-2">
         <h2 class="sub-title" lang="en">Archive Entries</h2>
-        <p class="meta-text">共 30 条，当前最多展示 <span x-text="visibleCount"></span> 条</p>
+        <p class="meta-text">总计 30 条；当前匹配 <span x-text="matchingCount()"></span> 条；当前显示 <span x-text="visibleCountActual()"></span> 条</p>
       </div>
 
       <div class="divide-y divide-[var(--line)]">
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="a novel rna-light probe for structured-illumination microscopy super-resolution imaging of nucleolar ultrastructure and analysis of nucleolar dynamics analytical chemistry wang et al. real-time visualization of nucleolar dynamics is essential for elucidating its physiological functions and understanding the mechanisms underlying nucleolus-related stress and diseases. however, this task is technically challenging: super-resolution imaging is required to resolve the organelle&#39;s intricate architecture and rapidly changing morphology. two major bottlenecks remain─the scarcity of probes compatible with such nanoscopy and the exclusive focus on proteins, which leaves the complete nucleolar morphology invisible. here, we report a novel quinoline derivative probe ( qvt ) that can rapidly &#34;light up&#34; cellular rna and exhibits superior performance compared to the commercial dye syto rna select, including red emission, greater rna selectivity and binding affinity, and enhanced photostability. these optical advantages facilitate super-resolution mapping of nucleolar ultrastructure using structured-illumination microscopy (sim), particularly in clearly delineating rna-rich subcompartments such as the dense fibrillar component and fibrillar centers. more importantly, qvt enables sim to monitor nucleolar rna dynamics in living cells during ferroptosis in real time and to investigate the previously elusive dynamics of nucleolus and nucleolar rna in fatty liver disease. this study not only establishes a versatile chemical scaffold for next-generation rna-targeted probes but also opens new avenues for mechanistic exploration of nucleolar biology in both health and disease."
   data-journal-slug="analytical-chemistry"
   data-index="0"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -587,7 +697,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Real-time visualization of nucleolar dynamics is essential for elucidating its physiological functions and understanding the mechanisms underlying nucleolus-related stress and diseases. However, this task is technically …</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Real-time visualization of nucleolar dynamics is essential for elucidating its physiological functions and understanding the mechanisms underlying nucleolus-related stress and diseases. However, this task is technically ...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Real-time visualization of nucleolar dynamics is essential for elucidating its physiological functions and understanding the mechanisms underlying nucleolus-related stress and diseases. However, this task is technically challenging: super-resolution imaging is required to resolve the organelle&#39;s intricate architecture and rapidly changing morphology. Two major bottlenecks remain─the scarcity of probes compatible with such nanoscopy and the exclusive focus on proteins, which leaves the complete nucleolar morphology invisible. Here, we report a novel quinoline derivative probe ( QVT ) that can rapidly &#34;light up&#34; cellular RNA and exhibits superior performance compared to the commercial dye SYTO RNA Select, including red emission, greater RNA selectivity and binding affinity, and enhanced photostability. These optical advantages facilitate super-resolution mapping of nucleolar ultrastructure using structured-illumination microscopy (SIM), particularly in clearly delineating RNA-rich subcompartments such as the dense fibrillar component and fibrillar centers. More importantly, QVT enables SIM to monitor nucleolar RNA dynamics in living cells during ferroptosis in real time and to investigate the previously elusive dynamics of nucleolus and nucleolar RNA in fatty liver disease. This study not only establishes a versatile chemical scaffold for next-generation RNA-targeted probes but also opens new avenues for mechanistic exploration of nucleolar biology in both health and disease.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facs.analchem.5c05434.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -598,11 +719,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="integrated single-cell mass spectrometry imaging and immunofluorescence microscopy for multimodal characterization of human immune cells analytical chemistry bessler et al. understanding how individual cells differ within complex biological systems is essential for revealing mechanisms of health and disease. multimodal single-cell technologies provide powerful tools for this task, yet single-cell lipid profiling by mass spectrometry imaging often faces technical challenges such as batch effects that obscure biological insights. in this study, we developed an integrated workflow that combines immunofluorescence-based protein measurements with mass spectrometry imaging-based lipid analysis at single-cell resolution. we applied this approach to circulating human neutrophils and implemented a strategy to reduce batch-related variability, enabling more reliable comparison across clinical samples. using the integrated data set, we identified distinct signatures marking the emergence of pathogenic neutrophil populations in patients with liver cirrhosis. these findings demonstrate the value of combining multimodal single-cell profiling with batch-effect correction to discover cellular phenotypes and highlight the potential of this technology for translational and clinical research."
   data-journal-slug="analytical-chemistry"
   data-index="1"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -623,7 +745,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Understanding how individual cells differ within complex biological systems is essential for revealing mechanisms of health and disease. Multimodal single-cell technologies provide powerful tools for this task, yet singl…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Understanding how individual cells differ within complex biological systems is essential for revealing mechanisms of health and disease. Multimodal single-cell technologies provide powerful tools for this task, yet singl...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Understanding how individual cells differ within complex biological systems is essential for revealing mechanisms of health and disease. Multimodal single-cell technologies provide powerful tools for this task, yet single-cell lipid profiling by mass spectrometry imaging often faces technical challenges such as batch effects that obscure biological insights. In this study, we developed an integrated workflow that combines immunofluorescence-based protein measurements with mass spectrometry imaging-based lipid analysis at single-cell resolution. We applied this approach to circulating human neutrophils and implemented a strategy to reduce batch-related variability, enabling more reliable comparison across clinical samples. Using the integrated data set, we identified distinct signatures marking the emergence of pathogenic neutrophil populations in patients with liver cirrhosis. These findings demonstrate the value of combining multimodal single-cell profiling with batch-effect correction to discover cellular phenotypes and highlight the potential of this technology for translational and clinical research.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facs.analchem.6c00381.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -634,11 +767,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="recent advances in secondary electron imaging in transmission electron microscopy analytical chemistry ren et al. 暂无公开摘要"
   data-journal-slug="analytical-chemistry"
   data-index="2"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -659,7 +793,9 @@
       <span>摘要来源 missing</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">暂无公开摘要</p>
+    
+    <p class="m-0 muted-text">暂无公开摘要</p>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facs.analchem.5c07798.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -670,11 +806,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="smash imaging: a serial matrix-assisted laser desorption/ionization mass spectrometry strategy for high-resolution imaging facilitates dual-polarity and ms2 spatial lipidomics on a single tissue section analytical chemistry uchino et al. matrix-assisted laser desorption/ionization mass spectrometry imaging (maldi-msi) is a key technology in spatial lipidomics that provides high sensitivity and spatial resolution. because of the ionization preference of lipid classes and the lack of detailed structural information without ms2 data, dual-polarity analyses and the acquisition of ms/ms spectra are essential to improve coverage and annotation accuracy. multitime msi analyses of the same tissue section can provide seamless integration of multimodal spatial data. however, the feasibility of performing serial maldi-msi for the same pixels with high spatial resolution has not been fully evaluated. here, we present smash imaging for dual-polarity and ms2 spatial lipidomics in a single tissue section. we estimated two characteristic matrix compounds, 2,5-dihydroxyacetophenone and trans -2-[3-(4- tert -butylphenyl)-2-methyl-2-propenylidene]malononitrile, for dual-polarity analyses and defined the feasible number of layers of smash imaging via the coefficient of determination ( r 2 ). smash imaging successfully visualized over 400 lipid species on average with a 30 μm resolution, with annotation criteria s/ n ≥ 50, m / z ≤ 10 mda, and collision cross section ≤ 20 å 2 . in four layers of smash imaging, the molecular species of 18 lipids were characterized based on ms2 spectra evidence using parallel accumulation-serial fragmentation on a single mouse brain section. moreover, eight layers of smash imaging with a 5 μm spatial resolution annotated 25 lipid species, supported by a spatial correlation metric between multimodal data. our approach provides multimodal spatial lipidomics to create a lipidome atlas with accurate annotation and high spatial resolution on a single tissue section."
   data-journal-slug="analytical-chemistry"
   data-index="3"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -695,7 +832,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Matrix-assisted laser desorption/ionization mass spectrometry imaging (MALDI-MSI) is a key technology in spatial lipidomics that provides high sensitivity and spatial resolution. Because of the ionization preference of l…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Matrix-assisted laser desorption/ionization mass spectrometry imaging (MALDI-MSI) is a key technology in spatial lipidomics that provides high sensitivity and spatial resolution. Because of the ionization preference of l...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Matrix-assisted laser desorption/ionization mass spectrometry imaging (MALDI-MSI) is a key technology in spatial lipidomics that provides high sensitivity and spatial resolution. Because of the ionization preference of lipid classes and the lack of detailed structural information without MS2 data, dual-polarity analyses and the acquisition of MS/MS spectra are essential to improve coverage and annotation accuracy. Multitime MSI analyses of the same tissue section can provide seamless integration of multimodal spatial data. However, the feasibility of performing serial MALDI-MSI for the same pixels with high spatial resolution has not been fully evaluated. Here, we present SMASH imaging for dual-polarity and MS2 spatial lipidomics in a single tissue section. We estimated two characteristic matrix compounds, 2,5-dihydroxyacetophenone and trans -2-[3-(4- tert -butylphenyl)-2-methyl-2-propenylidene]malononitrile, for dual-polarity analyses and defined the feasible number of layers of SMASH imaging via the coefficient of determination ( R 2 ). SMASH imaging successfully visualized over 400 lipid species on average with a 30 μm resolution, with annotation criteria S/ N ≥ 50, m / z ≤ 10 mDa, and collision cross section ≤ 20 Å 2 . In four layers of SMASH imaging, the molecular species of 18 lipids were characterized based on MS2 spectra evidence using parallel accumulation-serial fragmentation on a single mouse brain section. Moreover, eight layers of SMASH imaging with a 5 μm spatial resolution annotated 25 lipid species, supported by a spatial correlation metric between multimodal data. Our approach provides multimodal spatial lipidomics to create a lipidome atlas with accurate annotation and high spatial resolution on a single tissue section.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facs.analchem.5c03738.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -706,11 +854,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="label-free imaging and refractive index mapping of biological tissues by hyperspectral spr microscopy analytical chemistry yang et al. staining of tissue sections and subsequent microscopic imaging are two key steps in conducting conventional histopathological analysis, but these processes are complex and time-consuming, and the image analysis results largely depend on the experience of the operator. to overcome these limitations, this work proposes a label-free quantitative histopathological analysis method based on the hyperspectral surface plasmon resonance microscopy (hsprm) system. the hsprm system consists of a kretschmann-type spectral spr sensor and a hyperspectral microscope, which are optically connected through an imaging lens. the hsprm system with an equilateral triangular prism coupler made of high-index glass can capture wavelength-scanning spr images and pixel-resolved resonance wavelengths (rws) of tissue sections, and allows for two-dimensional (2d) mapping of the refractive index (ri) of the tissue in a wide dynamic range by fitting the measured rws pixel by pixel with the multilayer fresnel model. as a result, the hsprm system can easily distinguish the cancerous region from the normal region based on the measured 2d distribution of the ri of the tissue sample. this outstanding capability of the hsprm system was verified through comparative tests of tumor tissue and normal tissue from mouse mammary glands. the experimental results indicated that the average ri of the tumor tissue is higher than that of the normal tissue. multiple measurements demonstrated that the prerequisite for label-free quantitative histopathological analysis with the hsprm system is to ensure gapless adhesion of the tissue section to the spr sensor chip."
   data-journal-slug="analytical-chemistry"
   data-index="4"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -731,7 +880,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Staining of tissue sections and subsequent microscopic imaging are two key steps in conducting conventional histopathological analysis, but these processes are complex and time-consuming, and the image analysis results l…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Staining of tissue sections and subsequent microscopic imaging are two key steps in conducting conventional histopathological analysis, but these processes are complex and time-consuming, and the image analysis results l...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Staining of tissue sections and subsequent microscopic imaging are two key steps in conducting conventional histopathological analysis, but these processes are complex and time-consuming, and the image analysis results largely depend on the experience of the operator. To overcome these limitations, this work proposes a label-free quantitative histopathological analysis method based on the hyperspectral surface plasmon resonance microscopy (HSPRM) system. The HSPRM system consists of a Kretschmann-type spectral SPR sensor and a hyperspectral microscope, which are optically connected through an imaging lens. The HSPRM system with an equilateral triangular prism coupler made of high-index glass can capture wavelength-scanning SPR images and pixel-resolved resonance wavelengths (RWs) of tissue sections, and allows for two-dimensional (2D) mapping of the refractive index (RI) of the tissue in a wide dynamic range by fitting the measured RWs pixel by pixel with the multilayer Fresnel model. As a result, the HSPRM system can easily distinguish the cancerous region from the normal region based on the measured 2D distribution of the RI of the tissue sample. This outstanding capability of the HSPRM system was verified through comparative tests of tumor tissue and normal tissue from mouse mammary glands. The experimental results indicated that the average RI of the tumor tissue is higher than that of the normal tissue. Multiple measurements demonstrated that the prerequisite for label-free quantitative histopathological analysis with the HSPRM system is to ensure gapless adhesion of the tissue section to the SPR sensor chip.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facs.analchem.5c07441.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -742,11 +902,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="a foundation model for multi-task cross-distribution restoration of fluorescence microscopy images nature communications lu et al. deep learning has demonstrated remarkable abilities in restoring fluorescence microscopy images degraded by noise, blur, or undersampling. however, most existing models are task-specific and trained on limited, homogeneously distributed data, which restricts their generalizability and practicality. here, we present fluoresfm, a foundation model for multi-task and cross-distribution fluorescence microscopy image restoration in a unified model. fluoresfm leverages textual prior information to adapt to specific tasks and data distributions. trained on datasets across three tasks (image denoising, deconvolution, and super-resolution) and over 20 biological structures, fluoresfm demonstrates superior restoration performance and enhanced generalization across datasets with varied biological structures and imaging conditions. through fine-tuning with only a single sample, fluoresfm can further improve its performance on unseen data, achieving results comparable to conventional models trained on hundreds of samples, and be easily adapted to additional tasks, including 3d image restoration, surface projection, isotropic reconstruction, and super-resolution with various scale factors. moreover, the performance of existing cell/organelle segmentation models can be enhanced using the high-quality images restored by fluoresfm."
   data-journal-slug="nature-communications"
   data-index="5"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -767,7 +928,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Deep learning has demonstrated remarkable abilities in restoring fluorescence microscopy images degraded by noise, blur, or undersampling. However, most existing models are task-specific and trained on limited, homogeneo…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Deep learning has demonstrated remarkable abilities in restoring fluorescence microscopy images degraded by noise, blur, or undersampling. However, most existing models are task-specific and trained on limited, homogeneo...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Deep learning has demonstrated remarkable abilities in restoring fluorescence microscopy images degraded by noise, blur, or undersampling. However, most existing models are task-specific and trained on limited, homogeneously distributed data, which restricts their generalizability and practicality. Here, we present FluoResFM, a foundation model for multi-task and cross-distribution fluorescence microscopy image restoration in a unified model. FluoResFM leverages textual prior information to adapt to specific tasks and data distributions. Trained on datasets across three tasks (image denoising, deconvolution, and super-resolution) and over 20 biological structures, FluoResFM demonstrates superior restoration performance and enhanced generalization across datasets with varied biological structures and imaging conditions. Through fine-tuning with only a single sample, FluoResFM can further improve its performance on unseen data, achieving results comparable to conventional models trained on hundreds of samples, and be easily adapted to additional tasks, including 3D image restoration, surface projection, isotropic reconstruction, and super-resolution with various scale factors. Moreover, the performance of existing cell/organelle segmentation models can be enhanced using the high-quality images restored by FluoResFM.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1038%2Fs41467-026-70307-4.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -778,11 +950,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="quantum well-enhanced plasmonic substrate to enhance spontaneously blinking fluorescence for single-molecule localization microscopy analytical chemistry hsieh et al. quantum well (qw)-enhanced plasmonic substrates have been demonstrated to improve the blinking fluorescence of spontaneously blinking fluorophores, which enhances the localization precision and density for single-molecule localization microscopy (smlm). the qw-enhanced plasmonic substrate consists of a three-repeat ingan qw structure covered by al nanoparticles. in addition to the localized surface plasmon enhancement produced by al nanoparticles, ingan qws with tunable discrete energy levels and a high-density surface charge distribution can facilitate additional charge transfer resonances. this effect further enhances the local surface plasmon resonance around the al nanoparticles. moreover, the interaction between the high-density surface charges of the ingan qws and the oscillating electrons of the al nanoparticles can lead to another type of surface plasmon enhancement effect. therefore, the blinking intensity and event frequency are significantly increased, resulting in improved smlm image resolution under the wide-field fluorescence excitation. with multiple fluorescence enhancement effects, the qw-enhanced plasmonic substrate enables smlm imaging of phosphorylated epidermal growth factor receptors (egfrs) in a549 lung cancer cells to quantitatively investigate the inhibition of egfr tyrosine kinase. furthermore, this qw-enhanced plasmonic substrate can reduce the excitation power needed for smlm imaging at an acceptable resolution."
   data-journal-slug="analytical-chemistry"
   data-index="6"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -803,7 +976,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Quantum well (QW)-enhanced plasmonic substrates have been demonstrated to improve the blinking fluorescence of spontaneously blinking fluorophores, which enhances the localization precision and density for single-molecul…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Quantum well (QW)-enhanced plasmonic substrates have been demonstrated to improve the blinking fluorescence of spontaneously blinking fluorophores, which enhances the localization precision and density for single-molecul...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Quantum well (QW)-enhanced plasmonic substrates have been demonstrated to improve the blinking fluorescence of spontaneously blinking fluorophores, which enhances the localization precision and density for single-molecule localization microscopy (SMLM). The QW-enhanced plasmonic substrate consists of a three-repeat InGaN QW structure covered by Al nanoparticles. In addition to the localized surface plasmon enhancement produced by Al nanoparticles, InGaN QWs with tunable discrete energy levels and a high-density surface charge distribution can facilitate additional charge transfer resonances. This effect further enhances the local surface plasmon resonance around the Al nanoparticles. Moreover, the interaction between the high-density surface charges of the InGaN QWs and the oscillating electrons of the Al nanoparticles can lead to another type of surface plasmon enhancement effect. Therefore, the blinking intensity and event frequency are significantly increased, resulting in improved SMLM image resolution under the wide-field fluorescence excitation. With multiple fluorescence enhancement effects, the QW-enhanced plasmonic substrate enables SMLM imaging of phosphorylated epidermal growth factor receptors (EGFRs) in A549 lung cancer cells to quantitatively investigate the inhibition of EGFR tyrosine kinase. Furthermore, this QW-enhanced plasmonic substrate can reduce the excitation power needed for SMLM imaging at an acceptable resolution.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facs.analchem.5c03721.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -814,11 +998,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="dual deconvolution in multiphoton structured illumination microscopy for deep-tissue super-resolution imaging nature communications lim et al. imaging in thick biological tissues is often degraded by sample-induced aberrations, which reduce resolution and contrast, particularly in super-resolution techniques. while hardware-based adaptive optics (ao) using wavefront shaping can correct these aberrations, their complexity and cost hinder widespread adoption. here, we present a computational ao framework for multiphoton structured illumination microscopy, enabling deep-tissue super-resolution imaging with minimal hardware modifications. by replacing the photodetector with a camera from the conventional laser-scanning multiphoton microscope, we capture a sequence of scanned images. using virtual structured illumination, we develop a dual deconvolution algorithm that independently corrects excitation and emission aberrations, recovering an aberration-free object spectrum with an extended spatial frequency bandwidth. we experimentally validate this framework through two-photon super-resolution imaging, achieving a lateral resolution of 130 nm-one-fourth of the emission wavelength-at a depth of 180 μm in thick mouse brain tissue, where conventional deconvolution fails to maintain super-resolution capability. this approach provides a cost-effective and accessible alternative to hardware-based ao, expanding the potential for high-resolution deep-tissue imaging in biological research."
   data-journal-slug="nature-communications"
   data-index="7"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -839,7 +1024,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Imaging in thick biological tissues is often degraded by sample-induced aberrations, which reduce resolution and contrast, particularly in super-resolution techniques. While hardware-based adaptive optics (AO) using wave…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Imaging in thick biological tissues is often degraded by sample-induced aberrations, which reduce resolution and contrast, particularly in super-resolution techniques. While hardware-based adaptive optics (AO) using wave...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Imaging in thick biological tissues is often degraded by sample-induced aberrations, which reduce resolution and contrast, particularly in super-resolution techniques. While hardware-based adaptive optics (AO) using wavefront shaping can correct these aberrations, their complexity and cost hinder widespread adoption. Here, we present a computational AO framework for multiphoton structured illumination microscopy, enabling deep-tissue super-resolution imaging with minimal hardware modifications. By replacing the photodetector with a camera from the conventional laser-scanning multiphoton microscope, we capture a sequence of scanned images. Using virtual structured illumination, we develop a dual deconvolution algorithm that independently corrects excitation and emission aberrations, recovering an aberration-free object spectrum with an extended spatial frequency bandwidth. We experimentally validate this framework through two-photon super-resolution imaging, achieving a lateral resolution of 130 nm-one-fourth of the emission wavelength-at a depth of 180 μm in thick mouse brain tissue, where conventional deconvolution fails to maintain super-resolution capability. This approach provides a cost-effective and accessible alternative to hardware-based AO, expanding the potential for high-resolution deep-tissue imaging in biological research.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1038%2Fs41467-026-69798-y.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -850,11 +1046,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="fluorescence-free single-molecule microscopy via electronic resonance stimulated raman scattering nature communications oh et al. vibrational spectroscopy is a powerful tool for spectral imaging of biological samples, thanks to its narrow bandwidth (10 cm⁻¹) compared to fluorescence. single-molecule vibrational spectroscopy has been demonstrated with near-field amplification as in surface-enhanced raman spectroscopy or fluorescence detection as in stimulated raman excited fluorescence and bond-selective fluorescence-detected infrared-excited spectro-microscopy. however, these methods often require elaborate sample preparation or sometimes generate background signals when unintended processes lead to fluorescence emission. in response to these issues, we developed electronic resonance stimulated raman scattering (er-srs) to achieve single-molecule sensitivity in far-field vibrational microscopy without relying on fluorescence detection. er-srs has encountered difficulties due to large electronic backgrounds. to overcome this, we employed raman-amplified nonfluorescent molecular probe (ranmp) alongside our synchronously pumped, independently tunable double optical parametric oscillators for effective optimization of the signal-to-background ratio. the optimization of probe and light source allowed us to successfully detect er-srs signal from single particles in solution and from single molecules embedded in polymer matrix. er-srs combined with ranmp provides single-molecule sensitivity without fluorescence detection, enabling applications in biological and chemical imaging, particularly in multiplexed imaging."
   data-journal-slug="nature-communications"
   data-index="8"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -875,7 +1072,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Vibrational spectroscopy is a powerful tool for spectral imaging of biological samples, thanks to its narrow bandwidth (10 cm⁻¹) compared to fluorescence. Single-molecule vibrational spectroscopy has been demonstrated wi…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Vibrational spectroscopy is a powerful tool for spectral imaging of biological samples, thanks to its narrow bandwidth (10 cm⁻¹) compared to fluorescence. Single-molecule vibrational spectroscopy has been demonstrated wi...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Vibrational spectroscopy is a powerful tool for spectral imaging of biological samples, thanks to its narrow bandwidth (10 cm⁻¹) compared to fluorescence. Single-molecule vibrational spectroscopy has been demonstrated with near-field amplification as in surface-enhanced Raman spectroscopy or fluorescence detection as in stimulated Raman excited fluorescence and bond-selective fluorescence-detected infrared-excited spectro-microscopy. However, these methods often require elaborate sample preparation or sometimes generate background signals when unintended processes lead to fluorescence emission. In response to these issues, we developed electronic resonance stimulated Raman scattering (ER-SRS) to achieve single-molecule sensitivity in far-field vibrational microscopy without relying on fluorescence detection. ER-SRS has encountered difficulties due to large electronic backgrounds. To overcome this, we employed Raman-amplified nonfluorescent molecular probe (RANMP) alongside our synchronously pumped, independently tunable double optical parametric oscillators for effective optimization of the signal-to-background ratio. The optimization of probe and light source allowed us to successfully detect ER-SRS signal from single particles in solution and from single molecules embedded in polymer matrix. ER-SRS combined with RANMP provides single-molecule sensitivity without fluorescence detection, enabling applications in biological and chemical imaging, particularly in multiplexed imaging.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1038%2Fs41467-026-69348-6.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -886,11 +1094,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="atomic-scale imaging and charge state manipulation of nv centers by scanning tunneling microscopy nature communications raghavan et al. nitrogen-vacancy (nv) centers in diamond are among the most promising solid-state qubit candidates, owing to their exceptionally long spin coherence times, efficient spin-photon coupling, room-temperature operation, and steadily advancing fabrication and integration techniques. despite significant progress in the field, atomic-scale characterization and control of individual nv centers have remained elusive. in this work, we utilize a conductive graphene capping layer to enable direct imaging and manipulation of nv⁻ defects via scanning tunneling microscopy (stm). by investigating over 40 individual nv⁻ centers, we identify their spectroscopic signatures and spatial configurations. our di/dv conductance spectra reveal the ground state resonance approximately 300 mev below the fermi level and density-of-states maps uncover a two-lobed wavefunction aligned along the [111] crystallographic direction. remarkably, we demonstrate the ability to manipulate the charge state of the nv centers from nv⁻ to nv⁰ through stm tip-induced gating. this work represents a significant advance in the atomic-scale imaging, spectroscopic characterization, and charge-state manipulation of nv centers, potentially paving the way for future quantum device development."
   data-journal-slug="nature-communications"
   data-index="9"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -911,7 +1120,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Nitrogen-vacancy (NV) centers in diamond are among the most promising solid-state qubit candidates, owing to their exceptionally long spin coherence times, efficient spin-photon coupling, room-temperature operation, and …</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Nitrogen-vacancy (NV) centers in diamond are among the most promising solid-state qubit candidates, owing to their exceptionally long spin coherence times, efficient spin-photon coupling, room-temperature operation, and ...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Nitrogen-vacancy (NV) centers in diamond are among the most promising solid-state qubit candidates, owing to their exceptionally long spin coherence times, efficient spin-photon coupling, room-temperature operation, and steadily advancing fabrication and integration techniques. Despite significant progress in the field, atomic-scale characterization and control of individual NV centers have remained elusive. In this work, we utilize a conductive graphene capping layer to enable direct imaging and manipulation of NV⁻ defects via scanning tunneling microscopy (STM). By investigating over 40 individual NV⁻ centers, we identify their spectroscopic signatures and spatial configurations. Our dI/dV conductance spectra reveal the ground state resonance approximately 300 meV below the Fermi level and density-of-states maps uncover a two-lobed wavefunction aligned along the [111] crystallographic direction. Remarkably, we demonstrate the ability to manipulate the charge state of the NV centers from NV⁻ to NV⁰ through STM tip-induced gating. This work represents a significant advance in the atomic-scale imaging, spectroscopic characterization, and charge-state manipulation of NV centers, potentially paving the way for future quantum device development.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1038%2Fs41467-026-68323-5.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -922,11 +1142,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="flips: genetically encoded molecular biosensors for functional imaging of cell signaling by linear dichroism microscopy science advances miclea et al. genetically encoded fluorescent biosensors convert specific biomolecular events into optically detectable signals. however, imaging biomolecular processes often requires modifying the proteins involved, and many molecular processes are still to be imaged. here, we present a biosensor design that uses a hitherto overlooked detection principle: directionality of optical properties of fluorescent proteins. the biosensors (termed flips) offer an extremely simple design, high sensitivity, multiplexing capability, ratiometric readout, and other advantages, without requiring modifications to their targets. we demonstrate the sensor performance by real-time imaging activity of g protein–coupled receptors (gpcrs), g proteins, arrestins, and other membrane-associated proteins, as well as by identifying a previously undescribed, pronounced, endocytosis-associated conformational change in a gpcr–β-arrestin complex. in combination with an original tri-scanning linear dichroism confocal microscope, flips allow unparalleled imaging of activity of nonmodified, endogenously expressed g proteins. thus, flips establish a powerful molecular platform for imaging cell signaling, allowing numerous future developments and insights."
   data-journal-slug="science-advances"
   data-index="10"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -947,7 +1168,18 @@
       <span>摘要来源 crossref</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Genetically encoded fluorescent biosensors convert specific biomolecular events into optically detectable signals. However, imaging biomolecular processes often requires modifying the proteins involved, and many molecula…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Genetically encoded fluorescent biosensors convert specific biomolecular events into optically detectable signals. However, imaging biomolecular processes often requires modifying the proteins involved, and many molecula...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Genetically encoded fluorescent biosensors convert specific biomolecular events into optically detectable signals. However, imaging biomolecular processes often requires modifying the proteins involved, and many molecular processes are still to be imaged. Here, we present a biosensor design that uses a hitherto overlooked detection principle: directionality of optical properties of fluorescent proteins. The biosensors (termed FLIPs) offer an extremely simple design, high sensitivity, multiplexing capability, ratiometric readout, and other advantages, without requiring modifications to their targets. We demonstrate the sensor performance by real-time imaging activity of G protein–coupled receptors (GPCRs), G proteins, arrestins, and other membrane-associated proteins, as well as by identifying a previously undescribed, pronounced, endocytosis-associated conformational change in a GPCR–β-arrestin complex. In combination with an original tri-scanning linear dichroism confocal microscope, FLIPs allow unparalleled imaging of activity of nonmodified, endogenously expressed G proteins. Thus, FLIPs establish a powerful molecular platform for imaging cell signaling, allowing numerous future developments and insights.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1126%2Fsciadv.adz5662.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -958,11 +1190,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="neural phase microscopy with metasurface optics for real-time and nanoscale quantitative phase imaging nature communications lee et al. quantitative phase imaging (qpi) enables non-invasive analysis of transparent specimens across biomedicine, materials science, and neuroscience. however, conventional hardware relies on complex architectures with multi-shot acquisition that preclude compact, real-time operation, while phase-retrieval software often yields degraded image quality, is environmentally sensitive, and runs slowly. here, we introduce a compact, fast, high-resolution qpi platform that addresses these challenges by integrating nanophotonic metasurfaces with artificial intelligence (ai). our metasurface optics simplifies the optical architecture by replacing bulky optics and modulators, enabling single-shot acquisition and a drastic reduction in form factor. we develop physics-informed ai models that correct optical aberrations, compensate for imperfections in nanofabrication and alignment, and restore nanoscale quantitative phase information in real-time. the system achieves nanoscale resolution better than 840 nm at 74 hz within a single, thin optical layer. our unique combination of nanophotonic hardware and ai algorithms advances qpi technology towards portable, precise, real-time phase imaging."
   data-journal-slug="nature-communications"
   data-index="11"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -983,7 +1216,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Quantitative phase imaging (QPI) enables non-invasive analysis of transparent specimens across biomedicine, materials science, and neuroscience. However, conventional hardware relies on complex architectures with multi-s…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Quantitative phase imaging (QPI) enables non-invasive analysis of transparent specimens across biomedicine, materials science, and neuroscience. However, conventional hardware relies on complex architectures with multi-s...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Quantitative phase imaging (QPI) enables non-invasive analysis of transparent specimens across biomedicine, materials science, and neuroscience. However, conventional hardware relies on complex architectures with multi-shot acquisition that preclude compact, real-time operation, while phase-retrieval software often yields degraded image quality, is environmentally sensitive, and runs slowly. Here, we introduce a compact, fast, high-resolution QPI platform that addresses these challenges by integrating nanophotonic metasurfaces with artificial intelligence (AI). Our metasurface optics simplifies the optical architecture by replacing bulky optics and modulators, enabling single-shot acquisition and a drastic reduction in form factor. We develop physics-informed AI models that correct optical aberrations, compensate for imperfections in nanofabrication and alignment, and restore nanoscale quantitative phase information in real-time. The system achieves nanoscale resolution better than 840 nm at 74 Hz within a single, thin optical layer. Our unique combination of nanophotonic hardware and AI algorithms advances QPI technology towards portable, precise, real-time phase imaging.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1038%2Fs41467-025-68151-z.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -994,11 +1238,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="a bayesian approach towards atomically-precise localization in fluorescence microscopy nature communications duan et al. super-resolution microscopy has revolutionized the imaging of complex physical and biological systems by surpassing the abbe diffraction limit. recent advancements, particularly in single-molecule localization microscopy, have pushed localization below nanometer precision, by applying prior knowledge of correlated fluorescence emission from single emitters. however, achieving a refinement from 1 nm to 1 ångström demands a hundred-fold increase in collected photon signal. this quadratic resource scaling imposes a fundamental barrier in single-molecule localization microscopy, where the intense photon collection is challenged by photo-bleaching, prolonged integration times, and inherent practical constraints. here, we break this limit by harnessing the periodic nature of the atomic lattice structure. applying this discrete grid imaging technique (digit) in a quantum emitter system, we observe an exponential collapse of localization uncertainty once surpassing the host crystal&#39;s atomic lattice constant. we further applied digit to a large-scale quantum emitter array, enabling parallel positioning of each emitter through wide-field imaging. collectively, these advancements establish digit as a competitive tool for achieving unprecedented, precise measurements, ultimately paving the way to direct optical resolution of crystal and atomic features within quantum and biological systems."
   data-journal-slug="nature-communications"
   data-index="12"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1019,7 +1264,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Super-resolution microscopy has revolutionized the imaging of complex physical and biological systems by surpassing the Abbe diffraction limit. Recent advancements, particularly in single-molecule localization microscopy…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Super-resolution microscopy has revolutionized the imaging of complex physical and biological systems by surpassing the Abbe diffraction limit. Recent advancements, particularly in single-molecule localization microscopy...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Super-resolution microscopy has revolutionized the imaging of complex physical and biological systems by surpassing the Abbe diffraction limit. Recent advancements, particularly in single-molecule localization microscopy, have pushed localization below nanometer precision, by applying prior knowledge of correlated fluorescence emission from single emitters. However, achieving a refinement from 1 nm to 1 Ångström demands a hundred-fold increase in collected photon signal. This quadratic resource scaling imposes a fundamental barrier in single-molecule localization microscopy, where the intense photon collection is challenged by photo-bleaching, prolonged integration times, and inherent practical constraints. Here, we break this limit by harnessing the periodic nature of the atomic lattice structure. Applying this discrete grid imaging technique (DIGIT) in a quantum emitter system, we observe an exponential collapse of localization uncertainty once surpassing the host crystal&#39;s atomic lattice constant. We further applied DIGIT to a large-scale quantum emitter array, enabling parallel positioning of each emitter through wide-field imaging. Collectively, these advancements establish DIGIT as a competitive tool for achieving unprecedented, precise measurements, ultimately paving the way to direct optical resolution of crystal and atomic features within quantum and biological systems.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1038%2Fs41467-025-64083-w.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1030,11 +1286,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="flexible fitting to infer atomistic-precision models of large-amplitude conformational dynamics in biomolecules from high-speed atomic force microscopy imaging acs nano amyot et al. high-speed atomic force microscopy (hs-afm) experiments allow direct observation of biomolecular dynamics at the single-molecule level, acquiring a large amount of topographic imaging data that visualizes changes in the molecular surface during functional activity over an extended period of time. since images have no atomistic resolution, a major challenge has been to develop post-experimental computational methods to infer atomistic information from measurements. the recently developed nmff-afm flexible fitting method provides a computationally efficient approach promising to infer atomistic-precision models of conformational dynamics from resolution-limited afm imaging data. we report the software integration of this method into the well-established bioafmviewer platform and demonstrate its first applications to experimental hs-afm imaging data. to facilitate applications, we developed a direct workflow from raw experimental afm data to the visualization and analysis of fitting results. the presented applications to experimental data of a single protein domain, a protein complex, and a megadalton-sized protein filament demonstrate the versatility of nmff-afm modeling to reproduce large-amplitude conformational motions of biomolecular dynamics from hs-afm imaging. as a first step toward automated large-scale analysis of afm imaging data, we furthermore demonstrate reconstruction of an atomistic molecular movie of protein dynamics, involving large-amplitude conformational transitions, from a measured hs-afm movie sequence. implementation of flexible fitting within the stand-alone user-friendly interactive bioafmviewer software provides the opportunity for a broad range of applications to facilitate the understanding of resolution-limited hs-afm measurements."
   data-journal-slug="acs-nano"
   data-index="13"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1055,7 +1312,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">High-speed atomic force microscopy (HS-AFM) experiments allow direct observation of biomolecular dynamics at the single-molecule level, acquiring a large amount of topographic imaging data that visualizes changes in the …</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">High-speed atomic force microscopy (HS-AFM) experiments allow direct observation of biomolecular dynamics at the single-molecule level, acquiring a large amount of topographic imaging data that visualizes changes in the ...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">High-speed atomic force microscopy (HS-AFM) experiments allow direct observation of biomolecular dynamics at the single-molecule level, acquiring a large amount of topographic imaging data that visualizes changes in the molecular surface during functional activity over an extended period of time. Since images have no atomistic resolution, a major challenge has been to develop post-experimental computational methods to infer atomistic information from measurements. The recently developed NMFF-AFM flexible fitting method provides a computationally efficient approach promising to infer atomistic-precision models of conformational dynamics from resolution-limited AFM imaging data. We report the software integration of this method into the well-established BioAFMviewer platform and demonstrate its first applications to experimental HS-AFM imaging data. To facilitate applications, we developed a direct workflow from raw experimental AFM data to the visualization and analysis of fitting results. The presented applications to experimental data of a single protein domain, a protein complex, and a megadalton-sized protein filament demonstrate the versatility of NMFF-AFM modeling to reproduce large-amplitude conformational motions of biomolecular dynamics from HS-AFM imaging. As a first step toward automated large-scale analysis of AFM imaging data, we furthermore demonstrate reconstruction of an atomistic molecular movie of protein dynamics, involving large-amplitude conformational transitions, from a measured HS-AFM movie sequence. Implementation of flexible fitting within the stand-alone user-friendly interactive BioAFMviewer software provides the opportunity for a broad range of applications to facilitate the understanding of resolution-limited HS-AFM measurements.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facsnano.5c10073.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1066,11 +1334,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="ultrasound matrix imaging for 3d transcranial in vivo localization microscopy science advances bureau et al. transcranial ultrasound imaging is usually limited by skull-induced attenuation and high-order aberrations. by using contrast agents such as microbubbles in combination with ultrafast imaging, not only can the signal-to-noise ratio be improved, but super-resolution images down to the micrometer scale of the brain vessels can also be obtained. however, ultrasound localization microscopy (ulm) remains affected by wavefront distortions that limit the microbubble detection rate and hamper their localization. in this work, we show how ultrasound matrix imaging, which relies on the prior recording of the reflection matrix, can provide a solution to these fundamental issues. as an experimental proof of concept, an in vivo reconstruction of deep brain microvessels is performed on three anesthetized sheep. the compensation of wave distortions is shown to markedly enhance the contrast and resolution of ulm. this experimental study thus opens up promising perspectives for a transcranial and nonionizing observation of human cerebral microvascular pathologies, such as stroke."
   data-journal-slug="science-advances"
   data-index="14"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1091,7 +1360,18 @@
       <span>摘要来源 crossref</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Transcranial ultrasound imaging is usually limited by skull-induced attenuation and high-order aberrations. By using contrast agents such as microbubbles in combination with ultrafast imaging, not only can the signal-to-…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Transcranial ultrasound imaging is usually limited by skull-induced attenuation and high-order aberrations. By using contrast agents such as microbubbles in combination with ultrafast imaging, not only can the signal-to-...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Transcranial ultrasound imaging is usually limited by skull-induced attenuation and high-order aberrations. By using contrast agents such as microbubbles in combination with ultrafast imaging, not only can the signal-to-noise ratio be improved, but super-resolution images down to the micrometer scale of the brain vessels can also be obtained. However, ultrasound localization microscopy (ULM) remains affected by wavefront distortions that limit the microbubble detection rate and hamper their localization. In this work, we show how ultrasound matrix imaging, which relies on the prior recording of the reflection matrix, can provide a solution to these fundamental issues. As an experimental proof of concept, an in vivo reconstruction of deep brain microvessels is performed on three anesthetized sheep. The compensation of wave distortions is shown to markedly enhance the contrast and resolution of ULM. This experimental study thus opens up promising perspectives for a transcranial and nonionizing observation of human cerebral microvascular pathologies, such as stroke.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1126%2Fsciadv.adt9778.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1102,11 +1382,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="optical tweeze-sectioning microscopy for 3d imaging and manipulation of suspended cells science advances li et al. optical manipulation and detection of biological particulates are crucial procedures in biophotonics. optical sectioning (os) opens the avenue to three-dimensional (3d) microscopy, but nonoptical approaches, including sample adhesion and mechanical scanning, have always been required in this technique, rendering it impossible to image suspended cells. here, we develop optical tweeze-sectioning microscopy by coupling structured illumination microscopy (sim) with holographic optical tweezers (hots). by sculpting light in hots, we demonstrate that the position fluctuations of suspended yeast cells can be optically squeezed to tens of nanometers, which is sufficient for the implementation of os with sim. sample scanning is achieved through optical delivery of the cells, instead of translation stages as in the conventional way. our work presents an all-optical solution for os, broadening its application to nonadherent, suspended cells. it further furnishes the original technique that enables both sim-based 3d imaging and optical manipulation."
   data-journal-slug="science-advances"
   data-index="15"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1127,7 +1408,18 @@
       <span>摘要来源 crossref</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Optical manipulation and detection of biological particulates are crucial procedures in biophotonics. Optical sectioning (OS) opens the avenue to three-dimensional (3D) microscopy, but nonoptical approaches, including sa…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Optical manipulation and detection of biological particulates are crucial procedures in biophotonics. Optical sectioning (OS) opens the avenue to three-dimensional (3D) microscopy, but nonoptical approaches, including sa...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Optical manipulation and detection of biological particulates are crucial procedures in biophotonics. Optical sectioning (OS) opens the avenue to three-dimensional (3D) microscopy, but nonoptical approaches, including sample adhesion and mechanical scanning, have always been required in this technique, rendering it impossible to image suspended cells. Here, we develop optical tweeze-sectioning microscopy by coupling structured illumination microscopy (SIM) with holographic optical tweezers (HOTs). By sculpting light in HOTs, we demonstrate that the position fluctuations of suspended yeast cells can be optically squeezed to tens of nanometers, which is sufficient for the implementation of OS with SIM. Sample scanning is achieved through optical delivery of the cells, instead of translation stages as in the conventional way. Our work presents an all-optical solution for OS, broadening its application to nonadherent, suspended cells. It further furnishes the original technique that enables both SIM-based 3D imaging and optical manipulation.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1126%2Fsciadv.adx3900.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1138,11 +1430,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="exploring the subcellular localization and degradation of spherical nucleic acids using fluorescence lifetime imaging microscopy acs nano narum et al. spherical nucleic acids (snas) are a powerful class of nucleic acids with broad applications that span from diagnostic sensors to nanoflares and gene therapeutic agents. snas accomplish these varied tasks by taking advantage of the programmability of nucleic acids coupled with enhanced multivalent interactions and improved cellular delivery. nonetheless, the intracellular trafficking of snas remains poorly understood, as conflicting claims in the literature suggest rapid endosomal entrapment and degradation in some cases, while others suggest sna stability and cytoplasmic escape. one of the challenges in this area is that some of the prior literature claims rely on intensity-based fluorescence measurements, which are indirect and prone to artifacts. here, we demonstrate the use of fluorescence lifetime imaging microscopy (flim) as a tool to provide additional insight into the sna intracellular fate. we specifically employ flim to investigate monothiol and dithiol anchored gold nanoparticle conjugates as well as phosphorothioate backbone-modified snas which allow us to characterize the initial stages of sna degradation within cells. our work shows that internalized snas lose up to 20% of their nucleic acids within 24 h depending on dnase ii-activity and thiol-displacement in model cell lines."
   data-journal-slug="acs-nano"
   data-index="16"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1163,7 +1456,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Spherical nucleic acids (SNAs) are a powerful class of nucleic acids with broad applications that span from diagnostic sensors to nanoflares and gene therapeutic agents. SNAs accomplish these varied tasks by taking advan…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Spherical nucleic acids (SNAs) are a powerful class of nucleic acids with broad applications that span from diagnostic sensors to nanoflares and gene therapeutic agents. SNAs accomplish these varied tasks by taking advan...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Spherical nucleic acids (SNAs) are a powerful class of nucleic acids with broad applications that span from diagnostic sensors to nanoflares and gene therapeutic agents. SNAs accomplish these varied tasks by taking advantage of the programmability of nucleic acids coupled with enhanced multivalent interactions and improved cellular delivery. Nonetheless, the intracellular trafficking of SNAs remains poorly understood, as conflicting claims in the literature suggest rapid endosomal entrapment and degradation in some cases, while others suggest SNA stability and cytoplasmic escape. One of the challenges in this area is that some of the prior literature claims rely on intensity-based fluorescence measurements, which are indirect and prone to artifacts. Here, we demonstrate the use of fluorescence lifetime imaging microscopy (FLIM) as a tool to provide additional insight into the SNA intracellular fate. We specifically employ FLIM to investigate monothiol and dithiol anchored gold nanoparticle conjugates as well as phosphorothioate backbone-modified SNAs which allow us to characterize the initial stages of SNA degradation within cells. Our work shows that internalized SNAs lose up to 20% of their nucleic acids within 24 h depending on DNase II-activity and thiol-displacement in model cell lines.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facsnano.5c00177.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1174,11 +1478,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="advancing biosensing through super-resolution fluorescence microscopy biosensors and bioelectronics go et al. 暂无公开摘要"
   data-journal-slug="biosensors-and-bioelectronics"
   data-index="17"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1199,7 +1504,9 @@
       <span>摘要来源 missing</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">暂无公开摘要</p>
+    
+    <p class="m-0 muted-text">暂无公开摘要</p>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1016%2Fj.bios.2025.117374.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1210,11 +1517,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="imaging of guest molecule adsorption onto 2d covalent organic frameworks by scanning tunneling microscopy acs nano wang et al. porous materials play an important role in molecular adsorption and separation. however, understanding the mechanisms of molecular adsorption and separation into the pores remains a challenge. herein, the adsorption of 1,3,5-tris(4-iodophenyl)benzene (tipb) molecules onto a two-dimensional (2d) covalent organic framework (cof) monolayer is studied by low-temperature scanning tunneling microscopy (lt-stm) and density functional theory calculations. the cof monolayers are synthesized via the on-surface ullmann reaction. the cof films have six types of porous morphology with different pore sizes, namely, tetragon, pentagon, hexagon, heptagon, octagon, and nonagon lattices. the adsorption behavior of guest tipb molecules into the host cof&#39;s pores is in situ probed by high-resolution lt-stm. our results reveal that the in-plane adsorption of tipb molecules is pore-size-dependent and influenced by the interaction with the substrate, with tetragon and pentagon lattices showing no molecule adsorption due to their small pore size. hexagon and heptagon lattices can adsorb one tipb molecule through i-h bonding, while octagon and nonagon lattices are able to accommodate two tipb molecules through both i-h and i-i bonding. the substrate affects the in-plane adsorption. after annealing, the adsorbed molecules can form new covalent bonds with the cof lattice, resulting in the pore-size-dependent grafting of tipb molecules at the cof branched chains. these findings help to understand the pore-size-dependent adsorption mechanisms and the covalent grafting of guest molecules onto 2d cofs."
   data-journal-slug="acs-nano"
   data-index="18"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1235,7 +1543,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Porous materials play an important role in molecular adsorption and separation. However, understanding the mechanisms of molecular adsorption and separation into the pores remains a challenge. Herein, the adsorption of 1…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Porous materials play an important role in molecular adsorption and separation. However, understanding the mechanisms of molecular adsorption and separation into the pores remains a challenge. Herein, the adsorption of 1...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Porous materials play an important role in molecular adsorption and separation. However, understanding the mechanisms of molecular adsorption and separation into the pores remains a challenge. Herein, the adsorption of 1,3,5-tris(4-iodophenyl)benzene (TIPB) molecules onto a two-dimensional (2D) covalent organic framework (COF) monolayer is studied by low-temperature scanning tunneling microscopy (LT-STM) and density functional theory calculations. The COF monolayers are synthesized via the on-surface Ullmann reaction. The COF films have six types of porous morphology with different pore sizes, namely, tetragon, pentagon, hexagon, heptagon, octagon, and nonagon lattices. The adsorption behavior of guest TIPB molecules into the host COF&#39;s pores is in situ probed by high-resolution LT-STM. Our results reveal that the in-plane adsorption of TIPB molecules is pore-size-dependent and influenced by the interaction with the substrate, with tetragon and pentagon lattices showing no molecule adsorption due to their small pore size. Hexagon and heptagon lattices can adsorb one TIPB molecule through I-H bonding, while octagon and nonagon lattices are able to accommodate two TIPB molecules through both I-H and I-I bonding. The substrate affects the in-plane adsorption. After annealing, the adsorbed molecules can form new covalent bonds with the COF lattice, resulting in the pore-size-dependent grafting of TIPB molecules at the COF branched chains. These findings help to understand the pore-size-dependent adsorption mechanisms and the covalent grafting of guest molecules onto 2D COFs.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facsnano.5c02862.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1246,11 +1565,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="two-stage growth of solid electrolyte interphase on copper: imaging and quantification by operando atomic force microscopy acs nano thaman et al. the solid electrolyte interphase (sei) plays a key role in the aging of lithium-ion batteries. the engineering of advanced negative electrode materials to increase battery lifetime relies on accurate models of sei growth, but quantitative measurement of sei growth rates remains challenging due to their nanoscale heterogeneity and environmental sensitivity. in this work, using operando electrochemical atomic force microscopy, we track the growth of sei on copper in a carbonate electrolyte. from operando measurements of sei thickness and irreversible electrochemical capacity, we directly visualize the dual growth regimes of the sei, observing an early-stage primary sei approximately ten times more &#34;electrochemically compact&#34; than later-stage secondary sei, as quantified via the incremental thickness per charge passed. while primary sei is responsible for about half of the irreversible capacity lost in a 24 h period, it accounts for only a tenth of thickness. we also show that nanoscale defects on the copper substrate play a key role in determining the nonuniform growth morphology of the sei, thus providing direct evidence that initial sei growth is not purely transport-limited. our experiments reveal that sei grows by two modes: first reaction-limited nucleation and growth of a dense, passivating primary sei layer, governed by ion-coupled electron transfer kinetics; and subsequently by diffusion-limited growth of a porous secondary sei layer, once the primary sei fully passivates the electrode surface."
   data-journal-slug="acs-nano"
   data-index="19"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1271,7 +1591,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">The solid electrolyte interphase (SEI) plays a key role in the aging of lithium-ion batteries. The engineering of advanced negative electrode materials to increase battery lifetime relies on accurate models of SEI growth…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">The solid electrolyte interphase (SEI) plays a key role in the aging of lithium-ion batteries. The engineering of advanced negative electrode materials to increase battery lifetime relies on accurate models of SEI growth...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">The solid electrolyte interphase (SEI) plays a key role in the aging of lithium-ion batteries. The engineering of advanced negative electrode materials to increase battery lifetime relies on accurate models of SEI growth, but quantitative measurement of SEI growth rates remains challenging due to their nanoscale heterogeneity and environmental sensitivity. In this work, using operando electrochemical atomic force microscopy, we track the growth of SEI on copper in a carbonate electrolyte. From operando measurements of SEI thickness and irreversible electrochemical capacity, we directly visualize the dual growth regimes of the SEI, observing an early-stage primary SEI approximately ten times more &#34;electrochemically compact&#34; than later-stage secondary SEI, as quantified via the incremental thickness per charge passed. While primary SEI is responsible for about half of the irreversible capacity lost in a 24 h period, it accounts for only a tenth of thickness. We also show that nanoscale defects on the copper substrate play a key role in determining the nonuniform growth morphology of the SEI, thus providing direct evidence that initial SEI growth is not purely transport-limited. Our experiments reveal that SEI grows by two modes: first reaction-limited nucleation and growth of a dense, passivating primary SEI layer, governed by ion-coupled electron transfer kinetics; and subsequently by diffusion-limited growth of a porous secondary SEI layer, once the primary SEI fully passivates the electrode surface.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facsnano.4c16418.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1282,11 +1613,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="nanoscale resolution imaging of whole mouse embryos using expansion microscopy acs nano sim et al. nanoscale imaging of whole vertebrates is essential for the systematic understanding of human diseases, yet this goal has not yet been achieved. expansion microscopy (exm) is an attractive option for accomplishing this aim; however, the expansion of even mouse embryos at mid- and late-developmental stages, which have fewer calcified body parts than adult mice, is yet to be demonstrated due to the challenges of expanding calcified tissues. here, we introduce a state-of-the-art exm technique, termed whole-body exm, that utilizes cyclic digestion. this technique allows for the super-resolution, volumetric imaging of anatomical structures, proteins, and endogenous fluorescent proteins (fps) within embryonic and neonatal mice by expanding them 4-fold. the key feature of whole-body exm is the alternating application of two enzyme compositions repeated multiple times. through the simple repetition of this digestion process with an increasing number of cycles, mouse embryos of various stages up to e18.5, and even neonatal mice, which display a dramatic difference in the content of calcified tissues compared to embryos, are expanded without further laborious optimization. furthermore, the whole-body exm&#39;s ability to retain fp signals allows the visualization of various neuronal structures in transgenic mice. whole-body exm could facilitate studies of molecular changes in various vertebrates."
   data-journal-slug="acs-nano"
   data-index="20"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1307,7 +1639,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Nanoscale imaging of whole vertebrates is essential for the systematic understanding of human diseases, yet this goal has not yet been achieved. Expansion microscopy (ExM) is an attractive option for accomplishing this a…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Nanoscale imaging of whole vertebrates is essential for the systematic understanding of human diseases, yet this goal has not yet been achieved. Expansion microscopy (ExM) is an attractive option for accomplishing this a...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Nanoscale imaging of whole vertebrates is essential for the systematic understanding of human diseases, yet this goal has not yet been achieved. Expansion microscopy (ExM) is an attractive option for accomplishing this aim; however, the expansion of even mouse embryos at mid- and late-developmental stages, which have fewer calcified body parts than adult mice, is yet to be demonstrated due to the challenges of expanding calcified tissues. Here, we introduce a state-of-the-art ExM technique, termed whole-body ExM, that utilizes cyclic digestion. This technique allows for the super-resolution, volumetric imaging of anatomical structures, proteins, and endogenous fluorescent proteins (FPs) within embryonic and neonatal mice by expanding them 4-fold. The key feature of whole-body ExM is the alternating application of two enzyme compositions repeated multiple times. Through the simple repetition of this digestion process with an increasing number of cycles, mouse embryos of various stages up to E18.5, and even neonatal mice, which display a dramatic difference in the content of calcified tissues compared to embryos, are expanded without further laborious optimization. Furthermore, the whole-body ExM&#39;s ability to retain FP signals allows the visualization of various neuronal structures in transgenic mice. Whole-body ExM could facilitate studies of molecular changes in various vertebrates.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facsnano.4c14791.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1318,11 +1661,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="kelvin probe force microscopy imaging of plasticity in hydrogenated perovskite nickelate multilevel neuromorphic devices acs nano dey et al. ion drift in nanoscale electronically inhomogeneous semiconductors is among the most important mechanisms being studied for designing neuromorphic computing hardware. however, nondestructive imaging of the ion drift in operando devices directly responsible for multiresistance states and synaptic memory represents a formidable challenge. here, we present kelvin probe force microscopy imaging of hydrogen-doped perovskite nickelate device channels subject to high-speed electric field pulses to directly visualize proton distribution by monitoring surface potential changes spatially, which is also supported with finite element-based electric field distribution studies. first-principles calculations provide mechanistic insights into the origin of surface potential changes as a function of hydrogen donor doping that serves as the contrast mechanism. we demonstrate 128 (7-bit) nonvolatile conductance levels in such devices relevant to in-memory computing applications. the synaptic plasticity measurements are implemented in spiking neural networks and show promising results for classification (scikit learn&#39;s iris and wine data sets) and control (openai&#39;s cartpole-v1 and bipedalwalker-v3) simulation tasks."
   data-journal-slug="acs-nano"
   data-index="21"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1343,7 +1687,18 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Ion drift in nanoscale electronically inhomogeneous semiconductors is among the most important mechanisms being studied for designing neuromorphic computing hardware. However, nondestructive imaging of the ion drift in o…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Ion drift in nanoscale electronically inhomogeneous semiconductors is among the most important mechanisms being studied for designing neuromorphic computing hardware. However, nondestructive imaging of the ion drift in o...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Ion drift in nanoscale electronically inhomogeneous semiconductors is among the most important mechanisms being studied for designing neuromorphic computing hardware. However, nondestructive imaging of the ion drift in operando devices directly responsible for multiresistance states and synaptic memory represents a formidable challenge. Here, we present Kelvin probe force microscopy imaging of hydrogen-doped perovskite nickelate device channels subject to high-speed electric field pulses to directly visualize proton distribution by monitoring surface potential changes spatially, which is also supported with finite element-based electric field distribution studies. First-principles calculations provide mechanistic insights into the origin of surface potential changes as a function of hydrogen donor doping that serves as the contrast mechanism. We demonstrate 128 (7-bit) nonvolatile conductance levels in such devices relevant to in-memory computing applications. The synaptic plasticity measurements are implemented in spiking neural networks and show promising results for classification (SciKit Learn&#39;s Iris and Wine data sets) and control (OpenAI&#39;s CartPole-v1 and BipedalWalker-v3) simulation tasks.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1021%2Facsnano.4c11567.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1354,11 +1709,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="electrochemical imaging of neurotransmitter release with fast-scan voltammetric ion conductance microscopy science advances wang et al. understanding the dynamic spatial and temporal release of neurotransmitters can help resolve long-standing questions related to chemical modulation of neurological circuits. dopamine modulates function in a range of physiological processes and is key to transmission in addiction and neurological disorders. studies at subcellular scales promise to help develop a broader understanding of dopamine release, diffusion, and receptor activation and how these processes lead to functional outcomes. electrochemical measurements of dopamine release at individual cells have proven especially informative. we describe incorporation of fast-scan cyclic voltammetry for detection of dopamine release with subcellular spatial resolution and millisecond time resolution. the platform is benchmarked with standard redox probes and then applied to imaging stimulated release from subcellular locations of a coculture of dopaminergic neurons and astrocytes. voltammetry reveals heterogeneity in release based on time, location, and neuron identity. we believe that this platform ultimately offers a window to understanding neurotransmission in pathophysiological models of disease where cell-cell communication is key."
   data-journal-slug="science-advances"
   data-index="22"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1379,7 +1735,18 @@
       <span>摘要来源 crossref</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Understanding the dynamic spatial and temporal release of neurotransmitters can help resolve long-standing questions related to chemical modulation of neurological circuits. Dopamine modulates function in a range of phys…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Understanding the dynamic spatial and temporal release of neurotransmitters can help resolve long-standing questions related to chemical modulation of neurological circuits. Dopamine modulates function in a range of phys...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Understanding the dynamic spatial and temporal release of neurotransmitters can help resolve long-standing questions related to chemical modulation of neurological circuits. Dopamine modulates function in a range of physiological processes and is key to transmission in addiction and neurological disorders. Studies at subcellular scales promise to help develop a broader understanding of dopamine release, diffusion, and receptor activation and how these processes lead to functional outcomes. Electrochemical measurements of dopamine release at individual cells have proven especially informative. We describe incorporation of fast-scan cyclic voltammetry for detection of dopamine release with subcellular spatial resolution and millisecond time resolution. The platform is benchmarked with standard redox probes and then applied to imaging stimulated release from subcellular locations of a coculture of dopaminergic neurons and astrocytes. Voltammetry reveals heterogeneity in release based on time, location, and neuron identity. We believe that this platform ultimately offers a window to understanding neurotransmission in pathophysiological models of disease where cell-cell communication is key.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1126%2Fsciadv.ado9322.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1390,11 +1757,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="highly multiplexed fluorescence microscopy with spectrally tunable semiconducting polymer dots science advances guo et al. current studies of biological tissues require visualizing diverse cell types and molecular interactions, creating a growing need for versatile techniques to simultaneously probe numerous targets. traditional multiplexed imaging is limited to around five targets at once. emerging methods using sequential rounds of staining, imaging, and signal removal can probe tens of targets but require specialized hardware and time-consuming workflows and face challenges with sample distortion and artifacts. we present a highly multiplexed fluorescence microscopy method using semiconducting polymer dots (pdots) in a single round of staining and imaging. pdots are small, bright, and photostable fluorescent probes with a wide range of tunable stokes shifts (20 to 450 nanometers). multiple series of pdots with varying excitation wavelengths allow for fast ("
   data-journal-slug="science-advances"
   data-index="23"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1415,7 +1783,18 @@
       <span>摘要来源 crossref</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Current studies of biological tissues require visualizing diverse cell types and molecular interactions, creating a growing need for versatile techniques to simultaneously probe numerous targets. Traditional multiplexed …</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Current studies of biological tissues require visualizing diverse cell types and molecular interactions, creating a growing need for versatile techniques to simultaneously probe numerous targets. Traditional multiplexed ...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Current studies of biological tissues require visualizing diverse cell types and molecular interactions, creating a growing need for versatile techniques to simultaneously probe numerous targets. Traditional multiplexed imaging is limited to around five targets at once. Emerging methods using sequential rounds of staining, imaging, and signal removal can probe tens of targets but require specialized hardware and time-consuming workflows and face challenges with sample distortion and artifacts. We present a highly multiplexed fluorescence microscopy method using semiconducting polymer dots (Pdots) in a single round of staining and imaging. Pdots are small, bright, and photostable fluorescent probes with a wide range of tunable Stokes shifts (20 to 450 nanometers). Multiple series of Pdots with varying excitation wavelengths allow for fast (</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1126%2Fsciadv.adk8829.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1426,11 +1805,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="raman microscopy of cryofixed biological specimens for high-resolution and high-sensitivity chemical imaging science advances mizushima et al. raman microscopy is an emerging molecular imaging technology, yet its signal-to-noise ratio (snr) in measurements of biological specimens is severely limited because of the small cross section of raman scattering. here, we present raman imaging techniques of cryofixed specimens to overcome snr limitations by enabling long exposure of specimens under highly stabilized low-temperature conditions. the observation of frozen specimens in a cryostat at a constant low temperature immediately after rapid freezing enabled the improvement of snr and enhanced the spatial and spectral resolution. we also confirmed that the cryofixation can preserve physicochemical states of specimens by observing alkyne-labeled coenzyme q in cytosol and hemeproteins in acute ischemic myocardium, which cannot be done by fixation using chemical reagents. last, we applied the technique for multiplex raman imaging of label-free endogenous molecules and alkyne-tagged molecules in cryofixed hela cells, demonstrating its capability of high-content imaging of complex biological phenomena while maintaining physiological conditions."
   data-journal-slug="science-advances"
   data-index="24"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1451,7 +1831,18 @@
       <span>摘要来源 crossref</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Raman microscopy is an emerging molecular imaging technology, yet its signal-to-noise ratio (SNR) in measurements of biological specimens is severely limited because of the small cross section of Raman scattering. Here, …</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Raman microscopy is an emerging molecular imaging technology, yet its signal-to-noise ratio (SNR) in measurements of biological specimens is severely limited because of the small cross section of Raman scattering. Here, ...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Raman microscopy is an emerging molecular imaging technology, yet its signal-to-noise ratio (SNR) in measurements of biological specimens is severely limited because of the small cross section of Raman scattering. Here, we present Raman imaging techniques of cryofixed specimens to overcome SNR limitations by enabling long exposure of specimens under highly stabilized low-temperature conditions. The observation of frozen specimens in a cryostat at a constant low temperature immediately after rapid freezing enabled the improvement of SNR and enhanced the spatial and spectral resolution. We also confirmed that the cryofixation can preserve physicochemical states of specimens by observing alkyne-labeled coenzyme Q in cytosol and hemeproteins in acute ischemic myocardium, which cannot be done by fixation using chemical reagents. Last, we applied the technique for multiplex Raman imaging of label-free endogenous molecules and alkyne-tagged molecules in cryofixed HeLa cells, demonstrating its capability of high-content imaging of complex biological phenomena while maintaining physiological conditions.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1126%2Fsciadv.adn0110.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1462,11 +1853,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="transcutaneous imaging of rabbit kidney using 3-d acoustic wave sparsely activated localization microscopy with a row-column-addressed array ieee transactions on biomedical engineering tan et al. 3-d awsalm offers an unique in-vivo imaging tool for fast, selective and large fov vascular flow mapping."
   data-journal-slug="ieee-transactions-on-biomedical-engineering"
   data-index="25"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1487,7 +1879,9 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">3-D AWSALM offers an unique in-vivo imaging tool for fast, selective and large FOV vascular flow mapping.</p>
+    
+    <p class="m-0 muted-text">3-D AWSALM offers an unique in-vivo imaging tool for fast, selective and large FOV vascular flow mapping.</p>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1109%2Ftbme.2024.3426487.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1498,11 +1892,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="automated whole slide imaging for label-free histology using photon absorption remote sensing microscopy ieee transactions on biomedical engineering tweel et al. this work is a critical advance for integrating label-free optical methods into standard histopathology workflows."
   data-journal-slug="ieee-transactions-on-biomedical-engineering"
   data-index="26"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1523,7 +1918,9 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">This work is a critical advance for integrating label-free optical methods into standard histopathology workflows.</p>
+    
+    <p class="m-0 muted-text">This work is a critical advance for integrating label-free optical methods into standard histopathology workflows.</p>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1109%2Ftbme.2024.3355296.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1534,11 +1931,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="fluorescence lifetime imaging microscopy for early diagnosis and severity prediction of preeclampsia with nile blue probe biosensors and bioelectronics zhu et al. preeclampsia (pe) is a common pregnancy complication and the leading cause of maternal and perinatal mortality. unfortunately, the early diagnostic methods for pe are still rare. fluorescence lifetime imaging (flim) technology has proven to be applicable for diagnosis of various diseases. here, we explore the possibility of the flim technique for pe early diagnosis and severity prediction with nile blue probe as biosensor. 23 placental slices and 162 third-trimester-collected maternal peripheral blood serum samples were stained with nile blue and imaged by flim system. fluorescence lifetimes of the probe increased significantly as the disease worsened (p &lt; 0.0001). characterization of the probe showed an increasing tendency in lifetimes under lower polarity conditions and revealed that the reason for the lifetime differences in serum sample was polarity changes caused by abnormal lipid metabolism in serum. for early diagnosis, we investigated 42 12th-week-collected chronic hypertension (ch) serum samples and successfully distinguished pe patients from pregnant women. with the functions of measuring fluorescence lifetime and detecting polarity changes caused by an abnormal lipid microenvironment in maternal peripheral blood, flim technology, together with nile blue probe, presents a feasible and advantageous approach for pe early noninvasive diagnosis and severity prediction."
   data-journal-slug="biosensors-and-bioelectronics"
   data-index="27"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1559,7 +1957,18 @@
       <span>摘要来源 semantic_scholar</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">Preeclampsia (PE) is a common pregnancy complication and the leading cause of maternal and perinatal mortality. Unfortunately, the early diagnostic methods for PE are still rare. Fluorescence lifetime imaging (FLIM) tech…</p>
+    
+    <p x-show="!expanded" class="m-0 muted-text">Preeclampsia (PE) is a common pregnancy complication and the leading cause of maternal and perinatal mortality. Unfortunately, the early diagnostic methods for PE are still rare. Fluorescence lifetime imaging (FLIM) tech...</p>
+    <p x-show="expanded" x-cloak class="m-0 muted-text whitespace-pre-wrap">Preeclampsia (PE) is a common pregnancy complication and the leading cause of maternal and perinatal mortality. Unfortunately, the early diagnostic methods for PE are still rare. Fluorescence lifetime imaging (FLIM) technology has proven to be applicable for diagnosis of various diseases. Here, we explore the possibility of the FLIM technique for PE early diagnosis and severity prediction with Nile Blue probe as biosensor. 23 placental slices and 162 third-trimester-collected maternal peripheral blood serum samples were stained with Nile blue and imaged by FLIM system. Fluorescence lifetimes of the probe increased significantly as the disease worsened (p &lt; 0.0001). Characterization of the probe showed an increasing tendency in lifetimes under lower polarity conditions and revealed that the reason for the lifetime differences in serum sample was polarity changes caused by abnormal lipid metabolism in serum. For early diagnosis, we investigated 42 12th-week-collected chronic hypertension (CH) serum samples and successfully distinguished PE patients from pregnant women. With the functions of measuring fluorescence lifetime and detecting polarity changes caused by an abnormal lipid microenvironment in maternal peripheral blood, FLIM technology, together with Nile Blue probe, presents a feasible and advantageous approach for PE early noninvasive diagnosis and severity prediction.</p>
+    <button
+      type="button"
+      @click="toggleAbstract()"
+      :aria-expanded="expanded.toString()"
+      class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+      <span x-show="!expanded">Show more</span>
+      <span x-show="expanded" x-cloak>Show less</span>
+    </button>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1016%2Fj.bios.2023.115809.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1570,11 +1979,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="ramaldi: enabling simultaneous raman and maldi imaging of the same tissue section biosensors and bioelectronics yang et al. 暂无公开摘要"
   data-journal-slug="biosensors-and-bioelectronics"
   data-index="28"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1595,7 +2005,9 @@
       <span>摘要来源 missing</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">暂无公开摘要</p>
+    
+    <p class="m-0 muted-text">暂无公开摘要</p>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1016%2Fj.bios.2023.115597.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1606,11 +2018,12 @@
         
           
           <article
+  x-data="{ expanded: false, toggleAbstract() { this.expanded = !this.expanded; } }"
   data-archive-row="true"
   data-search="comprehensive surface histology of fresh resection margins with rapid open-top light-sheet (otls) microscopy ieee transactions on biomedical engineering gao et al. the reported methods can potentially improve tumor-resection procedures, thereby improving patient outcomes and quality of life."
   data-journal-slug="ieee-transactions-on-biomedical-engineering"
   data-index="29"
-  x-show="(search === '' || $el.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || $el.dataset.journalSlug === activeJournal) && Number($el.dataset.index) < visibleCount"
+  x-show="isRowVisible($el)"
   class="py-4 md:py-5"
   x-transition>
 
@@ -1631,7 +2044,9 @@
       <span>摘要来源 openalex</span>
     </div>
 
-    <p class="m-0 muted-text line-clamp-3">The reported methods can potentially improve tumor-resection procedures, thereby improving patient outcomes and quality of life.</p>
+    
+    <p class="m-0 muted-text">The reported methods can potentially improve tumor-resection procedures, thereby improving patient outcomes and quality of life.</p>
+    
 
     <div class="flex flex-wrap items-center gap-3">
       <a href="/papers/10.1109%2Ftbme.2023.3237267.html" class="button-base button-secondary h-[32px] px-3">查看详情</a>
@@ -1645,7 +2060,7 @@
       <div class="pt-2 flex flex-wrap items-center justify-between gap-2">
         <p class="meta-text">继续加载可查看更早条目。</p>
         <button
-          x-show="visibleCount < 30"
+          x-show="canLoadMore()"
           x-cloak
           @click="loadMore()"
           class="button-base button-secondary">

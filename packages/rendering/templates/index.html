@@ -169,7 +169,7 @@
 
         <div class="flex flex-wrap gap-2">
           {% for item in journal_nav %}
-          <a href="/archive.html" class="chip hover:border-[var(--line-strong)]">{{ item.label }} · {{ item.count }}</a>
+          <a href="/archive.html?journal={{ item.label|urlencode }}" class="chip hover:border-[var(--line-strong)]">{{ item.label }} · {{ item.count }}</a>
           {% endfor %}
         </div>
       </div>

@@ -78,7 +78,8 @@ def detail_href(doi: str) -> str:
 def process_row(row: Any) -> Dict[str, Any]:
     doi_value = (row["doi"] or "").strip().lower() if "doi" in row.keys() else ""
     abstract_full = clean_text(row["abstract"] or "暂无公开摘要")
-    snippet = abstract_full[:220] + ("…" if len(abstract_full) > 220 else "")
+    abstract_truncated = len(abstract_full) > 220
+    snippet = abstract_full[:220] + ("..." if abstract_truncated else "")
 
     title = row["title"] or ""
     journal = row["journal"] or ""
@@ -95,6 +96,7 @@ def process_row(row: Any) -> Dict[str, Any]:
         "pub_date": row["pub_date"] or "",
         "full_abstract": abstract_full,
         "snippet": snippet,
+        "abstract_truncated": abstract_truncated,
         "source": row["abstract_source"] or "unknown",
         "doi_url": doi_to_url(doi_value, row["link"] or ""),
         "detail_href": detail_href(doi_value),

@@ -1,5 +1,13 @@
 <article
-  x-data="{ get isMatch() { return (search === '' || this.$refs.root.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || this.$refs.root.dataset.journalSlug === activeJournal) } }"
+  x-data="{
+    expanded: false,
+    get isMatch() {
+      return (search === '' || this.$refs.root.dataset.search.includes(search.toLowerCase())) && (activeJournal === 'all' || this.$refs.root.dataset.journalSlug === activeJournal);
+    },
+    toggleAbstract() {
+      this.expanded = !this.expanded;
+    }
+  }"
   x-ref="root"
   x-show="isMatch"
   data-search="{{ p.search_blob|escape }}"
@@ -24,7 +32,20 @@
     <span>摘要来源 {{ p.source }}</span>
   </div>
 
-  <p class="muted-text m-0 line-clamp-4">{{ p.snippet }}</p>
+  {% if p.abstract_truncated %}
+  <p x-show="!expanded" class="muted-text m-0">{{ p.snippet }}</p>
+  <p x-show="expanded" x-cloak class="muted-text m-0 whitespace-pre-wrap">{{ p.full_abstract }}</p>
+  <button
+    type="button"
+    @click="toggleAbstract()"
+    :aria-expanded="expanded.toString()"
+    class="text-[13px] text-[var(--accent)] hover:underline w-fit">
+    <span x-show="!expanded">Show more</span>
+    <span x-show="expanded" x-cloak>Show less</span>
+  </button>
+  {% else %}
+  <p class="muted-text m-0">{{ p.full_abstract }}</p>
+  {% endif %}
 
   <div class="pt-3 mt-auto border-t border-[var(--line)] flex flex-wrap items-center gap-3">
     <a href="{{ p.detail_href }}" class="button-base button-secondary h-[32px] px-3">阅读条目</a>
