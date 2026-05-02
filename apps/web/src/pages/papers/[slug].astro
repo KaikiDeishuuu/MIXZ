@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
-import { articles, paperSlug, formatDateTime } from '../../lib/data';
+import { articles, paperSlug, formatDateTime, articleBatchIds } from '../../lib/data';
 export function getStaticPaths() {
   return articles.map((article) => ({ params: { slug: paperSlug(article).replace(/\.html$/, '') }, props: { article } }));
 }
 const { article } = Astro.props;
 const related = articles.filter((item) => item.id !== article.id && item.journal === article.journal).slice(0, 4);
+const observationHistory = (article.crawl_history?.length ? article.crawl_history : articleBatchIds(article).map((batch_id) => ({ batch_id }))) as Array<{ batch_id: string; crawl_time?: string; crawl_date?: string; rank_in_batch?: number }>;
 ---
 <BaseLayout title={`MIXZ · ${article.title}`} description={article.snippet || article.abstract || article.title}>
   <section class="hero small paper-hero">
@@ -20,8 +21,12 @@ const related = articles.filter((item) => item.id !== article.id && item.journal
   </section>
   <section class="split detail-split">
     <article class="panel prose">
-      <h2>Abstract</h2>
+      <h2>完整摘要</h2>
       <p>{article.full_abstract || article.abstract || '暂无公开摘要'}</p>
+      <div class="article-actions">
+        {article.doi_url && <a href={article.doi_url} target="_blank" rel="noreferrer">打开 DOI</a>}
+        {article.url && <a href={article.url} target="_blank" rel="noreferrer">打开来源页面</a>}
+      </div>
     </article>
     <aside class="panel">
       <h2>Metadata</h2>
@@ -33,5 +38,15 @@ const related = articles.filter((item) => item.id !== article.id && item.journal
       </ul>
     </aside>
   </section>
+  {observationHistory.length > 0 && (
+    <section class="panel">
+      <h2>Observation history</h2>
+      <ul class="simple-list linked-list">
+        {observationHistory.map((item) => (
+          <li><a href={`/archive?batch=${encodeURIComponent(item.batch_id)}`}><span>{item.batch_id}</span><strong>{formatDateTime(item.crawl_time)}</strong></a></li>
+        ))}
+      </ul>
+    </section>
+  )}
   {related.length > 0 && <section class="panel"><h2>Related in {article.journal}</h2>{related.map((item) => <ArticleCard article={item} />)}</section>}
 </BaseLayout>

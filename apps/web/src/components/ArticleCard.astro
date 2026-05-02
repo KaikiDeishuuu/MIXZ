@@ -1,13 +1,21 @@
 ---
 import type { Article } from '../types';
-import { formatDate, paperSlug } from '../lib/data';
+import { articleBatchIds, formatDate, paperSlug } from '../lib/data';
 interface Props { article: Article; mode?: 'compact' | 'full'; }
 const { article, mode = 'compact' } = Astro.props;
 const slug = paperSlug(article);
 const isNew = Boolean(article.is_new_in_batch);
-const abstractText = article.snippet || article.abstract || article.full_abstract || '暂无公开摘要';
+const fullAbstract = article.full_abstract || article.abstract || article.snippet || '暂无公开摘要';
+const abstractText = mode === 'full' ? fullAbstract : (article.snippet || article.abstract || fullAbstract);
+const showExpandableAbstract = mode !== 'full' && fullAbstract && fullAbstract !== abstractText;
+const batchIds = articleBatchIds(article);
 ---
-<article class:list={["article-card", isNew ? "is-new" : "is-seen"]} data-search={article.search_blob || `${article.title} ${article.journal} ${article.doi}`}>
+<article
+  class:list={["article-card", isNew ? "is-new" : "is-seen"]}
+  data-search={article.search_blob || `${article.title} ${article.journal} ${article.doi}`}
+  data-journal={article.journal || 'Unknown'}
+  data-batches={batchIds.join('|')}
+>
   <div class="article-meta">
     <span class:list={["badge", isNew ? "badge-new" : "badge-seen"]}>{isNew ? '新发现' : '重复命中'}</span>
     <span>{article.journal || 'Unknown journal'}</span>
@@ -15,9 +23,15 @@ const abstractText = article.snippet || article.abstract || article.full_abstrac
   </div>
   <h2><a href={`/papers/${slug}.html`}>{article.title}</a></h2>
   <p class="authors">{article.author || article.authors?.slice(0, 5).join(', ')}</p>
-  <p class="abstract">{mode === 'full' ? (article.full_abstract || article.abstract || '暂无公开摘要') : abstractText}</p>
+  <p class="abstract">{abstractText}</p>
+  {showExpandableAbstract && (
+    <details class="abstract-details">
+      <summary>查看完整摘要</summary>
+      <p>{fullAbstract}</p>
+    </details>
+  )}
   <div class="article-actions">
-    <a href={`/papers/${slug}.html`}>详情</a>
+    <a class="primary-action" href={`/papers/${slug}.html`}>查看详情</a>
     {article.doi_url && <a href={article.doi_url} target="_blank" rel="noreferrer">DOI</a>}
     {article.last_seen_batch_id && <span>最后命中：{article.last_seen_batch_id}</span>}
   </div>

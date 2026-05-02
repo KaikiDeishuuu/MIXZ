@@ -1,34 +1,69 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
-import { articles, summary, journalList } from '../lib/data';
+import { articles, summary, journalList, batches, archiveBatchHref, archiveJournalHref } from '../lib/data';
 const journals = journalList();
+const recentBatches = batches.slice(0, 12);
 ---
 <BaseLayout title="MIXZ Archive" description="All MIXZ literature records">
   <section class="hero small">
     <p class="eyebrow">Archive</p>
     <h1>全部文献</h1>
-    <p>{summary.total_articles} 篇文章，来自 {journals.length} 个期刊/来源。支持本页前端即时搜索，不依赖 API。</p>
+    <p>{summary.total_articles} 篇文章，来自 {journals.length} 个期刊/来源。支持本页搜索，也支持从首页按 batch 或 journal 跳转筛选。</p>
+    <div id="activeFilter" class="filter-state" hidden>
+      <span></span>
+      <a href="/archive">清除筛选</a>
+    </div>
     <input id="archiveSearch" class="search-input" placeholder="搜索标题、作者、DOI、期刊或摘要…" />
   </section>
   <section class="archive-layout">
     <aside class="panel filters">
       <h2>Journals</h2>
-      <ul class="simple-list">{journals.map((item) => <li><span>{item.name}</span><strong>{item.count}</strong></li>)}</ul>
+      <ul class="simple-list linked-list">{journals.map((item) => <li><a href={archiveJournalHref(item.name)}><span>{item.name}</span><strong>{item.count}</strong></a></li>)}</ul>
+      <h2>Recent batches</h2>
+      <ul class="simple-list linked-list">{recentBatches.map((batch) => <li><a href={archiveBatchHref(batch.batch_id)}><span>{batch.batch_id}</span><strong>{batch.article_count || batch.articles?.length || 0}</strong></a></li>)}</ul>
     </aside>
     <div id="archiveList" class="article-list">
       {articles.map((article) => <ArticleCard article={article} />)}
     </div>
   </section>
   <script>
+    const params = new URLSearchParams(window.location.search);
+    const journalFilter = params.get('journal');
+    const batchFilter = params.get('batch');
     const input = document.querySelector('#archiveSearch');
     const cards = [...document.querySelectorAll('.article-card')];
-    input?.addEventListener('input', () => {
+    const activeFilter = document.querySelector('#activeFilter');
+    const activeFilterText = activeFilter?.querySelector('span');
+
+    if (activeFilter instanceof HTMLElement && activeFilterText) {
+      const labels = [];
+      if (journalFilter) labels.push(`Journal: ${journalFilter}`);
+      if (batchFilter) labels.push(`Batch: ${batchFilter}`);
+      if (labels.length > 0) {
+        activeFilterText.textContent = `当前筛选 · ${labels.join(' · ')}`;
+        activeFilter.hidden = false;
+      }
+    }
+
+    const matchesFilters = (card: Element) => {
+      const journal = card.getAttribute('data-journal') || '';
+      const batches = (card.getAttribute('data-batches') || '').split('|');
+      if (journalFilter && journal !== journalFilter) return false;
+      if (batchFilter && !batches.includes(batchFilter)) return false;
+      return true;
+    };
+
+    const applyFilters = () => {
       const q = (input instanceof HTMLInputElement ? input.value : '').trim().toLowerCase();
       for (const card of cards) {
         const text = (card.getAttribute('data-search') || card.textContent || '').toLowerCase();
-        card.toggleAttribute('hidden', q.length > 0 && !text.includes(q));
+        const matchesSearch = q.length === 0 || text.includes(q);
+        card.toggleAttribute('hidden', !matchesFilters(card) || !matchesSearch);
       }
-    });
+    };
+
+    input?.addEventListener('input', applyFilters);
+    applyFilters();
   </script>
 </BaseLayout>
