@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
+import SearchBar from '../components/SearchBar.astro';
 import { articles, summary, journalList, batches, archiveBatchHref, archiveJournalHref } from '../lib/data';
+
 const journals = journalList();
 const recentBatches = batches.slice(0, 12);
 ---
@@ -14,19 +16,39 @@ const recentBatches = batches.slice(0, 12);
       <span></span>
       <a href="/archive">清除筛选</a>
     </div>
-    <input id="archiveSearch" class="search-input" placeholder="搜索标题、作者、DOI、期刊或摘要…" />
+    <SearchBar />
   </section>
+
   <section class="archive-layout">
     <aside class="panel filters">
       <h2>Journals</h2>
-      <ul class="simple-list linked-list">{journals.map((item) => <li><a href={archiveJournalHref(item.name)}><span>{item.name}</span><strong>{item.count}</strong></a></li>)}</ul>
+      <ul class="simple-list linked-list">
+        {journals.map((item) => (
+          <li>
+            <a href={archiveJournalHref(item.name)}>
+              <span>{item.name}</span>
+              <strong>{item.count}</strong>
+            </a>
+          </li>
+        ))}
+      </ul>
       <h2>Recent batches</h2>
-      <ul class="simple-list linked-list">{recentBatches.map((batch) => <li><a href={archiveBatchHref(batch.batch_id)}><span>{batch.batch_id}</span><strong>{batch.article_count || batch.articles?.length || 0}</strong></a></li>)}</ul>
+      <ul class="simple-list linked-list">
+        {recentBatches.map((batch) => (
+          <li>
+            <a href={`/batches/${batch.batch_id}.html`}>
+              <span>{batch.batch_id}</span>
+              <strong>{batch.article_count || batch.articles?.length || 0}</strong>
+            </a>
+          </li>
+        ))}
+      </ul>
     </aside>
     <div id="archiveList" class="article-list">
       {articles.map((article) => <ArticleCard article={article} />)}
     </div>
   </section>
+
   <script>
     const params = new URLSearchParams(window.location.search);
     const journalFilter = params.get('journal');

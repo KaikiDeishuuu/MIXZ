@@ -1,0 +1,25 @@
+---
+interface Props {
+  placeholder?: string;
+  id?: string;
+  class?: string;
+}
+const {
+  placeholder = '搜索标题、作者、DOI、期刊或摘要…',
+  id = 'archiveSearch',
+  class: className = ''
+} = Astro.props;
+---
+<div class="search-wrapper">
+  <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <circle cx="11" cy="11" r="8"/>
+    <path d="m21 21-4.35-4.35"/>
+  </svg>
+  <input
+    type="search"
+    id={id}
+    class:list={['search-input', className]}
+    placeholder={placeholder}
+    autocomplete="off"
+  />
+</div>

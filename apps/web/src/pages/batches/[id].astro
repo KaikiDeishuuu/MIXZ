@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import EmptyState from '../../components/EmptyState.astro';
+import { batches, formatDateTime } from '../../lib/data';
+import type { BatchPayload } from '../../types';
+
+export function getStaticPaths() {
+  return batches.map((batch) => ({
+    params: { id: batch.batch_id },
+    props: { batch }
+  }));
+}
+
+interface Props {
+  batch: BatchPayload;
+}
+
+const { batch } = Astro.props;
+const newArticles = batch.new_articles || batch.articles.filter((a) => a.is_new_in_batch);
+const seenAgain = batch.seen_again_articles || batch.articles.filter((a) => !a.is_new_in_batch);
+const articleCount = batch.article_count ?? batch.articles?.length ?? 0;
+const newCount = batch.new_articles_count ?? newArticles.length;
+const seenCount = batch.seen_again_count ?? seenAgain.length;
+---
+<BaseLayout
+  title={`Batch ${batch.batch_id}`}
+  description={`MIXZ batch ${batch.batch_id} with ${articleCount} articles`}
+>
+  <section class="hero small">
+    <p class="eyebrow">Batch Snapshot</p>
+    <h1>{batch.batch_id}</h1>
+    <p>
+      抓取时间：{formatDateTime(batch.crawl_time || batch.crawl_date)}
+    </p>
+    <div class="stat-grid stat-grid--3">
+      <div>
+        <strong>{articleCount}</strong>
+        <span>总命中</span>
+      </div>
+      <div>
+        <strong>{newCount}</strong>
+        <span>新发现</span>
+      </div>
+      <div>
+        <strong>{seenCount}</strong>
+        <span>重复命中</span>
+      </div>
+    </div>
+  </section>
+
+  {newArticles.length > 0 && (
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">New in this batch</p>
+          <h2>新发现</h2>
+        </div>
+        <span>{newArticles.length} 篇</span>
+      </div>
+      <div class="article-list">
+        {newArticles.map((article) => <ArticleCard article={article} />)}
+      </div>
+    </section>
+  )}
+
+  {seenAgain.length > 0 && (
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Seen again</p>
+          <h2>重复命中</h2>
+        </div>
+        <span>{seenAgain.length} 篇</span>
+      </div>
+      <div class="article-list">
+        {seenAgain.map((article) => <ArticleCard article={article} />)}
+      </div>
+    </section>
+  )}
+
+  {articleCount === 0 && (
+    <EmptyState
+      type="empty"
+      message="本批次无文章"
+      description="这个批次没有抓取到任何文献"
+      actionLabel="返回 Archive"
+      actionHref="/archive"
+    />
+  )}
+
+  <section class="panel">
+    <div class="section-heading">
+      <h2>Navigation</h2>
+    </div>
+    <div class="batch-nav">
+      <a href="/archive" class="batch-nav__link">← 返回 Archive</a>
+      <a href="/" class="batch-nav__link">查看 Latest Batch →</a>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,10 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
+import EmptyState from '../components/EmptyState.astro';
+import BatchCard from '../components/BatchCard.astro';
 import { latest, summary, batches, formatDateTime, journalList, archiveBatchHref, archiveJournalHref } from '../lib/data';
+
 const latestNew = latest.new_articles || latest.articles.filter((article) => article.is_new_in_batch);
 const seenAgain = latest.seen_again_articles || latest.articles.filter((article) => !article.is_new_in_batch);
 const journals = journalList().slice(0, 10);
+const recentBatches = batches.slice(0, 8);
 ---
 <BaseLayout title="MIXZ Latest Batch" description="MIXZ biomedical imaging literature monitor">
   <section class="hero">
@@ -30,9 +34,19 @@ const journals = journalList().slice(0, 10);
         <p class="eyebrow">New in this batch</p>
         <h2>新发现</h2>
       </div>
-      <a href="/archive">查看完整 archive</a>
+      <a href="/archive" class="section-action">查看完整 archive</a>
     </div>
-    {latestNew.length > 0 ? latestNew.map((article) => <ArticleCard article={article} />) : <p class="empty">本批次没有新文章。</p>}
+    {latestNew.length > 0 ? (
+      <div class="article-list">
+        {latestNew.map((article) => <ArticleCard article={article} />)}
+      </div>
+    ) : (
+      <EmptyState
+        type="empty"
+        message="本批次没有新文章"
+        description="所有文章都是重复命中"
+      />
+    )}
   </section>
 
   <section class="panel history-panel">
@@ -51,11 +65,29 @@ const journals = journalList().slice(0, 10);
   <section class="split">
     <div class="panel">
       <h2>Journal coverage</h2>
-      <ul class="simple-list linked-list">{journals.map((item) => <li><a href={archiveJournalHref(item.name)}><span>{item.name}</span><strong>{item.count}</strong></a></li>)}</ul>
+      <ul class="simple-list linked-list">
+        {journals.map((item) => (
+          <li>
+            <a href={archiveJournalHref(item.name)}>
+              <span>{item.name}</span>
+              <strong>{item.count}</strong>
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
     <div class="panel">
       <h2>Recent batches</h2>
-      <ul class="simple-list linked-list">{batches.slice(0, 8).map((batch) => <li><a href={archiveBatchHref(batch.batch_id)}><span>{batch.batch_id}</span><strong>{batch.article_count || batch.articles?.length || 0}</strong></a></li>)}</ul>
+      <ul class="simple-list linked-list">
+        {recentBatches.map((batch) => (
+          <li>
+            <a href={`/batches/${batch.batch_id}.html`}>
+              <span>{batch.batch_id}</span>
+              <strong>{batch.article_count || batch.articles?.length || 0}</strong>
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
 </BaseLayout>

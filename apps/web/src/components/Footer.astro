@@ -1,0 +1,29 @@
+---
+interface Props {
+  buildInfo?: string;
+}
+const { buildInfo = '' } = Astro.props;
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <span class="footer-logo">MIXZ</span>
+      <span class="footer-tagline">Biomedical Imaging Literature Monitor</span>
+    </div>
+    <div class="footer-links">
+      <a href="/">Latest</a>
+      <a href="/archive">Archive</a>
+      <a href="/protocols">Protocols</a>
+      <a href="/api/stats">API</a>
+    </div>
+    <div class="footer-meta">
+      <span>SQLite → JSON → Astro static site</span>
+      <span>静态页面不依赖 API 存活</span>
+      {buildInfo && <span class="build-info">{buildInfo}</span>}
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; {year} MIXZ</span>
+  </div>
+</footer>

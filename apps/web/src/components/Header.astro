@@ -1,0 +1,26 @@
+---
+interface Props {
+  currentPath?: string;
+}
+const { currentPath = '/' } = Astro.props;
+const navLinks = [
+  { href: '/', label: 'Latest' },
+  { href: '/archive', label: 'Archive' },
+  { href: '/protocols', label: 'Protocols' },
+  { href: '/api/stats', label: 'API' },
+];
+---
+<header class="site-header">
+  <a class="brand" href="/">MIXZ</a>
+  <nav aria-label="Primary navigation">
+    {navLinks.map(({ href, label }) => (
+      <a
+        href={href}
+        class:list={['nav-link', { active: currentPath === href || (href !== '/' && currentPath.startsWith(href)) }]}
+        aria-current={currentPath === href ? 'page' : undefined}
+      >
+        {label}
+      </a>
+    ))}
+  </nav>
+</header>

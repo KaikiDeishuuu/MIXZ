@@ -1,0 +1,36 @@
+---
+interface Props {
+  type?: 'empty' | 'no-results' | 'loading' | 'error';
+  message?: string;
+  description?: string;
+  actionLabel?: string;
+  actionHref?: string;
+}
+
+const {
+  type = 'empty',
+  message,
+  description,
+  actionLabel,
+  actionHref = '/'
+} = Astro.props;
+
+const defaults: Record<string, { msg: string; desc: string; icon: string }> = {
+  'empty': { msg: '暂无内容', desc: '这里还没有任何内容', icon: '📭' },
+  'no-results': { msg: '未找到结果', desc: '没有匹配搜索条件的文献', icon: '🔍' },
+  'loading': { msg: '加载中…', desc: '请稍候', icon: '⏳' },
+  'error': { msg: '加载失败', desc: '请稍后重试', icon: '⚠️' },
+};
+
+const cfg = defaults[type] || defaults['empty'];
+const title = message || cfg.msg;
+const desc = description || cfg.desc;
+---
+<div class="empty-state" role="status">
+  <span class="empty-icon" aria-hidden="true">{cfg.icon}</span>
+  <h3 class="empty-title">{title}</h3>
+  {desc && <p class="empty-desc">{desc}</p>}
+  {actionLabel && (
+    <a href={actionHref} class="empty-action">{actionLabel}</a>
+  )}
+</div>

@@ -1,0 +1,52 @@
+---
+import { formatDateTime } from '../lib/data';
+import type { BatchPayload } from '../types';
+
+interface Props {
+  batch: BatchPayload;
+  variant?: 'compact' | 'full';
+  showArticles?: boolean;
+}
+
+const { batch, variant = 'compact', showArticles = false } = Astro.props;
+const articleCount = batch.article_count ?? batch.articles?.length ?? 0;
+const newCount = batch.new_articles_count ?? batch.new_articles?.length ?? 0;
+const seenCount = batch.seen_again_count ?? (batch.seen_again_articles?.length ?? 0);
+const href = `/archive?batch=${encodeURIComponent(batch.batch_id)}`;
+---
+<article class:list={['batch-card', `batch-card--${variant}`]}>
+  <a href={href} class="batch-card__link">
+    <div class="batch-card__header">
+      <h3 class="batch-card__id">{batch.batch_id}</h3>
+      <span class="batch-card__time">{formatDateTime(batch.crawl_time || batch.crawl_date)}</span>
+    </div>
+    <div class="batch-card__stats">
+      <span class="batch-stat">
+        <strong>{articleCount}</strong>
+        <span>篇</span>
+      </span>
+      {variant === 'full' && (
+        <>
+          <span class="batch-stat batch-stat--new">
+            <strong>{newCount}</strong>
+            <span>新发现</span>
+          </span>
+          <span class="batch-stat batch-stat--seen">
+            <strong>{seenCount}</strong>
+            <span>重复</span>
+          </span>
+        </>
+      )}
+    </div>
+    {variant === 'full' && batch.journals && batch.journals.length > 0 && (
+      <div class="batch-card__journals">
+        {batch.journals.slice(0, 5).map((j) => (
+          <span class="journal-tag">{j}</span>
+        ))}
+        {batch.journals.length > 5 && (
+          <span class="journal-tag journal-tag--more">+{batch.journals.length - 5}</span>
+        )}
+      </div>
+    )}
+  </a>
+</article>
