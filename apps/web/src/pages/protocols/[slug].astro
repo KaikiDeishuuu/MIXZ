@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { protocols } from '../../lib/protocols';
+export function getStaticPaths() {
+  return protocols.map((protocol) => ({ params: { slug: protocol.slug }, props: { protocol } }));
+}
+const { protocol } = Astro.props;
+---
+<BaseLayout title={`MIXZ · ${protocol.title}`} description={protocol.description}>
+  <section class="hero small">
+    <p class="eyebrow">{protocol.eyebrow}</p>
+    <h1>{protocol.icon} {protocol.title}</h1>
+    <p>{protocol.description}</p>
+    <div class="tags">{protocol.tags.map((tag) => <span>{tag}</span>)}</div>
+  </section>
+  <section class="panel prose">
+    {protocol.sections.map((section) => (
+      <section>
+        <h2>{section.title}</h2>
+        <ul>{section.body.map((line) => <li>{line}</li>)}</ul>
+      </section>
+    ))}
+  </section>
+</BaseLayout>

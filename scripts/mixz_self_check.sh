@@ -8,12 +8,6 @@ API_BASE="http://${API_HOST}:${API_PORT}"
 LOG_FILE="${MIXZ_SELF_CHECK_LOG:-/tmp/mixz_self_check_api.log}"
 START_TIMEOUT_SEC="${MIXZ_SELF_CHECK_TIMEOUT_SEC:-30}"
 
-if [[ -z "${MIXZ_POSTGRES_DSN:-}" ]]; then
-  echo "ERROR: MIXZ_POSTGRES_DSN is not set"
-  echo "Hint: export MIXZ_POSTGRES_DSN='postgresql+psycopg://user:pass@host:5432/db'"
-  exit 1
-fi
-
 started_by_script=0
 api_pid=""
 
@@ -50,6 +44,15 @@ ensure_api_running() {
   fi
 
   cd "$ROOT_DIR"
+  if [[ -z "${MIXZ_POSTGRES_DSN:-}" ]]; then
+    echo "ERROR: API is not running at ${API_BASE} and MIXZ_POSTGRES_DSN is not set, so self-check cannot start a temporary API."
+    echo "Hint: export MIXZ_POSTGRES_DSN='postgresql+psycopg://user:pass@host:5432/db' or start mixz-api.service first."
+    exit 1
+  fi
+  if [[ ! -x ".venv/bin/uvicorn" ]]; then
+    echo "ERROR: .venv/bin/uvicorn is missing; install requirements or start mixz-api.service first."
+    exit 1
+  fi
   MIXZ_POSTGRES_DSN="$MIXZ_POSTGRES_DSN" .venv/bin/uvicorn apps.api.main:app --host "$API_HOST" --port "$API_PORT" >"$LOG_FILE" 2>&1 &
   api_pid="$!"
   started_by_script=1

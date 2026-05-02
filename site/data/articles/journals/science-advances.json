@@ -1,0 +1,1767 @@
+{
+  "journal": "Science Advances",
+  "journal_slug": "science-advances",
+  "article_count": 17,
+  "articles": [
+    {
+      "id": "10.1126/sciadv.adz5662",
+      "title": "FLIPs: Genetically encoded molecular biosensors for functional imaging of cell signaling by linear dichroism microscopy",
+      "authors": [
+        "Paul Miclea",
+        "Vendula Nagy-Marková",
+        "Robin Van den Eynde",
+        "Wim Vandenberg",
+        "Alina Sakhi",
+        "Alexey Bondar",
+        "Jitka Myšková",
+        "Peter Dedecker",
+        "Josef Lazar"
+      ],
+      "author": "Paul Miclea, Vendula Nagy-Marková, Robin Van den Eynde, Wim Vandenberg, Alina Sakhi, Alexey Bondar, Jitka Myšková, Peter Dedecker, Josef Lazar",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adz5662",
+      "doi_value": "10.1126/sciadv.adz5662",
+      "doi_url": "https://doi.org/10.1126/sciadv.adz5662",
+      "url": "https://doi.org/10.1126/sciadv.adz5662",
+      "detail_href": "/papers/10.1126-sciadv.adz5662.html",
+      "abstract": "Genetically encoded fluorescent biosensors convert specific biomolecular events into optically detectable signals. However, imaging biomolecular processes often requires modifying the proteins involved, and many molecular processes are still to be imaged. Here, we present a biosensor design that uses a hitherto overlooked detection principle: directionality of optical properties of fluorescent proteins. The biosensors (termed FLIPs) offer an extremely simple design, high sensitivity, multiplexing capability, ratiometric readout, and other advantages, without requiring modifications to their targets. We demonstrate the sensor performance by real-time imaging activity of G protein–coupled receptors (GPCRs), G proteins, arrestins, and other membrane-associated proteins, as well as by identifying a previously undescribed, pronounced, endocytosis-associated conformational change in a GPCR–β-arrestin complex. In combination with an original tri-scanning linear dichroism confocal microscope, FLIPs allow unparalleled imaging of activity of nonmodified, endogenously expressed G proteins. Thus, FLIPs establish a powerful molecular platform for imaging cell signaling, allowing numerous future developments and insights.",
+      "full_abstract": "Genetically encoded fluorescent biosensors convert specific biomolecular events into optically detectable signals. However, imaging biomolecular processes often requires modifying the proteins involved, and many molecular processes are still to be imaged. Here, we present a biosensor design that uses a hitherto overlooked detection principle: directionality of optical properties of fluorescent proteins. The biosensors (termed FLIPs) offer an extremely simple design, high sensitivity, multiplexing capability, ratiometric readout, and other advantages, without requiring modifications to their targets. We demonstrate the sensor performance by real-time imaging activity of G protein–coupled receptors (GPCRs), G proteins, arrestins, and other membrane-associated proteins, as well as by identifying a previously undescribed, pronounced, endocytosis-associated conformational change in a GPCR–β-arrestin complex. In combination with an original tri-scanning linear dichroism confocal microscope, FLIPs allow unparalleled imaging of activity of nonmodified, endogenously expressed G proteins. Thus, FLIPs establish a powerful molecular platform for imaging cell signaling, allowing numerous future developments and insights.",
+      "snippet": "Genetically encoded fluorescent biosensors convert specific biomolecular events into optically detectable signals. However, imaging biomolecular processes often requires modifying the proteins involved, and many molecular processes are still to be imaged. Here…",
+      "abstract_truncated": true,
+      "published_date": "2026-01-16",
+      "pub_date": "2026-01-16",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46",
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01",
+        "2026-04-30_090001",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "science",
+      "keywords": [
+        "FLIPs:"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "science-advances",
+      "search_blob": "flips: genetically encoded molecular biosensors for functional imaging of cell signaling by linear dichroism microscopy science advances paul miclea vendula nagy-marková robin van den eynde wim vandenberg alina sakhi alexey bondar jitka myšková peter dedecker josef lazar genetically encoded fluorescent biosensors convert specific biomolecular events into optically detectable signals. however, imaging biomolecular processes often requires modifying the proteins involved, and many molecular processes are still to be imaged. here, we present a biosensor design that uses a hitherto overlooked detection principle: directionality of optical properties of fluorescent proteins. the biosensors (termed flips) offer an extremely simple design, high sensitivity, multiplexing capability, ratiometric readout, and other advantages, without requiring modifications to their targets. we demonstrate the sensor performance by real-time imaging activity of g protein–coupled receptors (gpcrs), g proteins, arrestins, and other membrane-associated proteins, as well as by identifying a previously undescribed, pronounced, endocytosis-associated conformational change in a gpcr–β-arrestin complex. in combination with an original tri-scanning linear dichroism confocal microscope, flips allow unparalleled imaging of activity of nonmodified, endogenously expressed g proteins. thus, flips establish a powerful molecular platform for imaging cell signaling, allowing numerous future developments and insights. flips: 10.1126/sciadv.adz5662 https://doi.org/10.1126/sciadv.adz5662",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 23
+        },
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 16
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adt9778",
+      "title": "Ultrasound matrix imaging for 3D transcranial in vivo localization microscopy",
+      "authors": [
+        "Flavien Bureau",
+        "Louise Denis",
+        "Antoine Coudert",
+        "Mathias Fink",
+        "Olivier Couture",
+        "Alexandre Aubry"
+      ],
+      "author": "Flavien Bureau, Louise Denis, Antoine Coudert, Mathias Fink, Olivier Couture, Alexandre Aubry",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adt9778",
+      "doi_value": "10.1126/sciadv.adt9778",
+      "doi_url": "https://doi.org/10.1126/sciadv.adt9778",
+      "url": "https://doi.org/10.1126/sciadv.adt9778",
+      "detail_href": "/papers/10.1126-sciadv.adt9778.html",
+      "abstract": "Transcranial ultrasound imaging is usually limited by skull-induced attenuation and high-order aberrations. By using contrast agents such as microbubbles in combination with ultrafast imaging, not only can the signal-to-noise ratio be improved, but super-resolution images down to the micrometer scale of the brain vessels can also be obtained. However, ultrasound localization microscopy (ULM) remains affected by wavefront distortions that limit the microbubble detection rate and hamper their localization. In this work, we show how ultrasound matrix imaging, which relies on the prior recording of the reflection matrix, can provide a solution to these fundamental issues. As an experimental proof of concept, an in vivo reconstruction of deep brain microvessels is performed on three anesthetized sheep. The compensation of wave distortions is shown to markedly enhance the contrast and resolution of ULM. This experimental study thus opens up promising perspectives for a transcranial and nonionizing observation of human cerebral microvascular pathologies, such as stroke.",
+      "full_abstract": "Transcranial ultrasound imaging is usually limited by skull-induced attenuation and high-order aberrations. By using contrast agents such as microbubbles in combination with ultrafast imaging, not only can the signal-to-noise ratio be improved, but super-resolution images down to the micrometer scale of the brain vessels can also be obtained. However, ultrasound localization microscopy (ULM) remains affected by wavefront distortions that limit the microbubble detection rate and hamper their localization. In this work, we show how ultrasound matrix imaging, which relies on the prior recording of the reflection matrix, can provide a solution to these fundamental issues. As an experimental proof of concept, an in vivo reconstruction of deep brain microvessels is performed on three anesthetized sheep. The compensation of wave distortions is shown to markedly enhance the contrast and resolution of ULM. This experimental study thus opens up promising perspectives for a transcranial and nonionizing observation of human cerebral microvascular pathologies, such as stroke.",
+      "snippet": "Transcranial ultrasound imaging is usually limited by skull-induced attenuation and high-order aberrations. By using contrast agents such as microbubbles in combination with ultrafast imaging, not only can the signal-to-noise ratio be improved, but super-resol…",
+      "abstract_truncated": true,
+      "published_date": "2025-08-01",
+      "pub_date": "2025-08-01",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46",
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "science",
+      "keywords": [
+        "Ultrasound"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "science-advances",
+      "search_blob": "ultrasound matrix imaging for 3d transcranial in vivo localization microscopy science advances flavien bureau louise denis antoine coudert mathias fink olivier couture alexandre aubry transcranial ultrasound imaging is usually limited by skull-induced attenuation and high-order aberrations. by using contrast agents such as microbubbles in combination with ultrafast imaging, not only can the signal-to-noise ratio be improved, but super-resolution images down to the micrometer scale of the brain vessels can also be obtained. however, ultrasound localization microscopy (ulm) remains affected by wavefront distortions that limit the microbubble detection rate and hamper their localization. in this work, we show how ultrasound matrix imaging, which relies on the prior recording of the reflection matrix, can provide a solution to these fundamental issues. as an experimental proof of concept, an in vivo reconstruction of deep brain microvessels is performed on three anesthetized sheep. the compensation of wave distortions is shown to markedly enhance the contrast and resolution of ulm. this experimental study thus opens up promising perspectives for a transcranial and nonionizing observation of human cerebral microvascular pathologies, such as stroke. ultrasound 10.1126/sciadv.adt9778 https://doi.org/10.1126/sciadv.adt9778",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 27
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 27
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 27
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 28
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 28
+        },
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 17
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adx3900",
+      "title": "Optical tweeze-sectioning microscopy for 3D imaging and manipulation of suspended cells",
+      "authors": [
+        "Xing Li",
+        "Dan Dan",
+        "Siarhei Zavatski",
+        "Wenyu Gao",
+        "Qiang Zhang",
+        "Yuan Zhou",
+        "Jia Qian",
+        "Yanlong Yang",
+        "Xianghua Yu",
+        "Shaohui Yan",
+        "Xiaohao Xu",
+        "Olivier J. F. Martin",
+        "Baoli Yao"
+      ],
+      "author": "Xing Li, Dan Dan, Siarhei Zavatski, Wenyu Gao, Qiang Zhang, Yuan Zhou, Jia Qian, Yanlong Yang, Xianghua Yu, Shaohui Yan, Xiaohao Xu, Olivier J. F. Martin, Baoli Yao",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adx3900",
+      "doi_value": "10.1126/sciadv.adx3900",
+      "doi_url": "https://doi.org/10.1126/sciadv.adx3900",
+      "url": "https://doi.org/10.1126/sciadv.adx3900",
+      "detail_href": "/papers/10.1126-sciadv.adx3900.html",
+      "abstract": "Optical manipulation and detection of biological particulates are crucial procedures in biophotonics. Optical sectioning (OS) opens the avenue to three-dimensional (3D) microscopy, but nonoptical approaches, including sample adhesion and mechanical scanning, have always been required in this technique, rendering it impossible to image suspended cells. Here, we develop optical tweeze-sectioning microscopy by coupling structured illumination microscopy (SIM) with holographic optical tweezers (HOTs). By sculpting light in HOTs, we demonstrate that the position fluctuations of suspended yeast cells can be optically squeezed to tens of nanometers, which is sufficient for the implementation of OS with SIM. Sample scanning is achieved through optical delivery of the cells, instead of translation stages as in the conventional way. Our work presents an all-optical solution for OS, broadening its application to nonadherent, suspended cells. It further furnishes the original technique that enables both SIM-based 3D imaging and optical manipulation.",
+      "full_abstract": "Optical manipulation and detection of biological particulates are crucial procedures in biophotonics. Optical sectioning (OS) opens the avenue to three-dimensional (3D) microscopy, but nonoptical approaches, including sample adhesion and mechanical scanning, have always been required in this technique, rendering it impossible to image suspended cells. Here, we develop optical tweeze-sectioning microscopy by coupling structured illumination microscopy (SIM) with holographic optical tweezers (HOTs). By sculpting light in HOTs, we demonstrate that the position fluctuations of suspended yeast cells can be optically squeezed to tens of nanometers, which is sufficient for the implementation of OS with SIM. Sample scanning is achieved through optical delivery of the cells, instead of translation stages as in the conventional way. Our work presents an all-optical solution for OS, broadening its application to nonadherent, suspended cells. It further furnishes the original technique that enables both SIM-based 3D imaging and optical manipulation.",
+      "snippet": "Optical manipulation and detection of biological particulates are crucial procedures in biophotonics. Optical sectioning (OS) opens the avenue to three-dimensional (3D) microscopy, but nonoptical approaches, including sample adhesion and mechanical scanning, h…",
+      "abstract_truncated": true,
+      "published_date": "2025-07-04",
+      "pub_date": "2025-07-04",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46",
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "science",
+      "keywords": [
+        "Optical"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "science-advances",
+      "search_blob": "optical tweeze-sectioning microscopy for 3d imaging and manipulation of suspended cells science advances xing li dan dan siarhei zavatski wenyu gao qiang zhang yuan zhou jia qian yanlong yang xianghua yu shaohui yan xiaohao xu olivier j. f. martin baoli yao optical manipulation and detection of biological particulates are crucial procedures in biophotonics. optical sectioning (os) opens the avenue to three-dimensional (3d) microscopy, but nonoptical approaches, including sample adhesion and mechanical scanning, have always been required in this technique, rendering it impossible to image suspended cells. here, we develop optical tweeze-sectioning microscopy by coupling structured illumination microscopy (sim) with holographic optical tweezers (hots). by sculpting light in hots, we demonstrate that the position fluctuations of suspended yeast cells can be optically squeezed to tens of nanometers, which is sufficient for the implementation of os with sim. sample scanning is achieved through optical delivery of the cells, instead of translation stages as in the conventional way. our work presents an all-optical solution for os, broadening its application to nonadherent, suspended cells. it further furnishes the original technique that enables both sim-based 3d imaging and optical manipulation. optical 10.1126/sciadv.adx3900 https://doi.org/10.1126/sciadv.adx3900",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 18
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 18
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adf6865",
+      "title": "Direct imaging of local atomic structures in zeolite using optimum bright-field scanning transmission electron microscopy",
+      "authors": [
+        "Kousuke Ooe",
+        "Takehito Seki",
+        "Kaname Yoshida",
+        "Yuji Kohno",
+        "Yuichi Ikuhara",
+        "Naoya Shibata"
+      ],
+      "author": "Kousuke Ooe, Takehito Seki, Kaname Yoshida, Yuji Kohno, Yuichi Ikuhara, Naoya Shibata",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adf6865",
+      "doi_value": "10.1126/sciadv.adf6865",
+      "doi_url": "https://doi.org/10.1126/sciadv.adf6865",
+      "url": "https://doi.org/10.1126/sciadv.adf6865",
+      "detail_href": "/papers/10.1126-sciadv.adf6865.html",
+      "abstract": "Zeolites are used in industries as catalysts, ion exchangers, and molecular sieves because of their unique porous atomic structures. However, direct observation of zeolitic local atomic structures via electron microscopy is difficult owing to low electron irradiation resistance. Subsequently, their fundamental structure-property relationships remain unclear. A low-electron-dose imaging technique, optimum bright-field scanning transmission electron microscopy (OBF STEM), has recently been developed. It reconstructs images with a high signal-to-noise ratio and a dose efficiency approximately two orders of magnitude higher than that of conventional methods. Here, we performed low-dose atomic-resolution OBF STEM observations of two types of zeolite, effectively visualizing all atomic sites in their frameworks. In addition, we visualized the complex local atomic structure of the twin boundaries in a faujasite (FAU)–type zeolite and Na + ions with low occupancy in eight-membered rings in a Na-Linde Type A (LTA) zeolite. The results of this study facilitate the characterization of local atomic structures in many electron beam–sensitive materials.",
+      "full_abstract": "Zeolites are used in industries as catalysts, ion exchangers, and molecular sieves because of their unique porous atomic structures. However, direct observation of zeolitic local atomic structures via electron microscopy is difficult owing to low electron irradiation resistance. Subsequently, their fundamental structure-property relationships remain unclear. A low-electron-dose imaging technique, optimum bright-field scanning transmission electron microscopy (OBF STEM), has recently been developed. It reconstructs images with a high signal-to-noise ratio and a dose efficiency approximately two orders of magnitude higher than that of conventional methods. Here, we performed low-dose atomic-resolution OBF STEM observations of two types of zeolite, effectively visualizing all atomic sites in their frameworks. In addition, we visualized the complex local atomic structure of the twin boundaries in a faujasite (FAU)–type zeolite and Na + ions with low occupancy in eight-membered rings in a Na-Linde Type A (LTA) zeolite. The results of this study facilitate the characterization of local atomic structures in many electron beam–sensitive materials.",
+      "snippet": "Zeolites are used in industries as catalysts, ion exchangers, and molecular sieves because of their unique porous atomic structures. However, direct observation of zeolitic local atomic structures via electron microscopy is difficult owing to low electron irra…",
+      "abstract_truncated": true,
+      "published_date": "2023-08-04",
+      "pub_date": "2023-08-04",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "science",
+      "keywords": [
+        "Direct"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "science-advances",
+      "search_blob": "direct imaging of local atomic structures in zeolite using optimum bright-field scanning transmission electron microscopy science advances kousuke ooe takehito seki kaname yoshida yuji kohno yuichi ikuhara naoya shibata zeolites are used in industries as catalysts, ion exchangers, and molecular sieves because of their unique porous atomic structures. however, direct observation of zeolitic local atomic structures via electron microscopy is difficult owing to low electron irradiation resistance. subsequently, their fundamental structure-property relationships remain unclear. a low-electron-dose imaging technique, optimum bright-field scanning transmission electron microscopy (obf stem), has recently been developed. it reconstructs images with a high signal-to-noise ratio and a dose efficiency approximately two orders of magnitude higher than that of conventional methods. here, we performed low-dose atomic-resolution obf stem observations of two types of zeolite, effectively visualizing all atomic sites in their frameworks. in addition, we visualized the complex local atomic structure of the twin boundaries in a faujasite (fau)–type zeolite and na + ions with low occupancy in eight-membered rings in a na-linde type a (lta) zeolite. the results of this study facilitate the characterization of local atomic structures in many electron beam–sensitive materials. direct 10.1126/sciadv.adf6865 https://doi.org/10.1126/sciadv.adf6865",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 19
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adh1069",
+      "title": "Imaging single CaMKII holoenzymes at work by high-speed atomic force microscopy",
+      "authors": [
+        "Shotaro Tsujioka",
+        "Ayumi Sumino",
+        "Yutaro Nagasawa",
+        "Takashi Sumikama",
+        "Holger Flechsig",
+        "Leonardo Puppulin",
+        "Takuya Tomita",
+        "Yudai Baba",
+        "Takahiro Kakuta",
+        "Tomoki Ogoshi",
+        "Kenichi Umeda",
+        "Noriyuki Kodera",
+        "Hideji Murakoshi",
+        "Mikihiro Shibata"
+      ],
+      "author": "Shotaro Tsujioka, Ayumi Sumino, Yutaro Nagasawa, Takashi Sumikama, Holger Flechsig, Leonardo Puppulin, Takuya Tomita, Yudai Baba, Takahiro Kakuta, Tomoki Ogoshi, Kenichi Umeda, Noriyuki Kodera, Hideji Murakoshi, Mikihiro Shibata",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adh1069",
+      "doi_value": "10.1126/sciadv.adh1069",
+      "doi_url": "https://doi.org/10.1126/sciadv.adh1069",
+      "url": "https://doi.org/10.1126/sciadv.adh1069",
+      "detail_href": "/papers/10.1126-sciadv.adh1069.html",
+      "abstract": "Ca 2+ /calmodulin-dependent protein kinase II (CaMKII) plays a pivotal role in synaptic plasticity. It is a dodecameric serine/threonine kinase that has been highly conserved across metazoans for over a million years. Despite the extensive knowledge of the mechanisms underlying CaMKII activation, its behavior at the molecular level has remained unobserved. In this study, we used high-speed atomic force microscopy to visualize the activity-dependent structural dynamics of rat/hydra/ C. elegans CaMKII with nanometer resolution. Our imaging results revealed that the dynamic behavior is dependent on CaM binding and subsequent pT286 phosphorylation. Among the species studies, only rat CaMKIIα with pT286/pT305/pT306 exhibited kinase domain oligomerization. Furthermore, we revealed that the sensitivity of CaMKII to PP2A in the three species differs, with rat, C. elegans , and hydra being less dephosphorylated in that order. The evolutionarily acquired features of mammalian CaMKIIα-specific structural arrangement and phosphatase tolerance may differentiate neuronal function between mammals and other species.",
+      "full_abstract": "Ca 2+ /calmodulin-dependent protein kinase II (CaMKII) plays a pivotal role in synaptic plasticity. It is a dodecameric serine/threonine kinase that has been highly conserved across metazoans for over a million years. Despite the extensive knowledge of the mechanisms underlying CaMKII activation, its behavior at the molecular level has remained unobserved. In this study, we used high-speed atomic force microscopy to visualize the activity-dependent structural dynamics of rat/hydra/ C. elegans CaMKII with nanometer resolution. Our imaging results revealed that the dynamic behavior is dependent on CaM binding and subsequent pT286 phosphorylation. Among the species studies, only rat CaMKIIα with pT286/pT305/pT306 exhibited kinase domain oligomerization. Furthermore, we revealed that the sensitivity of CaMKII to PP2A in the three species differs, with rat, C. elegans , and hydra being less dephosphorylated in that order. The evolutionarily acquired features of mammalian CaMKIIα-specific structural arrangement and phosphatase tolerance may differentiate neuronal function between mammals and other species.",
+      "snippet": "Ca 2+ /calmodulin-dependent protein kinase II (CaMKII) plays a pivotal role in synaptic plasticity. It is a dodecameric serine/threonine kinase that has been highly conserved across metazoans for over a million years. Despite the extensive knowledge of the mec…",
+      "abstract_truncated": true,
+      "published_date": "2023-06-30",
+      "pub_date": "2023-06-30",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "science",
+      "keywords": [
+        "Imaging"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "science-advances",
+      "search_blob": "imaging single camkii holoenzymes at work by high-speed atomic force microscopy science advances shotaro tsujioka ayumi sumino yutaro nagasawa takashi sumikama holger flechsig leonardo puppulin takuya tomita yudai baba takahiro kakuta tomoki ogoshi kenichi umeda noriyuki kodera hideji murakoshi mikihiro shibata ca 2+ /calmodulin-dependent protein kinase ii (camkii) plays a pivotal role in synaptic plasticity. it is a dodecameric serine/threonine kinase that has been highly conserved across metazoans for over a million years. despite the extensive knowledge of the mechanisms underlying camkii activation, its behavior at the molecular level has remained unobserved. in this study, we used high-speed atomic force microscopy to visualize the activity-dependent structural dynamics of rat/hydra/ c. elegans camkii with nanometer resolution. our imaging results revealed that the dynamic behavior is dependent on cam binding and subsequent pt286 phosphorylation. among the species studies, only rat camkiiα with pt286/pt305/pt306 exhibited kinase domain oligomerization. furthermore, we revealed that the sensitivity of camkii to pp2a in the three species differs, with rat, c. elegans , and hydra being less dephosphorylated in that order. the evolutionarily acquired features of mammalian camkiiα-specific structural arrangement and phosphatase tolerance may differentiate neuronal function between mammals and other species. imaging 10.1126/sciadv.adh1069 https://doi.org/10.1126/sciadv.adh1069",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 21
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adg8292",
+      "title": "Imaging beyond the surface region: Probing hidden materials via atomic force microscopy",
+      "authors": [
+        "Amir Farokh Payam",
+        "Ali Passian"
+      ],
+      "author": "Amir Farokh Payam, Ali Passian",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adg8292",
+      "doi_value": "10.1126/sciadv.adg8292",
+      "doi_url": "https://doi.org/10.1126/sciadv.adg8292",
+      "url": "https://doi.org/10.1126/sciadv.adg8292",
+      "detail_href": "/papers/10.1126-sciadv.adg8292.html",
+      "abstract": "Probing material properties at surfaces down to the single-particle scale of atoms and molecules has been achieved, but high-resolution subsurface imaging remains a nanometrology challenge due to electromagnetic and acoustic dispersion and diffraction. The atomically sharp probe used in scanning probe microscopy (SPM) has broken these limits at surfaces. Subsurface imaging is possible under certain physical, chemical, electrical, and thermal gradients present in the material. Of all the SPM techniques, atomic force microscopy has entertained unique opportunities for nondestructive and label-free measurements. Here, we explore the physics of the subsurface imaging problem and the emerging solutions that offer exceptional potential for visualization. We discuss materials science, electronics, biology, polymer and composite sciences, and emerging quantum sensing and quantum bio-imaging applications. The perspectives and prospects of subsurface techniques are presented to stimulate further work toward enabling noninvasive high spatial and spectral resolution investigation of materials including meta- and quantum materials.",
+      "full_abstract": "Probing material properties at surfaces down to the single-particle scale of atoms and molecules has been achieved, but high-resolution subsurface imaging remains a nanometrology challenge due to electromagnetic and acoustic dispersion and diffraction. The atomically sharp probe used in scanning probe microscopy (SPM) has broken these limits at surfaces. Subsurface imaging is possible under certain physical, chemical, electrical, and thermal gradients present in the material. Of all the SPM techniques, atomic force microscopy has entertained unique opportunities for nondestructive and label-free measurements. Here, we explore the physics of the subsurface imaging problem and the emerging solutions that offer exceptional potential for visualization. We discuss materials science, electronics, biology, polymer and composite sciences, and emerging quantum sensing and quantum bio-imaging applications. The perspectives and prospects of subsurface techniques are presented to stimulate further work toward enabling noninvasive high spatial and spectral resolution investigation of materials including meta- and quantum materials.",
+      "snippet": "Probing material properties at surfaces down to the single-particle scale of atoms and molecules has been achieved, but high-resolution subsurface imaging remains a nanometrology challenge due to electromagnetic and acoustic dispersion and diffraction. The ato…",
+      "abstract_truncated": true,
+      "published_date": "2023-06-30",
+      "pub_date": "2023-06-30",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "science",
+      "keywords": [
+        "Imaging"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "science-advances",
+      "search_blob": "imaging beyond the surface region: probing hidden materials via atomic force microscopy science advances amir farokh payam ali passian probing material properties at surfaces down to the single-particle scale of atoms and molecules has been achieved, but high-resolution subsurface imaging remains a nanometrology challenge due to electromagnetic and acoustic dispersion and diffraction. the atomically sharp probe used in scanning probe microscopy (spm) has broken these limits at surfaces. subsurface imaging is possible under certain physical, chemical, electrical, and thermal gradients present in the material. of all the spm techniques, atomic force microscopy has entertained unique opportunities for nondestructive and label-free measurements. here, we explore the physics of the subsurface imaging problem and the emerging solutions that offer exceptional potential for visualization. we discuss materials science, electronics, biology, polymer and composite sciences, and emerging quantum sensing and quantum bio-imaging applications. the perspectives and prospects of subsurface techniques are presented to stimulate further work toward enabling noninvasive high spatial and spectral resolution investigation of materials including meta- and quantum materials. imaging 10.1126/sciadv.adg8292 https://doi.org/10.1126/sciadv.adg8292",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 22
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adf9491",
+      "title": "3D deconvolution of human skin immune architecture with Multiplex Annotated Tissue Imaging System",
+      "authors": [
+        "Manon Scholaert",
+        "Raissa Houmadi",
+        "Jeremy Martin",
+        "Nadine Serhan",
+        "Marie Tauber",
+        "Emilie Braun",
+        "Lilian Basso",
+        "Eric Merle",
+        "Pascal Descargues",
+        "Manuelle Viguier",
+        "Cécile Lesort",
+        "Benoît Chaput",
+        "Jean Kanitakis",
+        "Denis Jullien",
+        "Cristina Bulai Livideanu",
+        "Laurence Lamant",
+        "Emeline Pagès",
+        "Nicolas Gaudenzio"
+      ],
+      "author": "Manon Scholaert, Raissa Houmadi, Jeremy Martin, Nadine Serhan, Marie Tauber, Emilie Braun, Lilian Basso, Eric Merle, Pascal Descargues, Manuelle Viguier, Cécile Lesort, Benoît Chaput, Jean Kanitakis, Denis Jullien, Cristina Bulai Livideanu, Laurence Lamant, Emeline Pagès, Nicolas Gaudenzio",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adf9491",
+      "doi_value": "10.1126/sciadv.adf9491",
+      "doi_url": "https://doi.org/10.1126/sciadv.adf9491",
+      "url": "https://doi.org/10.1126/sciadv.adf9491",
+      "detail_href": "/papers/10.1126-sciadv.adf9491.html",
+      "abstract": "Routine clinical assays, such as conventional immunohistochemistry, often fail to resolve the regional heterogeneity of complex inflammatory skin conditions. We introduce MANTIS (Multiplex Annotated Tissue Imaging System), a flexible analytic pipeline compatible with routine practice, specifically designed for spatially resolved immune phenotyping of the skin in experimental or clinical samples. On the basis of phenotype attribution matrices coupled to α-shape algorithms, MANTIS projects a representative digital immune landscape while enabling automated detection of major inflammatory clusters and concomitant single-cell data quantification of biomarkers. We observed that severe pathological lesions from systemic lupus erythematosus, Kawasaki syndrome, or COVID-19–associated skin manifestations share common quantitative immune features while displaying a nonrandom distribution of cells with the formation of disease-specific dermal immune structures. Given its accuracy and flexibility, MANTIS is designed to solve the spatial organization of complex immune environments to better apprehend the pathophysiology of skin manifestations.",
+      "full_abstract": "Routine clinical assays, such as conventional immunohistochemistry, often fail to resolve the regional heterogeneity of complex inflammatory skin conditions. We introduce MANTIS (Multiplex Annotated Tissue Imaging System), a flexible analytic pipeline compatible with routine practice, specifically designed for spatially resolved immune phenotyping of the skin in experimental or clinical samples. On the basis of phenotype attribution matrices coupled to α-shape algorithms, MANTIS projects a representative digital immune landscape while enabling automated detection of major inflammatory clusters and concomitant single-cell data quantification of biomarkers. We observed that severe pathological lesions from systemic lupus erythematosus, Kawasaki syndrome, or COVID-19–associated skin manifestations share common quantitative immune features while displaying a nonrandom distribution of cells with the formation of disease-specific dermal immune structures. Given its accuracy and flexibility, MANTIS is designed to solve the spatial organization of complex immune environments to better apprehend the pathophysiology of skin manifestations.",
+      "snippet": "Routine clinical assays, such as conventional immunohistochemistry, often fail to resolve the regional heterogeneity of complex inflammatory skin conditions. We introduce MANTIS (Multiplex Annotated Tissue Imaging System), a flexible analytic pipeline compatib…",
+      "abstract_truncated": true,
+      "published_date": "2023-06-09",
+      "pub_date": "2023-06-09",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "science",
+      "keywords": [
+        "3D"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "science-advances",
+      "search_blob": "3d deconvolution of human skin immune architecture with multiplex annotated tissue imaging system science advances manon scholaert raissa houmadi jeremy martin nadine serhan marie tauber emilie braun lilian basso eric merle pascal descargues manuelle viguier cécile lesort benoît chaput jean kanitakis denis jullien cristina bulai livideanu laurence lamant emeline pagès nicolas gaudenzio routine clinical assays, such as conventional immunohistochemistry, often fail to resolve the regional heterogeneity of complex inflammatory skin conditions. we introduce mantis (multiplex annotated tissue imaging system), a flexible analytic pipeline compatible with routine practice, specifically designed for spatially resolved immune phenotyping of the skin in experimental or clinical samples. on the basis of phenotype attribution matrices coupled to α-shape algorithms, mantis projects a representative digital immune landscape while enabling automated detection of major inflammatory clusters and concomitant single-cell data quantification of biomarkers. we observed that severe pathological lesions from systemic lupus erythematosus, kawasaki syndrome, or covid-19–associated skin manifestations share common quantitative immune features while displaying a nonrandom distribution of cells with the formation of disease-specific dermal immune structures. given its accuracy and flexibility, mantis is designed to solve the spatial organization of complex immune environments to better apprehend the pathophysiology of skin manifestations. 3d 10.1126/sciadv.adf9491 https://doi.org/10.1126/sciadv.adf9491",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 23
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adp2384",
+      "title": "Imaging with a twist: Three-dimensional insights of the chiral nematic phase of cellulose nanocrystals via SHG microscopy",
+      "authors": [
+        "Thibaut Legat",
+        "Vladimir Grachev",
+        "Desmond Kabus",
+        "Minne Paul Lettinga",
+        "Koen Clays",
+        "Thierry Verbiest",
+        "Yovan de Coene",
+        "Wim Thielemans",
+        "Stijn Van Cleuvenbergen"
+      ],
+      "author": "Thibaut Legat, Vladimir Grachev, Desmond Kabus, Minne Paul Lettinga, Koen Clays, Thierry Verbiest, Yovan de Coene, Wim Thielemans, Stijn Van Cleuvenbergen",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adp2384",
+      "doi_value": "10.1126/sciadv.adp2384",
+      "doi_url": "https://doi.org/10.1126/sciadv.adp2384",
+      "url": "https://doi.org/10.1126/sciadv.adp2384",
+      "detail_href": "/papers/10.1126-sciadv.adp2384.html",
+      "abstract": "Cellulose nanocrystals (CNCs) are bio-based nanoparticles that, under the right conditions, self-align into chiral nematic liquid crystals with a helical pitch. In this work, we exploit the inherent confocal effect of second-harmonic generation (SHG) microscopy to acquire highly resolved three-dimensional (3D) images of the chiral nematic phase of CNCs in a label-free manner. An in-depth analysis revealed a direct link between the observed variations in SHG intensity and the pitch. The highly contrasted 3D images provided unprecedented detail into liquid crystal’s native structure. Local alignment, morphology, as well as the presence of defects are readily revealed, and a provisional framework relating the SHG response to the orientational distribution of CNC nanorods within the liquid crystal structure is presented. This paper illustrates the numerous benefits of using SHG microscopy for visualizing CNC chiral nematic systems directly in the suspension-liquid phase and paves the road for using SHG microscopy to characterize other types of aligned CNC structures, in wet and dry states.",
+      "full_abstract": "Cellulose nanocrystals (CNCs) are bio-based nanoparticles that, under the right conditions, self-align into chiral nematic liquid crystals with a helical pitch. In this work, we exploit the inherent confocal effect of second-harmonic generation (SHG) microscopy to acquire highly resolved three-dimensional (3D) images of the chiral nematic phase of CNCs in a label-free manner. An in-depth analysis revealed a direct link between the observed variations in SHG intensity and the pitch. The highly contrasted 3D images provided unprecedented detail into liquid crystal’s native structure. Local alignment, morphology, as well as the presence of defects are readily revealed, and a provisional framework relating the SHG response to the orientational distribution of CNC nanorods within the liquid crystal structure is presented. This paper illustrates the numerous benefits of using SHG microscopy for visualizing CNC chiral nematic systems directly in the suspension-liquid phase and paves the road for using SHG microscopy to characterize other types of aligned CNC structures, in wet and dry states.",
+      "snippet": "Cellulose nanocrystals (CNCs) are bio-based nanoparticles that, under the right conditions, self-align into chiral nematic liquid crystals with a helical pitch. In this work, we exploit the inherent confocal effect of second-harmonic generation (SHG) microscop…",
+      "abstract_truncated": true,
+      "published_date": "2024-11-01",
+      "pub_date": "2024-11-01",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "science",
+      "keywords": [
+        "Imaging"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "science-advances",
+      "search_blob": "imaging with a twist: three-dimensional insights of the chiral nematic phase of cellulose nanocrystals via shg microscopy science advances thibaut legat vladimir grachev desmond kabus minne paul lettinga koen clays thierry verbiest yovan de coene wim thielemans stijn van cleuvenbergen cellulose nanocrystals (cncs) are bio-based nanoparticles that, under the right conditions, self-align into chiral nematic liquid crystals with a helical pitch. in this work, we exploit the inherent confocal effect of second-harmonic generation (shg) microscopy to acquire highly resolved three-dimensional (3d) images of the chiral nematic phase of cncs in a label-free manner. an in-depth analysis revealed a direct link between the observed variations in shg intensity and the pitch. the highly contrasted 3d images provided unprecedented detail into liquid crystal’s native structure. local alignment, morphology, as well as the presence of defects are readily revealed, and a provisional framework relating the shg response to the orientational distribution of cnc nanorods within the liquid crystal structure is presented. this paper illustrates the numerous benefits of using shg microscopy for visualizing cnc chiral nematic systems directly in the suspension-liquid phase and paves the road for using shg microscopy to characterize other types of aligned cnc structures, in wet and dry states. imaging 10.1126/sciadv.adp2384 https://doi.org/10.1126/sciadv.adp2384",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 17
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.ado3427",
+      "title": "Single-molecule detection and super-resolution imaging with a portable and adaptable 3D-printed microscopy platform (Brick-MIC)",
+      "authors": [
+        "Gabriel G. Moya Muñoz",
+        "Oliver Brix",
+        "Philipp Klocke",
+        "Paul D. Harris",
+        "Jorge R. Luna Piedra",
+        "Nicolas D. Wendler",
+        "Eitan Lerner",
+        "Niels Zijlstra",
+        "Thorben Cordes"
+      ],
+      "author": "Gabriel G. Moya Muñoz, Oliver Brix, Philipp Klocke, Paul D. Harris, Jorge R. Luna Piedra, Nicolas D. Wendler, Eitan Lerner, Niels Zijlstra, Thorben Cordes",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.ado3427",
+      "doi_value": "10.1126/sciadv.ado3427",
+      "doi_url": "https://doi.org/10.1126/sciadv.ado3427",
+      "url": "https://doi.org/10.1126/sciadv.ado3427",
+      "detail_href": "/papers/10.1126-sciadv.ado3427.html",
+      "abstract": "Over the past decades, single-molecule and super-resolution microscopy have advanced and represent essential tools for life science research. There is, however, a growing gap between the state of the art and what is accessible to biologists, biochemists, medical researchers, or labs with financial constraints. To bridge this gap, we introduce Brick-MIC, a versatile and affordable open-source 3D-printed microspectroscopy and imaging platform. Brick-MIC enables the integration of various fluorescence imaging techniques with single-molecule resolution within a single platform and exchange between different modalities within minutes. We here present variants of Brick-MIC that facilitate single-molecule fluorescence detection, fluorescence correlation spectroscopy, time-correlated single-photon counting and super-resolution imaging (STORM and PAINT). Detailed descriptions of the hardware and software components, as well as data analysis routines, are provided, to allow non-optics specialists to operate their own Brick-MIC with minimal effort and investments. We foresee that our affordable, flexible, and open-source Brick-MIC platform will be a valuable tool for many laboratories worldwide.",
+      "full_abstract": "Over the past decades, single-molecule and super-resolution microscopy have advanced and represent essential tools for life science research. There is, however, a growing gap between the state of the art and what is accessible to biologists, biochemists, medical researchers, or labs with financial constraints. To bridge this gap, we introduce Brick-MIC, a versatile and affordable open-source 3D-printed microspectroscopy and imaging platform. Brick-MIC enables the integration of various fluorescence imaging techniques with single-molecule resolution within a single platform and exchange between different modalities within minutes. We here present variants of Brick-MIC that facilitate single-molecule fluorescence detection, fluorescence correlation spectroscopy, time-correlated single-photon counting and super-resolution imaging (STORM and PAINT). Detailed descriptions of the hardware and software components, as well as data analysis routines, are provided, to allow non-optics specialists to operate their own Brick-MIC with minimal effort and investments. We foresee that our affordable, flexible, and open-source Brick-MIC platform will be a valuable tool for many laboratories worldwide.",
+      "snippet": "Over the past decades, single-molecule and super-resolution microscopy have advanced and represent essential tools for life science research. There is, however, a growing gap between the state of the art and what is accessible to biologists, biochemists, medic…",
+      "abstract_truncated": true,
+      "published_date": "2024-09-27",
+      "pub_date": "2024-09-27",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "science",
+      "keywords": [
+        "Single-molecule"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "science-advances",
+      "search_blob": "single-molecule detection and super-resolution imaging with a portable and adaptable 3d-printed microscopy platform (brick-mic) science advances gabriel g. moya muñoz oliver brix philipp klocke paul d. harris jorge r. luna piedra nicolas d. wendler eitan lerner niels zijlstra thorben cordes over the past decades, single-molecule and super-resolution microscopy have advanced and represent essential tools for life science research. there is, however, a growing gap between the state of the art and what is accessible to biologists, biochemists, medical researchers, or labs with financial constraints. to bridge this gap, we introduce brick-mic, a versatile and affordable open-source 3d-printed microspectroscopy and imaging platform. brick-mic enables the integration of various fluorescence imaging techniques with single-molecule resolution within a single platform and exchange between different modalities within minutes. we here present variants of brick-mic that facilitate single-molecule fluorescence detection, fluorescence correlation spectroscopy, time-correlated single-photon counting and super-resolution imaging (storm and paint). detailed descriptions of the hardware and software components, as well as data analysis routines, are provided, to allow non-optics specialists to operate their own brick-mic with minimal effort and investments. we foresee that our affordable, flexible, and open-source brick-mic platform will be a valuable tool for many laboratories worldwide. single-molecule 10.1126/sciadv.ado3427 https://doi.org/10.1126/sciadv.ado3427",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 20
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adj7944",
+      "title": "Phase-shifting optothermal microscopy enables live-cell mid-infrared hyperspectral imaging of large cell populations at high confluency",
+      "authors": [
+        "Tao Yuan",
+        "Lucas Riobo",
+        "Francesca Gasparin",
+        "Vasilis Ntziachristos",
+        "Miguel A. Pleitez"
+      ],
+      "author": "Tao Yuan, Lucas Riobo, Francesca Gasparin, Vasilis Ntziachristos, Miguel A. Pleitez",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adj7944",
+      "doi_value": "10.1126/sciadv.adj7944",
+      "doi_url": "https://doi.org/10.1126/sciadv.adj7944",
+      "url": "https://doi.org/10.1126/sciadv.adj7944",
+      "detail_href": "/papers/10.1126-sciadv.adj7944.html",
+      "abstract": "Rapid live-cell hyperspectral imaging at large fields of view (FOVs) and high cell confluency remains challenging for conventional vibrational spectroscopy–based microscopy technologies. At the same time, imaging at high cell confluency and large FOVs is important for proper cell function and statistical significance of measurements, respectively. Here, we introduce phase-shifting mid-infrared optothermal microscopy (PSOM), which interprets molecular-vibrational information as the optical path difference induced by mid-infrared absorption and can take snapshot vibrational images over broad excitation areas at high live-cell confluency. By means of phase-shifting, PSOM suppresses noise to a quarter of current optothermal microscopy modalities to allow capturing live-cell vibrational images at FOVs up to 50 times larger than state of the art. PSOM also reduces illumination power flux density (PFD) down to four orders of magnitude lower than other conventional vibrational microscopy methods, such as coherent anti-Stokes Raman scattering (CARS), thus considerably decreasing the risk of cell photodamage.",
+      "full_abstract": "Rapid live-cell hyperspectral imaging at large fields of view (FOVs) and high cell confluency remains challenging for conventional vibrational spectroscopy–based microscopy technologies. At the same time, imaging at high cell confluency and large FOVs is important for proper cell function and statistical significance of measurements, respectively. Here, we introduce phase-shifting mid-infrared optothermal microscopy (PSOM), which interprets molecular-vibrational information as the optical path difference induced by mid-infrared absorption and can take snapshot vibrational images over broad excitation areas at high live-cell confluency. By means of phase-shifting, PSOM suppresses noise to a quarter of current optothermal microscopy modalities to allow capturing live-cell vibrational images at FOVs up to 50 times larger than state of the art. PSOM also reduces illumination power flux density (PFD) down to four orders of magnitude lower than other conventional vibrational microscopy methods, such as coherent anti-Stokes Raman scattering (CARS), thus considerably decreasing the risk of cell photodamage.",
+      "snippet": "Rapid live-cell hyperspectral imaging at large fields of view (FOVs) and high cell confluency remains challenging for conventional vibrational spectroscopy–based microscopy technologies. At the same time, imaging at high cell confluency and large FOVs is impor…",
+      "abstract_truncated": true,
+      "published_date": "2024-02-23",
+      "pub_date": "2024-02-23",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "science",
+      "keywords": [
+        "Phase-shifting"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "science-advances",
+      "search_blob": "phase-shifting optothermal microscopy enables live-cell mid-infrared hyperspectral imaging of large cell populations at high confluency science advances tao yuan lucas riobo francesca gasparin vasilis ntziachristos miguel a. pleitez rapid live-cell hyperspectral imaging at large fields of view (fovs) and high cell confluency remains challenging for conventional vibrational spectroscopy–based microscopy technologies. at the same time, imaging at high cell confluency and large fovs is important for proper cell function and statistical significance of measurements, respectively. here, we introduce phase-shifting mid-infrared optothermal microscopy (psom), which interprets molecular-vibrational information as the optical path difference induced by mid-infrared absorption and can take snapshot vibrational images over broad excitation areas at high live-cell confluency. by means of phase-shifting, psom suppresses noise to a quarter of current optothermal microscopy modalities to allow capturing live-cell vibrational images at fovs up to 50 times larger than state of the art. psom also reduces illumination power flux density (pfd) down to four orders of magnitude lower than other conventional vibrational microscopy methods, such as coherent anti-stokes raman scattering (cars), thus considerably decreasing the risk of cell photodamage. phase-shifting 10.1126/sciadv.adj7944 https://doi.org/10.1126/sciadv.adj7944",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 26
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adi2181",
+      "title": "Stimulated Raman photothermal microscopy toward ultrasensitive chemical imaging",
+      "authors": [
+        "Yifan Zhu",
+        "Xiaowei Ge",
+        "Hongli Ni",
+        "Jiaze Yin",
+        "Haonan Lin",
+        "Le Wang",
+        "Yuying Tan",
+        "Chinmayee V. Prabhu Dessai",
+        "Yueming Li",
+        "Xinyan Teng",
+        "Ji-Xin Cheng"
+      ],
+      "author": "Yifan Zhu, Xiaowei Ge, Hongli Ni, Jiaze Yin, Haonan Lin, Le Wang, Yuying Tan, Chinmayee V. Prabhu Dessai, Yueming Li, Xinyan Teng, Ji-Xin Cheng",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adi2181",
+      "doi_value": "10.1126/sciadv.adi2181",
+      "doi_url": "https://doi.org/10.1126/sciadv.adi2181",
+      "url": "https://doi.org/10.1126/sciadv.adi2181",
+      "detail_href": "/papers/10.1126-sciadv.adi2181.html",
+      "abstract": "Stimulated Raman scattering (SRS) microscopy has shown enormous potential in revealing molecular structures, dynamics, and couplings in complex systems. However, the sensitivity of SRS is fundamentally limited to the millimolar level due to shot noise and the small modulation depth. To overcome this barrier, we revisit SRS from the perspective of energy deposition. The SRS process pumps molecules to their vibrationally excited states. The subsequent relaxation heats up the surroundings and induces refractive index changes. By probing the refractive index changes with a laser beam, we introduce stimulated Raman photothermal (SRP) microscopy, where a >500-fold boost of modulation depth is achieved. The versatile applications of SRP microscopy on viral particles, cells, and tissues are demonstrated. SRP microscopy opens a way to perform vibrational spectroscopic imaging with ultrahigh sensitivity.",
+      "full_abstract": "Stimulated Raman scattering (SRS) microscopy has shown enormous potential in revealing molecular structures, dynamics, and couplings in complex systems. However, the sensitivity of SRS is fundamentally limited to the millimolar level due to shot noise and the small modulation depth. To overcome this barrier, we revisit SRS from the perspective of energy deposition. The SRS process pumps molecules to their vibrationally excited states. The subsequent relaxation heats up the surroundings and induces refractive index changes. By probing the refractive index changes with a laser beam, we introduce stimulated Raman photothermal (SRP) microscopy, where a >500-fold boost of modulation depth is achieved. The versatile applications of SRP microscopy on viral particles, cells, and tissues are demonstrated. SRP microscopy opens a way to perform vibrational spectroscopic imaging with ultrahigh sensitivity.",
+      "snippet": "Stimulated Raman scattering (SRS) microscopy has shown enormous potential in revealing molecular structures, dynamics, and couplings in complex systems. However, the sensitivity of SRS is fundamentally limited to the millimolar level due to shot noise and the…",
+      "abstract_truncated": true,
+      "published_date": "2023-10-27",
+      "pub_date": "2023-10-27",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "science",
+      "keywords": [
+        "Stimulated"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "science-advances",
+      "search_blob": "stimulated raman photothermal microscopy toward ultrasensitive chemical imaging science advances yifan zhu xiaowei ge hongli ni jiaze yin haonan lin le wang yuying tan chinmayee v. prabhu dessai yueming li xinyan teng ji-xin cheng stimulated raman scattering (srs) microscopy has shown enormous potential in revealing molecular structures, dynamics, and couplings in complex systems. however, the sensitivity of srs is fundamentally limited to the millimolar level due to shot noise and the small modulation depth. to overcome this barrier, we revisit srs from the perspective of energy deposition. the srs process pumps molecules to their vibrationally excited states. the subsequent relaxation heats up the surroundings and induces refractive index changes. by probing the refractive index changes with a laser beam, we introduce stimulated raman photothermal (srp) microscopy, where a >500-fold boost of modulation depth is achieved. the versatile applications of srp microscopy on viral particles, cells, and tissues are demonstrated. srp microscopy opens a way to perform vibrational spectroscopic imaging with ultrahigh sensitivity. stimulated 10.1126/sciadv.adi2181 https://doi.org/10.1126/sciadv.adi2181",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 29
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adg9245",
+      "title": "Optimal sparsity allows reliable system-aware restoration of fluorescence microscopy images",
+      "authors": [
+        "Biagio Mandracchia",
+        "Wenhao Liu",
+        "Xuanwen Hua",
+        "Parvin Forghani",
+        "Soojung Lee",
+        "Jessica Hou",
+        "Shuyi Nie",
+        "Chunhui Xu",
+        "Shu Jia"
+      ],
+      "author": "Biagio Mandracchia, Wenhao Liu, Xuanwen Hua, Parvin Forghani, Soojung Lee, Jessica Hou, Shuyi Nie, Chunhui Xu, Shu Jia",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adg9245",
+      "doi_value": "10.1126/sciadv.adg9245",
+      "doi_url": "https://doi.org/10.1126/sciadv.adg9245",
+      "url": "https://doi.org/10.1126/sciadv.adg9245",
+      "detail_href": "/papers/10.1126-sciadv.adg9245.html",
+      "abstract": "Fluorescence microscopy is one of the most indispensable and informative driving forces for biological research, but the extent of observable biological phenomena is essentially determined by the content and quality of the acquired images. To address the different noise sources that can degrade these images, we introduce an algorithm for multiscale image restoration through optimally sparse representation (MIRO). MIRO is a deterministic framework that models the acquisition process and uses pixelwise noise correction to improve image quality. Our study demonstrates that this approach yields a remarkable restoration of the fluorescence signal for a wide range of microscopy systems, regardless of the detector used (e.g., electron-multiplying charge-coupled device, scientific complementary metal-oxide semiconductor, or photomultiplier tube). MIRO improves current imaging capabilities, enabling fast, low-light optical microscopy, accurate image analysis, and robust machine intelligence when integrated with deep neural networks. This expands the range of biological knowledge that can be obtained from fluorescence microscopy.",
+      "full_abstract": "Fluorescence microscopy is one of the most indispensable and informative driving forces for biological research, but the extent of observable biological phenomena is essentially determined by the content and quality of the acquired images. To address the different noise sources that can degrade these images, we introduce an algorithm for multiscale image restoration through optimally sparse representation (MIRO). MIRO is a deterministic framework that models the acquisition process and uses pixelwise noise correction to improve image quality. Our study demonstrates that this approach yields a remarkable restoration of the fluorescence signal for a wide range of microscopy systems, regardless of the detector used (e.g., electron-multiplying charge-coupled device, scientific complementary metal-oxide semiconductor, or photomultiplier tube). MIRO improves current imaging capabilities, enabling fast, low-light optical microscopy, accurate image analysis, and robust machine intelligence when integrated with deep neural networks. This expands the range of biological knowledge that can be obtained from fluorescence microscopy.",
+      "snippet": "Fluorescence microscopy is one of the most indispensable and informative driving forces for biological research, but the extent of observable biological phenomena is essentially determined by the content and quality of the acquired images. To address the diffe…",
+      "abstract_truncated": true,
+      "published_date": "2023-09-01",
+      "pub_date": "2023-09-01",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "science",
+      "keywords": [
+        "Optimal"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "science-advances",
+      "search_blob": "optimal sparsity allows reliable system-aware restoration of fluorescence microscopy images science advances biagio mandracchia wenhao liu xuanwen hua parvin forghani soojung lee jessica hou shuyi nie chunhui xu shu jia fluorescence microscopy is one of the most indispensable and informative driving forces for biological research, but the extent of observable biological phenomena is essentially determined by the content and quality of the acquired images. to address the different noise sources that can degrade these images, we introduce an algorithm for multiscale image restoration through optimally sparse representation (miro). miro is a deterministic framework that models the acquisition process and uses pixelwise noise correction to improve image quality. our study demonstrates that this approach yields a remarkable restoration of the fluorescence signal for a wide range of microscopy systems, regardless of the detector used (e.g., electron-multiplying charge-coupled device, scientific complementary metal-oxide semiconductor, or photomultiplier tube). miro improves current imaging capabilities, enabling fast, low-light optical microscopy, accurate image analysis, and robust machine intelligence when integrated with deep neural networks. this expands the range of biological knowledge that can be obtained from fluorescence microscopy. optimal 10.1126/sciadv.adg9245 https://doi.org/10.1126/sciadv.adg9245",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 30
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adl5218",
+      "title": "Noninvasive megapixel fluorescence microscopy through scattering layers by a virtual incoherent reflection matrix",
+      "authors": [
+        "Gil Weinberg",
+        "Elad Sunray",
+        "Ori Katz"
+      ],
+      "author": "Gil Weinberg, Elad Sunray, Ori Katz",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adl5218",
+      "doi_value": "10.1126/sciadv.adl5218",
+      "doi_url": "https://doi.org/10.1126/sciadv.adl5218",
+      "url": "https://doi.org/10.1126/sciadv.adl5218",
+      "detail_href": "/papers/10.1126-sciadv.adl5218.html",
+      "abstract": "Optical-resolution fluorescence imaging through and within complex samples presents a major challenge due to random light scattering, with substantial implications across multiple fields. While considerable advancements in coherent imaging through severe multiple scattering have been recently introduced by reflection matrix processing, approaches that tackle scattering in incoherent fluorescence imaging have been limited to sparse targets, require high-resolution control of the illumination or detection wavefronts, or require a very large number of measurements. Here, we present an approach that allows the adaptation of well-established reflection matrix techniques to scattering compensation in incoherent fluorescence imaging. We experimentally demonstrate that a small number of conventional wide-field fluorescence microscope images acquired under unknown random illuminations can effectively be used to construct a virtual fluorescence-based reflection matrix. Processing this matrix by an adapted matrix-based scattering compensation algorithm allows reconstructing megapixel-scale images from",
+      "full_abstract": "Optical-resolution fluorescence imaging through and within complex samples presents a major challenge due to random light scattering, with substantial implications across multiple fields. While considerable advancements in coherent imaging through severe multiple scattering have been recently introduced by reflection matrix processing, approaches that tackle scattering in incoherent fluorescence imaging have been limited to sparse targets, require high-resolution control of the illumination or detection wavefronts, or require a very large number of measurements. Here, we present an approach that allows the adaptation of well-established reflection matrix techniques to scattering compensation in incoherent fluorescence imaging. We experimentally demonstrate that a small number of conventional wide-field fluorescence microscope images acquired under unknown random illuminations can effectively be used to construct a virtual fluorescence-based reflection matrix. Processing this matrix by an adapted matrix-based scattering compensation algorithm allows reconstructing megapixel-scale images from",
+      "snippet": "Optical-resolution fluorescence imaging through and within complex samples presents a major challenge due to random light scattering, with substantial implications across multiple fields. While considerable advancements in coherent imaging through severe multi…",
+      "abstract_truncated": true,
+      "published_date": "2024-11-22",
+      "pub_date": "2024-11-22",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T11:39:42+08:00",
+      "last_seen_batch_id": "2026-04-29_113942",
+      "seen_batch_ids": [
+        "2026-04-29_113942"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T11:39:42+08:00",
+      "crawl_batch_id": "2026-04-29_113942",
+      "source": "science",
+      "keywords": [
+        "Noninvasive"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-29_113942"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-04-29T11:39:42+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "science-advances",
+      "search_blob": "noninvasive megapixel fluorescence microscopy through scattering layers by a virtual incoherent reflection matrix science advances gil weinberg elad sunray ori katz optical-resolution fluorescence imaging through and within complex samples presents a major challenge due to random light scattering, with substantial implications across multiple fields. while considerable advancements in coherent imaging through severe multiple scattering have been recently introduced by reflection matrix processing, approaches that tackle scattering in incoherent fluorescence imaging have been limited to sparse targets, require high-resolution control of the illumination or detection wavefronts, or require a very large number of measurements. here, we present an approach that allows the adaptation of well-established reflection matrix techniques to scattering compensation in incoherent fluorescence imaging. we experimentally demonstrate that a small number of conventional wide-field fluorescence microscope images acquired under unknown random illuminations can effectively be used to construct a virtual fluorescence-based reflection matrix. processing this matrix by an adapted matrix-based scattering compensation algorithm allows reconstructing megapixel-scale images from noninvasive 10.1126/sciadv.adl5218 https://doi.org/10.1126/sciadv.adl5218",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 30
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adn0110",
+      "title": "Raman microscopy of cryofixed biological specimens for high-resolution and high-sensitivity chemical imaging",
+      "authors": [
+        "Kenta Mizushima",
+        "Yasuaki Kumamoto",
+        "Shoko Tamura",
+        "Masahito Yamanaka",
+        "Kentaro Mochizuki",
+        "Menglu Li",
+        "Syusuke Egoshi",
+        "Kosuke Dodo",
+        "Yoshinori Harada",
+        "Nicholas I. Smith",
+        "Mikiko Sodeoka",
+        "Hideo Tanaka",
+        "Katsumasa Fujita"
+      ],
+      "author": "Kenta Mizushima, Yasuaki Kumamoto, Shoko Tamura, Masahito Yamanaka, Kentaro Mochizuki, Menglu Li, Syusuke Egoshi, Kosuke Dodo, Yoshinori Harada, Nicholas I. Smith, Mikiko Sodeoka, Hideo Tanaka, Katsumasa Fujita",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adn0110",
+      "doi_value": "10.1126/sciadv.adn0110",
+      "doi_url": "https://doi.org/10.1126/sciadv.adn0110",
+      "url": "https://doi.org/10.1126/sciadv.adn0110",
+      "detail_href": "/papers/10.1126-sciadv.adn0110.html",
+      "abstract": "Raman microscopy is an emerging molecular imaging technology, yet its signal-to-noise ratio (SNR) in measurements of biological specimens is severely limited because of the small cross section of Raman scattering. Here, we present Raman imaging techniques of cryofixed specimens to overcome SNR limitations by enabling long exposure of specimens under highly stabilized low-temperature conditions. The observation of frozen specimens in a cryostat at a constant low temperature immediately after rapid freezing enabled the improvement of SNR and enhanced the spatial and spectral resolution. We also confirmed that the cryofixation can preserve physicochemical states of specimens by observing alkyne-labeled coenzyme Q in cytosol and hemeproteins in acute ischemic myocardium, which cannot be done by fixation using chemical reagents. Last, we applied the technique for multiplex Raman imaging of label-free endogenous molecules and alkyne-tagged molecules in cryofixed HeLa cells, demonstrating its capability of high-content imaging of complex biological phenomena while maintaining physiological conditions.",
+      "full_abstract": "Raman microscopy is an emerging molecular imaging technology, yet its signal-to-noise ratio (SNR) in measurements of biological specimens is severely limited because of the small cross section of Raman scattering. Here, we present Raman imaging techniques of cryofixed specimens to overcome SNR limitations by enabling long exposure of specimens under highly stabilized low-temperature conditions. The observation of frozen specimens in a cryostat at a constant low temperature immediately after rapid freezing enabled the improvement of SNR and enhanced the spatial and spectral resolution. We also confirmed that the cryofixation can preserve physicochemical states of specimens by observing alkyne-labeled coenzyme Q in cytosol and hemeproteins in acute ischemic myocardium, which cannot be done by fixation using chemical reagents. Last, we applied the technique for multiplex Raman imaging of label-free endogenous molecules and alkyne-tagged molecules in cryofixed HeLa cells, demonstrating its capability of high-content imaging of complex biological phenomena while maintaining physiological conditions.",
+      "snippet": "Raman microscopy is an emerging molecular imaging technology, yet its signal-to-noise ratio (SNR) in measurements of biological specimens is severely limited because of the small cross section of Raman scattering. Here, we present Raman imaging techniques of c…",
+      "abstract_truncated": true,
+      "published_date": "2024-12-13",
+      "pub_date": "2024-12-13",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29 09:00:01",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46",
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-29 09:00:01",
+      "source": "science",
+      "keywords": [
+        "Raman"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-29 09:00:01"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-04-29T09:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "science-advances",
+      "search_blob": "raman microscopy of cryofixed biological specimens for high-resolution and high-sensitivity chemical imaging science advances kenta mizushima yasuaki kumamoto shoko tamura masahito yamanaka kentaro mochizuki menglu li syusuke egoshi kosuke dodo yoshinori harada nicholas i. smith mikiko sodeoka hideo tanaka katsumasa fujita raman microscopy is an emerging molecular imaging technology, yet its signal-to-noise ratio (snr) in measurements of biological specimens is severely limited because of the small cross section of raman scattering. here, we present raman imaging techniques of cryofixed specimens to overcome snr limitations by enabling long exposure of specimens under highly stabilized low-temperature conditions. the observation of frozen specimens in a cryostat at a constant low temperature immediately after rapid freezing enabled the improvement of snr and enhanced the spatial and spectral resolution. we also confirmed that the cryofixation can preserve physicochemical states of specimens by observing alkyne-labeled coenzyme q in cytosol and hemeproteins in acute ischemic myocardium, which cannot be done by fixation using chemical reagents. last, we applied the technique for multiplex raman imaging of label-free endogenous molecules and alkyne-tagged molecules in cryofixed hela cells, demonstrating its capability of high-content imaging of complex biological phenomena while maintaining physiological conditions. raman 10.1126/sciadv.adn0110 https://doi.org/10.1126/sciadv.adn0110",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 20
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adk8829",
+      "title": "Highly multiplexed fluorescence microscopy with spectrally tunable semiconducting polymer dots",
+      "authors": [
+        "Ziyu Guo",
+        "Chetan Poudel",
+        "Margaret C. Sarfatis",
+        "Jiangbo Yu",
+        "Madeline Wong",
+        "Daniel T. Chiu",
+        "Joshua C. Vaughan"
+      ],
+      "author": "Ziyu Guo, Chetan Poudel, Margaret C. Sarfatis, Jiangbo Yu, Madeline Wong, Daniel T. Chiu, Joshua C. Vaughan",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adk8829",
+      "doi_value": "10.1126/sciadv.adk8829",
+      "doi_url": "https://doi.org/10.1126/sciadv.adk8829",
+      "url": "https://doi.org/10.1126/sciadv.adk8829",
+      "detail_href": "/papers/10.1126-sciadv.adk8829.html",
+      "abstract": "Current studies of biological tissues require visualizing diverse cell types and molecular interactions, creating a growing need for versatile techniques to simultaneously probe numerous targets. Traditional multiplexed imaging is limited to around five targets at once. Emerging methods using sequential rounds of staining, imaging, and signal removal can probe tens of targets but require specialized hardware and time-consuming workflows and face challenges with sample distortion and artifacts. We present a highly multiplexed fluorescence microscopy method using semiconducting polymer dots (Pdots) in a single round of staining and imaging. Pdots are small, bright, and photostable fluorescent probes with a wide range of tunable Stokes shifts (20 to 450 nanometers). Multiple series of Pdots with varying excitation wavelengths allow for fast (",
+      "full_abstract": "Current studies of biological tissues require visualizing diverse cell types and molecular interactions, creating a growing need for versatile techniques to simultaneously probe numerous targets. Traditional multiplexed imaging is limited to around five targets at once. Emerging methods using sequential rounds of staining, imaging, and signal removal can probe tens of targets but require specialized hardware and time-consuming workflows and face challenges with sample distortion and artifacts. We present a highly multiplexed fluorescence microscopy method using semiconducting polymer dots (Pdots) in a single round of staining and imaging. Pdots are small, bright, and photostable fluorescent probes with a wide range of tunable Stokes shifts (20 to 450 nanometers). Multiple series of Pdots with varying excitation wavelengths allow for fast (",
+      "snippet": "Current studies of biological tissues require visualizing diverse cell types and molecular interactions, creating a growing need for versatile techniques to simultaneously probe numerous targets. Traditional multiplexed imaging is limited to around five target…",
+      "abstract_truncated": true,
+      "published_date": "2024-12-13",
+      "pub_date": "2024-12-13",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29 09:00:01",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46",
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-29 09:00:01",
+      "source": "science",
+      "keywords": [
+        "Highly"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-29 09:00:01"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-04-29T09:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "science-advances",
+      "search_blob": "highly multiplexed fluorescence microscopy with spectrally tunable semiconducting polymer dots science advances ziyu guo chetan poudel margaret c. sarfatis jiangbo yu madeline wong daniel t. chiu joshua c. vaughan current studies of biological tissues require visualizing diverse cell types and molecular interactions, creating a growing need for versatile techniques to simultaneously probe numerous targets. traditional multiplexed imaging is limited to around five targets at once. emerging methods using sequential rounds of staining, imaging, and signal removal can probe tens of targets but require specialized hardware and time-consuming workflows and face challenges with sample distortion and artifacts. we present a highly multiplexed fluorescence microscopy method using semiconducting polymer dots (pdots) in a single round of staining and imaging. pdots are small, bright, and photostable fluorescent probes with a wide range of tunable stokes shifts (20 to 450 nanometers). multiple series of pdots with varying excitation wavelengths allow for fast ( highly 10.1126/sciadv.adk8829 https://doi.org/10.1126/sciadv.adk8829",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 21
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.ado9322",
+      "title": "Electrochemical imaging of neurotransmitter release with fast-scan voltammetric ion conductance microscopy",
+      "authors": [
+        "Yunong Wang",
+        "Cristobal Rodriguez",
+        "Sasha E. Alden",
+        "Myung-hoon Choi",
+        "Kristen Alanis",
+        "Rahul Srinivasan",
+        "Lane A. Baker"
+      ],
+      "author": "Yunong Wang, Cristobal Rodriguez, Sasha E. Alden, Myung-hoon Choi, Kristen Alanis, Rahul Srinivasan, Lane A. Baker",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.ado9322",
+      "doi_value": "10.1126/sciadv.ado9322",
+      "doi_url": "https://doi.org/10.1126/sciadv.ado9322",
+      "url": "https://doi.org/10.1126/sciadv.ado9322",
+      "detail_href": "/papers/10.1126-sciadv.ado9322.html",
+      "abstract": "Understanding the dynamic spatial and temporal release of neurotransmitters can help resolve long-standing questions related to chemical modulation of neurological circuits. Dopamine modulates function in a range of physiological processes and is key to transmission in addiction and neurological disorders. Studies at subcellular scales promise to help develop a broader understanding of dopamine release, diffusion, and receptor activation and how these processes lead to functional outcomes. Electrochemical measurements of dopamine release at individual cells have proven especially informative. We describe incorporation of fast-scan cyclic voltammetry for detection of dopamine release with subcellular spatial resolution and millisecond time resolution. The platform is benchmarked with standard redox probes and then applied to imaging stimulated release from subcellular locations of a coculture of dopaminergic neurons and astrocytes. Voltammetry reveals heterogeneity in release based on time, location, and neuron identity. We believe that this platform ultimately offers a window to understanding neurotransmission in pathophysiological models of disease where cell-cell communication is key.",
+      "full_abstract": "Understanding the dynamic spatial and temporal release of neurotransmitters can help resolve long-standing questions related to chemical modulation of neurological circuits. Dopamine modulates function in a range of physiological processes and is key to transmission in addiction and neurological disorders. Studies at subcellular scales promise to help develop a broader understanding of dopamine release, diffusion, and receptor activation and how these processes lead to functional outcomes. Electrochemical measurements of dopamine release at individual cells have proven especially informative. We describe incorporation of fast-scan cyclic voltammetry for detection of dopamine release with subcellular spatial resolution and millisecond time resolution. The platform is benchmarked with standard redox probes and then applied to imaging stimulated release from subcellular locations of a coculture of dopaminergic neurons and astrocytes. Voltammetry reveals heterogeneity in release based on time, location, and neuron identity. We believe that this platform ultimately offers a window to understanding neurotransmission in pathophysiological models of disease where cell-cell communication is key.",
+      "snippet": "Understanding the dynamic spatial and temporal release of neurotransmitters can help resolve long-standing questions related to chemical modulation of neurological circuits. Dopamine modulates function in a range of physiological processes and is key to transm…",
+      "abstract_truncated": true,
+      "published_date": "2024-12-13",
+      "pub_date": "2024-12-13",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29 09:00:01",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46",
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-29 09:00:01",
+      "source": "science",
+      "keywords": [
+        "Electrochemical"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-29 09:00:01"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-04-29T09:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "science-advances",
+      "search_blob": "electrochemical imaging of neurotransmitter release with fast-scan voltammetric ion conductance microscopy science advances yunong wang cristobal rodriguez sasha e. alden myung-hoon choi kristen alanis rahul srinivasan lane a. baker understanding the dynamic spatial and temporal release of neurotransmitters can help resolve long-standing questions related to chemical modulation of neurological circuits. dopamine modulates function in a range of physiological processes and is key to transmission in addiction and neurological disorders. studies at subcellular scales promise to help develop a broader understanding of dopamine release, diffusion, and receptor activation and how these processes lead to functional outcomes. electrochemical measurements of dopamine release at individual cells have proven especially informative. we describe incorporation of fast-scan cyclic voltammetry for detection of dopamine release with subcellular spatial resolution and millisecond time resolution. the platform is benchmarked with standard redox probes and then applied to imaging stimulated release from subcellular locations of a coculture of dopaminergic neurons and astrocytes. voltammetry reveals heterogeneity in release based on time, location, and neuron identity. we believe that this platform ultimately offers a window to understanding neurotransmission in pathophysiological models of disease where cell-cell communication is key. electrochemical 10.1126/sciadv.ado9322 https://doi.org/10.1126/sciadv.ado9322",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 19
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.ado0518",
+      "title": "Optical-resolution parallel ultraviolet photoacoustic microscopy for slide-free histology",
+      "authors": [
+        "Cao et al."
+      ],
+      "author": "Cao et al.",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.ado0518",
+      "doi_value": "10.1126/sciadv.ado0518",
+      "doi_url": "https://doi.org/10.1126/sciadv.ado0518",
+      "url": "https://doi.org/10.1126/sciadv.ado0518",
+      "detail_href": "/papers/10.1126-sciadv.ado0518.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2024-12-13",
+      "pub_date": "2024-12-13",
+      "first_seen_date": "2026-04-13",
+      "first_seen_time": "2026-04-13T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-13 09:00",
+      "last_seen_date": "2026-04-13",
+      "last_seen_time": "2026-04-13T09:00:00+08:00",
+      "last_seen_batch_id": "2026-04-13 09:00",
+      "seen_batch_ids": [
+        "2026-04-13 09:00"
+      ],
+      "crawl_date": "2026-04-13",
+      "crawl_time": "2026-04-13T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-13 09:00",
+      "source": "science",
+      "keywords": [
+        "Optical-resolution"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-13 09:00"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-04-13T09:00:00+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "unknown",
+      "journal_slug": "science-advances",
+      "search_blob": "optical-resolution parallel ultraviolet photoacoustic microscopy for slide-free histology science advances cao et al. 从历史日志迁移 optical-resolution 10.1126/sciadv.ado0518 https://doi.org/10.1126/sciadv.ado0518",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    }
+  ]
+}

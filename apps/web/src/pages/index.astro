@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { latest, summary, batches, formatDateTime, journalList } from '../lib/data';
+const latestNew = latest.new_articles || latest.articles.filter((article) => article.is_new_in_batch);
+const seenAgain = latest.seen_again_articles || latest.articles.filter((article) => !article.is_new_in_batch);
+const journals = journalList().slice(0, 10);
+---
+<BaseLayout title="MIXZ Latest Batch" description="MIXZ biomedical imaging literature monitor">
+  <section class="hero">
+    <p class="eyebrow">Biomedical imaging literature monitor</p>
+    <h1>Latest batch: {summary.latest_batch_id}</h1>
+    <p>本页由 Astro 从后端导出的 JSON 静态生成；SQLite 仍然是唯一事实源。</p>
+    <div class="stat-grid">
+      <div><strong>{summary.total_articles}</strong><span>总文章</span></div>
+      <div><strong>{summary.total_batches}</strong><span>总批次</span></div>
+      <div><strong>{summary.latest_batch_article_count}</strong><span>本批次命中</span></div>
+      <div><strong>{formatDateTime(summary.latest_crawl_time)}</strong><span>最近抓取</span></div>
+    </div>
+  </section>
+
+  <section class="notice">
+    <strong>{summary.latest_batch_new_article_count || 0}</strong> 篇新发现，<strong>{summary.latest_batch_seen_again_count || 0}</strong> 篇重复命中。
+    {(summary.latest_batch_new_article_count || 0) === 0 && ' 本次抓取没有新文章，下方展示历史命中快照。'}
+  </section>
+
+  <section class="panel">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">New in this batch</p>
+        <h2>新发现</h2>
+      </div>
+      <a href="/archive">查看完整 archive</a>
+    </div>
+    {latestNew.length > 0 ? latestNew.map((article) => <ArticleCard article={article} />) : <p class="empty">本批次没有新文章。</p>}
+  </section>
+
+  <section class="panel history-panel">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Seen again</p>
+        <h2>历史快照</h2>
+      </div>
+      <span>{seenAgain.length} 篇</span>
+    </div>
+    <div class="article-list">
+      {seenAgain.slice(0, 30).map((article) => <ArticleCard article={article} />)}
+    </div>
+  </section>
+
+  <section class="split">
+    <div class="panel">
+      <h2>Journal coverage</h2>
+      <ul class="simple-list">{journals.map((item) => <li><span>{item.name}</span><strong>{item.count}</strong></li>)}</ul>
+    </div>
+    <div class="panel">
+      <h2>Recent batches</h2>
+      <ul class="simple-list">{batches.slice(0, 8).map((batch) => <li><span>{batch.batch_id}</span><strong>{batch.article_count || batch.articles?.length || 0}</strong></li>)}</ul>
+    </div>
+  </section>
+</BaseLayout>

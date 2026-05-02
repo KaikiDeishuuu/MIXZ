@@ -1,0 +1,151 @@
+{
+  "batch_id": "2026-04-13 09:00",
+  "crawl_time": "2026-04-13T09:00:00+08:00",
+  "crawl_date": "2026-04-13",
+  "article_count": 3,
+  "journal_count": 3,
+  "journals": [
+    "Nature Biotechnology",
+    "Nature Methods",
+    "Science Advances"
+  ],
+  "new_article_count": 0,
+  "updated_article_count": 0,
+  "articles": [
+    {
+      "id": "10.1038/s41592-025-02948-0",
+      "title": "Integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via DBiTplus",
+      "authors": [
+        "Enninful et al."
+      ],
+      "author": "Enninful et al.",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02948-0",
+      "doi_value": "10.1038/s41592-025-02948-0",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02948-0",
+      "url": "https://doi.org/10.1038/s41592-025-02948-0",
+      "detail_href": "/papers/10.1038-s41592-025-02948-0.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2026-01-15",
+      "pub_date": "2026-01-15",
+      "crawl_date": "2026-04-13",
+      "crawl_time": "2026-04-13T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-13 09:00",
+      "source": "nature",
+      "keywords": [
+        "Integration"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-13 09:00"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-04-13T09:00:00+08:00",
+      "abstract_source": "unknown",
+      "journal_slug": "nature-methods",
+      "search_blob": "integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via dbitplus nature methods enninful et al. 从历史日志迁移 integration 10.1038/s41592-025-02948-0 https://doi.org/10.1038/s41592-025-02948-0",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41587-025-02919-y",
+      "title": "Light-controlled tissue sectioning for volumetric imaging",
+      "authors": [
+        "Marchal"
+      ],
+      "author": "Marchal",
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-025-02919-y",
+      "doi_value": "10.1038/s41587-025-02919-y",
+      "doi_url": "https://doi.org/10.1038/s41587-025-02919-y",
+      "url": "https://doi.org/10.1038/s41587-025-02919-y",
+      "detail_href": "/papers/10.1038-s41587-025-02919-y.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2025-11-01",
+      "pub_date": "2025-11-01",
+      "crawl_date": "2026-04-13",
+      "crawl_time": "2026-04-13T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-13 09:00",
+      "source": "nature",
+      "keywords": [
+        "Light-controlled"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biotechnology",
+        "batch:2026-04-13 09:00"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-04-13T09:00:00+08:00",
+      "abstract_source": "unknown",
+      "journal_slug": "nature-biotechnology",
+      "search_blob": "light-controlled tissue sectioning for volumetric imaging nature biotechnology marchal 从历史日志迁移 light-controlled 10.1038/s41587-025-02919-y https://doi.org/10.1038/s41587-025-02919-y",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.ado0518",
+      "title": "Optical-resolution parallel ultraviolet photoacoustic microscopy for slide-free histology",
+      "authors": [
+        "Cao et al."
+      ],
+      "author": "Cao et al.",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.ado0518",
+      "doi_value": "10.1126/sciadv.ado0518",
+      "doi_url": "https://doi.org/10.1126/sciadv.ado0518",
+      "url": "https://doi.org/10.1126/sciadv.ado0518",
+      "detail_href": "/papers/10.1126-sciadv.ado0518.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2024-12-13",
+      "pub_date": "2024-12-13",
+      "crawl_date": "2026-04-13",
+      "crawl_time": "2026-04-13T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-13 09:00",
+      "source": "science",
+      "keywords": [
+        "Optical-resolution"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-13 09:00"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-04-13T09:00:00+08:00",
+      "abstract_source": "unknown",
+      "journal_slug": "science-advances",
+      "search_blob": "optical-resolution parallel ultraviolet photoacoustic microscopy for slide-free histology science advances cao et al. 从历史日志迁移 optical-resolution 10.1126/sciadv.ado0518 https://doi.org/10.1126/sciadv.ado0518",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    }
+  ]
+}

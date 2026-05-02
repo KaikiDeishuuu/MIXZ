@@ -1,0 +1,669 @@
+{
+  "journal": "Nature Photonics",
+  "journal_slug": "nature-photonics",
+  "article_count": 9,
+  "articles": [
+    {
+      "id": "10.1038/s41566-026-01869-4",
+      "title": "Three-dimensional super-resolution imaging with suppressed background via digital array modulation microscopy",
+      "authors": [
+        "Sijie Li",
+        "Rui Jin",
+        "Mengqi Lu",
+        "Ning Zhang",
+        "Meng Zhang",
+        "Yunfei Wei",
+        "Zhan Zhang",
+        "Shirui Guo",
+        "Yu-Hui Zhang",
+        "Fengchao Wang",
+        "Hui Gong",
+        "Qingming Luo",
+        "Jing Yuan"
+      ],
+      "author": "Sijie Li, Rui Jin, Mengqi Lu, Ning Zhang, Meng Zhang, Yunfei Wei, Zhan Zhang, Shirui Guo, Yu-Hui Zhang, Fengchao Wang, Hui Gong, Qingming Luo, Jing Yuan",
+      "journal": "Nature Photonics",
+      "doi": "10.1038/s41566-026-01869-4",
+      "doi_value": "10.1038/s41566-026-01869-4",
+      "doi_url": "https://doi.org/10.1038/s41566-026-01869-4",
+      "url": "https://doi.org/10.1038/s41566-026-01869-4",
+      "detail_href": "/papers/10.1038-s41566-026-01869-4.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2026-03-26",
+      "pub_date": "2026-03-26",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-29_113942",
+        "2026-04-30_090001",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "nature",
+      "keywords": [
+        "Three-dimensional"
+      ],
+      "tags": [
+        "nature",
+        "Nature Photonics",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-photonics",
+      "search_blob": "three-dimensional super-resolution imaging with suppressed background via digital array modulation microscopy nature photonics sijie li rui jin mengqi lu ning zhang meng zhang yunfei wei zhan zhang shirui guo yu-hui zhang fengchao wang hui gong qingming luo jing yuan 暂无公开摘要 three-dimensional 10.1038/s41566-026-01869-4 https://doi.org/10.1038/s41566-026-01869-4",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 7
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 11
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 27
+        },
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 2
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41566-025-01697-y",
+      "title": "Stimulated Brillouin scattering microscopy with a high-peak-power 780-nm pulsed laser system",
+      "authors": [
+        "Yun Qi",
+        "Shuai Yao",
+        "Zi-Xuan Du",
+        "Jin-Rui Zhang",
+        "Cuiyun Zhou",
+        "Xiaohu Fu",
+        "Huan Li",
+        "Ting Mi",
+        "Yu-Han Chen",
+        "Yu-Fan Wang",
+        "Yun Luo",
+        "Xuyan He",
+        "Jing Nan",
+        "Yanjie Zhang",
+        "Lin Sun",
+        "Peng Xia",
+        "Shi-Qing Cai",
+        "Jiu-Lin Du",
+        "Jingjing Xie",
+        "Wei-Biao Chen",
+        "Fan Yang"
+      ],
+      "author": "Yun Qi, Shuai Yao, Zi-Xuan Du, Jin-Rui Zhang, Cuiyun Zhou, Xiaohu Fu, Huan Li, Ting Mi, Yu-Han Chen, Yu-Fan Wang, Yun Luo, Xuyan He, Jing Nan, Yanjie Zhang, Lin Sun, Peng Xia, Shi-Qing Cai, Jiu-Lin Du, Jingjing Xie, Wei-Biao Chen, Fan Yang",
+      "journal": "Nature Photonics",
+      "doi": "10.1038/s41566-025-01697-y",
+      "doi_value": "10.1038/s41566-025-01697-y",
+      "doi_url": "https://doi.org/10.1038/s41566-025-01697-y",
+      "url": "https://doi.org/10.1038/s41566-025-01697-y",
+      "detail_href": "/papers/10.1038-s41566-025-01697-y.html",
+      "abstract": "Stimulated Brillouin scattering microscopy enables all-optical, non-contact, high-spatial-resolution mechanical imaging with high specificity. Recent advances in quasi-continuous-wave stimulated Brillouin scattering have substantially reduced the required laser power. However, the pixel dwell time remains limited to 20 ms, and further reductions without compromising resolution, precision or specificity are challenging. Here we address this limitation by developing a frequency-doubled pulsed fibre laser system operating at 780 nm, delivering a peak power of 267 W. To mitigate the high-intensity noise intrinsic to amplified fibre lasers, we implement a high-performance noise cancellation system based on auto-balanced detection. As a result, we achieve a pixel dwell time as short as 200 µs for full spectral acquisition, which is two orders of magnitude faster than previous stimulated Brillouin scattering implementations, and maintain an average power of 30 mW. We demonstrate high-speed, high-specificity and high-sensitivity Brillouin imaging of live single cells, organoids, zebrafish larvae and ovarian follicles with subcellular details. Furthermore, we capture the in vivo biomechanical dynamics of rapid cell divisions during the early embryo development of Caenorhabditis elegans in a living worm. A high-peak-power low-duty-cycle pulsed fibre laser enables stimulated Brillouin scattering microscopy with pixel dwell times as low as 0.2 ms and spatial resolution as low as 500 nm and 2 μm in the lateral and axial directions, respectively.",
+      "full_abstract": "Stimulated Brillouin scattering microscopy enables all-optical, non-contact, high-spatial-resolution mechanical imaging with high specificity. Recent advances in quasi-continuous-wave stimulated Brillouin scattering have substantially reduced the required laser power. However, the pixel dwell time remains limited to 20 ms, and further reductions without compromising resolution, precision or specificity are challenging. Here we address this limitation by developing a frequency-doubled pulsed fibre laser system operating at 780 nm, delivering a peak power of 267 W. To mitigate the high-intensity noise intrinsic to amplified fibre lasers, we implement a high-performance noise cancellation system based on auto-balanced detection. As a result, we achieve a pixel dwell time as short as 200 µs for full spectral acquisition, which is two orders of magnitude faster than previous stimulated Brillouin scattering implementations, and maintain an average power of 30 mW. We demonstrate high-speed, high-specificity and high-sensitivity Brillouin imaging of live single cells, organoids, zebrafish larvae and ovarian follicles with subcellular details. Furthermore, we capture the in vivo biomechanical dynamics of rapid cell divisions during the early embryo development of Caenorhabditis elegans in a living worm. A high-peak-power low-duty-cycle pulsed fibre laser enables stimulated Brillouin scattering microscopy with pixel dwell times as low as 0.2 ms and spatial resolution as low as 500 nm and 2 μm in the lateral and axial directions, respectively.",
+      "snippet": "Stimulated Brillouin scattering microscopy enables all-optical, non-contact, high-spatial-resolution mechanical imaging with high specificity. Recent advances in quasi-continuous-wave stimulated Brillouin scattering have substantially reduced the required lase…",
+      "abstract_truncated": true,
+      "published_date": "2025-07-10",
+      "pub_date": "2025-07-10",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-29_113942",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "nature",
+      "keywords": [
+        "Stimulated"
+      ],
+      "tags": [
+        "nature",
+        "Nature Photonics",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-photonics",
+      "search_blob": "stimulated brillouin scattering microscopy with a high-peak-power 780-nm pulsed laser system nature photonics yun qi shuai yao zi-xuan du jin-rui zhang cuiyun zhou xiaohu fu huan li ting mi yu-han chen yu-fan wang yun luo xuyan he jing nan yanjie zhang lin sun peng xia shi-qing cai jiu-lin du jingjing xie wei-biao chen fan yang stimulated brillouin scattering microscopy enables all-optical, non-contact, high-spatial-resolution mechanical imaging with high specificity. recent advances in quasi-continuous-wave stimulated brillouin scattering have substantially reduced the required laser power. however, the pixel dwell time remains limited to 20 ms, and further reductions without compromising resolution, precision or specificity are challenging. here we address this limitation by developing a frequency-doubled pulsed fibre laser system operating at 780 nm, delivering a peak power of 267 w. to mitigate the high-intensity noise intrinsic to amplified fibre lasers, we implement a high-performance noise cancellation system based on auto-balanced detection. as a result, we achieve a pixel dwell time as short as 200 µs for full spectral acquisition, which is two orders of magnitude faster than previous stimulated brillouin scattering implementations, and maintain an average power of 30 mw. we demonstrate high-speed, high-specificity and high-sensitivity brillouin imaging of live single cells, organoids, zebrafish larvae and ovarian follicles with subcellular details. furthermore, we capture the in vivo biomechanical dynamics of rapid cell divisions during the early embryo development of caenorhabditis elegans in a living worm. a high-peak-power low-duty-cycle pulsed fibre laser enables stimulated brillouin scattering microscopy with pixel dwell times as low as 0.2 ms and spatial resolution as low as 500 nm and 2 μm in the lateral and axial directions, respectively. stimulated 10.1038/s41566-025-01697-y https://doi.org/10.1038/s41566-025-01697-y",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 28
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 28
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 28
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 17
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41566-024-01481-4",
+      "title": "Doubling the resolution of fluorescence-lifetime single-molecule localization microscopy with image scanning microscopy",
+      "authors": [
+        "Niels Radmacher",
+        "Oleksii Nevskyi",
+        "José Ignacio Gallea",
+        "Jan Christoph Thiele",
+        "Ingo Gregor",
+        "Silvio O. Rizzoli",
+        "Jörg Enderlein"
+      ],
+      "author": "Niels Radmacher, Oleksii Nevskyi, José Ignacio Gallea, Jan Christoph Thiele, Ingo Gregor, Silvio O. Rizzoli, Jörg Enderlein",
+      "journal": "Nature Photonics",
+      "doi": "10.1038/s41566-024-01481-4",
+      "doi_value": "10.1038/s41566-024-01481-4",
+      "doi_url": "https://doi.org/10.1038/s41566-024-01481-4",
+      "url": "https://doi.org/10.1038/s41566-024-01481-4",
+      "detail_href": "/papers/10.1038-s41566-024-01481-4.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2024-08-02",
+      "pub_date": "2024-08-02",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Doubling"
+      ],
+      "tags": [
+        "nature",
+        "Nature Photonics",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-photonics",
+      "search_blob": "doubling the resolution of fluorescence-lifetime single-molecule localization microscopy with image scanning microscopy nature photonics niels radmacher oleksii nevskyi josé ignacio gallea jan christoph thiele ingo gregor silvio o. rizzoli jörg enderlein 暂无公开摘要 doubling 10.1038/s41566-024-01481-4 https://doi.org/10.1038/s41566-024-01481-4",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 22
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41566-024-01463-6",
+      "title": "Millimetre-deep micrometre-resolution vibrational imaging by shortwave infrared photothermal microscopy",
+      "authors": [
+        "Hongli Ni",
+        "Yuhao Yuan",
+        "Mingsheng Li",
+        "Yifan Zhu",
+        "Xiaowei Ge",
+        "Jiaze Yin",
+        "Chinmayee Prabhu Dessai",
+        "Le Wang",
+        "Ji-Xin Cheng"
+      ],
+      "author": "Hongli Ni, Yuhao Yuan, Mingsheng Li, Yifan Zhu, Xiaowei Ge, Jiaze Yin, Chinmayee Prabhu Dessai, Le Wang, Ji-Xin Cheng",
+      "journal": "Nature Photonics",
+      "doi": "10.1038/s41566-024-01463-6",
+      "doi_value": "10.1038/s41566-024-01463-6",
+      "doi_url": "https://doi.org/10.1038/s41566-024-01463-6",
+      "url": "https://doi.org/10.1038/s41566-024-01463-6",
+      "detail_href": "/papers/10.1038-s41566-024-01463-6.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2024-06-25",
+      "pub_date": "2024-06-25",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Millimetre-deep"
+      ],
+      "tags": [
+        "nature",
+        "Nature Photonics",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-photonics",
+      "search_blob": "millimetre-deep micrometre-resolution vibrational imaging by shortwave infrared photothermal microscopy nature photonics hongli ni yuhao yuan mingsheng li yifan zhu xiaowei ge jiaze yin chinmayee prabhu dessai le wang ji-xin cheng 暂无公开摘要 millimetre-deep 10.1038/s41566-024-01463-6 https://doi.org/10.1038/s41566-024-01463-6",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 25
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41566-023-01368-w",
+      "title": "Brillouin light scattering anisotropy microscopy for imaging the viscoelastic anisotropy in living cells",
+      "authors": [
+        "Hamid Keshmiri",
+        "Domagoj Cikes",
+        "Marketa Samalova",
+        "Lukas Schindler",
+        "Lisa-Marie Appel",
+        "Michal Urbanek",
+        "Ivan Yudushkin",
+        "Dea Slade",
+        "Wolfgang J. Weninger",
+        "Alexis Peaucelle",
+        "Josef Penninger",
+        "Kareem Elsayad"
+      ],
+      "author": "Hamid Keshmiri, Domagoj Cikes, Marketa Samalova, Lukas Schindler, Lisa-Marie Appel, Michal Urbanek, Ivan Yudushkin, Dea Slade, Wolfgang J. Weninger, Alexis Peaucelle, Josef Penninger, Kareem Elsayad",
+      "journal": "Nature Photonics",
+      "doi": "10.1038/s41566-023-01368-w",
+      "doi_value": "10.1038/s41566-023-01368-w",
+      "doi_url": "https://doi.org/10.1038/s41566-023-01368-w",
+      "url": "https://doi.org/10.1038/s41566-023-01368-w",
+      "detail_href": "/papers/10.1038-s41566-023-01368-w.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2024-01-18",
+      "pub_date": "2024-01-18",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Brillouin"
+      ],
+      "tags": [
+        "nature",
+        "Nature Photonics",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-photonics",
+      "search_blob": "brillouin light scattering anisotropy microscopy for imaging the viscoelastic anisotropy in living cells nature photonics hamid keshmiri domagoj cikes marketa samalova lukas schindler lisa-marie appel michal urbanek ivan yudushkin dea slade wolfgang j. weninger alexis peaucelle josef penninger kareem elsayad 暂无公开摘要 brillouin 10.1038/s41566-023-01368-w https://doi.org/10.1038/s41566-023-01368-w",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 28
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41566-025-01696-z",
+      "title": "Electrochemically modulated interferometric scattering microscopy for imaging ion channel activity in live cells",
+      "authors": [
+        "Qing-Yue Li",
+        "Pin-Tian Lyu",
+        "Bin Kang",
+        "Hong-Yuan Chen",
+        "Jing-Juan Xu"
+      ],
+      "author": "Qing-Yue Li, Pin-Tian Lyu, Bin Kang, Hong-Yuan Chen, Jing-Juan Xu",
+      "journal": "Nature Photonics",
+      "doi": "10.1038/s41566-025-01696-z",
+      "doi_value": "10.1038/s41566-025-01696-z",
+      "doi_url": "https://doi.org/10.1038/s41566-025-01696-z",
+      "url": "https://doi.org/10.1038/s41566-025-01696-z",
+      "detail_href": "/papers/10.1038-s41566-025-01696-z.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-06-05",
+      "pub_date": "2025-06-05",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T11:39:42+08:00",
+      "last_seen_batch_id": "2026-04-29_113942",
+      "seen_batch_ids": [
+        "2026-04-29_113942"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T11:39:42+08:00",
+      "crawl_batch_id": "2026-04-29_113942",
+      "source": "nature",
+      "keywords": [
+        "Electrochemically"
+      ],
+      "tags": [
+        "nature",
+        "Nature Photonics",
+        "batch:2026-04-29_113942"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-04-29T11:39:42+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-photonics",
+      "search_blob": "electrochemically modulated interferometric scattering microscopy for imaging ion channel activity in live cells nature photonics qing-yue li pin-tian lyu bin kang hong-yuan chen jing-juan xu 暂无公开摘要 electrochemically 10.1038/s41566-025-01696-z https://doi.org/10.1038/s41566-025-01696-z",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 21
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41566-025-01659-4",
+      "title": "Curved light sheet microscopy for centimetre-scale cleared tissue imaging",
+      "authors": [
+        "Lijuan Tang",
+        "Jiayu Wang",
+        "Jiayi Ding",
+        "Junyou Sun",
+        "Xing-jun Chen",
+        "Quqing Shen",
+        "Ruiheng Song",
+        "Peng Cao",
+        "Rong Gong",
+        "Fang Xu",
+        "Woo-ping Ge",
+        "Wenzhi Sun",
+        "Hu Zhao",
+        "Jianglai Wu"
+      ],
+      "author": "Lijuan Tang, Jiayu Wang, Jiayi Ding, Junyou Sun, Xing-jun Chen, Quqing Shen, Ruiheng Song, Peng Cao, Rong Gong, Fang Xu, Woo-ping Ge, Wenzhi Sun, Hu Zhao, Jianglai Wu",
+      "journal": "Nature Photonics",
+      "doi": "10.1038/s41566-025-01659-4",
+      "doi_value": "10.1038/s41566-025-01659-4",
+      "doi_url": "https://doi.org/10.1038/s41566-025-01659-4",
+      "url": "https://doi.org/10.1038/s41566-025-01659-4",
+      "detail_href": "/papers/10.1038-s41566-025-01659-4.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-04-11",
+      "pub_date": "2025-04-11",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T11:39:42+08:00",
+      "last_seen_batch_id": "2026-04-29_113942",
+      "seen_batch_ids": [
+        "2026-04-29_113942"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T11:39:42+08:00",
+      "crawl_batch_id": "2026-04-29_113942",
+      "source": "nature",
+      "keywords": [
+        "Curved"
+      ],
+      "tags": [
+        "nature",
+        "Nature Photonics",
+        "batch:2026-04-29_113942"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-04-29T11:39:42+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-photonics",
+      "search_blob": "curved light sheet microscopy for centimetre-scale cleared tissue imaging nature photonics lijuan tang jiayu wang jiayi ding junyou sun xing-jun chen quqing shen ruiheng song peng cao rong gong fang xu woo-ping ge wenzhi sun hu zhao jianglai wu 暂无公开摘要 curved 10.1038/s41566-025-01659-4 https://doi.org/10.1038/s41566-025-01659-4",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 25
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41566-025-01638-9",
+      "title": "Fast, three-dimensional, live-cell super-resolution imaging with multiplane structured illumination microscopy",
+      "authors": [
+        "Qian Chen",
+        "Wen Gou",
+        "Wenqing Lu",
+        "Jie Li",
+        "Yuhong Wei",
+        "Haoyu Li",
+        "Chengyu Wang",
+        "Wei You",
+        "Zhengqian Li",
+        "Dashan Dong",
+        "Xiuli Bi",
+        "Bin Xiao",
+        "Liangyi Chen",
+        "Kebin Shi",
+        "Junchao Fan",
+        "Xiaoshuai Huang"
+      ],
+      "author": "Qian Chen, Wen Gou, Wenqing Lu, Jie Li, Yuhong Wei, Haoyu Li, Chengyu Wang, Wei You, Zhengqian Li, Dashan Dong, Xiuli Bi, Bin Xiao, Liangyi Chen, Kebin Shi, Junchao Fan, Xiaoshuai Huang",
+      "journal": "Nature Photonics",
+      "doi": "10.1038/s41566-025-01638-9",
+      "doi_value": "10.1038/s41566-025-01638-9",
+      "doi_url": "https://doi.org/10.1038/s41566-025-01638-9",
+      "url": "https://doi.org/10.1038/s41566-025-01638-9",
+      "detail_href": "/papers/10.1038-s41566-025-01638-9.html",
+      "abstract": "Three-dimensional structured illumination microscopy (3D-SIM) doubles the spatial resolution along all dimensions and is used widely in cellular imaging. However, its temporal resolution is constrained by the need for sequential plane-by-plane movement of the sample using a piezo stage for imaging, which often increases the acquisition time to several seconds per volume. To address this limitation, we develop 3D multiplane SIM (3D-MP-SIM), which simultaneously detects multiplane images and reconstructs them using synergistically evolved reconstruction algorithms. Compared with conventional 3D-SIM imaging, 3D-MP-SIM achieves an approximately eightfold increase in the temporal resolution of volumetric super-resolution imaging, with lateral and axial spatial resolutions of about 120 and 300 nm, respectively. The rapid acquisition substantially reduces motion artefacts during the imaging of dynamic structures, such as late endosomes, in live cells. Moreover, we demonstrate the capabilities of 3D-MP-SIM via high-speed time-lapse volumetric imaging of the endoplasmic reticulum at rates of up to 11 volumes per second. We also show the feasibility of dual-colour imaging by observing rapid and close interactions among intra- and intercellular organelles in 3D space. These results highlight the potential of 3D-MP-SIM for explaining dynamic behaviours and interactions at the subcellular level and in three dimensions. Three-dimensional multiplane structured illumination microscopy, combining three-beam interference, multiplane detection and a synergistically evolved reconstruction algorithm, enables 3D imaging at rates of up to 11 volumes per second in live cells with lateral and axial spatial resolutions of 120 and 300 nm, respectively.",
+      "full_abstract": "Three-dimensional structured illumination microscopy (3D-SIM) doubles the spatial resolution along all dimensions and is used widely in cellular imaging. However, its temporal resolution is constrained by the need for sequential plane-by-plane movement of the sample using a piezo stage for imaging, which often increases the acquisition time to several seconds per volume. To address this limitation, we develop 3D multiplane SIM (3D-MP-SIM), which simultaneously detects multiplane images and reconstructs them using synergistically evolved reconstruction algorithms. Compared with conventional 3D-SIM imaging, 3D-MP-SIM achieves an approximately eightfold increase in the temporal resolution of volumetric super-resolution imaging, with lateral and axial spatial resolutions of about 120 and 300 nm, respectively. The rapid acquisition substantially reduces motion artefacts during the imaging of dynamic structures, such as late endosomes, in live cells. Moreover, we demonstrate the capabilities of 3D-MP-SIM via high-speed time-lapse volumetric imaging of the endoplasmic reticulum at rates of up to 11 volumes per second. We also show the feasibility of dual-colour imaging by observing rapid and close interactions among intra- and intercellular organelles in 3D space. These results highlight the potential of 3D-MP-SIM for explaining dynamic behaviours and interactions at the subcellular level and in three dimensions. Three-dimensional multiplane structured illumination microscopy, combining three-beam interference, multiplane detection and a synergistically evolved reconstruction algorithm, enables 3D imaging at rates of up to 11 volumes per second in live cells with lateral and axial spatial resolutions of 120 and 300 nm, respectively.",
+      "snippet": "Three-dimensional structured illumination microscopy (3D-SIM) doubles the spatial resolution along all dimensions and is used widely in cellular imaging. However, its temporal resolution is constrained by the need for sequential plane-by-plane movement of the…",
+      "abstract_truncated": true,
+      "published_date": "2025-03-03",
+      "pub_date": "2025-03-03",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T11:39:42+08:00",
+      "last_seen_batch_id": "2026-04-29_113942",
+      "seen_batch_ids": [
+        "2026-04-29_113942"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T11:39:42+08:00",
+      "crawl_batch_id": "2026-04-29_113942",
+      "source": "nature",
+      "keywords": [
+        "Fast,"
+      ],
+      "tags": [
+        "nature",
+        "Nature Photonics",
+        "batch:2026-04-29_113942"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-04-29T11:39:42+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "openalex",
+      "journal_slug": "nature-photonics",
+      "search_blob": "fast, three-dimensional, live-cell super-resolution imaging with multiplane structured illumination microscopy nature photonics qian chen wen gou wenqing lu jie li yuhong wei haoyu li chengyu wang wei you zhengqian li dashan dong xiuli bi bin xiao liangyi chen kebin shi junchao fan xiaoshuai huang three-dimensional structured illumination microscopy (3d-sim) doubles the spatial resolution along all dimensions and is used widely in cellular imaging. however, its temporal resolution is constrained by the need for sequential plane-by-plane movement of the sample using a piezo stage for imaging, which often increases the acquisition time to several seconds per volume. to address this limitation, we develop 3d multiplane sim (3d-mp-sim), which simultaneously detects multiplane images and reconstructs them using synergistically evolved reconstruction algorithms. compared with conventional 3d-sim imaging, 3d-mp-sim achieves an approximately eightfold increase in the temporal resolution of volumetric super-resolution imaging, with lateral and axial spatial resolutions of about 120 and 300 nm, respectively. the rapid acquisition substantially reduces motion artefacts during the imaging of dynamic structures, such as late endosomes, in live cells. moreover, we demonstrate the capabilities of 3d-mp-sim via high-speed time-lapse volumetric imaging of the endoplasmic reticulum at rates of up to 11 volumes per second. we also show the feasibility of dual-colour imaging by observing rapid and close interactions among intra- and intercellular organelles in 3d space. these results highlight the potential of 3d-mp-sim for explaining dynamic behaviours and interactions at the subcellular level and in three dimensions. three-dimensional multiplane structured illumination microscopy, combining three-beam interference, multiplane detection and a synergistically evolved reconstruction algorithm, enables 3d imaging at rates of up to 11 volumes per second in live cells with lateral and axial spatial resolutions of 120 and 300 nm, respectively. fast, 10.1038/s41566-025-01638-9 https://doi.org/10.1038/s41566-025-01638-9",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 27
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41566-025-01619-y",
+      "title": "Full-field Brillouin microscopy based on an imaging Fourier-transform spectrometer",
+      "authors": [
+        "Carlo Bevilacqua",
+        "Robert Prevedel"
+      ],
+      "author": "Carlo Bevilacqua, Robert Prevedel",
+      "journal": "Nature Photonics",
+      "doi": "10.1038/s41566-025-01619-y",
+      "doi_value": "10.1038/s41566-025-01619-y",
+      "doi_url": "https://doi.org/10.1038/s41566-025-01619-y",
+      "url": "https://doi.org/10.1038/s41566-025-01619-y",
+      "detail_href": "/papers/10.1038-s41566-025-01619-y.html",
+      "abstract": "Abstract Brillouin microscopy is an emerging optical elastography technique that can be used to assess mechanical properties of biological samples in a three-dimensional, all-optical and hence non-contact fashion. However, the low cross-section of spontaneous Brillouin scattering produces weak signals that often necessitate prolonged exposure times or illumination dosages that are potentially harmful for biological samples. Here we present a new approach for highly multiplexed and therefore rapid spectral acquisition of the Brillouin-scattered light. Specifically, by exploiting a custom-built Fourier-transform imaging spectrometer and the symmetric properties of the Brillouin spectrum, we experimentally demonstrate full-field 2D spectral Brillouin imaging of phantoms as well as biological samples, at a throughput of up to 40,000 spectra per second, with a precision of ~70 MHz and an effective 2D image acquisition speed of 0.1 Hz over a ~300 × 300 µm 2 field of view. This represents an approximately three-orders-of-magnitude improvement in speed and throughput compared with standard confocal methods, while retaining high spatial resolution and the capability to acquire three-dimensional images of photosensitive samples in biology and medicine.",
+      "full_abstract": "Abstract Brillouin microscopy is an emerging optical elastography technique that can be used to assess mechanical properties of biological samples in a three-dimensional, all-optical and hence non-contact fashion. However, the low cross-section of spontaneous Brillouin scattering produces weak signals that often necessitate prolonged exposure times or illumination dosages that are potentially harmful for biological samples. Here we present a new approach for highly multiplexed and therefore rapid spectral acquisition of the Brillouin-scattered light. Specifically, by exploiting a custom-built Fourier-transform imaging spectrometer and the symmetric properties of the Brillouin spectrum, we experimentally demonstrate full-field 2D spectral Brillouin imaging of phantoms as well as biological samples, at a throughput of up to 40,000 spectra per second, with a precision of ~70 MHz and an effective 2D image acquisition speed of 0.1 Hz over a ~300 × 300 µm 2 field of view. This represents an approximately three-orders-of-magnitude improvement in speed and throughput compared with standard confocal methods, while retaining high spatial resolution and the capability to acquire three-dimensional images of photosensitive samples in biology and medicine.",
+      "snippet": "Abstract Brillouin microscopy is an emerging optical elastography technique that can be used to assess mechanical properties of biological samples in a three-dimensional, all-optical and hence non-contact fashion. However, the low cross-section of spontaneous…",
+      "abstract_truncated": true,
+      "published_date": "2025-02-20",
+      "pub_date": "2025-02-20",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T11:39:42+08:00",
+      "last_seen_batch_id": "2026-04-29_113942",
+      "seen_batch_ids": [
+        "2026-04-29_113942"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T11:39:42+08:00",
+      "crawl_batch_id": "2026-04-29_113942",
+      "source": "nature",
+      "keywords": [
+        "Full-field"
+      ],
+      "tags": [
+        "nature",
+        "Nature Photonics",
+        "batch:2026-04-29_113942"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-04-29T11:39:42+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-photonics",
+      "search_blob": "full-field brillouin microscopy based on an imaging fourier-transform spectrometer nature photonics carlo bevilacqua robert prevedel abstract brillouin microscopy is an emerging optical elastography technique that can be used to assess mechanical properties of biological samples in a three-dimensional, all-optical and hence non-contact fashion. however, the low cross-section of spontaneous brillouin scattering produces weak signals that often necessitate prolonged exposure times or illumination dosages that are potentially harmful for biological samples. here we present a new approach for highly multiplexed and therefore rapid spectral acquisition of the brillouin-scattered light. specifically, by exploiting a custom-built fourier-transform imaging spectrometer and the symmetric properties of the brillouin spectrum, we experimentally demonstrate full-field 2d spectral brillouin imaging of phantoms as well as biological samples, at a throughput of up to 40,000 spectra per second, with a precision of ~70 mhz and an effective 2d image acquisition speed of 0.1 hz over a ~300 × 300 µm 2 field of view. this represents an approximately three-orders-of-magnitude improvement in speed and throughput compared with standard confocal methods, while retaining high spatial resolution and the capability to acquire three-dimensional images of photosensitive samples in biology and medicine. full-field 10.1038/s41566-025-01619-y https://doi.org/10.1038/s41566-025-01619-y",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 29
+        }
+      ]
+    }
+  ]
+}

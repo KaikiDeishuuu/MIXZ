@@ -1,0 +1,637 @@
+{
+  "journal": "Biosensors and Bioelectronics",
+  "journal_slug": "biosensors-and-bioelectronics",
+  "article_count": 6,
+  "articles": [
+    {
+      "id": "10.1016/j.bios.2026.118506",
+      "title": "Graphene hybrid nanoprobes for targeted microbial sensing and ultralow-energy, deep-tissue, noninvasive multiphoton imaging in the NIR-I/II region",
+      "authors": [
+        "Wen-Shuo Kuo",
+        "Yen-Sung Lin",
+        "Chia-Yuan Chang",
+        "Jiu-Yao Wang",
+        "Pei-Chi Chen",
+        "Shih-Wen Tseng",
+        "Chiao-Yun Lin",
+        "Chan-Chi Chang",
+        "Shang-Rung Wu"
+      ],
+      "author": "Wen-Shuo Kuo, Yen-Sung Lin, Chia-Yuan Chang, Jiu-Yao Wang, Pei-Chi Chen, Shih-Wen Tseng, Chiao-Yun Lin, Chan-Chi Chang, Shang-Rung Wu",
+      "journal": "Biosensors and Bioelectronics",
+      "doi": "10.1016/j.bios.2026.118506",
+      "doi_value": "10.1016/j.bios.2026.118506",
+      "doi_url": "https://doi.org/10.1016/j.bios.2026.118506",
+      "url": "https://doi.org/10.1016/j.bios.2026.118506",
+      "detail_href": "/papers/10.1016-j.bios.2026.118506.html",
+      "abstract": "Nitrogen (N) doping and amino functionalization markedly enhance the electron-donating capacity of graphene quantum dots (GQDs), thereby improving charge-transfer efficiency in amino-N-GQDs and yielding substantially superior photophysical performance compared with amino-free N-GQDs and N-free amino-GQDs. Further optimization was achieved through conjugation of amino-N-GQDs with sulfur- and nitrogen-rich polymers, polystyrene sulfonate and polyethylenimine, resulting in amino-N-GQD-polymer nanohybrids with significantly improved optical behavior. These hybrid nanostructures exhibited high quantum yields, excellent photostability, negligible reactive oxygen species generation, and strong two-photon luminescence, positioning them as promising contrast agents for nonlinear bioimaging. To enable molecular specificity, antibody functionalization was incorporated. When conjugated with anti-lipopolysaccharide or anti-TasA antibodies, the nanohybrids selectively targeted Escherichia coli (E. coli) and Bacillus subtilis (B. subtilis), generating bright fluorescence, strong signal intensity, and high signal-to-noise ratios under two-photon excitation. Using a custom-built Ti:sapphire laser system operating at 970 nm (near-infrared-II region), imaging depths of up to 270 μm were achieved with ultralow excitation energies, 42.96 nJ pixel-1 for E. coli and 35.14 nJ pixel-1 for B. subtilis, acquired over 100 scans (total exposure = 0.666 s). The nanohybrids produced two-photon luminescence using only 1/49 and 1/36 of the energy required for cellular autofluorescence, corresponding to ∼2401- and ∼1296-fold signal enhancements, respectively. This remarkable efficiency supports deep, noninvasive imaging and underscores the potential of amino-N-GQD-polymer nanohybrids as versatile near-infrared-I/II-responsive probes for next-generation biomedical imaging applications.",
+      "full_abstract": "Nitrogen (N) doping and amino functionalization markedly enhance the electron-donating capacity of graphene quantum dots (GQDs), thereby improving charge-transfer efficiency in amino-N-GQDs and yielding substantially superior photophysical performance compared with amino-free N-GQDs and N-free amino-GQDs. Further optimization was achieved through conjugation of amino-N-GQDs with sulfur- and nitrogen-rich polymers, polystyrene sulfonate and polyethylenimine, resulting in amino-N-GQD-polymer nanohybrids with significantly improved optical behavior. These hybrid nanostructures exhibited high quantum yields, excellent photostability, negligible reactive oxygen species generation, and strong two-photon luminescence, positioning them as promising contrast agents for nonlinear bioimaging. To enable molecular specificity, antibody functionalization was incorporated. When conjugated with anti-lipopolysaccharide or anti-TasA antibodies, the nanohybrids selectively targeted Escherichia coli (E. coli) and Bacillus subtilis (B. subtilis), generating bright fluorescence, strong signal intensity, and high signal-to-noise ratios under two-photon excitation. Using a custom-built Ti:sapphire laser system operating at 970 nm (near-infrared-II region), imaging depths of up to 270 μm were achieved with ultralow excitation energies, 42.96 nJ pixel-1 for E. coli and 35.14 nJ pixel-1 for B. subtilis, acquired over 100 scans (total exposure = 0.666 s). The nanohybrids produced two-photon luminescence using only 1/49 and 1/36 of the energy required for cellular autofluorescence, corresponding to ∼2401- and ∼1296-fold signal enhancements, respectively. This remarkable efficiency supports deep, noninvasive imaging and underscores the potential of amino-N-GQD-polymer nanohybrids as versatile near-infrared-I/II-responsive probes for next-generation biomedical imaging applications.",
+      "snippet": "Nitrogen (N) doping and amino functionalization markedly enhance the electron-donating capacity of graphene quantum dots (GQDs), thereby improving charge-transfer efficiency in amino-N-GQDs and yielding substantially superior photophysical performance compared…",
+      "abstract_truncated": true,
+      "published_date": "2026-06-01",
+      "pub_date": "2026-06-01",
+      "first_seen_date": "2026-04-21",
+      "first_seen_time": "2026-04-21T11:43:02+08:00",
+      "first_seen_batch_id": "2026-04-21 11:43:02",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01",
+        "2026-04-30_090001",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "other",
+      "keywords": [
+        "Graphene"
+      ],
+      "tags": [
+        "other",
+        "Biosensors and Bioelectronics",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-21T11:43:02+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "biosensors-and-bioelectronics",
+      "search_blob": "graphene hybrid nanoprobes for targeted microbial sensing and ultralow-energy, deep-tissue, noninvasive multiphoton imaging in the nir-i/ii region biosensors and bioelectronics wen-shuo kuo yen-sung lin chia-yuan chang jiu-yao wang pei-chi chen shih-wen tseng chiao-yun lin chan-chi chang shang-rung wu nitrogen (n) doping and amino functionalization markedly enhance the electron-donating capacity of graphene quantum dots (gqds), thereby improving charge-transfer efficiency in amino-n-gqds and yielding substantially superior photophysical performance compared with amino-free n-gqds and n-free amino-gqds. further optimization was achieved through conjugation of amino-n-gqds with sulfur- and nitrogen-rich polymers, polystyrene sulfonate and polyethylenimine, resulting in amino-n-gqd-polymer nanohybrids with significantly improved optical behavior. these hybrid nanostructures exhibited high quantum yields, excellent photostability, negligible reactive oxygen species generation, and strong two-photon luminescence, positioning them as promising contrast agents for nonlinear bioimaging. to enable molecular specificity, antibody functionalization was incorporated. when conjugated with anti-lipopolysaccharide or anti-tasa antibodies, the nanohybrids selectively targeted escherichia coli (e. coli) and bacillus subtilis (b. subtilis), generating bright fluorescence, strong signal intensity, and high signal-to-noise ratios under two-photon excitation. using a custom-built ti:sapphire laser system operating at 970 nm (near-infrared-ii region), imaging depths of up to 270 μm were achieved with ultralow excitation energies, 42.96 nj pixel-1 for e. coli and 35.14 nj pixel-1 for b. subtilis, acquired over 100 scans (total exposure = 0.666 s). the nanohybrids produced two-photon luminescence using only 1/49 and 1/36 of the energy required for cellular autofluorescence, corresponding to ∼2401- and ∼1296-fold signal enhancements, respectively. this remarkable efficiency supports deep, noninvasive imaging and underscores the potential of amino-n-gqd-polymer nanohybrids as versatile near-infrared-i/ii-responsive probes for next-generation biomedical imaging applications. graphene 10.1016/j.bios.2026.118506 https://doi.org/10.1016/j.bios.2026.118506",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 1
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 5
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 7
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 25
+        },
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 29
+        }
+      ]
+    },
+    {
+      "id": "10.1016/j.bios.2023.115256",
+      "title": "Sequence-specific DNA labelling for fluorescence microscopy",
+      "authors": [
+        "Shalini Pradhan",
+        "Sinem Apaydin",
+        "Jonas Bucevičius",
+        "Rūta Gerasimaitė",
+        "Georgij Kostiuk",
+        "Gražvydas Lukinavičius"
+      ],
+      "author": "Shalini Pradhan, Sinem Apaydin, Jonas Bucevičius, Rūta Gerasimaitė, Georgij Kostiuk, Gražvydas Lukinavičius",
+      "journal": "Biosensors and Bioelectronics",
+      "doi": "10.1016/j.bios.2023.115256",
+      "doi_value": "10.1016/j.bios.2023.115256",
+      "doi_url": "https://doi.org/10.1016/j.bios.2023.115256",
+      "url": "https://doi.org/10.1016/j.bios.2023.115256",
+      "detail_href": "/papers/10.1016-j.bios.2023.115256.html",
+      "abstract": "The preservation of nucleus structure during microscopy imaging is a top priority for understanding chromatin organization, genome dynamics, and gene expression regulation. In this review, we summarize the sequence-specific DNA labelling methods that can be used for imaging in fixed and/or living cells without harsh treatment and DNA denaturation: (i) hairpin polyamides, (ii) triplex-forming oligonucleotides, (iii) dCas9 proteins, (iv) transcription activator-like effectors (TALEs) and (v) DNA methyltransferases (MTases). All these techniques are capable of identifying repetitive DNA loci and robust probes are available for telomeres and centromeres, but visualizing single-copy sequences is still challenging. In our futuristic vision, we see gradual replacement of the historically important fluorescence in situ hybridization (FISH) by less invasive and non-destructive methods compatible with live cell imaging. Combined with super-resolution fluorescence microscopy, these methods will open the possibility to look into unperturbed structure and dynamics of chromatin in living cells, tissues and whole organisms.",
+      "full_abstract": "The preservation of nucleus structure during microscopy imaging is a top priority for understanding chromatin organization, genome dynamics, and gene expression regulation. In this review, we summarize the sequence-specific DNA labelling methods that can be used for imaging in fixed and/or living cells without harsh treatment and DNA denaturation: (i) hairpin polyamides, (ii) triplex-forming oligonucleotides, (iii) dCas9 proteins, (iv) transcription activator-like effectors (TALEs) and (v) DNA methyltransferases (MTases). All these techniques are capable of identifying repetitive DNA loci and robust probes are available for telomeres and centromeres, but visualizing single-copy sequences is still challenging. In our futuristic vision, we see gradual replacement of the historically important fluorescence in situ hybridization (FISH) by less invasive and non-destructive methods compatible with live cell imaging. Combined with super-resolution fluorescence microscopy, these methods will open the possibility to look into unperturbed structure and dynamics of chromatin in living cells, tissues and whole organisms.",
+      "snippet": "The preservation of nucleus structure during microscopy imaging is a top priority for understanding chromatin organization, genome dynamics, and gene expression regulation. In this review, we summarize the sequence-specific DNA labelling methods that can be us…",
+      "abstract_truncated": true,
+      "published_date": "2023-06-01",
+      "pub_date": "2023-06-01",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "other",
+      "keywords": [
+        "Sequence-specific"
+      ],
+      "tags": [
+        "other",
+        "Biosensors and Bioelectronics",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "openalex",
+      "journal_slug": "biosensors-and-bioelectronics",
+      "search_blob": "sequence-specific dna labelling for fluorescence microscopy biosensors and bioelectronics shalini pradhan sinem apaydin jonas bucevičius rūta gerasimaitė georgij kostiuk gražvydas lukinavičius the preservation of nucleus structure during microscopy imaging is a top priority for understanding chromatin organization, genome dynamics, and gene expression regulation. in this review, we summarize the sequence-specific dna labelling methods that can be used for imaging in fixed and/or living cells without harsh treatment and dna denaturation: (i) hairpin polyamides, (ii) triplex-forming oligonucleotides, (iii) dcas9 proteins, (iv) transcription activator-like effectors (tales) and (v) dna methyltransferases (mtases). all these techniques are capable of identifying repetitive dna loci and robust probes are available for telomeres and centromeres, but visualizing single-copy sequences is still challenging. in our futuristic vision, we see gradual replacement of the historically important fluorescence in situ hybridization (fish) by less invasive and non-destructive methods compatible with live cell imaging. combined with super-resolution fluorescence microscopy, these methods will open the possibility to look into unperturbed structure and dynamics of chromatin in living cells, tissues and whole organisms. sequence-specific 10.1016/j.bios.2023.115256 https://doi.org/10.1016/j.bios.2023.115256",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 24
+        }
+      ]
+    },
+    {
+      "id": "10.1016/j.bios.2023.115903",
+      "title": "A single atom cobalt anchored MXene bifunctional platform for rapid, label-free and high-throughput biomarker analysis and tissue imaging",
+      "authors": [
+        "Weiqiang Liang",
+        "Weining Yan",
+        "Xiao Wang",
+        "Xinfeng Yan",
+        "Qiongzheng Hu",
+        "Wenqiang Zhang",
+        "Hongzheng Meng",
+        "Luxu Yin",
+        "Qing He",
+        "Chunxia Ma"
+      ],
+      "author": "Weiqiang Liang, Weining Yan, Xiao Wang, Xinfeng Yan, Qiongzheng Hu, Wenqiang Zhang, Hongzheng Meng, Luxu Yin, Qing He, Chunxia Ma",
+      "journal": "Biosensors and Bioelectronics",
+      "doi": "10.1016/j.bios.2023.115903",
+      "doi_value": "10.1016/j.bios.2023.115903",
+      "doi_url": "https://doi.org/10.1016/j.bios.2023.115903",
+      "url": "https://doi.org/10.1016/j.bios.2023.115903",
+      "detail_href": "/papers/10.1016-j.bios.2023.115903.html",
+      "abstract": "Few of single-atom materials have been served as platform to analyze small molecules for surface assisted laser desorption/ionization mass spectrometry (SALDI-MS). Herein, a novel single Co atom-anchored MXene (Co-N-Ti3C2) is prepared to achieve enhanced SALDI-MS and mass spectrometry imaging (MSI) performance for the first time. The Co-N-Ti3C2 films were prepared by a simple in situ self-assembly strategy to generate an efficient SALDI-MS platform. Compared to typical inorganic/organic matrices, Co-N-Ti3C2 films exhibit superior performance in small molecules detection with ultra-high sensitivity (LOD at amol level), excellent repeatability (CV <4%), clean background and wide analyte coverage, enabling accurate quantitative analysis of various low-concentration metabolites from 1 μL biofluid in seconds. Its usage efficiently enhanced SALDI-MS detection of various small-molecule biomarkers such as amino acids, succinic acid, itaconic acid, arachidonic acid, citrulline, prostaglandin E2, creatinine, uric acid, glutamine, D-mannose, cholesterol and inositol in positive ion mode. The blood glucose level in humans was successfully determined from a linearity concentration range (0.25-10 mM). Notably, the Co-N-Ti3C2 assisted SALDI-MSI enables study the spatial distribution of small molecules covering the range central to metabolomics at a high resolution on a tissue section. Furthermore, Co-N-Ti3C2 platform revealed a speciﬁc peak proﬁle that distinguishes osteoarthritis (OA) from rheumatoid arthritis (RA) tissue. Density functional theory theoretical investigation revealed that single Co atoms anchored on Ti3C2 could highly enhanced the ionization ability of metabolites, resulting in high-sensitivity and heterogeneous metabolome coverage.",
+      "full_abstract": "Few of single-atom materials have been served as platform to analyze small molecules for surface assisted laser desorption/ionization mass spectrometry (SALDI-MS). Herein, a novel single Co atom-anchored MXene (Co-N-Ti3C2) is prepared to achieve enhanced SALDI-MS and mass spectrometry imaging (MSI) performance for the first time. The Co-N-Ti3C2 films were prepared by a simple in situ self-assembly strategy to generate an efficient SALDI-MS platform. Compared to typical inorganic/organic matrices, Co-N-Ti3C2 films exhibit superior performance in small molecules detection with ultra-high sensitivity (LOD at amol level), excellent repeatability (CV <4%), clean background and wide analyte coverage, enabling accurate quantitative analysis of various low-concentration metabolites from 1 μL biofluid in seconds. Its usage efficiently enhanced SALDI-MS detection of various small-molecule biomarkers such as amino acids, succinic acid, itaconic acid, arachidonic acid, citrulline, prostaglandin E2, creatinine, uric acid, glutamine, D-mannose, cholesterol and inositol in positive ion mode. The blood glucose level in humans was successfully determined from a linearity concentration range (0.25-10 mM). Notably, the Co-N-Ti3C2 assisted SALDI-MSI enables study the spatial distribution of small molecules covering the range central to metabolomics at a high resolution on a tissue section. Furthermore, Co-N-Ti3C2 platform revealed a speciﬁc peak proﬁle that distinguishes osteoarthritis (OA) from rheumatoid arthritis (RA) tissue. Density functional theory theoretical investigation revealed that single Co atoms anchored on Ti3C2 could highly enhanced the ionization ability of metabolites, resulting in high-sensitivity and heterogeneous metabolome coverage.",
+      "snippet": "Few of single-atom materials have been served as platform to analyze small molecules for surface assisted laser desorption/ionization mass spectrometry (SALDI-MS). Herein, a novel single Co atom-anchored MXene (Co-N-Ti3C2) is prepared to achieve enhanced SALDI…",
+      "abstract_truncated": true,
+      "published_date": "2024-02-01",
+      "pub_date": "2024-02-01",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "other",
+      "keywords": [
+        "A"
+      ],
+      "tags": [
+        "other",
+        "Biosensors and Bioelectronics",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "semantic_scholar",
+      "journal_slug": "biosensors-and-bioelectronics",
+      "search_blob": "a single atom cobalt anchored mxene bifunctional platform for rapid, label-free and high-throughput biomarker analysis and tissue imaging biosensors and bioelectronics weiqiang liang weining yan xiao wang xinfeng yan qiongzheng hu wenqiang zhang hongzheng meng luxu yin qing he chunxia ma few of single-atom materials have been served as platform to analyze small molecules for surface assisted laser desorption/ionization mass spectrometry (saldi-ms). herein, a novel single co atom-anchored mxene (co-n-ti3c2) is prepared to achieve enhanced saldi-ms and mass spectrometry imaging (msi) performance for the first time. the co-n-ti3c2 films were prepared by a simple in situ self-assembly strategy to generate an efficient saldi-ms platform. compared to typical inorganic/organic matrices, co-n-ti3c2 films exhibit superior performance in small molecules detection with ultra-high sensitivity (lod at amol level), excellent repeatability (cv <4%), clean background and wide analyte coverage, enabling accurate quantitative analysis of various low-concentration metabolites from 1 μl biofluid in seconds. its usage efficiently enhanced saldi-ms detection of various small-molecule biomarkers such as amino acids, succinic acid, itaconic acid, arachidonic acid, citrulline, prostaglandin e2, creatinine, uric acid, glutamine, d-mannose, cholesterol and inositol in positive ion mode. the blood glucose level in humans was successfully determined from a linearity concentration range (0.25-10 mm). notably, the co-n-ti3c2 assisted saldi-msi enables study the spatial distribution of small molecules covering the range central to metabolomics at a high resolution on a tissue section. furthermore, co-n-ti3c2 platform revealed a speciﬁc peak proﬁle that distinguishes osteoarthritis (oa) from rheumatoid arthritis (ra) tissue. density functional theory theoretical investigation revealed that single co atoms anchored on ti3c2 could highly enhanced the ionization ability of metabolites, resulting in high-sensitivity and heterogeneous metabolome coverage. a 10.1016/j.bios.2023.115903 https://doi.org/10.1016/j.bios.2023.115903",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 27
+        }
+      ]
+    },
+    {
+      "id": "10.1016/j.bios.2025.117374",
+      "title": "Advancing biosensing through super-resolution fluorescence microscopy",
+      "authors": [
+        "Ga-eun Go",
+        "Doory Kim"
+      ],
+      "author": "Ga-eun Go, Doory Kim",
+      "journal": "Biosensors and Bioelectronics",
+      "doi": "10.1016/j.bios.2025.117374",
+      "doi_value": "10.1016/j.bios.2025.117374",
+      "doi_url": "https://doi.org/10.1016/j.bios.2025.117374",
+      "url": "https://doi.org/10.1016/j.bios.2025.117374",
+      "detail_href": "/papers/10.1016-j.bios.2025.117374.html",
+      "abstract": "Advancement of super-resolution fluorescence microscopy (SRM) has recently allowed applications to the biosensing by offering significant advantages over conventional methods. Its nanoscale spatial resolution and single-molecule sensitivity allow visualization and quantification of biomolecular targets without the need of signal amplification steps typically required in traditional biosensing methods. Moreover, recent innovations in probe design and imaging protocols have expanded SRM capabilities to enable dynamic biosensing in living cells, revealing molecular processes in their native cellular contexts. In this review, we discuss these applications of various SRM techniques to biosensing by highlighting their unique capabilities in providing spatial distribution information and high molecular sensitivity. We address several challenges that must be overcome for the broader application of SRM-based biosensing. Finally, we discuss perspectives on future directions for advancing this field towards practical applications.",
+      "full_abstract": "Advancement of super-resolution fluorescence microscopy (SRM) has recently allowed applications to the biosensing by offering significant advantages over conventional methods. Its nanoscale spatial resolution and single-molecule sensitivity allow visualization and quantification of biomolecular targets without the need of signal amplification steps typically required in traditional biosensing methods. Moreover, recent innovations in probe design and imaging protocols have expanded SRM capabilities to enable dynamic biosensing in living cells, revealing molecular processes in their native cellular contexts. In this review, we discuss these applications of various SRM techniques to biosensing by highlighting their unique capabilities in providing spatial distribution information and high molecular sensitivity. We address several challenges that must be overcome for the broader application of SRM-based biosensing. Finally, we discuss perspectives on future directions for advancing this field towards practical applications.",
+      "snippet": "Advancement of super-resolution fluorescence microscopy (SRM) has recently allowed applications to the biosensing by offering significant advantages over conventional methods. Its nanoscale spatial resolution and single-molecule sensitivity allow visualization…",
+      "abstract_truncated": true,
+      "published_date": "2025-06-01",
+      "pub_date": "2025-06-01",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29 09:00:01",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46",
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-29 09:00:01",
+      "source": "other",
+      "keywords": [
+        "Advancing"
+      ],
+      "tags": [
+        "other",
+        "Biosensors and Bioelectronics",
+        "batch:2026-04-29 09:00:01"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-04-29T09:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "biosensors-and-bioelectronics",
+      "search_blob": "advancing biosensing through super-resolution fluorescence microscopy biosensors and bioelectronics ga-eun go doory kim advancement of super-resolution fluorescence microscopy (srm) has recently allowed applications to the biosensing by offering significant advantages over conventional methods. its nanoscale spatial resolution and single-molecule sensitivity allow visualization and quantification of biomolecular targets without the need of signal amplification steps typically required in traditional biosensing methods. moreover, recent innovations in probe design and imaging protocols have expanded srm capabilities to enable dynamic biosensing in living cells, revealing molecular processes in their native cellular contexts. in this review, we discuss these applications of various srm techniques to biosensing by highlighting their unique capabilities in providing spatial distribution information and high molecular sensitivity. we address several challenges that must be overcome for the broader application of srm-based biosensing. finally, we discuss perspectives on future directions for advancing this field towards practical applications. advancing 10.1016/j.bios.2025.117374 https://doi.org/10.1016/j.bios.2025.117374",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 28
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 28
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 28
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 28
+        }
+      ]
+    },
+    {
+      "id": "10.1016/j.bios.2023.115809",
+      "title": "Fluorescence lifetime imaging microscopy for early diagnosis and severity prediction of preeclampsia with Nile Blue probe",
+      "authors": [
+        "Yinru Zhu",
+        "Benqing Wu",
+        "Xinwei Gao",
+        "Yong Guo",
+        "Xiao Peng",
+        "Luwei Wang",
+        "Xuewu Tian",
+        "Jian Wang",
+        "Wei Yan",
+        "Hui Zhang",
+        "Junle Qu"
+      ],
+      "author": "Yinru Zhu, Benqing Wu, Xinwei Gao, Yong Guo, Xiao Peng, Luwei Wang, Xuewu Tian, Jian Wang, Wei Yan, Hui Zhang, Junle Qu",
+      "journal": "Biosensors and Bioelectronics",
+      "doi": "10.1016/j.bios.2023.115809",
+      "doi_value": "10.1016/j.bios.2023.115809",
+      "doi_url": "https://doi.org/10.1016/j.bios.2023.115809",
+      "url": "https://doi.org/10.1016/j.bios.2023.115809",
+      "detail_href": "/papers/10.1016-j.bios.2023.115809.html",
+      "abstract": "Preeclampsia (PE) is a common pregnancy complication and the leading cause of maternal and perinatal mortality. Unfortunately, the early diagnostic methods for PE are still rare. Fluorescence lifetime imaging (FLIM) technology has proven to be applicable for diagnosis of various diseases. Here, we explore the possibility of the FLIM technique for PE early diagnosis and severity prediction with Nile Blue probe as biosensor. 23 placental slices and 162 third-trimester-collected maternal peripheral blood serum samples were stained with Nile blue and imaged by FLIM system. Fluorescence lifetimes of the probe increased significantly as the disease worsened (p < 0.0001). Characterization of the probe showed an increasing tendency in lifetimes under lower polarity conditions and revealed that the reason for the lifetime differences in serum sample was polarity changes caused by abnormal lipid metabolism in serum. For early diagnosis, we investigated 42 12th-week-collected chronic hypertension (CH) serum samples and successfully distinguished PE patients from pregnant women. With the functions of measuring fluorescence lifetime and detecting polarity changes caused by an abnormal lipid microenvironment in maternal peripheral blood, FLIM technology, together with Nile Blue probe, presents a feasible and advantageous approach for PE early noninvasive diagnosis and severity prediction.",
+      "full_abstract": "Preeclampsia (PE) is a common pregnancy complication and the leading cause of maternal and perinatal mortality. Unfortunately, the early diagnostic methods for PE are still rare. Fluorescence lifetime imaging (FLIM) technology has proven to be applicable for diagnosis of various diseases. Here, we explore the possibility of the FLIM technique for PE early diagnosis and severity prediction with Nile Blue probe as biosensor. 23 placental slices and 162 third-trimester-collected maternal peripheral blood serum samples were stained with Nile blue and imaged by FLIM system. Fluorescence lifetimes of the probe increased significantly as the disease worsened (p < 0.0001). Characterization of the probe showed an increasing tendency in lifetimes under lower polarity conditions and revealed that the reason for the lifetime differences in serum sample was polarity changes caused by abnormal lipid metabolism in serum. For early diagnosis, we investigated 42 12th-week-collected chronic hypertension (CH) serum samples and successfully distinguished PE patients from pregnant women. With the functions of measuring fluorescence lifetime and detecting polarity changes caused by an abnormal lipid microenvironment in maternal peripheral blood, FLIM technology, together with Nile Blue probe, presents a feasible and advantageous approach for PE early noninvasive diagnosis and severity prediction.",
+      "snippet": "Preeclampsia (PE) is a common pregnancy complication and the leading cause of maternal and perinatal mortality. Unfortunately, the early diagnostic methods for PE are still rare. Fluorescence lifetime imaging (FLIM) technology has proven to be applicable for d…",
+      "abstract_truncated": true,
+      "published_date": "2024-01-01",
+      "pub_date": "2024-01-01",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-04-21",
+      "last_seen_time": "2026-04-21T11:34:46+08:00",
+      "last_seen_batch_id": "2026-04-21 11:34:46",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46"
+      ],
+      "crawl_date": "2026-04-21",
+      "crawl_time": "2026-04-21T11:34:46+08:00",
+      "crawl_batch_id": "2026-04-21 11:34:46",
+      "source": "other",
+      "keywords": [
+        "Fluorescence"
+      ],
+      "tags": [
+        "other",
+        "Biosensors and Bioelectronics",
+        "batch:2026-04-21 11:34:46"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-04-21T11:34:46+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "biosensors-and-bioelectronics",
+      "search_blob": "fluorescence lifetime imaging microscopy for early diagnosis and severity prediction of preeclampsia with nile blue probe biosensors and bioelectronics yinru zhu benqing wu xinwei gao yong guo xiao peng luwei wang xuewu tian jian wang wei yan hui zhang junle qu preeclampsia (pe) is a common pregnancy complication and the leading cause of maternal and perinatal mortality. unfortunately, the early diagnostic methods for pe are still rare. fluorescence lifetime imaging (flim) technology has proven to be applicable for diagnosis of various diseases. here, we explore the possibility of the flim technique for pe early diagnosis and severity prediction with nile blue probe as biosensor. 23 placental slices and 162 third-trimester-collected maternal peripheral blood serum samples were stained with nile blue and imaged by flim system. fluorescence lifetimes of the probe increased significantly as the disease worsened (p < 0.0001). characterization of the probe showed an increasing tendency in lifetimes under lower polarity conditions and revealed that the reason for the lifetime differences in serum sample was polarity changes caused by abnormal lipid metabolism in serum. for early diagnosis, we investigated 42 12th-week-collected chronic hypertension (ch) serum samples and successfully distinguished pe patients from pregnant women. with the functions of measuring fluorescence lifetime and detecting polarity changes caused by an abnormal lipid microenvironment in maternal peripheral blood, flim technology, together with nile blue probe, presents a feasible and advantageous approach for pe early noninvasive diagnosis and severity prediction. fluorescence 10.1016/j.bios.2023.115809 https://doi.org/10.1016/j.bios.2023.115809",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 29
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 29
+        }
+      ]
+    },
+    {
+      "id": "10.1016/j.bios.2023.115597",
+      "title": "RaMALDI: Enabling simultaneous Raman and MALDI imaging of the same tissue section",
+      "authors": [
+        "Ethan Yang",
+        "Jeong Hee Kim",
+        "Caitlin M. Tressler",
+        "Xinyi Elaine Shen",
+        "Dalton R. Brown",
+        "Cole C. Johnson",
+        "Tae-Hun Hahm",
+        "Ishan Barman",
+        "Kristine Glunde"
+      ],
+      "author": "Ethan Yang, Jeong Hee Kim, Caitlin M. Tressler, Xinyi Elaine Shen, Dalton R. Brown, Cole C. Johnson, Tae-Hun Hahm, Ishan Barman, Kristine Glunde",
+      "journal": "Biosensors and Bioelectronics",
+      "doi": "10.1016/j.bios.2023.115597",
+      "doi_value": "10.1016/j.bios.2023.115597",
+      "doi_url": "https://doi.org/10.1016/j.bios.2023.115597",
+      "url": "https://doi.org/10.1016/j.bios.2023.115597",
+      "detail_href": "/papers/10.1016-j.bios.2023.115597.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2023-11-01",
+      "pub_date": "2023-11-01",
+      "first_seen_date": "2026-04-11",
+      "first_seen_time": "2026-04-11T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-11 09:00",
+      "last_seen_date": "2026-04-21",
+      "last_seen_time": "2026-04-21T11:34:46+08:00",
+      "last_seen_batch_id": "2026-04-21 11:34:46",
+      "seen_batch_ids": [
+        "2026-04-11 09:00",
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46"
+      ],
+      "crawl_date": "2026-04-21",
+      "crawl_time": "2026-04-21T11:34:46+08:00",
+      "crawl_batch_id": "2026-04-21 11:34:46",
+      "source": "other",
+      "keywords": [
+        "RaMALDI:"
+      ],
+      "tags": [
+        "other",
+        "Biosensors and Bioelectronics",
+        "batch:2026-04-21 11:34:46"
+      ],
+      "created_at": "2026-04-11T09:00:00+08:00",
+      "updated_at": "2026-04-21T11:34:46+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "biosensors-and-bioelectronics",
+      "search_blob": "ramaldi: enabling simultaneous raman and maldi imaging of the same tissue section biosensors and bioelectronics ethan yang jeong hee kim caitlin m. tressler xinyi elaine shen dalton r. brown cole c. johnson tae-hun hahm ishan barman kristine glunde 从历史日志迁移 ramaldi: 10.1016/j.bios.2023.115597 https://doi.org/10.1016/j.bios.2023.115597",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-11 09:00",
+          "crawl_time": "2026-04-11T09:00:00+08:00",
+          "crawl_date": "2026-04-11",
+          "rank_in_batch": 0
+        }
+      ]
+    }
+  ]
+}

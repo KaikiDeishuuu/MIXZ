@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { articles, paperSlug, formatDateTime } from '../../lib/data';
+export function getStaticPaths() {
+  return articles.map((article) => ({ params: { slug: paperSlug(article).replace(/\.html$/, '') }, props: { article } }));
+}
+const { article } = Astro.props;
+const related = articles.filter((item) => item.id !== article.id && item.journal === article.journal).slice(0, 4);
+---
+<BaseLayout title={`MIXZ · ${article.title}`} description={article.snippet || article.abstract || article.title}>
+  <section class="hero small paper-hero">
+    <p class="eyebrow">{article.journal}</p>
+    <h1>{article.title}</h1>
+    <p>{article.author || article.authors?.join(', ')}</p>
+    <div class="article-actions hero-actions">
+      {article.doi_url && <a href={article.doi_url} target="_blank" rel="noreferrer">打开 DOI</a>}
+      <a href="/archive">返回 Archive</a>
+    </div>
+  </section>
+  <section class="split detail-split">
+    <article class="panel prose">
+      <h2>Abstract</h2>
+      <p>{article.full_abstract || article.abstract || '暂无公开摘要'}</p>
+    </article>
+    <aside class="panel">
+      <h2>Metadata</h2>
+      <ul class="simple-list meta-list">
+        <li><span>Published</span><strong>{article.published_date || article.pub_date || 'N/A'}</strong></li>
+        <li><span>First seen</span><strong>{article.first_seen_batch_id || 'N/A'}</strong></li>
+        <li><span>Last seen</span><strong>{article.last_seen_batch_id || 'N/A'}</strong></li>
+        <li><span>Last crawl</span><strong>{formatDateTime(article.last_seen_time || article.crawl_time)}</strong></li>
+      </ul>
+    </aside>
+  </section>
+  {related.length > 0 && <section class="panel"><h2>Related in {article.journal}</h2>{related.map((item) => <ArticleCard article={item} />)}</section>}
+</BaseLayout>

@@ -62,13 +62,13 @@ async def _fetch_json(
     raise RuntimeError(f"http request failed after retries: url={url}, error={last_exc}")
 
 
-async def get_crossref_works(client: Any, journal: str, issn: str, days: int = DAYS_BACK) -> List[dict]:
+async def get_crossref_works(client: Any, journal: str, issn: str, days: int = DAYS_BACK, rows: int | None = None) -> List[dict]:
     from_date = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d")
     params = {
         "filter": f"issn:{issn},from-pub-date:{from_date}",
         "sort": "published",
         "order": "desc",
-        "rows": str(PER_JOURNAL_CAP * 4),
+        "rows": str(rows or PER_JOURNAL_CAP * 4),
         "query.bibliographic": QUERY,
     }
     url = "https://api.crossref.org/works?" + urllib.parse.urlencode(params)
@@ -115,13 +115,14 @@ async def best_abstract(client: Any, doi: str, title: str, crossref_abstract: st
     if crossref and not abstract_bad(title, crossref):
         return crossref, "crossref"
 
-    openalex_task = abstract_from_openalex(client, doi)
-    semantic_task = abstract_from_s2(client, doi)
-    openalex, semantic = await asyncio.gather(openalex_task, semantic_task)
-
+    # Query OpenAlex first and only fall back to Semantic Scholar when needed.
+    # Semantic Scholar frequently rate-limits unauthenticated requests; avoiding
+    # speculative parallel calls keeps crawls faster and quieter.
+    openalex = await abstract_from_openalex(client, doi)
     if openalex and not abstract_bad(title, openalex):
         return openalex, "openalex"
 
+    semantic = await abstract_from_s2(client, doi)
     if semantic and not abstract_bad(title, semantic):
         return semantic, "semantic_scholar"
 
@@ -130,19 +131,37 @@ async def best_abstract(client: Any, doi: str, title: str, crossref_abstract: st
     return "暂无公开摘要", "missing"
 
 
-async def parse_crossref_item(client: Any, journal: str, item: dict) -> Optional[Tuple[Paper, dict]]:
+def _crossref_pub_date(item: dict) -> str:
+    dp = item.get("issued", {}).get("date-parts", [[0]])[0]
+    year = dp[0] if len(dp) > 0 else 0
+    month = dp[1] if len(dp) > 1 else 1
+    day = dp[2] if len(dp) > 2 else 1
+    return f"{year:04d}-{month:02d}-{day:02d}"
+
+
+def parse_crossref_metadata(journal: str, item: dict) -> Optional[dict[str, Any]]:
     title = clean_text((item.get("title") or [""])[0])
     doi = normalize_doi(item.get("DOI", ""))
     if not title or not doi:
         return None
     if not is_relevant_title(title):
         return None
+    return {
+        "doi": doi,
+        "title": title,
+        "journal": journal,
+        "pub_date": _crossref_pub_date(item),
+        "item": item,
+    }
 
-    dp = item.get("issued", {}).get("date-parts", [[0]])[0]
-    year = dp[0] if len(dp) > 0 else 0
-    month = dp[1] if len(dp) > 1 else 1
-    day = dp[2] if len(dp) > 2 else 1
-    pub_date = f"{year:04d}-{month:02d}-{day:02d}"
+
+async def parse_crossref_item(client: Any, journal: str, item: dict) -> Optional[Tuple[Paper, dict]]:
+    meta = parse_crossref_metadata(journal, item)
+    if not meta:
+        return None
+    title = meta["title"]
+    doi = meta["doi"]
+    pub_date = meta["pub_date"]
 
     authors = item.get("author", [])
     if authors:

@@ -3,12 +3,16 @@ from __future__ import annotations
 import html
 import re
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 from .config import GOOD_ABSTRACT_LEN, MIN_ABSTRACT_LEN
 
+LOCAL_TZ = ZoneInfo("Asia/Shanghai")
+
+
 
 def now_iso() -> str:
-    return datetime.now(timezone.utc).isoformat()
+    return datetime.now(LOCAL_TZ).isoformat()
 
 
 def normalize_doi(doi: str) -> str:
@@ -42,7 +46,16 @@ def abstract_bad(title: str, abstract: str) -> bool:
 
 def is_relevant_title(title: str) -> bool:
     lowered = (title or "").lower()
-    exclude = ["deep learning", "machine learning", "neural network", "llm", "transformer"]
+    exclude = [
+        "author correction",
+        "correction:",
+        "deep learning",
+        "machine learning",
+        "neural network",
+        "llm",
+        "transformer",
+        "cell phone radiation",
+    ]
     if any(keyword in lowered for keyword in exclude):
         return False
     include = [
@@ -53,5 +66,10 @@ def is_relevant_title(title: str) -> bool:
         "tissue section",
         "antibody",
         "confocal",
+        "tissue imaging",
+        "fluorescence imaging",
+        "multiphoton",
+        "whole slide",
+        "pathology",
     ]
     return any(keyword in lowered for keyword in include)

@@ -1,0 +1,13 @@
+{
+  "name": "mixz-monorepo",
+  "private": true,
+  "scripts": {
+    "web:dev": "npm --prefix apps/web run dev",
+    "web:build": "npm --prefix apps/web run build",
+    "web:preview": "npm --prefix apps/web run preview",
+    "publish": "python3 -m apps.worker.main --render-only && bash scripts/mixz_self_check.sh"
+  },
+  "workspaces": [
+    "apps/web"
+  ]
+}

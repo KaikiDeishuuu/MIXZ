@@ -182,10 +182,13 @@ class DB:
         self.conn.commit()
         return is_new, improved_abstract
 
-    def create_batch(self, batch_id: str):
+    def create_batch(self, batch_id: str, crawl_time: str, metadata: Optional[dict] = None):
+        payload = {"version": "v3"}
+        if metadata:
+            payload.update(metadata)
         self.conn.execute(
             "INSERT OR REPLACE INTO batches(batch_id, crawl_time, query_used, metadata) VALUES (?, ?, ?, ?)",
-            (batch_id, batch_id, QUERY, json.dumps({"version": "v2"}, ensure_ascii=False)),
+            (batch_id, crawl_time, QUERY, json.dumps(payload, ensure_ascii=False)),
         )
         self.conn.commit()
 
@@ -208,6 +211,10 @@ class DB:
             (total, new_count, updated_count, batch_id),
         )
         self.conn.commit()
+
+    def known_dois(self) -> set[str]:
+        rows = self.conn.execute("SELECT doi FROM papers").fetchall()
+        return {r["doi"] for r in rows if r["doi"]}
 
     def stats(self) -> dict:
         s = self.conn.execute(
@@ -259,7 +266,10 @@ class DB:
         SELECT p.* FROM batch_papers bp
         JOIN papers p ON p.doi = bp.doi
         WHERE bp.batch_id = ?
-        ORDER BY COALESCE(bp.rank_in_batch, 999999), p.pub_date DESC, p.title ASC
+        ORDER BY datetime(replace(substr(COALESCE(p.first_seen_at, ''),1,19),'T',' ')) DESC,
+                 p.pub_date DESC,
+                 COALESCE(bp.rank_in_batch, 999999),
+                 p.title ASC
         """,
             (batch_id,),
         ).fetchall()

@@ -1,0 +1,628 @@
+{
+  "journal": "IEEE Transactions on Biomedical Engineering",
+  "journal_slug": "ieee-transactions-on-biomedical-engineering",
+  "article_count": 4,
+  "articles": [
+    {
+      "id": "10.1109/tbme.2024.3426487",
+      "title": "Transcutaneous Imaging of Rabbit Kidney Using 3-D Acoustic Wave Sparsely Activated Localization Microscopy With a Row-Column-Addressed Array",
+      "authors": [
+        "Qingyuan Tan",
+        "Kai Riemer",
+        "Joseph Hansen-Shearer",
+        "Jipeng Yan",
+        "Matthieu Toulemonde",
+        "Laura Taylor",
+        "Su Yan",
+        "Christopher Dunsby",
+        "Peter D. Weinberg",
+        "Meng-Xing Tang"
+      ],
+      "author": "Qingyuan Tan, Kai Riemer, Joseph Hansen-Shearer, Jipeng Yan, Matthieu Toulemonde, Laura Taylor, Su Yan, Christopher Dunsby, Peter D. Weinberg, Meng-Xing Tang",
+      "journal": "IEEE Transactions on Biomedical Engineering",
+      "doi": "10.1109/tbme.2024.3426487",
+      "doi_value": "10.1109/tbme.2024.3426487",
+      "doi_url": "https://doi.org/10.1109/tbme.2024.3426487",
+      "url": "https://doi.org/10.1109/tbme.2024.3426487",
+      "detail_href": "/papers/10.1109-tbme.2024.3426487.html",
+      "abstract": "OBJECTIVE: Super-resolution ultrasound (SRUS) imaging through localizing and tracking microbubbles, also known as ultrasound localization microscopy (ULM), can produce sub-diffraction resolution images of micro-vessels. We have recently demonstrated 3-D selective SRUS with a matrix array and phase change contrast agents (PCCAs). However, this method is limited to a small field of view (FOV) and by the complex hardware required. METHOD: This study proposed 3-D acoustic wave sparsely activated localization microscopy (AWSALM) using PCCAs and a 128+128 row-column-addressed (RCA) array, which offers ultrafast acquisition with over 6 times larger FOV and 4 times reduction in hardware complexity than a 1024-element matrix array. We first validated this method on an in-vitro microflow phantom and subsequently demonstrated non-invasively on a rabbit kidney in-vivo. RESULTS: Our results show that 3-D AWSALM images of the phantom covering a mm volume can be generated under 5 seconds with an 8 times resolution improvement over the system point spread function. The full volume of the rabbit kidney can be covered to generate 3-D microvascular structure, flow speed and direction super-resolution maps under 15 seconds, combining the large FOV of RCA with the high resolution of SRUS. Additionally, 3-D AWSALM is selective and can visualize the microvasculature within the activation volume and downstream vessels in isolation. Sub-sets of the kidney microvasculature can be imaged through selective activation of PCCAs. CONCLUSION: Our study demonstrates large FOV 3-D AWSALM using an RCA probe. SIGNIFICANCE: 3-D AWSALM offers an unique in-vivo imaging tool for fast, selective and large FOV vascular flow mapping.",
+      "full_abstract": "OBJECTIVE: Super-resolution ultrasound (SRUS) imaging through localizing and tracking microbubbles, also known as ultrasound localization microscopy (ULM), can produce sub-diffraction resolution images of micro-vessels. We have recently demonstrated 3-D selective SRUS with a matrix array and phase change contrast agents (PCCAs). However, this method is limited to a small field of view (FOV) and by the complex hardware required. METHOD: This study proposed 3-D acoustic wave sparsely activated localization microscopy (AWSALM) using PCCAs and a 128+128 row-column-addressed (RCA) array, which offers ultrafast acquisition with over 6 times larger FOV and 4 times reduction in hardware complexity than a 1024-element matrix array. We first validated this method on an in-vitro microflow phantom and subsequently demonstrated non-invasively on a rabbit kidney in-vivo. RESULTS: Our results show that 3-D AWSALM images of the phantom covering a mm volume can be generated under 5 seconds with an 8 times resolution improvement over the system point spread function. The full volume of the rabbit kidney can be covered to generate 3-D microvascular structure, flow speed and direction super-resolution maps under 15 seconds, combining the large FOV of RCA with the high resolution of SRUS. Additionally, 3-D AWSALM is selective and can visualize the microvasculature within the activation volume and downstream vessels in isolation. Sub-sets of the kidney microvasculature can be imaged through selective activation of PCCAs. CONCLUSION: Our study demonstrates large FOV 3-D AWSALM using an RCA probe. SIGNIFICANCE: 3-D AWSALM offers an unique in-vivo imaging tool for fast, selective and large FOV vascular flow mapping.",
+      "snippet": "OBJECTIVE: Super-resolution ultrasound (SRUS) imaging through localizing and tracking microbubbles, also known as ultrasound localization microscopy (ULM), can produce sub-diffraction resolution images of micro-vessels. We have recently demonstrated 3-D select…",
+      "abstract_truncated": true,
+      "published_date": "2024-12-01",
+      "pub_date": "2024-12-01",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29 09:00:01",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46",
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-29 09:00:01",
+      "source": "ieee",
+      "keywords": [
+        "Transcutaneous"
+      ],
+      "tags": [
+        "ieee",
+        "IEEE Transactions on Biomedical Engineering",
+        "batch:2026-04-29 09:00:01"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-04-29T09:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "openalex",
+      "journal_slug": "ieee-transactions-on-biomedical-engineering",
+      "search_blob": "transcutaneous imaging of rabbit kidney using 3-d acoustic wave sparsely activated localization microscopy with a row-column-addressed array ieee transactions on biomedical engineering qingyuan tan kai riemer joseph hansen-shearer jipeng yan matthieu toulemonde laura taylor su yan christopher dunsby peter d. weinberg meng-xing tang objective: super-resolution ultrasound (srus) imaging through localizing and tracking microbubbles, also known as ultrasound localization microscopy (ulm), can produce sub-diffraction resolution images of micro-vessels. we have recently demonstrated 3-d selective srus with a matrix array and phase change contrast agents (pccas). however, this method is limited to a small field of view (fov) and by the complex hardware required. method: this study proposed 3-d acoustic wave sparsely activated localization microscopy (awsalm) using pccas and a 128+128 row-column-addressed (rca) array, which offers ultrafast acquisition with over 6 times larger fov and 4 times reduction in hardware complexity than a 1024-element matrix array. we first validated this method on an in-vitro microflow phantom and subsequently demonstrated non-invasively on a rabbit kidney in-vivo. results: our results show that 3-d awsalm images of the phantom covering a mm volume can be generated under 5 seconds with an 8 times resolution improvement over the system point spread function. the full volume of the rabbit kidney can be covered to generate 3-d microvascular structure, flow speed and direction super-resolution maps under 15 seconds, combining the large fov of rca with the high resolution of srus. additionally, 3-d awsalm is selective and can visualize the microvasculature within the activation volume and downstream vessels in isolation. sub-sets of the kidney microvasculature can be imaged through selective activation of pccas. conclusion: our study demonstrates large fov 3-d awsalm using an rca probe. significance: 3-d awsalm offers an unique in-vivo imaging tool for fast, selective and large fov vascular flow mapping. transcutaneous 10.1109/tbme.2024.3426487 https://doi.org/10.1109/tbme.2024.3426487",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 13
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 13
+        }
+      ]
+    },
+    {
+      "id": "10.1109/tbme.2024.3414419",
+      "title": "Wearable Ultrasound System Using Low-Voltage Time Delay Spectrometry for Dynamic Tissue Imaging",
+      "authors": [
+        "Ahmed Bashatah",
+        "Biswarup Mukherjee",
+        "Afsana Rima",
+        "Shriniwas Patwardhan",
+        "Paul Otto",
+        "Robert Sutherland",
+        "Erica L. King",
+        "Brandon Lancaster",
+        "Abhishek Aher",
+        "Gabriel Gibson",
+        "Laura De Marzi",
+        "Zahra Taghizadeh",
+        "Samuel Acuña",
+        "Parag V. Chitnis",
+        "Siddhartha Sikdar"
+      ],
+      "author": "Ahmed Bashatah, Biswarup Mukherjee, Afsana Rima, Shriniwas Patwardhan, Paul Otto, Robert Sutherland, Erica L. King, Brandon Lancaster, Abhishek Aher, Gabriel Gibson, Laura De Marzi, Zahra Taghizadeh, Samuel Acuña, Parag V. Chitnis, Siddhartha Sikdar",
+      "journal": "IEEE Transactions on Biomedical Engineering",
+      "doi": "10.1109/tbme.2024.3414419",
+      "doi_value": "10.1109/tbme.2024.3414419",
+      "doi_url": "https://doi.org/10.1109/tbme.2024.3414419",
+      "url": "https://doi.org/10.1109/tbme.2024.3414419",
+      "detail_href": "/papers/10.1109-tbme.2024.3414419.html",
+      "abstract": "OBJECTIVE: Wearable ultrasound is emerging as a new paradigm of real-time imaging in freely moving humans and has wide applications from cardiovascular health monitoring to human gesture recognition. However, current wearable ultrasound devices have typically employed pulse-echo imaging which requires high excitation voltages and sampling rates, posing safety risks, and requiring specialized hardware. Our objective was to develop and evaluate a wearable ultrasound system based on time delay spectrometry (TDS) that utilizes low-voltage excitation and significantly simplified instrumentation. METHODS: We developed a TDS-based ultrasound system that utilizes continuous, frequency-modulated sweeps at low excitation voltages. By mixing the transmit and receive signals, the system digitizes the ultrasound signal at audio frequency (kHz) sampling rates. Wearable ultrasound transducers were developed, and the system was characterized in terms of imaging performance, acoustic output, thermal characteristics, and applications in musculoskeletal imaging. RESULTS: The prototype TDS system is capable of imaging up to 6 cm of depth with signal-to-noise ratio of up to 42 dB at a spatial resolution of 0.33 mm. Acoustic and thermal radiation measurements were within clinically safe limits for continuous ultrasound imaging. We demonstrated the ability to use a 4-channel wearable system for dynamic imaging of muscle activity. CONCLUSION: We developed a wearable ultrasound imaging system using TDS to mitigate challenges with pulse echo-based wearable ultrasound imaging systems. Our device is capable of high-resolution, dynamic imaging of deep-seated tissue structures and is safe for long-term use. SIGNIFICANCE: This work paves the way for low-voltage wearable ultrasound imaging devices with significantly reduced hardware complexity.",
+      "full_abstract": "OBJECTIVE: Wearable ultrasound is emerging as a new paradigm of real-time imaging in freely moving humans and has wide applications from cardiovascular health monitoring to human gesture recognition. However, current wearable ultrasound devices have typically employed pulse-echo imaging which requires high excitation voltages and sampling rates, posing safety risks, and requiring specialized hardware. Our objective was to develop and evaluate a wearable ultrasound system based on time delay spectrometry (TDS) that utilizes low-voltage excitation and significantly simplified instrumentation. METHODS: We developed a TDS-based ultrasound system that utilizes continuous, frequency-modulated sweeps at low excitation voltages. By mixing the transmit and receive signals, the system digitizes the ultrasound signal at audio frequency (kHz) sampling rates. Wearable ultrasound transducers were developed, and the system was characterized in terms of imaging performance, acoustic output, thermal characteristics, and applications in musculoskeletal imaging. RESULTS: The prototype TDS system is capable of imaging up to 6 cm of depth with signal-to-noise ratio of up to 42 dB at a spatial resolution of 0.33 mm. Acoustic and thermal radiation measurements were within clinically safe limits for continuous ultrasound imaging. We demonstrated the ability to use a 4-channel wearable system for dynamic imaging of muscle activity. CONCLUSION: We developed a wearable ultrasound imaging system using TDS to mitigate challenges with pulse echo-based wearable ultrasound imaging systems. Our device is capable of high-resolution, dynamic imaging of deep-seated tissue structures and is safe for long-term use. SIGNIFICANCE: This work paves the way for low-voltage wearable ultrasound imaging devices with significantly reduced hardware complexity.",
+      "snippet": "OBJECTIVE: Wearable ultrasound is emerging as a new paradigm of real-time imaging in freely moving humans and has wide applications from cardiovascular health monitoring to human gesture recognition. However, current wearable ultrasound devices have typically…",
+      "abstract_truncated": true,
+      "published_date": "2024-11-01",
+      "pub_date": "2024-11-01",
+      "first_seen_date": "2026-04-21",
+      "first_seen_time": "2026-04-21T11:43:02+08:00",
+      "first_seen_batch_id": "2026-04-21 11:43:02",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29 09:00:01",
+      "seen_batch_ids": [
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-29 09:00:01",
+      "source": "ieee",
+      "keywords": [
+        "Wearable"
+      ],
+      "tags": [
+        "ieee",
+        "IEEE Transactions on Biomedical Engineering",
+        "batch:2026-04-29 09:00:01"
+      ],
+      "created_at": "2026-04-21T11:43:02+08:00",
+      "updated_at": "2026-04-29T09:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "openalex",
+      "journal_slug": "ieee-transactions-on-biomedical-engineering",
+      "search_blob": "wearable ultrasound system using low-voltage time delay spectrometry for dynamic tissue imaging ieee transactions on biomedical engineering ahmed bashatah biswarup mukherjee afsana rima shriniwas patwardhan paul otto robert sutherland erica l. king brandon lancaster abhishek aher gabriel gibson laura de marzi zahra taghizadeh samuel acuña parag v. chitnis siddhartha sikdar objective: wearable ultrasound is emerging as a new paradigm of real-time imaging in freely moving humans and has wide applications from cardiovascular health monitoring to human gesture recognition. however, current wearable ultrasound devices have typically employed pulse-echo imaging which requires high excitation voltages and sampling rates, posing safety risks, and requiring specialized hardware. our objective was to develop and evaluate a wearable ultrasound system based on time delay spectrometry (tds) that utilizes low-voltage excitation and significantly simplified instrumentation. methods: we developed a tds-based ultrasound system that utilizes continuous, frequency-modulated sweeps at low excitation voltages. by mixing the transmit and receive signals, the system digitizes the ultrasound signal at audio frequency (khz) sampling rates. wearable ultrasound transducers were developed, and the system was characterized in terms of imaging performance, acoustic output, thermal characteristics, and applications in musculoskeletal imaging. results: the prototype tds system is capable of imaging up to 6 cm of depth with signal-to-noise ratio of up to 42 db at a spatial resolution of 0.33 mm. acoustic and thermal radiation measurements were within clinically safe limits for continuous ultrasound imaging. we demonstrated the ability to use a 4-channel wearable system for dynamic imaging of muscle activity. conclusion: we developed a wearable ultrasound imaging system using tds to mitigate challenges with pulse echo-based wearable ultrasound imaging systems. our device is capable of high-resolution, dynamic imaging of deep-seated tissue structures and is safe for long-term use. significance: this work paves the way for low-voltage wearable ultrasound imaging devices with significantly reduced hardware complexity. wearable 10.1109/tbme.2024.3414419 https://doi.org/10.1109/tbme.2024.3414419",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 14
+        }
+      ]
+    },
+    {
+      "id": "10.1109/tbme.2024.3355296",
+      "title": "Automated Whole Slide Imaging for Label-Free Histology Using Photon Absorption Remote Sensing Microscopy",
+      "authors": [
+        "James E.D. Tweel",
+        "Benjamin R. Ecclestone",
+        "Marian Boktor",
+        "Deepak Dinakaran",
+        "John R. Mackey",
+        "Parsin Haji Reza"
+      ],
+      "author": "James E.D. Tweel, Benjamin R. Ecclestone, Marian Boktor, Deepak Dinakaran, John R. Mackey, Parsin Haji Reza",
+      "journal": "IEEE Transactions on Biomedical Engineering",
+      "doi": "10.1109/tbme.2024.3355296",
+      "doi_value": "10.1109/tbme.2024.3355296",
+      "doi_url": "https://doi.org/10.1109/tbme.2024.3355296",
+      "url": "https://doi.org/10.1109/tbme.2024.3355296",
+      "detail_href": "/papers/10.1109-tbme.2024.3355296.html",
+      "abstract": "OBJECTIVE: Pathologists rely on histochemical stains to impart contrast in thin translucent tissue samples, revealing tissue features necessary for identifying pathological conditions. However, the chemical labeling process is destructive and often irreversible or challenging to undo, imposing practical limits on the number of stains that can be applied to the same tissue section. Here we present an automated label-free whole slide scanner using a PARS microscope designed for imaging thin, transmissible samples. METHODS: Peak SNR and in-focus acquisitions are achieved across entire tissue sections using the scattering signal from the PARS detection beam to measure the optimal focal plane. Whole slide images (WSI) are seamlessly stitched together using a custom contrast leveling algorithm. Identical tissue sections are subsequently H&E stained and brightfield imaged. The one-to-one WSIs from both modalities are visually and quantitatively compared. RESULTS: PARS WSIs are presented at standard 40x magnification in malignant human breast and skin samples. We show correspondence of subcellular diagnostic details in both PARS and H&E WSIs and demonstrate virtual H&E staining of an entire PARS WSI. The one-to-one WSI from both modalities show quantitative similarity in nuclear features and structural information. CONCLUSION: PARS WSIs are compatible with existing digital pathology tools, and samples remain suitable for histochemical, immunohistochemical, and other staining techniques. SIGNIFICANCE: This work is a critical advance for integrating label-free optical methods into standard histopathology workflows.",
+      "full_abstract": "OBJECTIVE: Pathologists rely on histochemical stains to impart contrast in thin translucent tissue samples, revealing tissue features necessary for identifying pathological conditions. However, the chemical labeling process is destructive and often irreversible or challenging to undo, imposing practical limits on the number of stains that can be applied to the same tissue section. Here we present an automated label-free whole slide scanner using a PARS microscope designed for imaging thin, transmissible samples. METHODS: Peak SNR and in-focus acquisitions are achieved across entire tissue sections using the scattering signal from the PARS detection beam to measure the optimal focal plane. Whole slide images (WSI) are seamlessly stitched together using a custom contrast leveling algorithm. Identical tissue sections are subsequently H&E stained and brightfield imaged. The one-to-one WSIs from both modalities are visually and quantitatively compared. RESULTS: PARS WSIs are presented at standard 40x magnification in malignant human breast and skin samples. We show correspondence of subcellular diagnostic details in both PARS and H&E WSIs and demonstrate virtual H&E staining of an entire PARS WSI. The one-to-one WSI from both modalities show quantitative similarity in nuclear features and structural information. CONCLUSION: PARS WSIs are compatible with existing digital pathology tools, and samples remain suitable for histochemical, immunohistochemical, and other staining techniques. SIGNIFICANCE: This work is a critical advance for integrating label-free optical methods into standard histopathology workflows.",
+      "snippet": "OBJECTIVE: Pathologists rely on histochemical stains to impart contrast in thin translucent tissue samples, revealing tissue features necessary for identifying pathological conditions. However, the chemical labeling process is destructive and often irreversibl…",
+      "abstract_truncated": true,
+      "published_date": "2024-06-01",
+      "pub_date": "2024-06-01",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29 09:00:01",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46",
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-29 09:00:01",
+      "source": "ieee",
+      "keywords": [
+        "Automated"
+      ],
+      "tags": [
+        "ieee",
+        "IEEE Transactions on Biomedical Engineering",
+        "batch:2026-04-29 09:00:01"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-04-29T09:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "openalex",
+      "journal_slug": "ieee-transactions-on-biomedical-engineering",
+      "search_blob": "automated whole slide imaging for label-free histology using photon absorption remote sensing microscopy ieee transactions on biomedical engineering james e.d. tweel benjamin r. ecclestone marian boktor deepak dinakaran john r. mackey parsin haji reza objective: pathologists rely on histochemical stains to impart contrast in thin translucent tissue samples, revealing tissue features necessary for identifying pathological conditions. however, the chemical labeling process is destructive and often irreversible or challenging to undo, imposing practical limits on the number of stains that can be applied to the same tissue section. here we present an automated label-free whole slide scanner using a pars microscope designed for imaging thin, transmissible samples. methods: peak snr and in-focus acquisitions are achieved across entire tissue sections using the scattering signal from the pars detection beam to measure the optimal focal plane. whole slide images (wsi) are seamlessly stitched together using a custom contrast leveling algorithm. identical tissue sections are subsequently h&e stained and brightfield imaged. the one-to-one wsis from both modalities are visually and quantitatively compared. results: pars wsis are presented at standard 40x magnification in malignant human breast and skin samples. we show correspondence of subcellular diagnostic details in both pars and h&e wsis and demonstrate virtual h&e staining of an entire pars wsi. the one-to-one wsi from both modalities show quantitative similarity in nuclear features and structural information. conclusion: pars wsis are compatible with existing digital pathology tools, and samples remain suitable for histochemical, immunohistochemical, and other staining techniques. significance: this work is a critical advance for integrating label-free optical methods into standard histopathology workflows. automated 10.1109/tbme.2024.3355296 https://doi.org/10.1109/tbme.2024.3355296",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 14
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 14
+        }
+      ]
+    },
+    {
+      "id": "10.1109/tbme.2023.3237267",
+      "title": "Comprehensive Surface Histology of Fresh Resection Margins With Rapid Open-Top Light-Sheet (OTLS) Microscopy",
+      "authors": [
+        "Gan Gao",
+        "Dominie Miyasato",
+        "Lindsey A. Barner",
+        "Robert Serafin",
+        "Kevin W. Bishop",
+        "Weisi Xie",
+        "Adam K. Glaser",
+        "Eben L. Rosenthal",
+        "Lawrence D. True",
+        "Jonathan T. C. Liu"
+      ],
+      "author": "Gan Gao, Dominie Miyasato, Lindsey A. Barner, Robert Serafin, Kevin W. Bishop, Weisi Xie, Adam K. Glaser, Eben L. Rosenthal, Lawrence D. True, Jonathan T. C. Liu",
+      "journal": "IEEE Transactions on Biomedical Engineering",
+      "doi": "10.1109/tbme.2023.3237267",
+      "doi_value": "10.1109/tbme.2023.3237267",
+      "doi_url": "https://doi.org/10.1109/tbme.2023.3237267",
+      "url": "https://doi.org/10.1109/tbme.2023.3237267",
+      "detail_href": "/papers/10.1109-tbme.2023.3237267.html",
+      "abstract": "OBJECTIVE: For tumor resections, margin status typically correlates with patient survival but positive margin rates are generally high (up to 45% for head and neck cancer). Frozen section analysis (FSA) is often used to intraoperatively assess the margins of excised tissue, but suffers from severe under-sampling of the actual margin surface, inferior image quality, slow turnaround, and tissue destructiveness. METHODS: , and (3) rapid digital surface extraction to account for topological irregularities at the tissue surface. RESULTS: In addition to the performance metrics listed above, we show that the image quality generated by our rapid surface-histology method approaches that of gold-standard archival histology. CONCLUSION: OTLS microscopy has the feasibility to provide intraoperative guidance of surgical oncology procedures. SIGNIFICANCE: The reported methods can potentially improve tumor-resection procedures, thereby improving patient outcomes and quality of life.",
+      "full_abstract": "OBJECTIVE: For tumor resections, margin status typically correlates with patient survival but positive margin rates are generally high (up to 45% for head and neck cancer). Frozen section analysis (FSA) is often used to intraoperatively assess the margins of excised tissue, but suffers from severe under-sampling of the actual margin surface, inferior image quality, slow turnaround, and tissue destructiveness. METHODS: , and (3) rapid digital surface extraction to account for topological irregularities at the tissue surface. RESULTS: In addition to the performance metrics listed above, we show that the image quality generated by our rapid surface-histology method approaches that of gold-standard archival histology. CONCLUSION: OTLS microscopy has the feasibility to provide intraoperative guidance of surgical oncology procedures. SIGNIFICANCE: The reported methods can potentially improve tumor-resection procedures, thereby improving patient outcomes and quality of life.",
+      "snippet": "OBJECTIVE: For tumor resections, margin status typically correlates with patient survival but positive margin rates are generally high (up to 45% for head and neck cancer). Frozen section analysis (FSA) is often used to intraoperatively assess the margins of e…",
+      "abstract_truncated": true,
+      "published_date": "2023-07-01",
+      "pub_date": "2023-07-01",
+      "first_seen_date": "2026-04-15",
+      "first_seen_time": "2026-04-15T22:23:33+08:00",
+      "first_seen_batch_id": "2026-04-15 22:23:33",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29 09:00:01",
+      "seen_batch_ids": [
+        "2026-04-15 22:23:33",
+        "2026-04-16 09:00:01",
+        "2026-04-17 09:00:01",
+        "2026-04-21 11:34:46",
+        "2026-04-21 11:43:02",
+        "2026-04-23 19:00:01",
+        "2026-04-24 09:00:01",
+        "2026-04-25 19:00:02",
+        "2026-04-26 09:00:02",
+        "2026-04-26 19:00:01",
+        "2026-04-27 09:00:01",
+        "2026-04-27 19:00:01",
+        "2026-04-28 09:00:01",
+        "2026-04-28 19:00:01",
+        "2026-04-29 09:00:01"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-29 09:00:01",
+      "source": "ieee",
+      "keywords": [
+        "Comprehensive"
+      ],
+      "tags": [
+        "ieee",
+        "IEEE Transactions on Biomedical Engineering",
+        "batch:2026-04-29 09:00:01"
+      ],
+      "created_at": "2026-04-15T22:23:33+08:00",
+      "updated_at": "2026-04-29T09:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "openalex",
+      "journal_slug": "ieee-transactions-on-biomedical-engineering",
+      "search_blob": "comprehensive surface histology of fresh resection margins with rapid open-top light-sheet (otls) microscopy ieee transactions on biomedical engineering gan gao dominie miyasato lindsey a. barner robert serafin kevin w. bishop weisi xie adam k. glaser eben l. rosenthal lawrence d. true jonathan t. c. liu objective: for tumor resections, margin status typically correlates with patient survival but positive margin rates are generally high (up to 45% for head and neck cancer). frozen section analysis (fsa) is often used to intraoperatively assess the margins of excised tissue, but suffers from severe under-sampling of the actual margin surface, inferior image quality, slow turnaround, and tissue destructiveness. methods: , and (3) rapid digital surface extraction to account for topological irregularities at the tissue surface. results: in addition to the performance metrics listed above, we show that the image quality generated by our rapid surface-histology method approaches that of gold-standard archival histology. conclusion: otls microscopy has the feasibility to provide intraoperative guidance of surgical oncology procedures. significance: the reported methods can potentially improve tumor-resection procedures, thereby improving patient outcomes and quality of life. comprehensive 10.1109/tbme.2023.3237267 https://doi.org/10.1109/tbme.2023.3237267",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29 09:00:01",
+          "crawl_time": "2026-04-29T09:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-28 19:00:01",
+          "crawl_time": "2026-04-28T19:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-28 09:00:01",
+          "crawl_time": "2026-04-28T09:00:01+08:00",
+          "crawl_date": "2026-04-28",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-27 19:00:01",
+          "crawl_time": "2026-04-27T19:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-27 09:00:01",
+          "crawl_time": "2026-04-27T09:00:01+08:00",
+          "crawl_date": "2026-04-27",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-26 19:00:01",
+          "crawl_time": "2026-04-26T19:00:01+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-26 09:00:02",
+          "crawl_time": "2026-04-26T09:00:02+08:00",
+          "crawl_date": "2026-04-26",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-25 19:00:02",
+          "crawl_time": "2026-04-25T19:00:02+08:00",
+          "crawl_date": "2026-04-25",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-24 09:00:01",
+          "crawl_time": "2026-04-24T09:00:01+08:00",
+          "crawl_date": "2026-04-24",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-23 19:00:01",
+          "crawl_time": "2026-04-23T19:00:01+08:00",
+          "crawl_date": "2026-04-23",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-21 11:43:02",
+          "crawl_time": "2026-04-21T11:43:02+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 15
+        }
+      ]
+    }
+  ]
+}

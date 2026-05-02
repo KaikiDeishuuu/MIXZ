@@ -1,0 +1,24 @@
+---
+import type { Article } from '../types';
+import { formatDate, paperSlug } from '../lib/data';
+interface Props { article: Article; mode?: 'compact' | 'full'; }
+const { article, mode = 'compact' } = Astro.props;
+const slug = paperSlug(article);
+const isNew = Boolean(article.is_new_in_batch);
+const abstractText = article.snippet || article.abstract || article.full_abstract || '暂无公开摘要';
+---
+<article class:list={["article-card", isNew ? "is-new" : "is-seen"]} data-search={article.search_blob || `${article.title} ${article.journal} ${article.doi}`}>
+  <div class="article-meta">
+    <span class:list={["badge", isNew ? "badge-new" : "badge-seen"]}>{isNew ? '新发现' : '重复命中'}</span>
+    <span>{article.journal || 'Unknown journal'}</span>
+    <span>{formatDate(article.published_date || article.pub_date)}</span>
+  </div>
+  <h2><a href={`/papers/${slug}.html`}>{article.title}</a></h2>
+  <p class="authors">{article.author || article.authors?.slice(0, 5).join(', ')}</p>
+  <p class="abstract">{mode === 'full' ? (article.full_abstract || article.abstract || '暂无公开摘要') : abstractText}</p>
+  <div class="article-actions">
+    <a href={`/papers/${slug}.html`}>详情</a>
+    {article.doi_url && <a href={article.doi_url} target="_blank" rel="noreferrer">DOI</a>}
+    {article.last_seen_batch_id && <span>最后命中：{article.last_seen_batch_id}</span>}
+  </div>
+</article>

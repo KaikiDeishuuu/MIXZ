@@ -56,3 +56,8 @@ htmlcov/
 .ipynb_checkpoints/
 tmp/
 *.tmp
+
+# Node / Astro
+node_modules/
+apps/web/dist/
+.astro/

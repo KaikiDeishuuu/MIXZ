@@ -1,0 +1,137 @@
+{
+  "batch_id": "2026-04-11 09:00",
+  "crawl_time": "2026-04-11T09:00:00+08:00",
+  "crawl_date": "2026-04-11",
+  "article_count": 2,
+  "journal_count": 2,
+  "journals": [
+    "Biosensors and Bioelectronics",
+    "Nature Biotechnology"
+  ],
+  "new_article_count": 0,
+  "updated_article_count": 0,
+  "articles": [
+    {
+      "id": "10.1038/s41587-024-02249-5",
+      "title": "Long-term intravital subcellular imaging with confocal scanning light-field microscopy",
+      "authors": [
+        "Lu et al."
+      ],
+      "author": "Lu et al.",
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-024-02249-5",
+      "doi_value": "10.1038/s41587-024-02249-5",
+      "doi_url": "https://doi.org/10.1038/s41587-024-02249-5",
+      "url": "https://doi.org/10.1038/s41587-024-02249-5",
+      "detail_href": "/papers/10.1038-s41587-024-02249-5.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2024-05-27",
+      "pub_date": "2024-05-27",
+      "crawl_date": "2026-04-11",
+      "crawl_time": "2026-04-11T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-11 09:00",
+      "source": "nature",
+      "keywords": [
+        "Long-term"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biotechnology",
+        "batch:2026-04-11 09:00"
+      ],
+      "created_at": "2026-04-11T09:00:00+08:00",
+      "updated_at": "2026-04-11T09:00:00+08:00",
+      "abstract_source": "unknown",
+      "journal_slug": "nature-biotechnology",
+      "search_blob": "long-term intravital subcellular imaging with confocal scanning light-field microscopy nature biotechnology lu et al. 从历史日志迁移 long-term 10.1038/s41587-024-02249-5 https://doi.org/10.1038/s41587-024-02249-5",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-11 09:00",
+          "crawl_time": "2026-04-11T09:00:00+08:00",
+          "crawl_date": "2026-04-11",
+          "rank_in_batch": 0
+        }
+      ]
+    },
+    {
+      "id": "10.1016/j.bios.2023.115597",
+      "title": "RaMALDI: Enabling simultaneous Raman and MALDI imaging of the same tissue section",
+      "authors": [
+        "Ethan Yang",
+        "Jeong Hee Kim",
+        "Caitlin M. Tressler",
+        "Xinyi Elaine Shen",
+        "Dalton R. Brown",
+        "Cole C. Johnson",
+        "Tae-Hun Hahm",
+        "Ishan Barman",
+        "Kristine Glunde"
+      ],
+      "author": "Ethan Yang, Jeong Hee Kim, Caitlin M. Tressler, Xinyi Elaine Shen, Dalton R. Brown, Cole C. Johnson, Tae-Hun Hahm, Ishan Barman, Kristine Glunde",
+      "journal": "Biosensors and Bioelectronics",
+      "doi": "10.1016/j.bios.2023.115597",
+      "doi_value": "10.1016/j.bios.2023.115597",
+      "doi_url": "https://doi.org/10.1016/j.bios.2023.115597",
+      "url": "https://doi.org/10.1016/j.bios.2023.115597",
+      "detail_href": "/papers/10.1016-j.bios.2023.115597.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2023-11-01",
+      "pub_date": "2023-11-01",
+      "crawl_date": "2026-04-11",
+      "crawl_time": "2026-04-11T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-11 09:00",
+      "source": "other",
+      "keywords": [
+        "RaMALDI:"
+      ],
+      "tags": [
+        "other",
+        "Biosensors and Bioelectronics",
+        "batch:2026-04-11 09:00"
+      ],
+      "created_at": "2026-04-11T09:00:00+08:00",
+      "updated_at": "2026-04-21T03:35:15.959859+00:00",
+      "abstract_source": "legacy",
+      "journal_slug": "biosensors-and-bioelectronics",
+      "search_blob": "ramaldi: enabling simultaneous raman and maldi imaging of the same tissue section biosensors and bioelectronics ethan yang jeong hee kim caitlin m. tressler xinyi elaine shen dalton r. brown cole c. johnson tae-hun hahm ishan barman kristine glunde 从历史日志迁移 ramaldi: 10.1016/j.bios.2023.115597 https://doi.org/10.1016/j.bios.2023.115597",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-21 11:34:46",
+          "crawl_time": "2026-04-21T11:34:46+08:00",
+          "crawl_date": "2026-04-21",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-17 09:00:01",
+          "crawl_time": "2026-04-17T09:00:01+08:00",
+          "crawl_date": "2026-04-17",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-16 09:00:01",
+          "crawl_time": "2026-04-16T09:00:01+08:00",
+          "crawl_date": "2026-04-16",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-15 22:23:33",
+          "crawl_time": "2026-04-15T22:23:33+08:00",
+          "crawl_date": "2026-04-15",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-11 09:00",
+          "crawl_time": "2026-04-11T09:00:00+08:00",
+          "crawl_date": "2026-04-11",
+          "rank_in_batch": 0
+        }
+      ]
+    }
+  ]
+}

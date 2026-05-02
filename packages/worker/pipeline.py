@@ -1,20 +1,24 @@
 from __future__ import annotations
 
-import asyncio
 import argparse
+import asyncio
 import json
 import logging
-from datetime import datetime
+import shutil
+import subprocess
+from pathlib import Path
 
 from packages.crawler.clients_async import (
     best_abstract,
     get_crossref_works,
     journal_sources,
-    parse_items_for_journal,
+    parse_crossref_item,
+    parse_crossref_metadata,
 )
+from packages.rendering.archive_data import make_batch_id, local_now_iso
 from packages.domain.config import DB_PATH, MAX_TOTAL_POSTS, PER_JOURNAL_CAP
 from packages.domain.text_utils import abstract_bad
-from packages.rendering.static_site import render_archive, render_index, render_paper_details, write_stats_json
+from packages.rendering.static_site import write_archive_exports, write_stats_json
 from packages.storage.sqlite_repo import DB
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s")
@@ -35,8 +39,9 @@ def _import_httpx():
 
 
 async def crawl_async(db: DB) -> dict:
-    batch_id = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    db.create_batch(batch_id)
+    started_at = local_now_iso()
+    batch_id = make_batch_id()
+    db.create_batch(batch_id, started_at, metadata={"source": "crawl_async", "selection": "novelty_first_recent_balanced"})
 
     seen_run = set()
     rank = 0
@@ -47,34 +52,86 @@ async def crawl_async(db: DB) -> dict:
     timeout = httpx.Timeout(connect=8.0, read=20.0, write=20.0, pool=20.0)
     limits = httpx.Limits(max_keepalive_connections=20, max_connections=40)
     async with httpx.AsyncClient(timeout=timeout, limits=limits) as client:
+        existing_dois = db.known_dois()
+        candidate_by_doi: dict[str, dict] = {}
+
+        # First pass is metadata-only: scan deeper across every journal without
+        # spending OpenAlex/Semantic Scholar calls on articles that will not be
+        # selected. This prevents early journals (for example ACS Nano) from
+        # monopolizing the latest batch with repeated old hits.
         for journal, issn in journal_sources():
-            picked = 0
-            items = await get_crossref_works(client, journal, issn)
-            parsed_rows = await parse_items_for_journal(client, journal, items)
-            for parsed in parsed_rows:
-                if not parsed:
+            items = await get_crossref_works(client, journal, issn, rows=max(PER_JOURNAL_CAP * 10, 60))
+            journal_candidates = 0
+            unseen_candidates = 0
+            for item in items:
+                meta = parse_crossref_metadata(journal, item)
+                if not meta:
                     continue
-                paper, raw = parsed
-                if paper.doi in seen_run:
-                    continue
+                journal_candidates += 1
+                if meta["doi"] not in existing_dois:
+                    unseen_candidates += 1
+                current = candidate_by_doi.get(meta["doi"])
+                if current is None or meta.get("pub_date", "") > current.get("pub_date", ""):
+                    candidate_by_doi[meta["doi"]] = meta
+            _log(
+                "journal_candidates_scanned",
+                journal=journal,
+                fetched=len(items),
+                relevant=journal_candidates,
+                unseen=unseen_candidates,
+            )
 
-                is_new, improved = db.upsert_paper(paper, raw)
-                rank += 1
-                db.add_batch_paper(batch_id, paper.doi, rank)
-                seen_run.add(paper.doi)
-                picked += 1
+        candidates = list(candidate_by_doi.values())
+        # Prefer never-before-seen articles, then sort within each novelty bucket
+        # by publication date. This makes the latest batch useful even when a
+        # source keeps returning the same high-relevance historical papers.
+        candidates.sort(
+            key=lambda item: (
+                item["doi"] not in existing_dois,
+                item.get("pub_date") or "0000-00-00",
+                item.get("journal") or "",
+                item.get("title") or "",
+            ),
+            reverse=True,
+        )
 
-                if is_new:
-                    new_count += 1
-                elif improved:
-                    updated_count += 1
-
-                if len(seen_run) >= MAX_TOTAL_POSTS:
-                    break
-                if picked >= PER_JOURNAL_CAP:
-                    break
-            if len(seen_run) >= MAX_TOTAL_POSTS:
+        selected: list[dict] = []
+        per_journal_counts: dict[str, int] = {}
+        for candidate in candidates:
+            journal = candidate.get("journal") or "unknown"
+            if per_journal_counts.get(journal, 0) >= PER_JOURNAL_CAP:
+                continue
+            selected.append(candidate)
+            per_journal_counts[journal] = per_journal_counts.get(journal, 0) + 1
+            if len(selected) >= MAX_TOTAL_POSTS:
                 break
+
+        _log(
+            "crawl_selection_completed",
+            candidates=len(candidates),
+            selected=len(selected),
+            selected_unseen=sum(1 for item in selected if item["doi"] not in existing_dois),
+            selected_seen_again=sum(1 for item in selected if item["doi"] in existing_dois),
+            per_journal=per_journal_counts,
+        )
+
+        for candidate in selected:
+            parsed = await parse_crossref_item(client, candidate["journal"], candidate["item"])
+            if not parsed:
+                continue
+            paper, raw = parsed
+            if paper.doi in seen_run:
+                continue
+
+            is_new, improved = db.upsert_paper(paper, raw)
+            rank += 1
+            db.add_batch_paper(batch_id, paper.doi, rank)
+            seen_run.add(paper.doi)
+
+            if is_new:
+                new_count += 1
+            elif improved:
+                updated_count += 1
 
     db.finalize_batch(batch_id, new_count=new_count, updated_count=updated_count)
     result = {
@@ -82,6 +139,8 @@ async def crawl_async(db: DB) -> dict:
         "fetched": len(seen_run),
         "new": new_count,
         "updated": updated_count,
+        "generated_at": started_at,
+        "crawl_time": started_at,
     }
     _log("crawl_completed", **result)
     return result
@@ -146,6 +205,26 @@ def prune_redundant_batches(db: DB) -> dict:
     return {"kept": len(kept), "removed": len(removed), "removed_items": removed}
 
 
+def sync_production_database() -> None:
+    """Keep the downloadable/production SQLite DB in sync with the canonical repo DB."""
+    target = Path("/var/www/mixz/data/papers.db")
+    try:
+        if DB_PATH.resolve() == target.resolve():
+            return
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(DB_PATH, target)
+        log.info("production db synced: %s -> %s", DB_PATH, target)
+    except Exception as exc:  # pragma: no cover - filesystem specific
+        log.warning("failed to sync production db: %s", exc)
+
+
+def build_and_deploy_astro_site() -> None:
+    """Build Astro from exported JSON and deploy the static artifact to Nginx root."""
+    root = Path(__file__).resolve().parents[2]
+    subprocess.run(["npm", "--prefix", "apps/web", "run", "build"], cwd=root, check=True)
+    subprocess.run(["/bin/bash", "scripts/deploy_astro_site.sh"], cwd=root, check=True)
+
+
 def run_pipeline(render_only: bool = False, prune: bool = False) -> dict:
     db = DB(DB_PATH)
     try:
@@ -157,16 +236,24 @@ def run_pipeline(render_only: bool = False, prune: bool = False) -> dict:
             log.info("prune_result=%s", json.dumps(prune_result, ensure_ascii=False))
 
         if render_only:
-            crawl_result = {"batch_id": "render-only", "fetched": 0, "new": 0, "updated": 0}
+            rendered_at = local_now_iso()
+            crawl_result = {
+                "batch_id": "render-only",
+                "fetched": 0,
+                "new": 0,
+                "updated": 0,
+                "generated_at": rendered_at,
+                "crawl_time": rendered_at,
+            }
             enrich_result = {"checked": 0, "filled": 0, "skipped": True}
         else:
             crawl_result = crawl(db)
             enrich_result = enrich_missing_abstracts(db, limit=300)
 
-        render_index(db)
-        render_archive(db)
-        render_paper_details(db)
+        write_archive_exports(db)
         write_stats_json(db, {**crawl_result, "abstract_backfill": enrich_result, "prune": prune_result})
+        sync_production_database()
+        build_and_deploy_astro_site()
 
         result = {
             "ok": True,

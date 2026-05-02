@@ -1,0 +1,425 @@
+{
+  "journal": "Nature Biotechnology",
+  "journal_slug": "nature-biotechnology",
+  "article_count": 6,
+  "articles": [
+    {
+      "id": "10.1038/s41587-025-02882-8",
+      "title": "Isotropic, aberration-corrected light sheet microscopy for rapid high-resolution imaging of cleared tissue",
+      "authors": [
+        "Mostafa Aakhte",
+        "Gesine F. Müller",
+        "Lennart Roos",
+        "Joe Li",
+        "Torben Göpel",
+        "Kurt R. Weiss",
+        "Aleyna M. Diniz",
+        "Jan Wenzel",
+        "Markus Schwaninger",
+        "Tobias Moser",
+        "Jan Huisken"
+      ],
+      "author": "Mostafa Aakhte, Gesine F. Müller, Lennart Roos, Joe Li, Torben Göpel, Kurt R. Weiss, Aleyna M. Diniz, Jan Wenzel, Markus Schwaninger, Tobias Moser, Jan Huisken",
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-025-02882-8",
+      "doi_value": "10.1038/s41587-025-02882-8",
+      "doi_url": "https://doi.org/10.1038/s41587-025-02882-8",
+      "url": "https://doi.org/10.1038/s41587-025-02882-8",
+      "detail_href": "/papers/10.1038-s41587-025-02882-8.html",
+      "abstract": "Abstract Light-sheet microscopy is ideal for imaging large and cleared tissues, but achieving a high isotropic resolution for a centimeter-sized sample is limited by slow and often aberrated, axially scanned light sheets. Here, we introduce a compact, high-speed light-sheet fluorescence microscope achieving 850 nm isotropic resolution across cleared samples up to 1 cm³ and refractive indices ranging from 1.33 to 1.56. Using off-the-shelf optics, we combine an air objective and a meniscus lens with an axially swept light sheet to achieve diffraction-limited resolution and aberration correction. The effective field of view is increased by twofold by correcting the field curvature of the light sheet using a concave mirror in the remote focusing unit. Adapting the light sheet’s motion with a closed-loop feedback enhances the imaging speed by tenfold, reaching 100 frames per second while maintaining resolution and field of view. We benchmark the system performance across scales, from subcellular structure up to centimeter scale, using various clearing methods.",
+      "full_abstract": "Abstract Light-sheet microscopy is ideal for imaging large and cleared tissues, but achieving a high isotropic resolution for a centimeter-sized sample is limited by slow and often aberrated, axially scanned light sheets. Here, we introduce a compact, high-speed light-sheet fluorescence microscope achieving 850 nm isotropic resolution across cleared samples up to 1 cm³ and refractive indices ranging from 1.33 to 1.56. Using off-the-shelf optics, we combine an air objective and a meniscus lens with an axially swept light sheet to achieve diffraction-limited resolution and aberration correction. The effective field of view is increased by twofold by correcting the field curvature of the light sheet using a concave mirror in the remote focusing unit. Adapting the light sheet’s motion with a closed-loop feedback enhances the imaging speed by tenfold, reaching 100 frames per second while maintaining resolution and field of view. We benchmark the system performance across scales, from subcellular structure up to centimeter scale, using various clearing methods.",
+      "snippet": "Abstract Light-sheet microscopy is ideal for imaging large and cleared tissues, but achieving a high isotropic resolution for a centimeter-sized sample is limited by slow and often aberrated, axially scanned light sheets. Here, we introduce a compact, high-spe…",
+      "abstract_truncated": true,
+      "published_date": "2025-11-13",
+      "pub_date": "2025-11-13",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-29_113942",
+        "2026-04-30_090001",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "nature",
+      "keywords": [
+        "Isotropic,"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biotechnology",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-biotechnology",
+      "search_blob": "isotropic, aberration-corrected light sheet microscopy for rapid high-resolution imaging of cleared tissue nature biotechnology mostafa aakhte gesine f. müller lennart roos joe li torben göpel kurt r. weiss aleyna m. diniz jan wenzel markus schwaninger tobias moser jan huisken abstract light-sheet microscopy is ideal for imaging large and cleared tissues, but achieving a high isotropic resolution for a centimeter-sized sample is limited by slow and often aberrated, axially scanned light sheets. here, we introduce a compact, high-speed light-sheet fluorescence microscope achieving 850 nm isotropic resolution across cleared samples up to 1 cm³ and refractive indices ranging from 1.33 to 1.56. using off-the-shelf optics, we combine an air objective and a meniscus lens with an axially swept light sheet to achieve diffraction-limited resolution and aberration correction. the effective field of view is increased by twofold by correcting the field curvature of the light sheet using a concave mirror in the remote focusing unit. adapting the light sheet’s motion with a closed-loop feedback enhances the imaging speed by tenfold, reaching 100 frames per second while maintaining resolution and field of view. we benchmark the system performance across scales, from subcellular structure up to centimeter scale, using various clearing methods. isotropic, 10.1038/s41587-025-02882-8 https://doi.org/10.1038/s41587-025-02882-8",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 24
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 24
+        },
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 30
+        },
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 6
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41587-025-02919-y",
+      "title": "Light-controlled tissue sectioning for volumetric imaging",
+      "authors": [
+        "Iris Marchal"
+      ],
+      "author": "Iris Marchal",
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-025-02919-y",
+      "doi_value": "10.1038/s41587-025-02919-y",
+      "doi_url": "https://doi.org/10.1038/s41587-025-02919-y",
+      "url": "https://doi.org/10.1038/s41587-025-02919-y",
+      "detail_href": "/papers/10.1038-s41587-025-02919-y.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2025-11-01",
+      "pub_date": "2025-11-01",
+      "first_seen_date": "2026-04-13",
+      "first_seen_time": "2026-04-13T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-13 09:00",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-13 09:00",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "nature",
+      "keywords": [
+        "Light-controlled"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biotechnology",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-biotechnology",
+      "search_blob": "light-controlled tissue sectioning for volumetric imaging nature biotechnology iris marchal 从历史日志迁移 light-controlled 10.1038/s41587-025-02919-y https://doi.org/10.1038/s41587-025-02919-y",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 23
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 23
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 25
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 25
+        },
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41587-023-01875-9",
+      "title": "Fluorescence microscopy resolution increases to near-atomic level",
+      "authors": [
+        "Julie N. Chuong"
+      ],
+      "author": "Julie N. Chuong",
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-023-01875-9",
+      "doi_value": "10.1038/s41587-023-01875-9",
+      "doi_url": "https://doi.org/10.1038/s41587-023-01875-9",
+      "url": "https://doi.org/10.1038/s41587-023-01875-9",
+      "detail_href": "/papers/10.1038-s41587-023-01875-9.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2023-07-01",
+      "pub_date": "2023-07-01",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "nature",
+      "keywords": [
+        "Fluorescence"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biotechnology",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-biotechnology",
+      "search_blob": "fluorescence microscopy resolution increases to near-atomic level nature biotechnology julie n. chuong 暂无公开摘要 fluorescence 10.1038/s41587-023-01875-9 https://doi.org/10.1038/s41587-023-01875-9",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 20
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41587-025-02613-z",
+      "title": "Spatial transcriptomic imaging of an intact organism using volumetric DNA microscopy",
+      "authors": [
+        "Nianchao Qian",
+        "Joshua A. Weinstein"
+      ],
+      "author": "Nianchao Qian, Joshua A. Weinstein",
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-025-02613-z",
+      "doi_value": "10.1038/s41587-025-02613-z",
+      "doi_url": "https://doi.org/10.1038/s41587-025-02613-z",
+      "url": "https://doi.org/10.1038/s41587-025-02613-z",
+      "detail_href": "/papers/10.1038-s41587-025-02613-z.html",
+      "abstract": "molecules by forming a distributed intermolecular network of proximal unique DNA barcodes tagging complementary DNA molecules inside the specimen. After sequencing the DNA-encoded network, an image of molecular positions is inferred using geodesic spectral embeddings, a dimensionality reduction approach that we show to be especially suitable for this data-inverse problem. Applying whole-transcriptome volumetric DNA microscopy to intact zebrafish embryos, we demonstrate that three-dimensional image inference recapitulates zebrafish morphology and known gene expression patterns, capturing the spatial organization of gene sequences. Our extension of spatial genetic measurements to three dimensions, independent of prior templates, opens the door to detailed joint resolution of genomics and morphology in biological tissues.",
+      "full_abstract": "molecules by forming a distributed intermolecular network of proximal unique DNA barcodes tagging complementary DNA molecules inside the specimen. After sequencing the DNA-encoded network, an image of molecular positions is inferred using geodesic spectral embeddings, a dimensionality reduction approach that we show to be especially suitable for this data-inverse problem. Applying whole-transcriptome volumetric DNA microscopy to intact zebrafish embryos, we demonstrate that three-dimensional image inference recapitulates zebrafish morphology and known gene expression patterns, capturing the spatial organization of gene sequences. Our extension of spatial genetic measurements to three dimensions, independent of prior templates, opens the door to detailed joint resolution of genomics and morphology in biological tissues.",
+      "snippet": "molecules by forming a distributed intermolecular network of proximal unique DNA barcodes tagging complementary DNA molecules inside the specimen. After sequencing the DNA-encoded network, an image of molecular positions is inferred using geodesic spectral emb…",
+      "abstract_truncated": true,
+      "published_date": "2025-03-27",
+      "pub_date": "2025-03-27",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T11:39:42+08:00",
+      "last_seen_batch_id": "2026-04-29_113942",
+      "seen_batch_ids": [
+        "2026-04-29_113942"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T11:39:42+08:00",
+      "crawl_batch_id": "2026-04-29_113942",
+      "source": "nature",
+      "keywords": [
+        "Spatial"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biotechnology",
+        "batch:2026-04-29_113942"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-04-29T11:39:42+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "openalex",
+      "journal_slug": "nature-biotechnology",
+      "search_blob": "spatial transcriptomic imaging of an intact organism using volumetric dna microscopy nature biotechnology nianchao qian joshua a. weinstein molecules by forming a distributed intermolecular network of proximal unique dna barcodes tagging complementary dna molecules inside the specimen. after sequencing the dna-encoded network, an image of molecular positions is inferred using geodesic spectral embeddings, a dimensionality reduction approach that we show to be especially suitable for this data-inverse problem. applying whole-transcriptome volumetric dna microscopy to intact zebrafish embryos, we demonstrate that three-dimensional image inference recapitulates zebrafish morphology and known gene expression patterns, capturing the spatial organization of gene sequences. our extension of spatial genetic measurements to three dimensions, independent of prior templates, opens the door to detailed joint resolution of genomics and morphology in biological tissues. spatial 10.1038/s41587-025-02613-z https://doi.org/10.1038/s41587-025-02613-z",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 26
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41587-025-02604-0",
+      "title": "Fluorescence imaging of RNA and protein in deep tissue",
+      "authors": [
+        "Iris Marchal"
+      ],
+      "author": "Iris Marchal",
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-025-02604-0",
+      "doi_value": "10.1038/s41587-025-02604-0",
+      "doi_url": "https://doi.org/10.1038/s41587-025-02604-0",
+      "url": "https://doi.org/10.1038/s41587-025-02604-0",
+      "detail_href": "/papers/10.1038-s41587-025-02604-0.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-03-01",
+      "pub_date": "2025-03-01",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T11:39:42+08:00",
+      "last_seen_batch_id": "2026-04-29_113942",
+      "seen_batch_ids": [
+        "2026-04-29_113942"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T11:39:42+08:00",
+      "crawl_batch_id": "2026-04-29_113942",
+      "source": "nature",
+      "keywords": [
+        "Fluorescence"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biotechnology",
+        "batch:2026-04-29_113942"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-04-29T11:39:42+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-biotechnology",
+      "search_blob": "fluorescence imaging of rna and protein in deep tissue nature biotechnology iris marchal 暂无公开摘要 fluorescence 10.1038/s41587-025-02604-0 https://doi.org/10.1038/s41587-025-02604-0",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 28
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41587-024-02249-5",
+      "title": "Long-term intravital subcellular imaging with confocal scanning light-field microscopy",
+      "authors": [
+        "Lu et al."
+      ],
+      "author": "Lu et al.",
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-024-02249-5",
+      "doi_value": "10.1038/s41587-024-02249-5",
+      "doi_url": "https://doi.org/10.1038/s41587-024-02249-5",
+      "url": "https://doi.org/10.1038/s41587-024-02249-5",
+      "detail_href": "/papers/10.1038-s41587-024-02249-5.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2024-05-27",
+      "pub_date": "2024-05-27",
+      "first_seen_date": "2026-04-11",
+      "first_seen_time": "2026-04-11T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-11 09:00",
+      "last_seen_date": "2026-04-11",
+      "last_seen_time": "2026-04-11T09:00:00+08:00",
+      "last_seen_batch_id": "2026-04-11 09:00",
+      "seen_batch_ids": [
+        "2026-04-11 09:00"
+      ],
+      "crawl_date": "2026-04-11",
+      "crawl_time": "2026-04-11T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-11 09:00",
+      "source": "nature",
+      "keywords": [
+        "Long-term"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biotechnology",
+        "batch:2026-04-11 09:00"
+      ],
+      "created_at": "2026-04-11T09:00:00+08:00",
+      "updated_at": "2026-04-11T09:00:00+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "unknown",
+      "journal_slug": "nature-biotechnology",
+      "search_blob": "long-term intravital subcellular imaging with confocal scanning light-field microscopy nature biotechnology lu et al. 从历史日志迁移 long-term 10.1038/s41587-024-02249-5 https://doi.org/10.1038/s41587-024-02249-5",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-11 09:00",
+          "crawl_time": "2026-04-11T09:00:00+08:00",
+          "crawl_date": "2026-04-11",
+          "rank_in_batch": 0
+        }
+      ]
+    }
+  ]
+}

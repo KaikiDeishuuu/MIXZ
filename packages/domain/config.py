@@ -16,11 +16,35 @@ INDEX_PATHS = [
 ]
 ARCHIVE_PATHS = [
     SITE_ROOT / "archive.html",
+    SITE_ROOT / "archive" / "index.html",
     Path(os.getenv("MIXZ_PROD_ARCHIVE_PATH", "/var/www/mixz/archive.html")),
+    Path(os.getenv("MIXZ_PROD_ARCHIVE_INDEX_PATH", "/var/www/mixz/archive/index.html")),
+]
+PROTOCOL_INDEX_PATHS = [
+    SITE_ROOT / "protocols" / "index.html",
+    Path(os.getenv("MIXZ_PROD_PROTOCOL_INDEX_PATH", "/var/www/mixz/protocols/index.html")),
 ]
 STATS_JSON_PATHS = [
     DATA_ROOT / "stats.json",
     Path(os.getenv("MIXZ_PROD_STATS_PATH", "/var/www/mixz/data/stats.json")),
+]
+
+ARTICLES_DATA_ROOT = DATA_ROOT / "articles"
+ARTICLES_INDEX_JSON_PATHS = [
+    ARTICLES_DATA_ROOT / "articles_index.json",
+    Path(os.getenv("MIXZ_PROD_ARTICLES_INDEX_PATH", "/var/www/mixz/data/articles/articles_index.json")),
+]
+ARCHIVE_SUMMARY_JSON_PATHS = [
+    ARTICLES_DATA_ROOT / "archive_summary.json",
+    Path(os.getenv("MIXZ_PROD_ARCHIVE_SUMMARY_PATH", "/var/www/mixz/data/articles/archive_summary.json")),
+]
+ARTICLE_BATCH_JSON_DIRS = [
+    ARTICLES_DATA_ROOT / "batches",
+    Path(os.getenv("MIXZ_PROD_ARTICLE_BATCH_DIR", "/var/www/mixz/data/articles/batches")),
+]
+JOURNAL_JSON_DIRS = [
+    ARTICLES_DATA_ROOT / "journals",
+    Path(os.getenv("MIXZ_PROD_JOURNAL_DIR", "/var/www/mixz/data/articles/journals")),
 ]
 
 JOURNALS: List[Tuple[str, str]] = [

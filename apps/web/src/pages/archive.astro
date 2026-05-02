@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { articles, summary, journalList } from '../lib/data';
+const journals = journalList();
+---
+<BaseLayout title="MIXZ Archive" description="All MIXZ literature records">
+  <section class="hero small">
+    <p class="eyebrow">Archive</p>
+    <h1>全部文献</h1>
+    <p>{summary.total_articles} 篇文章，来自 {journals.length} 个期刊/来源。支持本页前端即时搜索，不依赖 API。</p>
+    <input id="archiveSearch" class="search-input" placeholder="搜索标题、作者、DOI、期刊或摘要…" />
+  </section>
+  <section class="archive-layout">
+    <aside class="panel filters">
+      <h2>Journals</h2>
+      <ul class="simple-list">{journals.map((item) => <li><span>{item.name}</span><strong>{item.count}</strong></li>)}</ul>
+    </aside>
+    <div id="archiveList" class="article-list">
+      {articles.map((article) => <ArticleCard article={article} />)}
+    </div>
+  </section>
+  <script>
+    const input = document.querySelector('#archiveSearch');
+    const cards = [...document.querySelectorAll('.article-card')];
+    input?.addEventListener('input', () => {
+      const q = (input instanceof HTMLInputElement ? input.value : '').trim().toLowerCase();
+      for (const card of cards) {
+        const text = (card.getAttribute('data-search') || card.textContent || '').toLowerCase();
+        card.toggleAttribute('hidden', q.length > 0 && !text.includes(q));
+      }
+    });
+  </script>
+</BaseLayout>

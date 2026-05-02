@@ -1,0 +1,403 @@
+{
+  "journal": "Nature Biomedical Engineering",
+  "journal_slug": "nature-biomedical-engineering",
+  "article_count": 5,
+  "articles": [
+    {
+      "id": "10.1038/s41551-025-01593-4",
+      "title": "Label-free tissue NIR-II autofluorescence imaging for visualization of human liver malignancy",
+      "authors": [
+        "Haisheng He",
+        "Wenwei Zhu",
+        "Han Miao",
+        "Shangfeng Wang",
+        "Zunguo Du",
+        "Hongxin Zhang",
+        "Jiang Ming",
+        "Ben Shi",
+        "Hao Wang",
+        "Jianping Qi",
+        "Yong Fan",
+        "Wei Wu",
+        "Dongyuan Zhao",
+        "Lun-Xiu Qin",
+        "Fan Zhang"
+      ],
+      "author": "Haisheng He, Wenwei Zhu, Han Miao, Shangfeng Wang, Zunguo Du, Hongxin Zhang, Jiang Ming, Ben Shi, Hao Wang, Jianping Qi, Yong Fan, Wei Wu, Dongyuan Zhao, Lun-Xiu Qin, Fan Zhang",
+      "journal": "Nature Biomedical Engineering",
+      "doi": "10.1038/s41551-025-01593-4",
+      "doi_value": "10.1038/s41551-025-01593-4",
+      "doi_url": "https://doi.org/10.1038/s41551-025-01593-4",
+      "url": "https://doi.org/10.1038/s41551-025-01593-4",
+      "detail_href": "/papers/10.1038-s41551-025-01593-4.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2026-01-20",
+      "pub_date": "2026-01-20",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-29_113942",
+        "2026-04-30_090001",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "nature",
+      "keywords": [
+        "Label-free"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biomedical Engineering",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-biomedical-engineering",
+      "search_blob": "label-free tissue nir-ii autofluorescence imaging for visualization of human liver malignancy nature biomedical engineering haisheng he wenwei zhu han miao shangfeng wang zunguo du hongxin zhang jiang ming ben shi hao wang jianping qi yong fan wei wu dongyuan zhao lun-xiu qin fan zhang 暂无公开摘要 label-free 10.1038/s41551-025-01593-4 https://doi.org/10.1038/s41551-025-01593-4",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 15
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 28
+        },
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 3
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41551-024-01249-9",
+      "title": "Low-cost and scalable projected light-sheet microscopy for the high-resolution imaging of cleared tissue and living samples",
+      "authors": [
+        "Yannan Chen",
+        "Shradha Chauhan",
+        "Cheng Gong",
+        "Hannah Dayton",
+        "Cong Xu",
+        "Estanislao Daniel De La Cruz",
+        "Yu-Young Wesley Tsai",
+        "Malika S. Datta",
+        "Gorazd B. Rosoklija",
+        "Andrew J. Dwork",
+        "J. John Mann",
+        "Maura Boldrini",
+        "Kam W. Leong",
+        "Lars E. P. Dietrich",
+        "Raju Tomer"
+      ],
+      "author": "Yannan Chen, Shradha Chauhan, Cheng Gong, Hannah Dayton, Cong Xu, Estanislao Daniel De La Cruz, Yu-Young Wesley Tsai, Malika S. Datta, Gorazd B. Rosoklija, Andrew J. Dwork, J. John Mann, Maura Boldrini, Kam W. Leong, Lars E. P. Dietrich, Raju Tomer",
+      "journal": "Nature Biomedical Engineering",
+      "doi": "10.1038/s41551-024-01249-9",
+      "doi_value": "10.1038/s41551-024-01249-9",
+      "doi_url": "https://doi.org/10.1038/s41551-024-01249-9",
+      "url": "https://doi.org/10.1038/s41551-024-01249-9",
+      "detail_href": "/papers/10.1038-s41551-024-01249-9.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2024-08-29",
+      "pub_date": "2024-08-29",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Low-cost"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biomedical Engineering",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-biomedical-engineering",
+      "search_blob": "low-cost and scalable projected light-sheet microscopy for the high-resolution imaging of cleared tissue and living samples nature biomedical engineering yannan chen shradha chauhan cheng gong hannah dayton cong xu estanislao daniel de la cruz yu-young wesley tsai malika s. datta gorazd b. rosoklija andrew j. dwork j. john mann maura boldrini kam w. leong lars e. p. dietrich raju tomer 暂无公开摘要 low-cost 10.1038/s41551-024-01249-9 https://doi.org/10.1038/s41551-024-01249-9",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 21
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41551-024-01218-2",
+      "title": "Optical microscopy and transcriptomics reveal the origins of fluorescence in glioma surgery",
+      "authors": [],
+      "author": "未知作者",
+      "journal": "Nature Biomedical Engineering",
+      "doi": "10.1038/s41551-024-01218-2",
+      "doi_value": "10.1038/s41551-024-01218-2",
+      "doi_url": "https://doi.org/10.1038/s41551-024-01218-2",
+      "url": "https://doi.org/10.1038/s41551-024-01218-2",
+      "detail_href": "/papers/10.1038-s41551-024-01218-2.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2024-07-11",
+      "pub_date": "2024-07-11",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Optical"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biomedical Engineering",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-biomedical-engineering",
+      "search_blob": "optical microscopy and transcriptomics reveal the origins of fluorescence in glioma surgery nature biomedical engineering 暂无公开摘要 optical 10.1038/s41551-024-01218-2 https://doi.org/10.1038/s41551-024-01218-2",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 23
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41551-024-01217-3",
+      "title": "Localization of protoporphyrin IX during glioma-resection surgery via paired stimulated Raman histology and fluorescence microscopy",
+      "authors": [
+        "Mustafa Nasir-Moin",
+        "Lisa Irina Wadiura",
+        "Vlad Sacalean",
+        "Devin Juros",
+        "Misha Movahed-Ezazi",
+        "Emily K. Lock",
+        "Andrew Smith",
+        "Matthew Lee",
+        "Hannah Weiss",
+        "Michael Müther",
+        "Daniel Alber",
+        "Sujay Ratna",
+        "Camila Fang",
+        "Eric Suero-Molina",
+        "Sönke Hellwig",
+        "Walter Stummer",
+        "Karl Rössler",
+        "Johannes A. Hainfellner",
+        "Georg Widhalm",
+        "Barbara Kiesel",
+        "David Reichert",
+        "Mario Mischkulnig",
+        "Rajan Jain",
+        "Jakob Straehle",
+        "Nicolas Neidert",
+        "Oliver Schnell",
+        "Jürgen Beck",
+        "Jay Trautman",
+        "Steve Pastore",
+        "Donato Pacione",
+        "Dimitris Placantonakis",
+        "Eric Karl Oermann",
+        "John G. Golfinos",
+        "Todd C. Hollon",
+        "Matija Snuderl",
+        "Christian W. Freudiger",
+        "Dieter Henrik Heiland",
+        "Daniel A. Orringer"
+      ],
+      "author": "Mustafa Nasir-Moin, Lisa Irina Wadiura, Vlad Sacalean, Devin Juros, Misha Movahed-Ezazi, Emily K. Lock, Andrew Smith, Matthew Lee, Hannah Weiss, Michael Müther, Daniel Alber, Sujay Ratna, Camila Fang, Eric Suero-Molina, Sönke Hellwig, Walter Stummer, Karl Rössler, Johannes A. Hainfellner, Georg Widhalm, Barbara Kiesel, David Reichert, Mario Mischkulnig, Rajan Jain, Jakob Straehle, Nicolas Neidert, Oliver Schnell, Jürgen Beck, Jay Trautman, Steve Pastore, Donato Pacione, Dimitris Placantonakis, Eric Karl Oermann, John G. Golfinos, Todd C. Hollon, Matija Snuderl, Christian W. Freudiger, Dieter Henrik Heiland, Daniel A. Orringer",
+      "journal": "Nature Biomedical Engineering",
+      "doi": "10.1038/s41551-024-01217-3",
+      "doi_value": "10.1038/s41551-024-01217-3",
+      "doi_url": "https://doi.org/10.1038/s41551-024-01217-3",
+      "url": "https://doi.org/10.1038/s41551-024-01217-3",
+      "detail_href": "/papers/10.1038-s41551-024-01217-3.html",
+      "abstract": "The most widely used fluorophore in glioma-resection surgery, 5-aminolevulinic acid (5-ALA), is thought to cause the selective accumulation of fluorescent protoporphyrin IX (PpIX) in tumour cells. Here we show that the clinical detection of PpIX can be improved via a microscope that performs paired stimulated Raman histology and two-photon excitation fluorescence microscopy (TPEF). We validated the technique in fresh tumour specimens from 115 patients with high-grade gliomas across four medical institutions. We found a weak negative correlation between tissue cellularity and the fluorescence intensity of PpIX across all imaged specimens. Semi-supervised clustering of the TPEF images revealed five distinct patterns of PpIX fluorescence, and spatial transcriptomic analyses of the imaged tissue showed that myeloid cells predominate in areas where PpIX accumulates in the intracellular space. Further analysis of external spatially resolved metabolomics, transcriptomics and RNA-sequencing datasets from glioblastoma specimens confirmed that myeloid cells preferentially accumulate and metabolize PpIX. Our findings question 5-ALA-induced fluorescence in glioma cells and show how 5-ALA and TPEF imaging can provide a window into the immune microenvironment of gliomas. The clinical detection of fluorescent protoporphyrin IX during glioma-resection surgery can be improved via a microscope that pairs stimulated Raman histology and two-photon excitation fluorescence microscopy.",
+      "full_abstract": "The most widely used fluorophore in glioma-resection surgery, 5-aminolevulinic acid (5-ALA), is thought to cause the selective accumulation of fluorescent protoporphyrin IX (PpIX) in tumour cells. Here we show that the clinical detection of PpIX can be improved via a microscope that performs paired stimulated Raman histology and two-photon excitation fluorescence microscopy (TPEF). We validated the technique in fresh tumour specimens from 115 patients with high-grade gliomas across four medical institutions. We found a weak negative correlation between tissue cellularity and the fluorescence intensity of PpIX across all imaged specimens. Semi-supervised clustering of the TPEF images revealed five distinct patterns of PpIX fluorescence, and spatial transcriptomic analyses of the imaged tissue showed that myeloid cells predominate in areas where PpIX accumulates in the intracellular space. Further analysis of external spatially resolved metabolomics, transcriptomics and RNA-sequencing datasets from glioblastoma specimens confirmed that myeloid cells preferentially accumulate and metabolize PpIX. Our findings question 5-ALA-induced fluorescence in glioma cells and show how 5-ALA and TPEF imaging can provide a window into the immune microenvironment of gliomas. The clinical detection of fluorescent protoporphyrin IX during glioma-resection surgery can be improved via a microscope that pairs stimulated Raman histology and two-photon excitation fluorescence microscopy.",
+      "snippet": "The most widely used fluorophore in glioma-resection surgery, 5-aminolevulinic acid (5-ALA), is thought to cause the selective accumulation of fluorescent protoporphyrin IX (PpIX) in tumour cells. Here we show that the clinical detection of PpIX can be improve…",
+      "abstract_truncated": true,
+      "published_date": "2024-07-10",
+      "pub_date": "2024-07-10",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Localization"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biomedical Engineering",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "semantic_scholar",
+      "journal_slug": "nature-biomedical-engineering",
+      "search_blob": "localization of protoporphyrin ix during glioma-resection surgery via paired stimulated raman histology and fluorescence microscopy nature biomedical engineering mustafa nasir-moin lisa irina wadiura vlad sacalean devin juros misha movahed-ezazi emily k. lock andrew smith matthew lee hannah weiss michael müther daniel alber sujay ratna camila fang eric suero-molina sönke hellwig walter stummer karl rössler johannes a. hainfellner georg widhalm barbara kiesel david reichert mario mischkulnig rajan jain jakob straehle nicolas neidert oliver schnell jürgen beck jay trautman steve pastore donato pacione dimitris placantonakis eric karl oermann john g. golfinos todd c. hollon matija snuderl christian w. freudiger dieter henrik heiland daniel a. orringer the most widely used fluorophore in glioma-resection surgery, 5-aminolevulinic acid (5-ala), is thought to cause the selective accumulation of fluorescent protoporphyrin ix (ppix) in tumour cells. here we show that the clinical detection of ppix can be improved via a microscope that performs paired stimulated raman histology and two-photon excitation fluorescence microscopy (tpef). we validated the technique in fresh tumour specimens from 115 patients with high-grade gliomas across four medical institutions. we found a weak negative correlation between tissue cellularity and the fluorescence intensity of ppix across all imaged specimens. semi-supervised clustering of the tpef images revealed five distinct patterns of ppix fluorescence, and spatial transcriptomic analyses of the imaged tissue showed that myeloid cells predominate in areas where ppix accumulates in the intracellular space. further analysis of external spatially resolved metabolomics, transcriptomics and rna-sequencing datasets from glioblastoma specimens confirmed that myeloid cells preferentially accumulate and metabolize ppix. our findings question 5-ala-induced fluorescence in glioma cells and show how 5-ala and tpef imaging can provide a window into the immune microenvironment of gliomas. the clinical detection of fluorescent protoporphyrin ix during glioma-resection surgery can be improved via a microscope that pairs stimulated raman histology and two-photon excitation fluorescence microscopy. localization 10.1038/s41551-024-01217-3 https://doi.org/10.1038/s41551-024-01217-3",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 24
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41551-025-01411-x",
+      "title": "Microfluidics combined with electron microscopy for rapid and high-throughput mapping of antibody–viral glycoprotein complexes",
+      "authors": [
+        "Leigh M. Sewall",
+        "Rebeca de Paiva Froes Rocha",
+        "Grace Gibson",
+        "Michelle Louie",
+        "Zhenfei Xie",
+        "Sandhya Bangaru",
+        "Andy S. Tran",
+        "Gabriel Ozorowski",
+        "Subhasis Mohanty",
+        "Nathan Beutler",
+        "Thomas F. Rogers",
+        "Dennis R. Burton",
+        "Albert C. Shaw",
+        "Facundo D. Batista",
+        "Blanca Chocarro Ruiz",
+        "Alba Torrents de la Peña",
+        "Andrew B. Ward"
+      ],
+      "author": "Leigh M. Sewall, Rebeca de Paiva Froes Rocha, Grace Gibson, Michelle Louie, Zhenfei Xie, Sandhya Bangaru, Andy S. Tran, Gabriel Ozorowski, Subhasis Mohanty, Nathan Beutler, Thomas F. Rogers, Dennis R. Burton, Albert C. Shaw, Facundo D. Batista, Blanca Chocarro Ruiz, Alba Torrents de la Peña, Andrew B. Ward",
+      "journal": "Nature Biomedical Engineering",
+      "doi": "10.1038/s41551-025-01411-x",
+      "doi_value": "10.1038/s41551-025-01411-x",
+      "doi_url": "https://doi.org/10.1038/s41551-025-01411-x",
+      "url": "https://doi.org/10.1038/s41551-025-01411-x",
+      "detail_href": "/papers/10.1038-s41551-025-01411-x.html",
+      "abstract": "Abstract Understanding the mechanistic interplay between antibodies and invading pathogens is essential for vaccine development. Current methods are labour and time intensive and limited by sample preparation bottlenecks. Here we present microfluidic electron microscopy-based polyclonal epitope mapping (mEM), which combines microfluidics with single-particle electron microscopy for the structural characterization of immune complexes using small volumes of sera (",
+      "full_abstract": "Abstract Understanding the mechanistic interplay between antibodies and invading pathogens is essential for vaccine development. Current methods are labour and time intensive and limited by sample preparation bottlenecks. Here we present microfluidic electron microscopy-based polyclonal epitope mapping (mEM), which combines microfluidics with single-particle electron microscopy for the structural characterization of immune complexes using small volumes of sera (",
+      "snippet": "Abstract Understanding the mechanistic interplay between antibodies and invading pathogens is essential for vaccine development. Current methods are labour and time intensive and limited by sample preparation bottlenecks. Here we present microfluidic electron…",
+      "abstract_truncated": true,
+      "published_date": "2025-06-03",
+      "pub_date": "2025-06-03",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T11:39:42+08:00",
+      "last_seen_batch_id": "2026-04-29_113942",
+      "seen_batch_ids": [
+        "2026-04-29_113942"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T11:39:42+08:00",
+      "crawl_batch_id": "2026-04-29_113942",
+      "source": "nature",
+      "keywords": [
+        "Microfluidics"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biomedical Engineering",
+        "batch:2026-04-29_113942"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-04-29T11:39:42+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-biomedical-engineering",
+      "search_blob": "microfluidics combined with electron microscopy for rapid and high-throughput mapping of antibody–viral glycoprotein complexes nature biomedical engineering leigh m. sewall rebeca de paiva froes rocha grace gibson michelle louie zhenfei xie sandhya bangaru andy s. tran gabriel ozorowski subhasis mohanty nathan beutler thomas f. rogers dennis r. burton albert c. shaw facundo d. batista blanca chocarro ruiz alba torrents de la peña andrew b. ward abstract understanding the mechanistic interplay between antibodies and invading pathogens is essential for vaccine development. current methods are labour and time intensive and limited by sample preparation bottlenecks. here we present microfluidic electron microscopy-based polyclonal epitope mapping (mem), which combines microfluidics with single-particle electron microscopy for the structural characterization of immune complexes using small volumes of sera ( microfluidics 10.1038/s41551-025-01411-x https://doi.org/10.1038/s41551-025-01411-x",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 23
+        }
+      ]
+    }
+  ]
+}

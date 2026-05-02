@@ -1,0 +1,514 @@
+{
+  "batch_id": "2026-04-13 09:00",
+  "crawl_time": "2026-04-13T09:00:00+08:00",
+  "crawl_date": "2026-04-13",
+  "article_count": 3,
+  "total_observed_articles": 3,
+  "new_articles_count": 3,
+  "seen_again_count": 0,
+  "journal_count": 3,
+  "journals": [
+    "Nature Biotechnology",
+    "Nature Methods",
+    "Science Advances"
+  ],
+  "new_article_count": 3,
+  "updated_article_count": 0,
+  "articles": [
+    {
+      "id": "10.1038/s41592-025-02948-0",
+      "title": "Integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via DBiTplus",
+      "authors": [
+        "Archibald Enninful",
+        "Zhaojun Zhang",
+        "Dmytro Klymyshyn",
+        "Matthew Ingalls",
+        "Mingyu Yang",
+        "Hailing Zong",
+        "Zhiliang Bai",
+        "Negin Farzad",
+        "Graham Su",
+        "Alev Baysoy",
+        "Jungmin Nam",
+        "Yao Lu",
+        "Shuozhen Bao",
+        "Siyan Deng",
+        "Nancy R. Zhang",
+        "Oliver Braubach",
+        "Mina L. Xu",
+        "Zongming Ma",
+        "Rong Fan"
+      ],
+      "author": "Archibald Enninful, Zhaojun Zhang, Dmytro Klymyshyn, Matthew Ingalls, Mingyu Yang, Hailing Zong, Zhiliang Bai, Negin Farzad, Graham Su, Alev Baysoy, Jungmin Nam, Yao Lu, Shuozhen Bao, Siyan Deng, Nancy R. Zhang, Oliver Braubach, Mina L. Xu, Zongming Ma, Rong Fan",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02948-0",
+      "doi_value": "10.1038/s41592-025-02948-0",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02948-0",
+      "url": "https://doi.org/10.1038/s41592-025-02948-0",
+      "detail_href": "/papers/10.1038-s41592-025-02948-0.html",
+      "abstract": "Abstract Spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. Here we present Deterministic Barcoding in Tissue sequencing plus (DBiTplus), an integrative multimodal spatial omics approach combining sequencing-based spatial transcriptomics and multiplexed protein imaging on the same section, enabling both single-cell-resolution cell typing and transcriptome-wide interrogation of biological pathways. DBiTplus utilizes spatial barcoding and RNase H-mediated cDNA retrieval, preserving tissue architecture for multiplexed protein imaging. We developed computational pipelines to integrate these modalities, allowing imaging-guided deconvolution to generate single-cell-resolved spatial transcriptome atlases. We demonstrate DBiTplus across diverse samples including frozen mouse embryos, and formalin-fixed paraffin-embedded human lymph nodes and lymphoma tissues, highlighting its compatibility with challenging clinical specimens. DBiTplus uncovered mechanisms of lymphomagenesis, progression and transformation in human lymphomas. Thus, DBiTplus is a unified workflow for spatially resolved single-cell atlasing and unbiased exploration of biological mechanisms in a cell-by-cell manner at transcriptome scale.",
+      "full_abstract": "Abstract Spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. Here we present Deterministic Barcoding in Tissue sequencing plus (DBiTplus), an integrative multimodal spatial omics approach combining sequencing-based spatial transcriptomics and multiplexed protein imaging on the same section, enabling both single-cell-resolution cell typing and transcriptome-wide interrogation of biological pathways. DBiTplus utilizes spatial barcoding and RNase H-mediated cDNA retrieval, preserving tissue architecture for multiplexed protein imaging. We developed computational pipelines to integrate these modalities, allowing imaging-guided deconvolution to generate single-cell-resolved spatial transcriptome atlases. We demonstrate DBiTplus across diverse samples including frozen mouse embryos, and formalin-fixed paraffin-embedded human lymph nodes and lymphoma tissues, highlighting its compatibility with challenging clinical specimens. DBiTplus uncovered mechanisms of lymphomagenesis, progression and transformation in human lymphomas. Thus, DBiTplus is a unified workflow for spatially resolved single-cell atlasing and unbiased exploration of biological mechanisms in a cell-by-cell manner at transcriptome scale.",
+      "snippet": "Abstract Spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. Here we present Deterministic Barcoding in Tissue sequencing plus (DBiTplus), an integrative m…",
+      "abstract_truncated": true,
+      "published_date": "2026-01-15",
+      "pub_date": "2026-01-15",
+      "first_seen_date": "2026-04-13",
+      "first_seen_time": "2026-04-13T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-13 09:00",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-13 09:00",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-04-13",
+      "crawl_time": "2026-04-13T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-13 09:00",
+      "source": "nature",
+      "keywords": [
+        "Integration"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-13 09:00"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-methods",
+      "search_blob": "integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via dbitplus nature methods archibald enninful zhaojun zhang dmytro klymyshyn matthew ingalls mingyu yang hailing zong zhiliang bai negin farzad graham su alev baysoy jungmin nam yao lu shuozhen bao siyan deng nancy r. zhang oliver braubach mina l. xu zongming ma rong fan abstract spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. here we present deterministic barcoding in tissue sequencing plus (dbitplus), an integrative multimodal spatial omics approach combining sequencing-based spatial transcriptomics and multiplexed protein imaging on the same section, enabling both single-cell-resolution cell typing and transcriptome-wide interrogation of biological pathways. dbitplus utilizes spatial barcoding and rnase h-mediated cdna retrieval, preserving tissue architecture for multiplexed protein imaging. we developed computational pipelines to integrate these modalities, allowing imaging-guided deconvolution to generate single-cell-resolved spatial transcriptome atlases. we demonstrate dbitplus across diverse samples including frozen mouse embryos, and formalin-fixed paraffin-embedded human lymph nodes and lymphoma tissues, highlighting its compatibility with challenging clinical specimens. dbitplus uncovered mechanisms of lymphomagenesis, progression and transformation in human lymphomas. thus, dbitplus is a unified workflow for spatially resolved single-cell atlasing and unbiased exploration of biological mechanisms in a cell-by-cell manner at transcriptome scale. integration 10.1038/s41592-025-02948-0 https://doi.org/10.1038/s41592-025-02948-0",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41587-025-02919-y",
+      "title": "Light-controlled tissue sectioning for volumetric imaging",
+      "authors": [
+        "Iris Marchal"
+      ],
+      "author": "Iris Marchal",
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-025-02919-y",
+      "doi_value": "10.1038/s41587-025-02919-y",
+      "doi_url": "https://doi.org/10.1038/s41587-025-02919-y",
+      "url": "https://doi.org/10.1038/s41587-025-02919-y",
+      "detail_href": "/papers/10.1038-s41587-025-02919-y.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2025-11-01",
+      "pub_date": "2025-11-01",
+      "first_seen_date": "2026-04-13",
+      "first_seen_time": "2026-04-13T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-13 09:00",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-13 09:00",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-04-13",
+      "crawl_time": "2026-04-13T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-13 09:00",
+      "source": "nature",
+      "keywords": [
+        "Light-controlled"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biotechnology",
+        "batch:2026-04-13 09:00"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-biotechnology",
+      "search_blob": "light-controlled tissue sectioning for volumetric imaging nature biotechnology iris marchal 从历史日志迁移 light-controlled 10.1038/s41587-025-02919-y https://doi.org/10.1038/s41587-025-02919-y",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 23
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 23
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 25
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 25
+        },
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.ado0518",
+      "title": "Optical-resolution parallel ultraviolet photoacoustic microscopy for slide-free histology",
+      "authors": [
+        "Cao et al."
+      ],
+      "author": "Cao et al.",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.ado0518",
+      "doi_value": "10.1126/sciadv.ado0518",
+      "doi_url": "https://doi.org/10.1126/sciadv.ado0518",
+      "url": "https://doi.org/10.1126/sciadv.ado0518",
+      "detail_href": "/papers/10.1126-sciadv.ado0518.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2024-12-13",
+      "pub_date": "2024-12-13",
+      "first_seen_date": "2026-04-13",
+      "first_seen_time": "2026-04-13T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-13 09:00",
+      "last_seen_date": "2026-04-13",
+      "last_seen_time": "2026-04-13T09:00:00+08:00",
+      "last_seen_batch_id": "2026-04-13 09:00",
+      "seen_batch_ids": [
+        "2026-04-13 09:00"
+      ],
+      "crawl_date": "2026-04-13",
+      "crawl_time": "2026-04-13T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-13 09:00",
+      "source": "science",
+      "keywords": [
+        "Optical-resolution"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-13 09:00"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-04-13T09:00:00+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "unknown",
+      "journal_slug": "science-advances",
+      "search_blob": "optical-resolution parallel ultraviolet photoacoustic microscopy for slide-free histology science advances cao et al. 从历史日志迁移 optical-resolution 10.1126/sciadv.ado0518 https://doi.org/10.1126/sciadv.ado0518",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    }
+  ],
+  "new_articles": [
+    {
+      "id": "10.1038/s41592-025-02948-0",
+      "title": "Integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via DBiTplus",
+      "authors": [
+        "Archibald Enninful",
+        "Zhaojun Zhang",
+        "Dmytro Klymyshyn",
+        "Matthew Ingalls",
+        "Mingyu Yang",
+        "Hailing Zong",
+        "Zhiliang Bai",
+        "Negin Farzad",
+        "Graham Su",
+        "Alev Baysoy",
+        "Jungmin Nam",
+        "Yao Lu",
+        "Shuozhen Bao",
+        "Siyan Deng",
+        "Nancy R. Zhang",
+        "Oliver Braubach",
+        "Mina L. Xu",
+        "Zongming Ma",
+        "Rong Fan"
+      ],
+      "author": "Archibald Enninful, Zhaojun Zhang, Dmytro Klymyshyn, Matthew Ingalls, Mingyu Yang, Hailing Zong, Zhiliang Bai, Negin Farzad, Graham Su, Alev Baysoy, Jungmin Nam, Yao Lu, Shuozhen Bao, Siyan Deng, Nancy R. Zhang, Oliver Braubach, Mina L. Xu, Zongming Ma, Rong Fan",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02948-0",
+      "doi_value": "10.1038/s41592-025-02948-0",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02948-0",
+      "url": "https://doi.org/10.1038/s41592-025-02948-0",
+      "detail_href": "/papers/10.1038-s41592-025-02948-0.html",
+      "abstract": "Abstract Spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. Here we present Deterministic Barcoding in Tissue sequencing plus (DBiTplus), an integrative multimodal spatial omics approach combining sequencing-based spatial transcriptomics and multiplexed protein imaging on the same section, enabling both single-cell-resolution cell typing and transcriptome-wide interrogation of biological pathways. DBiTplus utilizes spatial barcoding and RNase H-mediated cDNA retrieval, preserving tissue architecture for multiplexed protein imaging. We developed computational pipelines to integrate these modalities, allowing imaging-guided deconvolution to generate single-cell-resolved spatial transcriptome atlases. We demonstrate DBiTplus across diverse samples including frozen mouse embryos, and formalin-fixed paraffin-embedded human lymph nodes and lymphoma tissues, highlighting its compatibility with challenging clinical specimens. DBiTplus uncovered mechanisms of lymphomagenesis, progression and transformation in human lymphomas. Thus, DBiTplus is a unified workflow for spatially resolved single-cell atlasing and unbiased exploration of biological mechanisms in a cell-by-cell manner at transcriptome scale.",
+      "full_abstract": "Abstract Spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. Here we present Deterministic Barcoding in Tissue sequencing plus (DBiTplus), an integrative multimodal spatial omics approach combining sequencing-based spatial transcriptomics and multiplexed protein imaging on the same section, enabling both single-cell-resolution cell typing and transcriptome-wide interrogation of biological pathways. DBiTplus utilizes spatial barcoding and RNase H-mediated cDNA retrieval, preserving tissue architecture for multiplexed protein imaging. We developed computational pipelines to integrate these modalities, allowing imaging-guided deconvolution to generate single-cell-resolved spatial transcriptome atlases. We demonstrate DBiTplus across diverse samples including frozen mouse embryos, and formalin-fixed paraffin-embedded human lymph nodes and lymphoma tissues, highlighting its compatibility with challenging clinical specimens. DBiTplus uncovered mechanisms of lymphomagenesis, progression and transformation in human lymphomas. Thus, DBiTplus is a unified workflow for spatially resolved single-cell atlasing and unbiased exploration of biological mechanisms in a cell-by-cell manner at transcriptome scale.",
+      "snippet": "Abstract Spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. Here we present Deterministic Barcoding in Tissue sequencing plus (DBiTplus), an integrative m…",
+      "abstract_truncated": true,
+      "published_date": "2026-01-15",
+      "pub_date": "2026-01-15",
+      "first_seen_date": "2026-04-13",
+      "first_seen_time": "2026-04-13T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-13 09:00",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-13 09:00",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-04-13",
+      "crawl_time": "2026-04-13T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-13 09:00",
+      "source": "nature",
+      "keywords": [
+        "Integration"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-13 09:00"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-methods",
+      "search_blob": "integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via dbitplus nature methods archibald enninful zhaojun zhang dmytro klymyshyn matthew ingalls mingyu yang hailing zong zhiliang bai negin farzad graham su alev baysoy jungmin nam yao lu shuozhen bao siyan deng nancy r. zhang oliver braubach mina l. xu zongming ma rong fan abstract spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. here we present deterministic barcoding in tissue sequencing plus (dbitplus), an integrative multimodal spatial omics approach combining sequencing-based spatial transcriptomics and multiplexed protein imaging on the same section, enabling both single-cell-resolution cell typing and transcriptome-wide interrogation of biological pathways. dbitplus utilizes spatial barcoding and rnase h-mediated cdna retrieval, preserving tissue architecture for multiplexed protein imaging. we developed computational pipelines to integrate these modalities, allowing imaging-guided deconvolution to generate single-cell-resolved spatial transcriptome atlases. we demonstrate dbitplus across diverse samples including frozen mouse embryos, and formalin-fixed paraffin-embedded human lymph nodes and lymphoma tissues, highlighting its compatibility with challenging clinical specimens. dbitplus uncovered mechanisms of lymphomagenesis, progression and transformation in human lymphomas. thus, dbitplus is a unified workflow for spatially resolved single-cell atlasing and unbiased exploration of biological mechanisms in a cell-by-cell manner at transcriptome scale. integration 10.1038/s41592-025-02948-0 https://doi.org/10.1038/s41592-025-02948-0",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41587-025-02919-y",
+      "title": "Light-controlled tissue sectioning for volumetric imaging",
+      "authors": [
+        "Iris Marchal"
+      ],
+      "author": "Iris Marchal",
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-025-02919-y",
+      "doi_value": "10.1038/s41587-025-02919-y",
+      "doi_url": "https://doi.org/10.1038/s41587-025-02919-y",
+      "url": "https://doi.org/10.1038/s41587-025-02919-y",
+      "detail_href": "/papers/10.1038-s41587-025-02919-y.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2025-11-01",
+      "pub_date": "2025-11-01",
+      "first_seen_date": "2026-04-13",
+      "first_seen_time": "2026-04-13T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-13 09:00",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-13 09:00",
+        "2026-04-30_190001",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-04-13",
+      "crawl_time": "2026-04-13T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-13 09:00",
+      "source": "nature",
+      "keywords": [
+        "Light-controlled"
+      ],
+      "tags": [
+        "nature",
+        "Nature Biotechnology",
+        "batch:2026-04-13 09:00"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-biotechnology",
+      "search_blob": "light-controlled tissue sectioning for volumetric imaging nature biotechnology iris marchal 从历史日志迁移 light-controlled 10.1038/s41587-025-02919-y https://doi.org/10.1038/s41587-025-02919-y",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 23
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 23
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 25
+        },
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 25
+        },
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.ado0518",
+      "title": "Optical-resolution parallel ultraviolet photoacoustic microscopy for slide-free histology",
+      "authors": [
+        "Cao et al."
+      ],
+      "author": "Cao et al.",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.ado0518",
+      "doi_value": "10.1126/sciadv.ado0518",
+      "doi_url": "https://doi.org/10.1126/sciadv.ado0518",
+      "url": "https://doi.org/10.1126/sciadv.ado0518",
+      "detail_href": "/papers/10.1126-sciadv.ado0518.html",
+      "abstract": "从历史日志迁移",
+      "full_abstract": "从历史日志迁移",
+      "snippet": "从历史日志迁移",
+      "abstract_truncated": false,
+      "published_date": "2024-12-13",
+      "pub_date": "2024-12-13",
+      "first_seen_date": "2026-04-13",
+      "first_seen_time": "2026-04-13T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-13 09:00",
+      "last_seen_date": "2026-04-13",
+      "last_seen_time": "2026-04-13T09:00:00+08:00",
+      "last_seen_batch_id": "2026-04-13 09:00",
+      "seen_batch_ids": [
+        "2026-04-13 09:00"
+      ],
+      "crawl_date": "2026-04-13",
+      "crawl_time": "2026-04-13T09:00:00+08:00",
+      "crawl_batch_id": "2026-04-13 09:00",
+      "source": "science",
+      "keywords": [
+        "Optical-resolution"
+      ],
+      "tags": [
+        "science",
+        "Science Advances",
+        "batch:2026-04-13 09:00"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-04-13T09:00:00+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "unknown",
+      "journal_slug": "science-advances",
+      "search_blob": "optical-resolution parallel ultraviolet photoacoustic microscopy for slide-free histology science advances cao et al. 从历史日志迁移 optical-resolution 10.1126/sciadv.ado0518 https://doi.org/10.1126/sciadv.ado0518",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    }
+  ],
+  "seen_again_articles": []
+}

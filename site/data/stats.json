@@ -1,16 +1,18 @@
 {
-  "generated_at": "2026-04-20T18:27:42.629036+08:00",
+  "generated_at": "2026-05-02T20:54:51.904359+08:00",
   "stats": {
-    "total_papers": 30,
-    "total_batches": 1,
-    "papers_with_abstract": 27,
-    "abstract_coverage_pct": 90.0
+    "total_papers": 181,
+    "total_batches": 26,
+    "papers_with_abstract": 154,
+    "abstract_coverage_pct": 85.08
   },
   "crawl": {
     "batch_id": "render-only",
     "fetched": 0,
     "new": 0,
     "updated": 0,
+    "generated_at": "2026-05-02T20:54:51.904359+08:00",
+    "crawl_time": "2026-05-02T20:54:51.904359+08:00",
     "abstract_backfill": {
       "checked": 0,
       "filled": 0,

@@ -1,0 +1,1944 @@
+{
+  "journal": "Nature Methods",
+  "journal_slug": "nature-methods",
+  "article_count": 28,
+  "articles": [
+    {
+      "id": "10.1038/s41592-026-03053-6",
+      "title": "Adaptive optical correction for in vivo two-photon fluorescence microscopy with neural fields",
+      "authors": [
+        "Iksung Kang",
+        "Hyeonggeon Kim",
+        "Ryan Natan",
+        "Qinrong Zhang",
+        "Stella X. Yu",
+        "Na Ji"
+      ],
+      "author": "Iksung Kang, Hyeonggeon Kim, Ryan Natan, Qinrong Zhang, Stella X. Yu, Na Ji",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-026-03053-6",
+      "doi_value": "10.1038/s41592-026-03053-6",
+      "doi_url": "https://doi.org/10.1038/s41592-026-03053-6",
+      "url": "https://doi.org/10.1038/s41592-026-03053-6",
+      "detail_href": "/papers/10.1038-s41592-026-03053-6.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2026-04-13",
+      "pub_date": "2026-04-13",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-29_113942",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "nature",
+      "keywords": [
+        "Adaptive"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-methods",
+      "search_blob": "adaptive optical correction for in vivo two-photon fluorescence microscopy with neural fields nature methods iksung kang hyeonggeon kim ryan natan qinrong zhang stella x. yu na ji 暂无公开摘要 adaptive 10.1038/s41592-026-03053-6 https://doi.org/10.1038/s41592-026-03053-6",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 4
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 8
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 10
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 16
+        },
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 1
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-025-02948-0",
+      "title": "Integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via DBiTplus",
+      "authors": [
+        "Archibald Enninful",
+        "Zhaojun Zhang",
+        "Dmytro Klymyshyn",
+        "Matthew Ingalls",
+        "Mingyu Yang",
+        "Hailing Zong",
+        "Zhiliang Bai",
+        "Negin Farzad",
+        "Graham Su",
+        "Alev Baysoy",
+        "Jungmin Nam",
+        "Yao Lu",
+        "Shuozhen Bao",
+        "Siyan Deng",
+        "Nancy R. Zhang",
+        "Oliver Braubach",
+        "Mina L. Xu",
+        "Zongming Ma",
+        "Rong Fan"
+      ],
+      "author": "Archibald Enninful, Zhaojun Zhang, Dmytro Klymyshyn, Matthew Ingalls, Mingyu Yang, Hailing Zong, Zhiliang Bai, Negin Farzad, Graham Su, Alev Baysoy, Jungmin Nam, Yao Lu, Shuozhen Bao, Siyan Deng, Nancy R. Zhang, Oliver Braubach, Mina L. Xu, Zongming Ma, Rong Fan",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02948-0",
+      "doi_value": "10.1038/s41592-025-02948-0",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02948-0",
+      "url": "https://doi.org/10.1038/s41592-025-02948-0",
+      "detail_href": "/papers/10.1038-s41592-025-02948-0.html",
+      "abstract": "Abstract Spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. Here we present Deterministic Barcoding in Tissue sequencing plus (DBiTplus), an integrative multimodal spatial omics approach combining sequencing-based spatial transcriptomics and multiplexed protein imaging on the same section, enabling both single-cell-resolution cell typing and transcriptome-wide interrogation of biological pathways. DBiTplus utilizes spatial barcoding and RNase H-mediated cDNA retrieval, preserving tissue architecture for multiplexed protein imaging. We developed computational pipelines to integrate these modalities, allowing imaging-guided deconvolution to generate single-cell-resolved spatial transcriptome atlases. We demonstrate DBiTplus across diverse samples including frozen mouse embryos, and formalin-fixed paraffin-embedded human lymph nodes and lymphoma tissues, highlighting its compatibility with challenging clinical specimens. DBiTplus uncovered mechanisms of lymphomagenesis, progression and transformation in human lymphomas. Thus, DBiTplus is a unified workflow for spatially resolved single-cell atlasing and unbiased exploration of biological mechanisms in a cell-by-cell manner at transcriptome scale.",
+      "full_abstract": "Abstract Spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. Here we present Deterministic Barcoding in Tissue sequencing plus (DBiTplus), an integrative multimodal spatial omics approach combining sequencing-based spatial transcriptomics and multiplexed protein imaging on the same section, enabling both single-cell-resolution cell typing and transcriptome-wide interrogation of biological pathways. DBiTplus utilizes spatial barcoding and RNase H-mediated cDNA retrieval, preserving tissue architecture for multiplexed protein imaging. We developed computational pipelines to integrate these modalities, allowing imaging-guided deconvolution to generate single-cell-resolved spatial transcriptome atlases. We demonstrate DBiTplus across diverse samples including frozen mouse embryos, and formalin-fixed paraffin-embedded human lymph nodes and lymphoma tissues, highlighting its compatibility with challenging clinical specimens. DBiTplus uncovered mechanisms of lymphomagenesis, progression and transformation in human lymphomas. Thus, DBiTplus is a unified workflow for spatially resolved single-cell atlasing and unbiased exploration of biological mechanisms in a cell-by-cell manner at transcriptome scale.",
+      "snippet": "Abstract Spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. Here we present Deterministic Barcoding in Tissue sequencing plus (DBiTplus), an integrative m…",
+      "abstract_truncated": true,
+      "published_date": "2026-01-15",
+      "pub_date": "2026-01-15",
+      "first_seen_date": "2026-04-13",
+      "first_seen_time": "2026-04-13T09:00:00+08:00",
+      "first_seen_batch_id": "2026-04-13 09:00",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-13 09:00",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "nature",
+      "keywords": [
+        "Integration"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-13T09:00:00+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-methods",
+      "search_blob": "integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via dbitplus nature methods archibald enninful zhaojun zhang dmytro klymyshyn matthew ingalls mingyu yang hailing zong zhiliang bai negin farzad graham su alev baysoy jungmin nam yao lu shuozhen bao siyan deng nancy r. zhang oliver braubach mina l. xu zongming ma rong fan abstract spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. here we present deterministic barcoding in tissue sequencing plus (dbitplus), an integrative multimodal spatial omics approach combining sequencing-based spatial transcriptomics and multiplexed protein imaging on the same section, enabling both single-cell-resolution cell typing and transcriptome-wide interrogation of biological pathways. dbitplus utilizes spatial barcoding and rnase h-mediated cdna retrieval, preserving tissue architecture for multiplexed protein imaging. we developed computational pipelines to integrate these modalities, allowing imaging-guided deconvolution to generate single-cell-resolved spatial transcriptome atlases. we demonstrate dbitplus across diverse samples including frozen mouse embryos, and formalin-fixed paraffin-embedded human lymph nodes and lymphoma tissues, highlighting its compatibility with challenging clinical specimens. dbitplus uncovered mechanisms of lymphomagenesis, progression and transformation in human lymphomas. thus, dbitplus is a unified workflow for spatially resolved single-cell atlasing and unbiased exploration of biological mechanisms in a cell-by-cell manner at transcriptome scale. integration 10.1038/s41592-025-02948-0 https://doi.org/10.1038/s41592-025-02948-0",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 17
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 22
+        },
+        {
+          "batch_id": "2026-04-13 09:00",
+          "crawl_time": "2026-04-13T09:00:00+08:00",
+          "crawl_date": "2026-04-13",
+          "rank_in_batch": 0
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-025-02871-4",
+      "title": "AI-empowered super-resolution microscopy: a revolution in nanoscale cellular imaging",
+      "authors": [
+        "Sen Li",
+        "Xiangjie Meng",
+        "Bo Zhou",
+        "Wenfeng Tian",
+        "Liangyi Chen",
+        "Yang Zhang"
+      ],
+      "author": "Sen Li, Xiangjie Meng, Bo Zhou, Wenfeng Tian, Liangyi Chen, Yang Zhang",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02871-4",
+      "doi_value": "10.1038/s41592-025-02871-4",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02871-4",
+      "url": "https://doi.org/10.1038/s41592-025-02871-4",
+      "detail_href": "/papers/10.1038-s41592-025-02871-4.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-12-31",
+      "pub_date": "2025-12-31",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-29_113942",
+        "2026-05-01_090002",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "nature",
+      "keywords": [
+        "AI-empowered"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-methods",
+      "search_blob": "ai-empowered super-resolution microscopy: a revolution in nanoscale cellular imaging nature methods sen li xiangjie meng bo zhou wenfeng tian liangyi chen yang zhang 暂无公开摘要 ai-empowered 10.1038/s41592-025-02871-4 https://doi.org/10.1038/s41592-025-02871-4",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 19
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 23
+        },
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 4
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-025-02966-y",
+      "title": "Bio-friendly and high-precision super-resolution imaging through self-supervised reconstruction structured illumination microscopy",
+      "authors": [
+        "Jiahao Liu",
+        "Xue Dong",
+        "Huaide Lu",
+        "Tao Liu",
+        "Wei Liu",
+        "Xinyao Hu",
+        "Quan Meng",
+        "Amin Jiang",
+        "Tao Jiang",
+        "Xiaohan Geng",
+        "Haosen Liu",
+        "Jun Cheng",
+        "Edmund Y. Lam",
+        "Yan-Jun Liu",
+        "Shan Tan",
+        "Dong Li"
+      ],
+      "author": "Jiahao Liu, Xue Dong, Huaide Lu, Tao Liu, Wei Liu, Xinyao Hu, Quan Meng, Amin Jiang, Tao Jiang, Xiaohan Geng, Haosen Liu, Jun Cheng, Edmund Y. Lam, Yan-Jun Liu, Shan Tan, Dong Li",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02966-y",
+      "doi_value": "10.1038/s41592-025-02966-y",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02966-y",
+      "url": "https://doi.org/10.1038/s41592-025-02966-y",
+      "detail_href": "/papers/10.1038-s41592-025-02966-y.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-12-12",
+      "pub_date": "2025-12-12",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-29_113942",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "nature",
+      "keywords": [
+        "Bio-friendly"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-methods",
+      "search_blob": "bio-friendly and high-precision super-resolution imaging through self-supervised reconstruction structured illumination microscopy nature methods jiahao liu xue dong huaide lu tao liu wei liu xinyao hu quan meng amin jiang tao jiang xiaohan geng haosen liu jun cheng edmund y. lam yan-jun liu shan tan dong li 暂无公开摘要 bio-friendly 10.1038/s41592-025-02966-y https://doi.org/10.1038/s41592-025-02966-y",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 20
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 21
+        },
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 5
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-025-02843-8",
+      "title": "Kilohertz volumetric imaging of in vivo dynamics using squeezed light field microscopy",
+      "authors": [
+        "Zhaoqiang Wang",
+        "Ruixuan Zhao",
+        "Daniel A. Wagenaar",
+        "Diego Espino",
+        "Liron Sheintuch",
+        "Ohr Benshlomo",
+        "Wenjun Kang",
+        "Enbo Zhu",
+        "Calvin K. Lee",
+        "William C. Schmidt",
+        "Aryan Pammar",
+        "Jing Wang",
+        "Gerard C. L. Wong",
+        "Rongguang Liang",
+        "Sungmoo Lee",
+        "Michael Z. Lin",
+        "Madhuvanthi Kannan",
+        "Peyman Golshani",
+        "Tzung K. Hsiai",
+        "Liang Gao"
+      ],
+      "author": "Zhaoqiang Wang, Ruixuan Zhao, Daniel A. Wagenaar, Diego Espino, Liron Sheintuch, Ohr Benshlomo, Wenjun Kang, Enbo Zhu, Calvin K. Lee, William C. Schmidt, Aryan Pammar, Jing Wang, Gerard C. L. Wong, Rongguang Liang, Sungmoo Lee, Michael Z. Lin, Madhuvanthi Kannan, Peyman Golshani, Tzung K. Hsiai, Liang Gao",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02843-8",
+      "doi_value": "10.1038/s41592-025-02843-8",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02843-8",
+      "url": "https://doi.org/10.1038/s41592-025-02843-8",
+      "detail_href": "/papers/10.1038-s41592-025-02843-8.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-09-23",
+      "pub_date": "2025-09-23",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-05-02",
+      "last_seen_time": "2026-05-02T19:00:01+08:00",
+      "last_seen_batch_id": "2026-05-02_190001",
+      "seen_batch_ids": [
+        "2026-04-29_113942",
+        "2026-05-01_190001",
+        "2026-05-02_090001",
+        "2026-05-02_190001"
+      ],
+      "crawl_date": "2026-05-02",
+      "crawl_time": "2026-05-02T19:00:01+08:00",
+      "crawl_batch_id": "2026-05-02_190001",
+      "source": "nature",
+      "keywords": [
+        "Kilohertz"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-05-02_190001"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-05-02T19:00:01+08:00",
+      "is_new_in_batch": false,
+      "abstract_source": "legacy",
+      "journal_slug": "nature-methods",
+      "search_blob": "kilohertz volumetric imaging of in vivo dynamics using squeezed light field microscopy nature methods zhaoqiang wang ruixuan zhao daniel a. wagenaar diego espino liron sheintuch ohr benshlomo wenjun kang enbo zhu calvin k. lee william c. schmidt aryan pammar jing wang gerard c. l. wong rongguang liang sungmoo lee michael z. lin madhuvanthi kannan peyman golshani tzung k. hsiai liang gao 暂无公开摘要 kilohertz 10.1038/s41592-025-02843-8 https://doi.org/10.1038/s41592-025-02843-8",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-02_190001",
+          "crawl_time": "2026-05-02T19:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 24
+        },
+        {
+          "batch_id": "2026-05-02_090001",
+          "crawl_time": "2026-05-02T09:00:01+08:00",
+          "crawl_date": "2026-05-02",
+          "rank_in_batch": 24
+        },
+        {
+          "batch_id": "2026-05-01_190001",
+          "crawl_time": "2026-05-01T19:00:01+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 24
+        },
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 9
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-023-01976-y",
+      "title": "DNA-barcoded signal amplification for imaging mass cytometry enables sensitive and highly multiplexed tissue imaging",
+      "authors": [
+        "Tsuyoshi Hosogane",
+        "Ruben Casanova",
+        "Bernd Bodenmiller"
+      ],
+      "author": "Tsuyoshi Hosogane, Ruben Casanova, Bernd Bodenmiller",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-023-01976-y",
+      "doi_value": "10.1038/s41592-023-01976-y",
+      "doi_url": "https://doi.org/10.1038/s41592-023-01976-y",
+      "url": "https://doi.org/10.1038/s41592-023-01976-y",
+      "detail_href": "/papers/10.1038-s41592-023-01976-y.html",
+      "abstract": "Abstract Imaging mass cytometry (IMC) is a highly multiplexed, antibody-based imaging method that captures heterogeneous spatial protein expression patterns at subcellular resolution. Here we report the extension of IMC to low-abundance markers through incorporation of the DNA-based signal amplification by exchange reaction, immuno-SABER. We applied SABER-IMC to image the tumor immune microenvironment in human melanoma by simultaneous imaging of 18 markers with immuno-SABER and 20 markers without amplification. SABER-IMC enabled the identification of immune cell phenotypic markers, such as T cell co-receptors and their ligands, that are not detectable with IMC.",
+      "full_abstract": "Abstract Imaging mass cytometry (IMC) is a highly multiplexed, antibody-based imaging method that captures heterogeneous spatial protein expression patterns at subcellular resolution. Here we report the extension of IMC to low-abundance markers through incorporation of the DNA-based signal amplification by exchange reaction, immuno-SABER. We applied SABER-IMC to image the tumor immune microenvironment in human melanoma by simultaneous imaging of 18 markers with immuno-SABER and 20 markers without amplification. SABER-IMC enabled the identification of immune cell phenotypic markers, such as T cell co-receptors and their ligands, that are not detectable with IMC.",
+      "snippet": "Abstract Imaging mass cytometry (IMC) is a highly multiplexed, antibody-based imaging method that captures heterogeneous spatial protein expression patterns at subcellular resolution. Here we report the extension of IMC to low-abundance markers through incorpo…",
+      "abstract_truncated": true,
+      "published_date": "2023-08-31",
+      "pub_date": "2023-08-31",
+      "first_seen_date": "2026-05-01",
+      "first_seen_time": "2026-05-01T09:00:02+08:00",
+      "first_seen_batch_id": "2026-05-01_090002",
+      "last_seen_date": "2026-05-01",
+      "last_seen_time": "2026-05-01T09:00:02+08:00",
+      "last_seen_batch_id": "2026-05-01_090002",
+      "seen_batch_ids": [
+        "2026-05-01_090002"
+      ],
+      "crawl_date": "2026-05-01",
+      "crawl_time": "2026-05-01T09:00:02+08:00",
+      "crawl_batch_id": "2026-05-01_090002",
+      "source": "nature",
+      "keywords": [
+        "DNA-barcoded"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-05-01_090002"
+      ],
+      "created_at": "2026-05-01T09:00:02+08:00",
+      "updated_at": "2026-05-01T09:00:02+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-methods",
+      "search_blob": "dna-barcoded signal amplification for imaging mass cytometry enables sensitive and highly multiplexed tissue imaging nature methods tsuyoshi hosogane ruben casanova bernd bodenmiller abstract imaging mass cytometry (imc) is a highly multiplexed, antibody-based imaging method that captures heterogeneous spatial protein expression patterns at subcellular resolution. here we report the extension of imc to low-abundance markers through incorporation of the dna-based signal amplification by exchange reaction, immuno-saber. we applied saber-imc to image the tumor immune microenvironment in human melanoma by simultaneous imaging of 18 markers with immuno-saber and 20 markers without amplification. saber-imc enabled the identification of immune cell phenotypic markers, such as t cell co-receptors and their ligands, that are not detectable with imc. dna-barcoded 10.1038/s41592-023-01976-y https://doi.org/10.1038/s41592-023-01976-y",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 10
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-023-01991-z",
+      "title": "scNodes: a correlation and processing toolkit for super-resolution fluorescence and electron microscopy",
+      "authors": [
+        "Mart G. F. Last",
+        "Lenard M. Voortman",
+        "Thomas H. Sharp"
+      ],
+      "author": "Mart G. F. Last, Lenard M. Voortman, Thomas H. Sharp",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-023-01991-z",
+      "doi_value": "10.1038/s41592-023-01991-z",
+      "doi_url": "https://doi.org/10.1038/s41592-023-01991-z",
+      "url": "https://doi.org/10.1038/s41592-023-01991-z",
+      "detail_href": "/papers/10.1038-s41592-023-01991-z.html",
+      "abstract": "C orrelative cryo-super resolution light and cryo-electron microscopy (SR-cr yoCLEM) is an upcoming method that promises to enable accurately targeted, high-resolution in situ structure determination by combining the specificity of fluorescent labels with the high resolution of cryo-EM. As it is a novel and rapidly developing method, there has been no dedicated open-source software available for data processing, and current implementations rely instead on numerous disjointed software packages for processing and visualization. Here we present a solution: an open-source, standalone processing suite called scNodes that is specialized for (but not limited to) SR-cryoCLEM and Check for updates",
+      "full_abstract": "C orrelative cryo-super resolution light and cryo-electron microscopy (SR-cr yoCLEM) is an upcoming method that promises to enable accurately targeted, high-resolution in situ structure determination by combining the specificity of fluorescent labels with the high resolution of cryo-EM. As it is a novel and rapidly developing method, there has been no dedicated open-source software available for data processing, and current implementations rely instead on numerous disjointed software packages for processing and visualization. Here we present a solution: an open-source, standalone processing suite called scNodes that is specialized for (but not limited to) SR-cryoCLEM and Check for updates",
+      "snippet": "C orrelative cryo-super resolution light and cryo-electron microscopy (SR-cr yoCLEM) is an upcoming method that promises to enable accurately targeted, high-resolution in situ structure determination by combining the specificity of fluorescent labels with the…",
+      "abstract_truncated": true,
+      "published_date": "2023-08-18",
+      "pub_date": "2023-08-18",
+      "first_seen_date": "2026-05-01",
+      "first_seen_time": "2026-05-01T09:00:02+08:00",
+      "first_seen_batch_id": "2026-05-01_090002",
+      "last_seen_date": "2026-05-01",
+      "last_seen_time": "2026-05-01T09:00:02+08:00",
+      "last_seen_batch_id": "2026-05-01_090002",
+      "seen_batch_ids": [
+        "2026-05-01_090002"
+      ],
+      "crawl_date": "2026-05-01",
+      "crawl_time": "2026-05-01T09:00:02+08:00",
+      "crawl_batch_id": "2026-05-01_090002",
+      "source": "nature",
+      "keywords": [
+        "scNodes:"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-05-01_090002"
+      ],
+      "created_at": "2026-05-01T09:00:02+08:00",
+      "updated_at": "2026-05-01T09:00:02+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "semantic_scholar",
+      "journal_slug": "nature-methods",
+      "search_blob": "scnodes: a correlation and processing toolkit for super-resolution fluorescence and electron microscopy nature methods mart g. f. last lenard m. voortman thomas h. sharp c orrelative cryo-super resolution light and cryo-electron microscopy (sr-cr yoclem) is an upcoming method that promises to enable accurately targeted, high-resolution in situ structure determination by combining the specificity of fluorescent labels with the high resolution of cryo-em. as it is a novel and rapidly developing method, there has been no dedicated open-source software available for data processing, and current implementations rely instead on numerous disjointed software packages for processing and visualization. here we present a solution: an open-source, standalone processing suite called scnodes that is specialized for (but not limited to) sr-cryoclem and check for updates scnodes: 10.1038/s41592-023-01991-z https://doi.org/10.1038/s41592-023-01991-z",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 11
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-023-01846-7",
+      "title": "Organ Mapping Antibody Panels: a community resource for standardized multiplexed tissue imaging",
+      "authors": [
+        "Ellen M. Quardokus",
+        "Diane C. Saunders",
+        "Elizabeth McDonough",
+        "John W. Hickey",
+        "Christopher Werlein",
+        "Christine Surrette",
+        "Presha Rajbhandari",
+        "Anna Martinez Casals",
+        "Hua Tian",
+        "Lisa Lowery",
+        "Elizabeth K. Neumann",
+        "Frida Björklund",
+        "Taruna V. Neelakantan",
+        "Josh Croteau",
+        "Anne E. Wiblin",
+        "Jeremy Fisher",
+        "April J. Livengood",
+        "Karen G. Dowell",
+        "Jonathan C. Silverstein",
+        "Jeffrey M. Spraggins",
+        "Gloria S. Pryhuber",
+        "Gail Deutsch",
+        "Fiona Ginty",
+        "Garry P. Nolan",
+        "Simon Melov",
+        "Danny Jonigk",
+        "Michael A. Caldwell",
+        "Ioannis S. Vlachos",
+        "Werner Muller",
+        "Nils Gehlenborg",
+        "Brent R. Stockwell",
+        "Emma Lundberg",
+        "Michael P. Snyder",
+        "Ronald N. Germain",
+        "Jeannie M. Camarillo",
+        "Neil L. Kelleher",
+        "Katy Börner",
+        "Andrea J. Radtke"
+      ],
+      "author": "Ellen M. Quardokus, Diane C. Saunders, Elizabeth McDonough, John W. Hickey, Christopher Werlein, Christine Surrette, Presha Rajbhandari, Anna Martinez Casals, Hua Tian, Lisa Lowery, Elizabeth K. Neumann, Frida Björklund, Taruna V. Neelakantan, Josh Croteau, Anne E. Wiblin, Jeremy Fisher, April J. Livengood, Karen G. Dowell, Jonathan C. Silverstein, Jeffrey M. Spraggins, Gloria S. Pryhuber, Gail Deutsch, Fiona Ginty, Garry P. Nolan, Simon Melov, Danny Jonigk, Michael A. Caldwell, Ioannis S. Vlachos, Werner Muller, Nils Gehlenborg, Brent R. Stockwell, Emma Lundberg, Michael P. Snyder, Ronald N. Germain, Jeannie M. Camarillo, Neil L. Kelleher, Katy Börner, Andrea J. Radtke",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-023-01846-7",
+      "doi_value": "10.1038/s41592-023-01846-7",
+      "doi_url": "https://doi.org/10.1038/s41592-023-01846-7",
+      "url": "https://doi.org/10.1038/s41592-023-01846-7",
+      "detail_href": "/papers/10.1038-s41592-023-01846-7.html",
+      "abstract": "Abstract Multiplexed antibody-based imaging enables the detailed characterization of molecular and cellular organization in tissues. Advances in the field now allow high-parameter data collection (>60 targets); however, considerable expertise and capital are needed to construct the antibody panels employed by these methods. Organ mapping antibody panels are community-validated resources that save time and money, increase reproducibility, accelerate discovery and support the construction of a Human Reference Atlas.",
+      "full_abstract": "Abstract Multiplexed antibody-based imaging enables the detailed characterization of molecular and cellular organization in tissues. Advances in the field now allow high-parameter data collection (>60 targets); however, considerable expertise and capital are needed to construct the antibody panels employed by these methods. Organ mapping antibody panels are community-validated resources that save time and money, increase reproducibility, accelerate discovery and support the construction of a Human Reference Atlas.",
+      "snippet": "Abstract Multiplexed antibody-based imaging enables the detailed characterization of molecular and cellular organization in tissues. Advances in the field now allow high-parameter data collection (>60 targets); however, considerable expertise and capital are n…",
+      "abstract_truncated": true,
+      "published_date": "2023-07-19",
+      "pub_date": "2023-07-19",
+      "first_seen_date": "2026-05-01",
+      "first_seen_time": "2026-05-01T09:00:02+08:00",
+      "first_seen_batch_id": "2026-05-01_090002",
+      "last_seen_date": "2026-05-01",
+      "last_seen_time": "2026-05-01T09:00:02+08:00",
+      "last_seen_batch_id": "2026-05-01_090002",
+      "seen_batch_ids": [
+        "2026-05-01_090002"
+      ],
+      "crawl_date": "2026-05-01",
+      "crawl_time": "2026-05-01T09:00:02+08:00",
+      "crawl_batch_id": "2026-05-01_090002",
+      "source": "nature",
+      "keywords": [
+        "Organ"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-05-01_090002"
+      ],
+      "created_at": "2026-05-01T09:00:02+08:00",
+      "updated_at": "2026-05-01T09:00:02+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-methods",
+      "search_blob": "organ mapping antibody panels: a community resource for standardized multiplexed tissue imaging nature methods ellen m. quardokus diane c. saunders elizabeth mcdonough john w. hickey christopher werlein christine surrette presha rajbhandari anna martinez casals hua tian lisa lowery elizabeth k. neumann frida björklund taruna v. neelakantan josh croteau anne e. wiblin jeremy fisher april j. livengood karen g. dowell jonathan c. silverstein jeffrey m. spraggins gloria s. pryhuber gail deutsch fiona ginty garry p. nolan simon melov danny jonigk michael a. caldwell ioannis s. vlachos werner muller nils gehlenborg brent r. stockwell emma lundberg michael p. snyder ronald n. germain jeannie m. camarillo neil l. kelleher katy börner andrea j. radtke abstract multiplexed antibody-based imaging enables the detailed characterization of molecular and cellular organization in tissues. advances in the field now allow high-parameter data collection (>60 targets); however, considerable expertise and capital are needed to construct the antibody panels employed by these methods. organ mapping antibody panels are community-validated resources that save time and money, increase reproducibility, accelerate discovery and support the construction of a human reference atlas. organ 10.1038/s41592-023-01846-7 https://doi.org/10.1038/s41592-023-01846-7",
+      "crawl_history": [
+        {
+          "batch_id": "2026-05-01_090002",
+          "crawl_time": "2026-05-01T09:00:02+08:00",
+          "crawl_date": "2026-05-01",
+          "rank_in_batch": 12
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-023-02127-z",
+      "title": "Image restoration of degraded time-lapse microscopy data mediated by near-infrared imaging",
+      "authors": [
+        "Nicola Gritti",
+        "Rory M. Power",
+        "Alyssa Graves",
+        "Jan Huisken"
+      ],
+      "author": "Nicola Gritti, Rory M. Power, Alyssa Graves, Jan Huisken",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-023-02127-z",
+      "doi_value": "10.1038/s41592-023-02127-z",
+      "doi_url": "https://doi.org/10.1038/s41592-023-02127-z",
+      "url": "https://doi.org/10.1038/s41592-023-02127-z",
+      "detail_href": "/papers/10.1038-s41592-023-02127-z.html",
+      "abstract": "Abstract Time-lapse fluorescence microscopy is key to unraveling biological development and function; however, living systems, by their nature, permit only limited interrogation and contain untapped information that can only be captured by more invasive methods. Deep-tissue live imaging presents a particular challenge owing to the spectral range of live-cell imaging probes/fluorescent proteins, which offer only modest optical penetration into scattering tissues. Herein, we employ convolutional neural networks to augment live-imaging data with deep-tissue images taken on fixed samples. We demonstrate that convolutional neural networks may be used to restore deep-tissue contrast in GFP-based time-lapse imaging using paired final-state datasets acquired using near-infrared dyes, an approach termed InfraRed-mediated Image Restoration (IR 2 ). Notably, the networks are remarkably robust over a wide range of developmental times. We employ IR 2 to enhance the information content of green fluorescent protein time-lapse images of zebrafish and Drosophila embryo/larval development and demonstrate its quantitative potential in increasing the fidelity of cell tracking/lineaging in developing pescoids. Thus, IR 2 is poised to extend live imaging to depths otherwise inaccessible.",
+      "full_abstract": "Abstract Time-lapse fluorescence microscopy is key to unraveling biological development and function; however, living systems, by their nature, permit only limited interrogation and contain untapped information that can only be captured by more invasive methods. Deep-tissue live imaging presents a particular challenge owing to the spectral range of live-cell imaging probes/fluorescent proteins, which offer only modest optical penetration into scattering tissues. Herein, we employ convolutional neural networks to augment live-imaging data with deep-tissue images taken on fixed samples. We demonstrate that convolutional neural networks may be used to restore deep-tissue contrast in GFP-based time-lapse imaging using paired final-state datasets acquired using near-infrared dyes, an approach termed InfraRed-mediated Image Restoration (IR 2 ). Notably, the networks are remarkably robust over a wide range of developmental times. We employ IR 2 to enhance the information content of green fluorescent protein time-lapse images of zebrafish and Drosophila embryo/larval development and demonstrate its quantitative potential in increasing the fidelity of cell tracking/lineaging in developing pescoids. Thus, IR 2 is poised to extend live imaging to depths otherwise inaccessible.",
+      "snippet": "Abstract Time-lapse fluorescence microscopy is key to unraveling biological development and function; however, living systems, by their nature, permit only limited interrogation and contain untapped information that can only be captured by more invasive method…",
+      "abstract_truncated": true,
+      "published_date": "2024-01-04",
+      "pub_date": "2024-01-04",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_190001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_190001",
+      "seen_batch_ids": [
+        "2026-04-30_190001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_190001",
+      "source": "nature",
+      "keywords": [
+        "Image"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_190001"
+      ],
+      "created_at": "2026-04-30T19:00:01+08:00",
+      "updated_at": "2026-04-30T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-methods",
+      "search_blob": "image restoration of degraded time-lapse microscopy data mediated by near-infrared imaging nature methods nicola gritti rory m. power alyssa graves jan huisken abstract time-lapse fluorescence microscopy is key to unraveling biological development and function; however, living systems, by their nature, permit only limited interrogation and contain untapped information that can only be captured by more invasive methods. deep-tissue live imaging presents a particular challenge owing to the spectral range of live-cell imaging probes/fluorescent proteins, which offer only modest optical penetration into scattering tissues. herein, we employ convolutional neural networks to augment live-imaging data with deep-tissue images taken on fixed samples. we demonstrate that convolutional neural networks may be used to restore deep-tissue contrast in gfp-based time-lapse imaging using paired final-state datasets acquired using near-infrared dyes, an approach termed infrared-mediated image restoration (ir 2 ). notably, the networks are remarkably robust over a wide range of developmental times. we employ ir 2 to enhance the information content of green fluorescent protein time-lapse images of zebrafish and drosophila embryo/larval development and demonstrate its quantitative potential in increasing the fidelity of cell tracking/lineaging in developing pescoids. thus, ir 2 is poised to extend live imaging to depths otherwise inaccessible. image 10.1038/s41592-023-02127-z https://doi.org/10.1038/s41592-023-02127-z",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 13
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-023-02126-0",
+      "title": "Smart lattice light-sheet microscopy for imaging rare and complex cellular events",
+      "authors": [
+        "Yu Shi",
+        "Jimmy S. Tabet",
+        "Daniel E. Milkie",
+        "Timothy A. Daugird",
+        "Chelsea Q. Yang",
+        "Alex T. Ritter",
+        "Andrea Giovannucci",
+        "Wesley R. Legant"
+      ],
+      "author": "Yu Shi, Jimmy S. Tabet, Daniel E. Milkie, Timothy A. Daugird, Chelsea Q. Yang, Alex T. Ritter, Andrea Giovannucci, Wesley R. Legant",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-023-02126-0",
+      "doi_value": "10.1038/s41592-023-02126-0",
+      "doi_url": "https://doi.org/10.1038/s41592-023-02126-0",
+      "url": "https://doi.org/10.1038/s41592-023-02126-0",
+      "detail_href": "/papers/10.1038-s41592-023-02126-0.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2024-01-02",
+      "pub_date": "2024-01-02",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_190001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_190001",
+      "seen_batch_ids": [
+        "2026-04-30_190001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_190001",
+      "source": "nature",
+      "keywords": [
+        "Smart"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_190001"
+      ],
+      "created_at": "2026-04-30T19:00:01+08:00",
+      "updated_at": "2026-04-30T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "smart lattice light-sheet microscopy for imaging rare and complex cellular events nature methods yu shi jimmy s. tabet daniel e. milkie timothy a. daugird chelsea q. yang alex t. ritter andrea giovannucci wesley r. legant 暂无公开摘要 smart 10.1038/s41592-023-02126-0 https://doi.org/10.1038/s41592-023-02126-0",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 14
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-023-02084-7",
+      "title": "Embryo mechanics cartography: inference of 3D force atlases from fluorescence microscopy",
+      "authors": [
+        "Sacha Ichbiah",
+        "Fabrice Delbary",
+        "Alex McDougall",
+        "Rémi Dumollard",
+        "Hervé Turlier"
+      ],
+      "author": "Sacha Ichbiah, Fabrice Delbary, Alex McDougall, Rémi Dumollard, Hervé Turlier",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-023-02084-7",
+      "doi_value": "10.1038/s41592-023-02084-7",
+      "doi_url": "https://doi.org/10.1038/s41592-023-02084-7",
+      "url": "https://doi.org/10.1038/s41592-023-02084-7",
+      "detail_href": "/papers/10.1038-s41592-023-02084-7.html",
+      "abstract": "Abstract Tissue morphogenesis results from a tight interplay between gene expression, biochemical signaling and mechanics. Although sequencing methods allow the generation of cell-resolved spatiotemporal maps of gene expression, creating similar maps of cell mechanics in three-dimensional (3D) developing tissues has remained a real challenge. Exploiting the foam-like arrangement of cells, we propose a robust end-to-end computational method called ‘foambryo’ to infer spatiotemporal atlases of cellular forces from fluorescence microscopy images of cell membranes. Our method generates precise 3D meshes of cells’ geometry and successively predicts relative cell surface tensions and pressures. We validate it with 3D foam simulations, study its noise sensitivity and prove its biological relevance in mouse, ascidian and worm embryos. 3D force inference allows us to recover mechanical features identified previously, but also predicts new ones, unveiling potential new insights on the spatiotemporal regulation of cell mechanics in developing embryos. Our code is freely available and paves the way for unraveling the unknown mechanochemical feedbacks that control embryo and tissue morphogenesis.",
+      "full_abstract": "Abstract Tissue morphogenesis results from a tight interplay between gene expression, biochemical signaling and mechanics. Although sequencing methods allow the generation of cell-resolved spatiotemporal maps of gene expression, creating similar maps of cell mechanics in three-dimensional (3D) developing tissues has remained a real challenge. Exploiting the foam-like arrangement of cells, we propose a robust end-to-end computational method called ‘foambryo’ to infer spatiotemporal atlases of cellular forces from fluorescence microscopy images of cell membranes. Our method generates precise 3D meshes of cells’ geometry and successively predicts relative cell surface tensions and pressures. We validate it with 3D foam simulations, study its noise sensitivity and prove its biological relevance in mouse, ascidian and worm embryos. 3D force inference allows us to recover mechanical features identified previously, but also predicts new ones, unveiling potential new insights on the spatiotemporal regulation of cell mechanics in developing embryos. Our code is freely available and paves the way for unraveling the unknown mechanochemical feedbacks that control embryo and tissue morphogenesis.",
+      "snippet": "Abstract Tissue morphogenesis results from a tight interplay between gene expression, biochemical signaling and mechanics. Although sequencing methods allow the generation of cell-resolved spatiotemporal maps of gene expression, creating similar maps of cell m…",
+      "abstract_truncated": true,
+      "published_date": "2023-12-01",
+      "pub_date": "2023-12-01",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_190001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_190001",
+      "seen_batch_ids": [
+        "2026-04-30_190001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_190001",
+      "source": "nature",
+      "keywords": [
+        "Embryo"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_190001"
+      ],
+      "created_at": "2026-04-30T19:00:01+08:00",
+      "updated_at": "2026-04-30T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-methods",
+      "search_blob": "embryo mechanics cartography: inference of 3d force atlases from fluorescence microscopy nature methods sacha ichbiah fabrice delbary alex mcdougall rémi dumollard hervé turlier abstract tissue morphogenesis results from a tight interplay between gene expression, biochemical signaling and mechanics. although sequencing methods allow the generation of cell-resolved spatiotemporal maps of gene expression, creating similar maps of cell mechanics in three-dimensional (3d) developing tissues has remained a real challenge. exploiting the foam-like arrangement of cells, we propose a robust end-to-end computational method called ‘foambryo’ to infer spatiotemporal atlases of cellular forces from fluorescence microscopy images of cell membranes. our method generates precise 3d meshes of cells’ geometry and successively predicts relative cell surface tensions and pressures. we validate it with 3d foam simulations, study its noise sensitivity and prove its biological relevance in mouse, ascidian and worm embryos. 3d force inference allows us to recover mechanical features identified previously, but also predicts new ones, unveiling potential new insights on the spatiotemporal regulation of cell mechanics in developing embryos. our code is freely available and paves the way for unraveling the unknown mechanochemical feedbacks that control embryo and tissue morphogenesis. embryo 10.1038/s41592-023-02084-7 https://doi.org/10.1038/s41592-023-02084-7",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 15
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-023-02054-z",
+      "title": "Pulsed stimulated Brillouin microscopy enables high-sensitivity mechanical imaging of live and fragile biological specimens",
+      "authors": [
+        "Fan Yang",
+        "Carlo Bevilacqua",
+        "Sebastian Hambura",
+        "Ana Neves",
+        "Anusha Gopalan",
+        "Koki Watanabe",
+        "Matt Govendir",
+        "Maria Bernabeu",
+        "Jan Ellenberg",
+        "Alba Diz-Muñoz",
+        "Simone Köhler",
+        "Georgia Rapti",
+        "Martin Jechlinger",
+        "Robert Prevedel"
+      ],
+      "author": "Fan Yang, Carlo Bevilacqua, Sebastian Hambura, Ana Neves, Anusha Gopalan, Koki Watanabe, Matt Govendir, Maria Bernabeu, Jan Ellenberg, Alba Diz-Muñoz, Simone Köhler, Georgia Rapti, Martin Jechlinger, Robert Prevedel",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-023-02054-z",
+      "doi_value": "10.1038/s41592-023-02054-z",
+      "doi_url": "https://doi.org/10.1038/s41592-023-02054-z",
+      "url": "https://doi.org/10.1038/s41592-023-02054-z",
+      "detail_href": "/papers/10.1038-s41592-023-02054-z.html",
+      "abstract": "Abstract Brillouin microscopy is an emerging optical elastography technique capable of assessing mechanical properties of biological samples in a three-dimensional, all-optical and noncontact fashion. The typically weak Brillouin scattering signal can be substantially enhanced via a stimulated Brillouin scattering (SBS) process; however, current implementations require high pump powers, which prohibit applications to photosensitive or live imaging of biological samples. Here we present a pulsed SBS scheme that takes advantage of the nonlinearity of the pump–probe interaction. In particular, we show that the required pump laser power can be decreased ~20-fold without affecting the signal levels or spectral precision. We demonstrate the low phototoxicity and high specificity of our pulsed SBS approach by imaging, with subcellular detail, sensitive single cells, zebrafish larvae, mouse embryos and adult Caenorhabditis elegans . Furthermore, our method permits observing the mechanics of organoids and C. elegans embryos over time, opening up further possibilities for the field of mechanobiology.",
+      "full_abstract": "Abstract Brillouin microscopy is an emerging optical elastography technique capable of assessing mechanical properties of biological samples in a three-dimensional, all-optical and noncontact fashion. The typically weak Brillouin scattering signal can be substantially enhanced via a stimulated Brillouin scattering (SBS) process; however, current implementations require high pump powers, which prohibit applications to photosensitive or live imaging of biological samples. Here we present a pulsed SBS scheme that takes advantage of the nonlinearity of the pump–probe interaction. In particular, we show that the required pump laser power can be decreased ~20-fold without affecting the signal levels or spectral precision. We demonstrate the low phototoxicity and high specificity of our pulsed SBS approach by imaging, with subcellular detail, sensitive single cells, zebrafish larvae, mouse embryos and adult Caenorhabditis elegans . Furthermore, our method permits observing the mechanics of organoids and C. elegans embryos over time, opening up further possibilities for the field of mechanobiology.",
+      "snippet": "Abstract Brillouin microscopy is an emerging optical elastography technique capable of assessing mechanical properties of biological samples in a three-dimensional, all-optical and noncontact fashion. The typically weak Brillouin scattering signal can be subst…",
+      "abstract_truncated": true,
+      "published_date": "2023-10-26",
+      "pub_date": "2023-10-26",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_190001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_190001",
+      "seen_batch_ids": [
+        "2026-04-30_190001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_190001",
+      "source": "nature",
+      "keywords": [
+        "Pulsed"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_190001"
+      ],
+      "created_at": "2026-04-30T19:00:01+08:00",
+      "updated_at": "2026-04-30T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-methods",
+      "search_blob": "pulsed stimulated brillouin microscopy enables high-sensitivity mechanical imaging of live and fragile biological specimens nature methods fan yang carlo bevilacqua sebastian hambura ana neves anusha gopalan koki watanabe matt govendir maria bernabeu jan ellenberg alba diz-muñoz simone köhler georgia rapti martin jechlinger robert prevedel abstract brillouin microscopy is an emerging optical elastography technique capable of assessing mechanical properties of biological samples in a three-dimensional, all-optical and noncontact fashion. the typically weak brillouin scattering signal can be substantially enhanced via a stimulated brillouin scattering (sbs) process; however, current implementations require high pump powers, which prohibit applications to photosensitive or live imaging of biological samples. here we present a pulsed sbs scheme that takes advantage of the nonlinearity of the pump–probe interaction. in particular, we show that the required pump laser power can be decreased ~20-fold without affecting the signal levels or spectral precision. we demonstrate the low phototoxicity and high specificity of our pulsed sbs approach by imaging, with subcellular detail, sensitive single cells, zebrafish larvae, mouse embryos and adult caenorhabditis elegans . furthermore, our method permits observing the mechanics of organoids and c. elegans embryos over time, opening up further possibilities for the field of mechanobiology. pulsed 10.1038/s41592-023-02054-z https://doi.org/10.1038/s41592-023-02054-z",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 16
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-023-02037-0",
+      "title": "Hydrogel-based molecular tension fluorescence microscopy for investigating receptor-mediated rigidity sensing",
+      "authors": [
+        "Wenxu Wang",
+        "Wei Chen",
+        "Chaoyang Wu",
+        "Chen Zhang",
+        "Jingjing Feng",
+        "Pengxiang Liu",
+        "Yuru Hu",
+        "Hongyun Li",
+        "Feng Sun",
+        "Kai Jiang",
+        "Xinghua Zhang",
+        "Zheng Liu"
+      ],
+      "author": "Wenxu Wang, Wei Chen, Chaoyang Wu, Chen Zhang, Jingjing Feng, Pengxiang Liu, Yuru Hu, Hongyun Li, Feng Sun, Kai Jiang, Xinghua Zhang, Zheng Liu",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-023-02037-0",
+      "doi_value": "10.1038/s41592-023-02037-0",
+      "doi_url": "https://doi.org/10.1038/s41592-023-02037-0",
+      "url": "https://doi.org/10.1038/s41592-023-02037-0",
+      "detail_href": "/papers/10.1038-s41592-023-02037-0.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2023-10-05",
+      "pub_date": "2023-10-05",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_190001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_190001",
+      "seen_batch_ids": [
+        "2026-04-30_190001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_190001",
+      "source": "nature",
+      "keywords": [
+        "Hydrogel-based"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_190001"
+      ],
+      "created_at": "2026-04-30T19:00:01+08:00",
+      "updated_at": "2026-04-30T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "hydrogel-based molecular tension fluorescence microscopy for investigating receptor-mediated rigidity sensing nature methods wenxu wang wei chen chaoyang wu chen zhang jingjing feng pengxiang liu yuru hu hongyun li feng sun kai jiang xinghua zhang zheng liu 暂无公开摘要 hydrogel-based 10.1038/s41592-023-02037-0 https://doi.org/10.1038/s41592-023-02037-0",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 17
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-023-01977-x",
+      "title": "Multielement Z-tag imaging by X-ray fluorescence microscopy for next-generation multiplex imaging",
+      "authors": [
+        "Merrick Strotton",
+        "Tsuyoshi Hosogane",
+        "Marco di Michiel",
+        "Holger Moch",
+        "Zsuzsanna Varga",
+        "Bernd Bodenmiller"
+      ],
+      "author": "Merrick Strotton, Tsuyoshi Hosogane, Marco di Michiel, Holger Moch, Zsuzsanna Varga, Bernd Bodenmiller",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-023-01977-x",
+      "doi_value": "10.1038/s41592-023-01977-x",
+      "doi_url": "https://doi.org/10.1038/s41592-023-01977-x",
+      "url": "https://doi.org/10.1038/s41592-023-01977-x",
+      "detail_href": "/papers/10.1038-s41592-023-01977-x.html",
+      "abstract": "Abstract Rapid, highly multiplexed, nondestructive imaging that spans the molecular to the supra-cellular scale would be a powerful tool for tissue analysis. However, the physical constraints of established imaging methods limit the simultaneous improvement of these parameters. Whole-organism to atomic-level imaging is possible with tissue-penetrant, picometer-wavelength X-rays. To enable highly multiplexed X-ray imaging, we developed multielement Z-tag X-ray fluorescence (MEZ-XRF) that can operate at kHz speeds when combined with signal amplification by exchange reaction (SABER)-amplified Z-tag reagents. We demonstrated parallel imaging of 20 Z-tag or SABER Z-tag reagents at subcellular resolution in cell lines and multiple human tissues. We benchmarked MEZ-XRF against imaging mass cytometry and demonstrated the nondestructive multiscale repeat imaging capabilities of MEZ-XRF with rapid tissue overview scans, followed by slower, more sensitive imaging of low-abundance markers such as immune checkpoint proteins. The unique multiscale, nondestructive nature of MEZ-XRF, combined with SABER Z-tags for high sensitivity or enhanced speed, enables highly multiplexed bioimaging across biological scales.",
+      "full_abstract": "Abstract Rapid, highly multiplexed, nondestructive imaging that spans the molecular to the supra-cellular scale would be a powerful tool for tissue analysis. However, the physical constraints of established imaging methods limit the simultaneous improvement of these parameters. Whole-organism to atomic-level imaging is possible with tissue-penetrant, picometer-wavelength X-rays. To enable highly multiplexed X-ray imaging, we developed multielement Z-tag X-ray fluorescence (MEZ-XRF) that can operate at kHz speeds when combined with signal amplification by exchange reaction (SABER)-amplified Z-tag reagents. We demonstrated parallel imaging of 20 Z-tag or SABER Z-tag reagents at subcellular resolution in cell lines and multiple human tissues. We benchmarked MEZ-XRF against imaging mass cytometry and demonstrated the nondestructive multiscale repeat imaging capabilities of MEZ-XRF with rapid tissue overview scans, followed by slower, more sensitive imaging of low-abundance markers such as immune checkpoint proteins. The unique multiscale, nondestructive nature of MEZ-XRF, combined with SABER Z-tags for high sensitivity or enhanced speed, enables highly multiplexed bioimaging across biological scales.",
+      "snippet": "Abstract Rapid, highly multiplexed, nondestructive imaging that spans the molecular to the supra-cellular scale would be a powerful tool for tissue analysis. However, the physical constraints of established imaging methods limit the simultaneous improvement of…",
+      "abstract_truncated": true,
+      "published_date": "2023-08-31",
+      "pub_date": "2023-08-31",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_190001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_190001",
+      "seen_batch_ids": [
+        "2026-04-30_190001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_190001",
+      "source": "nature",
+      "keywords": [
+        "Multielement"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_190001"
+      ],
+      "created_at": "2026-04-30T19:00:01+08:00",
+      "updated_at": "2026-04-30T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-methods",
+      "search_blob": "multielement z-tag imaging by x-ray fluorescence microscopy for next-generation multiplex imaging nature methods merrick strotton tsuyoshi hosogane marco di michiel holger moch zsuzsanna varga bernd bodenmiller abstract rapid, highly multiplexed, nondestructive imaging that spans the molecular to the supra-cellular scale would be a powerful tool for tissue analysis. however, the physical constraints of established imaging methods limit the simultaneous improvement of these parameters. whole-organism to atomic-level imaging is possible with tissue-penetrant, picometer-wavelength x-rays. to enable highly multiplexed x-ray imaging, we developed multielement z-tag x-ray fluorescence (mez-xrf) that can operate at khz speeds when combined with signal amplification by exchange reaction (saber)-amplified z-tag reagents. we demonstrated parallel imaging of 20 z-tag or saber z-tag reagents at subcellular resolution in cell lines and multiple human tissues. we benchmarked mez-xrf against imaging mass cytometry and demonstrated the nondestructive multiscale repeat imaging capabilities of mez-xrf with rapid tissue overview scans, followed by slower, more sensitive imaging of low-abundance markers such as immune checkpoint proteins. the unique multiscale, nondestructive nature of mez-xrf, combined with saber z-tags for high sensitivity or enhanced speed, enables highly multiplexed bioimaging across biological scales. multielement 10.1038/s41592-023-01977-x https://doi.org/10.1038/s41592-023-01977-x",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_190001",
+          "crawl_time": "2026-04-30T19:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 18
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-024-02294-7",
+      "title": "Deconwolf enables high-performance deconvolution of widefield fluorescence microscopy images",
+      "authors": [
+        "Erik Wernersson",
+        "Eleni Gelali",
+        "Gabriele Girelli",
+        "Su Wang",
+        "David Castillo",
+        "Christoffer Mattsson Langseth",
+        "Quentin Verron",
+        "Huy Q. Nguyen",
+        "Shyamtanu Chattoraj",
+        "Anna Martinez Casals",
+        "Hans Blom",
+        "Emma Lundberg",
+        "Mats Nilsson",
+        "Marc A. Marti-Renom",
+        "Chao-ting Wu",
+        "Nicola Crosetto",
+        "Magda Bienko"
+      ],
+      "author": "Erik Wernersson, Eleni Gelali, Gabriele Girelli, Su Wang, David Castillo, Christoffer Mattsson Langseth, Quentin Verron, Huy Q. Nguyen, Shyamtanu Chattoraj, Anna Martinez Casals, Hans Blom, Emma Lundberg, Mats Nilsson, Marc A. Marti-Renom, Chao-ting Wu, Nicola Crosetto, Magda Bienko",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-024-02294-7",
+      "doi_value": "10.1038/s41592-024-02294-7",
+      "doi_url": "https://doi.org/10.1038/s41592-024-02294-7",
+      "url": "https://doi.org/10.1038/s41592-024-02294-7",
+      "detail_href": "/papers/10.1038-s41592-024-02294-7.html",
+      "abstract": "Abstract Microscopy-based spatially resolved omic methods are transforming the life sciences. However, these methods rely on high numerical aperture objectives and cannot resolve crowded molecular targets, limiting the amount of extractable biological information. To overcome these limitations, here we develop Deconwolf, an open-source, user-friendly software for high-performance deconvolution of widefield fluorescence microscopy images, which efficiently runs on laptop computers. Deconwolf enables accurate quantification of crowded diffraction limited fluorescence dots in DNA and RNA fluorescence in situ hybridization images and allows robust detection of individual transcripts in tissue sections imaged with ×20 air objectives. Deconvolution of in situ spatial transcriptomics images with Deconwolf increased the number of transcripts identified more than threefold, while the application of Deconwolf to images obtained by fluorescence in situ sequencing of barcoded Oligopaint probes drastically improved chromosome tracing. Deconwolf greatly facilitates the use of deconvolution in many bioimaging applications.",
+      "full_abstract": "Abstract Microscopy-based spatially resolved omic methods are transforming the life sciences. However, these methods rely on high numerical aperture objectives and cannot resolve crowded molecular targets, limiting the amount of extractable biological information. To overcome these limitations, here we develop Deconwolf, an open-source, user-friendly software for high-performance deconvolution of widefield fluorescence microscopy images, which efficiently runs on laptop computers. Deconwolf enables accurate quantification of crowded diffraction limited fluorescence dots in DNA and RNA fluorescence in situ hybridization images and allows robust detection of individual transcripts in tissue sections imaged with ×20 air objectives. Deconvolution of in situ spatial transcriptomics images with Deconwolf increased the number of transcripts identified more than threefold, while the application of Deconwolf to images obtained by fluorescence in situ sequencing of barcoded Oligopaint probes drastically improved chromosome tracing. Deconwolf greatly facilitates the use of deconvolution in many bioimaging applications.",
+      "snippet": "Abstract Microscopy-based spatially resolved omic methods are transforming the life sciences. However, these methods rely on high numerical aperture objectives and cannot resolve crowded molecular targets, limiting the amount of extractable biological informat…",
+      "abstract_truncated": true,
+      "published_date": "2024-06-06",
+      "pub_date": "2024-06-06",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "nature",
+      "keywords": [
+        "Deconwolf"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-methods",
+      "search_blob": "deconwolf enables high-performance deconvolution of widefield fluorescence microscopy images nature methods erik wernersson eleni gelali gabriele girelli su wang david castillo christoffer mattsson langseth quentin verron huy q. nguyen shyamtanu chattoraj anna martinez casals hans blom emma lundberg mats nilsson marc a. marti-renom chao-ting wu nicola crosetto magda bienko abstract microscopy-based spatially resolved omic methods are transforming the life sciences. however, these methods rely on high numerical aperture objectives and cannot resolve crowded molecular targets, limiting the amount of extractable biological information. to overcome these limitations, here we develop deconwolf, an open-source, user-friendly software for high-performance deconvolution of widefield fluorescence microscopy images, which efficiently runs on laptop computers. deconwolf enables accurate quantification of crowded diffraction limited fluorescence dots in dna and rna fluorescence in situ hybridization images and allows robust detection of individual transcripts in tissue sections imaged with ×20 air objectives. deconvolution of in situ spatial transcriptomics images with deconwolf increased the number of transcripts identified more than threefold, while the application of deconwolf to images obtained by fluorescence in situ sequencing of barcoded oligopaint probes drastically improved chromosome tracing. deconwolf greatly facilitates the use of deconvolution in many bioimaging applications. deconwolf 10.1038/s41592-024-02294-7 https://doi.org/10.1038/s41592-024-02294-7",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 13
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-024-02297-4",
+      "title": "Effects and avoidance of photoconversion-induced artifacts in confocal and STED microscopy",
+      "authors": [
+        "Anindita Dasgupta",
+        "Agnes Koerfer",
+        "Boštjan Kokot",
+        "Iztok Urbančič",
+        "Christian Eggeling",
+        "Pablo Carravilla"
+      ],
+      "author": "Anindita Dasgupta, Agnes Koerfer, Boštjan Kokot, Iztok Urbančič, Christian Eggeling, Pablo Carravilla",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-024-02297-4",
+      "doi_value": "10.1038/s41592-024-02297-4",
+      "doi_url": "https://doi.org/10.1038/s41592-024-02297-4",
+      "url": "https://doi.org/10.1038/s41592-024-02297-4",
+      "detail_href": "/papers/10.1038-s41592-024-02297-4.html",
+      "abstract": "Abstract Fluorescence microscopy is limited by photoconversion due to continuous illumination, which results in not only photobleaching but also conversion of fluorescent molecules into species of different spectral properties through photoblueing. Here, we determined different fluorescence parameters of photoconverted products for various fluorophores under standard confocal and stimulated emission depletion (STED) microscopy conditions. We observed changes in both fluorescence spectra and lifetimes that can cause artifacts in quantitative measurements, which can be avoided by using exchangeable dyes.",
+      "full_abstract": "Abstract Fluorescence microscopy is limited by photoconversion due to continuous illumination, which results in not only photobleaching but also conversion of fluorescent molecules into species of different spectral properties through photoblueing. Here, we determined different fluorescence parameters of photoconverted products for various fluorophores under standard confocal and stimulated emission depletion (STED) microscopy conditions. We observed changes in both fluorescence spectra and lifetimes that can cause artifacts in quantitative measurements, which can be avoided by using exchangeable dyes.",
+      "snippet": "Abstract Fluorescence microscopy is limited by photoconversion due to continuous illumination, which results in not only photobleaching but also conversion of fluorescent molecules into species of different spectral properties through photoblueing. Here, we de…",
+      "abstract_truncated": true,
+      "published_date": "2024-06-04",
+      "pub_date": "2024-06-04",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "nature",
+      "keywords": [
+        "Effects"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-methods",
+      "search_blob": "effects and avoidance of photoconversion-induced artifacts in confocal and sted microscopy nature methods anindita dasgupta agnes koerfer boštjan kokot iztok urbančič christian eggeling pablo carravilla abstract fluorescence microscopy is limited by photoconversion due to continuous illumination, which results in not only photobleaching but also conversion of fluorescent molecules into species of different spectral properties through photoblueing. here, we determined different fluorescence parameters of photoconverted products for various fluorophores under standard confocal and stimulated emission depletion (sted) microscopy conditions. we observed changes in both fluorescence spectra and lifetimes that can cause artifacts in quantitative measurements, which can be avoided by using exchangeable dyes. effects 10.1038/s41592-024-02297-4 https://doi.org/10.1038/s41592-024-02297-4",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 14
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-024-02276-9",
+      "title": "Targeted illumination confocal microscopy enables in vivo voltage imaging in thick tissue",
+      "authors": [],
+      "author": "未知作者",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-024-02276-9",
+      "doi_value": "10.1038/s41592-024-02276-9",
+      "doi_url": "https://doi.org/10.1038/s41592-024-02276-9",
+      "url": "https://doi.org/10.1038/s41592-024-02276-9",
+      "detail_href": "/papers/10.1038-s41592-024-02276-9.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2024-06-01",
+      "pub_date": "2024-06-01",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "nature",
+      "keywords": [
+        "Targeted"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "targeted illumination confocal microscopy enables in vivo voltage imaging in thick tissue nature methods 暂无公开摘要 targeted 10.1038/s41592-024-02276-9 https://doi.org/10.1038/s41592-024-02276-9",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 15
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-024-02275-w",
+      "title": "Large-scale deep tissue voltage imaging with targeted-illumination confocal microscopy",
+      "authors": [
+        "Sheng Xiao",
+        "William J. Cunningham",
+        "Krishnakanth Kondabolu",
+        "Eric Lowet",
+        "Maria V. Moya",
+        "Rebecca A. Mount",
+        "Cara Ravasio",
+        "Emma Bortz",
+        "Dana Shaw",
+        "Michael N. Economo",
+        "Xue Han",
+        "Jerome Mertz"
+      ],
+      "author": "Sheng Xiao, William J. Cunningham, Krishnakanth Kondabolu, Eric Lowet, Maria V. Moya, Rebecca A. Mount, Cara Ravasio, Emma Bortz, Dana Shaw, Michael N. Economo, Xue Han, Jerome Mertz",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-024-02275-w",
+      "doi_value": "10.1038/s41592-024-02275-w",
+      "doi_url": "https://doi.org/10.1038/s41592-024-02275-w",
+      "url": "https://doi.org/10.1038/s41592-024-02275-w",
+      "detail_href": "/papers/10.1038-s41592-024-02275-w.html",
+      "abstract": "Voltage imaging with cellular specificity has been made possible by advances in genetically encoded voltage indicators. However, the kilohertz rates required for voltage imaging lead to weak signals. Moreover, out-of-focus fluorescence and tissue scattering produce background that both undermines the signal-to-noise ratio and induces crosstalk between cells, making reliable in vivo imaging in densely labeled tissue highly challenging. We describe a microscope that combines the distinct advantages of targeted illumination and confocal gating while also maximizing signal detection efficiency. The resulting benefits in signal-to-noise ratio and crosstalk reduction are quantified experimentally and theoretically. Our microscope provides a versatile solution for enabling high-fidelity in vivo voltage imaging at large scales and penetration depths, which we demonstrate across a wide range of imaging conditions and different genetically encoded voltage indicator classes.",
+      "full_abstract": "Voltage imaging with cellular specificity has been made possible by advances in genetically encoded voltage indicators. However, the kilohertz rates required for voltage imaging lead to weak signals. Moreover, out-of-focus fluorescence and tissue scattering produce background that both undermines the signal-to-noise ratio and induces crosstalk between cells, making reliable in vivo imaging in densely labeled tissue highly challenging. We describe a microscope that combines the distinct advantages of targeted illumination and confocal gating while also maximizing signal detection efficiency. The resulting benefits in signal-to-noise ratio and crosstalk reduction are quantified experimentally and theoretically. Our microscope provides a versatile solution for enabling high-fidelity in vivo voltage imaging at large scales and penetration depths, which we demonstrate across a wide range of imaging conditions and different genetically encoded voltage indicator classes.",
+      "snippet": "Voltage imaging with cellular specificity has been made possible by advances in genetically encoded voltage indicators. However, the kilohertz rates required for voltage imaging lead to weak signals. Moreover, out-of-focus fluorescence and tissue scattering pr…",
+      "abstract_truncated": true,
+      "published_date": "2024-06-01",
+      "pub_date": "2024-06-01",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "nature",
+      "keywords": [
+        "Large-scale"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "openalex",
+      "journal_slug": "nature-methods",
+      "search_blob": "large-scale deep tissue voltage imaging with targeted-illumination confocal microscopy nature methods sheng xiao william j. cunningham krishnakanth kondabolu eric lowet maria v. moya rebecca a. mount cara ravasio emma bortz dana shaw michael n. economo xue han jerome mertz voltage imaging with cellular specificity has been made possible by advances in genetically encoded voltage indicators. however, the kilohertz rates required for voltage imaging lead to weak signals. moreover, out-of-focus fluorescence and tissue scattering produce background that both undermines the signal-to-noise ratio and induces crosstalk between cells, making reliable in vivo imaging in densely labeled tissue highly challenging. we describe a microscope that combines the distinct advantages of targeted illumination and confocal gating while also maximizing signal detection efficiency. the resulting benefits in signal-to-noise ratio and crosstalk reduction are quantified experimentally and theoretically. our microscope provides a versatile solution for enabling high-fidelity in vivo voltage imaging at large scales and penetration depths, which we demonstrate across a wide range of imaging conditions and different genetically encoded voltage indicator classes. large-scale 10.1038/s41592-024-02275-w https://doi.org/10.1038/s41592-024-02275-w",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 16
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-024-02244-3",
+      "title": "Pretraining a foundation model for generalizable fluorescence microscopy-based image restoration",
+      "authors": [
+        "Chenxi Ma",
+        "Weimin Tan",
+        "Ruian He",
+        "Bo Yan"
+      ],
+      "author": "Chenxi Ma, Weimin Tan, Ruian He, Bo Yan",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-024-02244-3",
+      "doi_value": "10.1038/s41592-024-02244-3",
+      "doi_url": "https://doi.org/10.1038/s41592-024-02244-3",
+      "url": "https://doi.org/10.1038/s41592-024-02244-3",
+      "detail_href": "/papers/10.1038-s41592-024-02244-3.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2024-04-12",
+      "pub_date": "2024-04-12",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "nature",
+      "keywords": [
+        "Pretraining"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "pretraining a foundation model for generalizable fluorescence microscopy-based image restoration nature methods chenxi ma weimin tan ruian he bo yan 暂无公开摘要 pretraining 10.1038/s41592-024-02244-3 https://doi.org/10.1038/s41592-024-02244-3",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 17
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-024-02196-8",
+      "title": "Super-sectioning with multi-sheet reversible saturable optical fluorescence transitions (RESOLFT) microscopy",
+      "authors": [
+        "Andreas Bodén",
+        "Dirk Ollech",
+        "Andrew G. York",
+        "Alfred Millett-Sikking",
+        "Ilaria Testa"
+      ],
+      "author": "Andreas Bodén, Dirk Ollech, Andrew G. York, Alfred Millett-Sikking, Ilaria Testa",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-024-02196-8",
+      "doi_value": "10.1038/s41592-024-02196-8",
+      "doi_url": "https://doi.org/10.1038/s41592-024-02196-8",
+      "url": "https://doi.org/10.1038/s41592-024-02196-8",
+      "detail_href": "/papers/10.1038-s41592-024-02196-8.html",
+      "abstract": "Abstract Light-sheet fluorescence microscopy is an invaluable tool for four-dimensional biological imaging of multicellular systems due to the rapid volumetric imaging and minimal illumination dosage. However, it is challenging to retrieve fine subcellular information, especially in living cells, due to the width of the sheet of light (>1 μm). Here, using reversibly switchable fluorescent proteins (RSFPs) and a periodic light pattern for photoswitching, we demonstrate a super-resolution imaging method for rapid volumetric imaging of subcellular structures called multi-sheet RESOLFT. Multiple emission-sheets with a width that is far below the diffraction limit are created in parallel increasing recording speed (1–2 Hz) to provide super-sectioning ability (",
+      "full_abstract": "Abstract Light-sheet fluorescence microscopy is an invaluable tool for four-dimensional biological imaging of multicellular systems due to the rapid volumetric imaging and minimal illumination dosage. However, it is challenging to retrieve fine subcellular information, especially in living cells, due to the width of the sheet of light (>1 μm). Here, using reversibly switchable fluorescent proteins (RSFPs) and a periodic light pattern for photoswitching, we demonstrate a super-resolution imaging method for rapid volumetric imaging of subcellular structures called multi-sheet RESOLFT. Multiple emission-sheets with a width that is far below the diffraction limit are created in parallel increasing recording speed (1–2 Hz) to provide super-sectioning ability (",
+      "snippet": "Abstract Light-sheet fluorescence microscopy is an invaluable tool for four-dimensional biological imaging of multicellular systems due to the rapid volumetric imaging and minimal illumination dosage. However, it is challenging to retrieve fine subcellular inf…",
+      "abstract_truncated": true,
+      "published_date": "2024-02-23",
+      "pub_date": "2024-02-23",
+      "first_seen_date": "2026-04-30",
+      "first_seen_time": "2026-04-30T09:00:01+08:00",
+      "first_seen_batch_id": "2026-04-30_090001",
+      "last_seen_date": "2026-04-30",
+      "last_seen_time": "2026-04-30T09:00:01+08:00",
+      "last_seen_batch_id": "2026-04-30_090001",
+      "seen_batch_ids": [
+        "2026-04-30_090001"
+      ],
+      "crawl_date": "2026-04-30",
+      "crawl_time": "2026-04-30T09:00:01+08:00",
+      "crawl_batch_id": "2026-04-30_090001",
+      "source": "nature",
+      "keywords": [
+        "Super-sectioning"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-30_090001"
+      ],
+      "created_at": "2026-04-30T09:00:01+08:00",
+      "updated_at": "2026-04-30T09:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "crossref",
+      "journal_slug": "nature-methods",
+      "search_blob": "super-sectioning with multi-sheet reversible saturable optical fluorescence transitions (resolft) microscopy nature methods andreas bodén dirk ollech andrew g. york alfred millett-sikking ilaria testa abstract light-sheet fluorescence microscopy is an invaluable tool for four-dimensional biological imaging of multicellular systems due to the rapid volumetric imaging and minimal illumination dosage. however, it is challenging to retrieve fine subcellular information, especially in living cells, due to the width of the sheet of light (>1 μm). here, using reversibly switchable fluorescent proteins (rsfps) and a periodic light pattern for photoswitching, we demonstrate a super-resolution imaging method for rapid volumetric imaging of subcellular structures called multi-sheet resolft. multiple emission-sheets with a width that is far below the diffraction limit are created in parallel increasing recording speed (1–2 hz) to provide super-sectioning ability ( super-sectioning 10.1038/s41592-024-02196-8 https://doi.org/10.1038/s41592-024-02196-8",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-30_090001",
+          "crawl_time": "2026-04-30T09:00:01+08:00",
+          "crawl_date": "2026-04-30",
+          "rank_in_batch": 18
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-025-02667-6",
+      "title": "Dark-based optical sectioning assists background removal in fluorescence microscopy",
+      "authors": [
+        "Ruijie Cao",
+        "Yaning Li",
+        "Yao Zhou",
+        "Meiqi Li",
+        "Fangrui Lin",
+        "Wenyi Wang",
+        "Guoxun Zhang",
+        "Gang Wang",
+        "Boya Jin",
+        "Wei Ren",
+        "Yu Sun",
+        "Zhifeng Zhao",
+        "Wei Zhang",
+        "Jing Sun",
+        "Yiwei Hou",
+        "Xinzhu Xu",
+        "Jiakui Hu",
+        "Wei Shi",
+        "Shuang Fu",
+        "Qianxi Liang",
+        "Yanye Lu",
+        "Changhui Li",
+        "Yuxuan Zhao",
+        "Yiming Li",
+        "Dong Kuang",
+        "Jiamin Wu",
+        "Peng Fei",
+        "Junle Qu",
+        "Peng Xi"
+      ],
+      "author": "Ruijie Cao, Yaning Li, Yao Zhou, Meiqi Li, Fangrui Lin, Wenyi Wang, Guoxun Zhang, Gang Wang, Boya Jin, Wei Ren, Yu Sun, Zhifeng Zhao, Wei Zhang, Jing Sun, Yiwei Hou, Xinzhu Xu, Jiakui Hu, Wei Shi, Shuang Fu, Qianxi Liang, Yanye Lu, Changhui Li, Yuxuan Zhao, Yiming Li, Dong Kuang, Jiamin Wu, Peng Fei, Junle Qu, Peng Xi",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02667-6",
+      "doi_value": "10.1038/s41592-025-02667-6",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02667-6",
+      "url": "https://doi.org/10.1038/s41592-025-02667-6",
+      "detail_href": "/papers/10.1038-s41592-025-02667-6.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-05-12",
+      "pub_date": "2025-05-12",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Dark-based"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "dark-based optical sectioning assists background removal in fluorescence microscopy nature methods ruijie cao yaning li yao zhou meiqi li fangrui lin wenyi wang guoxun zhang gang wang boya jin wei ren yu sun zhifeng zhao wei zhang jing sun yiwei hou xinzhu xu jiakui hu wei shi shuang fu qianxi liang yanye lu changhui li yuxuan zhao yiming li dong kuang jiamin wu peng fei junle qu peng xi 暂无公开摘要 dark-based 10.1038/s41592-025-02667-6 https://doi.org/10.1038/s41592-025-02667-6",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 9
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-025-02678-3",
+      "title": "Fast-adaptive super-resolution lattice light-sheet microscopy for rapid, long-term, near-isotropic subcellular imaging",
+      "authors": [
+        "Chang Qiao",
+        "Ziwei Li",
+        "Zongfa Wang",
+        "Yuhuan Lin",
+        "Chong Liu",
+        "Siwei Zhang",
+        "Yong Liu",
+        "Yun Feng",
+        "Xiaoyu Yang",
+        "Wenfeng Fu",
+        "Xue Dong",
+        "Jiabao Guo",
+        "Wencong Xu",
+        "Xinyu Wang",
+        "Tao Jiang",
+        "Quan Meng",
+        "Qinghua Wang",
+        "Qionghai Dai",
+        "Dong Li"
+      ],
+      "author": "Chang Qiao, Ziwei Li, Zongfa Wang, Yuhuan Lin, Chong Liu, Siwei Zhang, Yong Liu, Yun Feng, Xiaoyu Yang, Wenfeng Fu, Xue Dong, Jiabao Guo, Wencong Xu, Xinyu Wang, Tao Jiang, Quan Meng, Qinghua Wang, Qionghai Dai, Dong Li",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02678-3",
+      "doi_value": "10.1038/s41592-025-02678-3",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02678-3",
+      "url": "https://doi.org/10.1038/s41592-025-02678-3",
+      "detail_href": "/papers/10.1038-s41592-025-02678-3.html",
+      "abstract": "Lattice light-sheet microscopy (LLSM) provides a crucial observation window into intra- and inter-cellular physiology of living specimens with high speed and low phototoxicity, however, at the diffraction-limited resolution or anisotropic super-resolution with structured illumination. Here we present the meta-learning-empowered reflective lattice light-sheet virtual structured illumination microscopy (Meta-rLLS-VSIM), which instantly upgrades LLSM to a near-isotropic super resolution of ∼120-nm laterally and ∼160-nm axially, more than twofold improvement in each dimension, without any modification of the optical system or sacrifice of other imaging metrics. Moreover, to alleviate the tremendous demands on training data and time necessitated by existing deep-learning (DL) methods, we devised an adaptive online training approach by synergizing the front-end imaging system and back-end meta-learning framework, which reduced the total time for data acquisition and model training down to tens of seconds. With this method, a new model can be well-trained with tenfold less data and three orders of magnitude less time than current standard supervised learning. We demonstrate the versatile functionalities of Meta-rLLS-VSIM by imaging a variety of bioprocesses with ultrahigh spatiotemporal resolution for long duration of hundreds of multi-color volumes, characterizing the dynamic regulation of contractile ring filaments during mitosis and the growth of pollen tubes, and delineating the nanoscale distributions, dispersion, and interaction pattern of multiple organelles in embryos and eukaryotic cells.",
+      "full_abstract": "Lattice light-sheet microscopy (LLSM) provides a crucial observation window into intra- and inter-cellular physiology of living specimens with high speed and low phototoxicity, however, at the diffraction-limited resolution or anisotropic super-resolution with structured illumination. Here we present the meta-learning-empowered reflective lattice light-sheet virtual structured illumination microscopy (Meta-rLLS-VSIM), which instantly upgrades LLSM to a near-isotropic super resolution of ∼120-nm laterally and ∼160-nm axially, more than twofold improvement in each dimension, without any modification of the optical system or sacrifice of other imaging metrics. Moreover, to alleviate the tremendous demands on training data and time necessitated by existing deep-learning (DL) methods, we devised an adaptive online training approach by synergizing the front-end imaging system and back-end meta-learning framework, which reduced the total time for data acquisition and model training down to tens of seconds. With this method, a new model can be well-trained with tenfold less data and three orders of magnitude less time than current standard supervised learning. We demonstrate the versatile functionalities of Meta-rLLS-VSIM by imaging a variety of bioprocesses with ultrahigh spatiotemporal resolution for long duration of hundreds of multi-color volumes, characterizing the dynamic regulation of contractile ring filaments during mitosis and the growth of pollen tubes, and delineating the nanoscale distributions, dispersion, and interaction pattern of multiple organelles in embryos and eukaryotic cells.",
+      "snippet": "Lattice light-sheet microscopy (LLSM) provides a crucial observation window into intra- and inter-cellular physiology of living specimens with high speed and low phototoxicity, however, at the diffraction-limited resolution or anisotropic super-resolution with…",
+      "abstract_truncated": true,
+      "published_date": "2025-04-29",
+      "pub_date": "2025-04-29",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Fast-adaptive"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "semantic_scholar",
+      "journal_slug": "nature-methods",
+      "search_blob": "fast-adaptive super-resolution lattice light-sheet microscopy for rapid, long-term, near-isotropic subcellular imaging nature methods chang qiao ziwei li zongfa wang yuhuan lin chong liu siwei zhang yong liu yun feng xiaoyu yang wenfeng fu xue dong jiabao guo wencong xu xinyu wang tao jiang quan meng qinghua wang qionghai dai dong li lattice light-sheet microscopy (llsm) provides a crucial observation window into intra- and inter-cellular physiology of living specimens with high speed and low phototoxicity, however, at the diffraction-limited resolution or anisotropic super-resolution with structured illumination. here we present the meta-learning-empowered reflective lattice light-sheet virtual structured illumination microscopy (meta-rlls-vsim), which instantly upgrades llsm to a near-isotropic super resolution of ∼120-nm laterally and ∼160-nm axially, more than twofold improvement in each dimension, without any modification of the optical system or sacrifice of other imaging metrics. moreover, to alleviate the tremendous demands on training data and time necessitated by existing deep-learning (dl) methods, we devised an adaptive online training approach by synergizing the front-end imaging system and back-end meta-learning framework, which reduced the total time for data acquisition and model training down to tens of seconds. with this method, a new model can be well-trained with tenfold less data and three orders of magnitude less time than current standard supervised learning. we demonstrate the versatile functionalities of meta-rlls-vsim by imaging a variety of bioprocesses with ultrahigh spatiotemporal resolution for long duration of hundreds of multi-color volumes, characterizing the dynamic regulation of contractile ring filaments during mitosis and the growth of pollen tubes, and delineating the nanoscale distributions, dispersion, and interaction pattern of multiple organelles in embryos and eukaryotic cells. fast-adaptive 10.1038/s41592-025-02678-3 https://doi.org/10.1038/s41592-025-02678-3",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 10
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-025-02647-w",
+      "title": "Imaging 3D cell cultures with optical microscopy",
+      "authors": [
+        "Huai-Ching Hsieh",
+        "Qinghua Han",
+        "David Brenes",
+        "Kevin W. Bishop",
+        "Rui Wang",
+        "Yuli Wang",
+        "Chetan Poudel",
+        "Adam K. Glaser",
+        "Benjamin S. Freedman",
+        "Joshua C. Vaughan",
+        "Nancy L. Allbritton",
+        "Jonathan T. C. Liu"
+      ],
+      "author": "Huai-Ching Hsieh, Qinghua Han, David Brenes, Kevin W. Bishop, Rui Wang, Yuli Wang, Chetan Poudel, Adam K. Glaser, Benjamin S. Freedman, Joshua C. Vaughan, Nancy L. Allbritton, Jonathan T. C. Liu",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02647-w",
+      "doi_value": "10.1038/s41592-025-02647-w",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02647-w",
+      "url": "https://doi.org/10.1038/s41592-025-02647-w",
+      "detail_href": "/papers/10.1038-s41592-025-02647-w.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-04-17",
+      "pub_date": "2025-04-17",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Imaging"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "imaging 3d cell cultures with optical microscopy nature methods huai-ching hsieh qinghua han david brenes kevin w. bishop rui wang yuli wang chetan poudel adam k. glaser benjamin s. freedman joshua c. vaughan nancy l. allbritton jonathan t. c. liu 暂无公开摘要 imaging 10.1038/s41592-025-02647-w https://doi.org/10.1038/s41592-025-02647-w",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 12
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-025-02598-2",
+      "title": "Imaging of cellular dynamics from a whole organism to subcellular scale with self-driving, multiscale microscopy",
+      "authors": [
+        "Stephan Daetwyler",
+        "Hanieh Mazloom-Farsibaf",
+        "Felix Y. Zhou",
+        "Dagan Segal",
+        "Etai Sapoznik",
+        "Bingying Chen",
+        "Jill M. Westcott",
+        "Rolf A. Brekken",
+        "Gaudenz Danuser",
+        "Reto Fiolka"
+      ],
+      "author": "Stephan Daetwyler, Hanieh Mazloom-Farsibaf, Felix Y. Zhou, Dagan Segal, Etai Sapoznik, Bingying Chen, Jill M. Westcott, Rolf A. Brekken, Gaudenz Danuser, Reto Fiolka",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02598-2",
+      "doi_value": "10.1038/s41592-025-02598-2",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02598-2",
+      "url": "https://doi.org/10.1038/s41592-025-02598-2",
+      "detail_href": "/papers/10.1038-s41592-025-02598-2.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-02-12",
+      "pub_date": "2025-02-12",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Imaging"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "imaging of cellular dynamics from a whole organism to subcellular scale with self-driving, multiscale microscopy nature methods stephan daetwyler hanieh mazloom-farsibaf felix y. zhou dagan segal etai sapoznik bingying chen jill m. westcott rolf a. brekken gaudenz danuser reto fiolka 暂无公开摘要 imaging 10.1038/s41592-025-02598-2 https://doi.org/10.1038/s41592-025-02598-2",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 16
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-024-02458-5",
+      "title": "Volumetric voltage imaging of neuronal populations in the mouse brain by confocal light-field microscopy",
+      "authors": [
+        "Lu Bai",
+        "Lin Cong",
+        "Ziqi Shi",
+        "Yuchen Zhao",
+        "Yujie Zhang",
+        "Bin Lu",
+        "Jing Zhang",
+        "Zhi-Qi Xiong",
+        "Ninglong Xu",
+        "Yu Mu",
+        "Kai Wang"
+      ],
+      "author": "Lu Bai, Lin Cong, Ziqi Shi, Yuchen Zhao, Yujie Zhang, Bin Lu, Jing Zhang, Zhi-Qi Xiong, Ninglong Xu, Yu Mu, Kai Wang",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-024-02458-5",
+      "doi_value": "10.1038/s41592-024-02458-5",
+      "doi_url": "https://doi.org/10.1038/s41592-024-02458-5",
+      "url": "https://doi.org/10.1038/s41592-024-02458-5",
+      "detail_href": "/papers/10.1038-s41592-024-02458-5.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2024-10-08",
+      "pub_date": "2024-10-08",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Volumetric"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "volumetric voltage imaging of neuronal populations in the mouse brain by confocal light-field microscopy nature methods lu bai lin cong ziqi shi yuchen zhao yujie zhang bin lu jing zhang zhi-qi xiong ninglong xu yu mu kai wang 暂无公开摘要 volumetric 10.1038/s41592-024-02458-5 https://doi.org/10.1038/s41592-024-02458-5",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 18
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-024-02459-4",
+      "title": "Mapping voltage activity in a live mouse brain in 3D using confocal light field microscopy",
+      "authors": [],
+      "author": "未知作者",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-024-02459-4",
+      "doi_value": "10.1038/s41592-024-02459-4",
+      "doi_url": "https://doi.org/10.1038/s41592-024-02459-4",
+      "url": "https://doi.org/10.1038/s41592-024-02459-4",
+      "detail_href": "/papers/10.1038-s41592-024-02459-4.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2024-10-08",
+      "pub_date": "2024-10-08",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T19:00:01+08:00",
+      "first_seen_batch_id": "2026-04-29_190001",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T19:00:01+08:00",
+      "last_seen_batch_id": "2026-04-29_190001",
+      "seen_batch_ids": [
+        "2026-04-29_190001"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T19:00:01+08:00",
+      "crawl_batch_id": "2026-04-29_190001",
+      "source": "nature",
+      "keywords": [
+        "Mapping"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-29_190001"
+      ],
+      "created_at": "2026-04-29T19:00:01+08:00",
+      "updated_at": "2026-04-29T19:00:01+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "mapping voltage activity in a live mouse brain in 3d using confocal light field microscopy nature methods 暂无公开摘要 mapping 10.1038/s41592-024-02459-4 https://doi.org/10.1038/s41592-024-02459-4",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_190001",
+          "crawl_time": "2026-04-29T19:00:01+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 19
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-025-02662-x",
+      "title": "Spotiflow: accurate and efficient spot detection for fluorescence microscopy with deep stereographic flow regression",
+      "authors": [
+        "Albert Dominguez Mantes",
+        "Antonio Herrera",
+        "Irina Khven",
+        "Anjalie Schlaeppi",
+        "Eftychia Kyriacou",
+        "Georgios Tsissios",
+        "Evangelia Skoufa",
+        "Luca Santangeli",
+        "Elena Buglakova",
+        "Emine Berna Durmus",
+        "Suliana Manley",
+        "Anna Kreshuk",
+        "Detlev Arendt",
+        "Can Aztekin",
+        "Joachim Lingner",
+        "Gioele La Manno",
+        "Martin Weigert"
+      ],
+      "author": "Albert Dominguez Mantes, Antonio Herrera, Irina Khven, Anjalie Schlaeppi, Eftychia Kyriacou, Georgios Tsissios, Evangelia Skoufa, Luca Santangeli, Elena Buglakova, Emine Berna Durmus, Suliana Manley, Anna Kreshuk, Detlev Arendt, Can Aztekin, Joachim Lingner, Gioele La Manno, Martin Weigert",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02662-x",
+      "doi_value": "10.1038/s41592-025-02662-x",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02662-x",
+      "url": "https://doi.org/10.1038/s41592-025-02662-x",
+      "detail_href": "/papers/10.1038-s41592-025-02662-x.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-06-06",
+      "pub_date": "2025-06-06",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T11:39:42+08:00",
+      "last_seen_batch_id": "2026-04-29_113942",
+      "seen_batch_ids": [
+        "2026-04-29_113942"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T11:39:42+08:00",
+      "crawl_batch_id": "2026-04-29_113942",
+      "source": "nature",
+      "keywords": [
+        "Spotiflow:"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-29_113942"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-04-29T11:39:42+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "spotiflow: accurate and efficient spot detection for fluorescence microscopy with deep stereographic flow regression nature methods albert dominguez mantes antonio herrera irina khven anjalie schlaeppi eftychia kyriacou georgios tsissios evangelia skoufa luca santangeli elena buglakova emine berna durmus suliana manley anna kreshuk detlev arendt can aztekin joachim lingner gioele la manno martin weigert 暂无公开摘要 spotiflow: 10.1038/s41592-025-02662-x https://doi.org/10.1038/s41592-025-02662-x",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 20
+        }
+      ]
+    },
+    {
+      "id": "10.1038/s41592-025-02668-5",
+      "title": "Dark sectioning boosts segmentation accuracy and image quality in fluorescence microscopy",
+      "authors": [],
+      "author": "未知作者",
+      "journal": "Nature Methods",
+      "doi": "10.1038/s41592-025-02668-5",
+      "doi_value": "10.1038/s41592-025-02668-5",
+      "doi_url": "https://doi.org/10.1038/s41592-025-02668-5",
+      "url": "https://doi.org/10.1038/s41592-025-02668-5",
+      "detail_href": "/papers/10.1038-s41592-025-02668-5.html",
+      "abstract": "暂无公开摘要",
+      "full_abstract": "暂无公开摘要",
+      "snippet": "暂无公开摘要",
+      "abstract_truncated": false,
+      "published_date": "2025-05-13",
+      "pub_date": "2025-05-13",
+      "first_seen_date": "2026-04-29",
+      "first_seen_time": "2026-04-29T11:39:42+08:00",
+      "first_seen_batch_id": "2026-04-29_113942",
+      "last_seen_date": "2026-04-29",
+      "last_seen_time": "2026-04-29T11:39:42+08:00",
+      "last_seen_batch_id": "2026-04-29_113942",
+      "seen_batch_ids": [
+        "2026-04-29_113942"
+      ],
+      "crawl_date": "2026-04-29",
+      "crawl_time": "2026-04-29T11:39:42+08:00",
+      "crawl_batch_id": "2026-04-29_113942",
+      "source": "nature",
+      "keywords": [
+        "Dark"
+      ],
+      "tags": [
+        "nature",
+        "Nature Methods",
+        "batch:2026-04-29_113942"
+      ],
+      "created_at": "2026-04-29T11:39:42+08:00",
+      "updated_at": "2026-04-29T11:39:42+08:00",
+      "is_new_in_batch": true,
+      "abstract_source": "missing",
+      "journal_slug": "nature-methods",
+      "search_blob": "dark sectioning boosts segmentation accuracy and image quality in fluorescence microscopy nature methods 暂无公开摘要 dark 10.1038/s41592-025-02668-5 https://doi.org/10.1038/s41592-025-02668-5",
+      "crawl_history": [
+        {
+          "batch_id": "2026-04-29_113942",
+          "crawl_time": "2026-04-29T11:39:42+08:00",
+          "crawl_date": "2026-04-29",
+          "rank_in_batch": 24
+        }
+      ]
+    }
+  ]
+}

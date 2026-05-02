@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { protocols } from '../../lib/protocols';
+---
+<BaseLayout title="MIXZ Protocol Library" description="MIXZ experimental protocol library">
+  <section class="hero small">
+    <p class="eyebrow">Protocol Library</p>
+    <h1>实验 Protocols</h1>
+    <p>从旧首页锚点迁移为独立 Astro 静态页面，避免目录无 index 导致 403。</p>
+  </section>
+  <section class="card-grid">
+    {protocols.map((item) => (
+      <a class="protocol-card" href={`/protocols/${item.slug}.html`}>
+        <span class="protocol-icon">{item.icon}</span>
+        <p class="eyebrow">{item.eyebrow}</p>
+        <h2>{item.title}</h2>
+        <p>{item.description}</p>
+        <div class="tags">{item.tags.map((tag) => <span>{tag}</span>)}</div>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
