@@ -6,14 +6,12 @@ interface Props {
   title?: string;
   description?: string;
   currentPath?: string;
-  buildInfo?: string;
 }
 
 const {
   title = 'MIXZ Literature',
   description = 'Biomedical imaging literature monitor',
-  currentPath = Astro.url.pathname,
-  buildInfo
+  currentPath = Astro.url.pathname
 } = Astro.props;
 
 const fullTitle = title === 'MIXZ Literature' ? title : `${title} · MIXZ`;
@@ -33,6 +31,6 @@ const fullTitle = title === 'MIXZ Literature' ? title : `${title} · MIXZ`;
     <main>
       <slot />
     </main>
-    <Footer buildInfo={buildInfo} />
+    <Footer />
   </body>
 </html>

@@ -1,8 +1,4 @@
 ---
-interface Props {
-  buildInfo?: string;
-}
-const { buildInfo = '' } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
@@ -31,29 +27,29 @@ const year = new Date().getFullYear();
       </div>
       
       <div class="footer-section">
-        <h3 class="footer-section__title">技术栈</h3>
+        <h3 class="footer-section__title">更新范围</h3>
         <ul class="footer-tech">
-          <li><span class="tech-badge">Astro</span></li>
-          <li><span class="tech-badge">SQLite</span></li>
-          <li><span class="tech-badge">Python</span></li>
-          <li><span class="tech-badge">Nginx</span></li>
+          <li><span class="tech-badge">Microscopy</span></li>
+          <li><span class="tech-badge">Bioimaging</span></li>
+          <li><span class="tech-badge">Protocols</span></li>
+          <li><span class="tech-badge">Daily</span></li>
         </ul>
         <p class="footer-note">
-          静态生成，无需 API 存活
+          关注生物医学成像领域的新增与重复命中文献。
         </p>
       </div>
       
       <div class="footer-section">
         <h3 class="footer-section__title">关于</h3>
         <p class="footer-about">
-          MIXZ 是一个开源的文献监控工具，专注于生物医学成像领域。
+          MIXZ 是一个开源的文献监控工具，源码与反馈入口托管在 GitHub。
         </p>
         <div class="footer-social">
-          <a href="https://github.com/wulab" aria-label="GitHub" class="social-link">
+          <a href="https://github.com/KaikiDeishuuu/MIXZ" aria-label="GitHub repository" class="social-link">
             <span>💻</span>
           </a>
-          <a href="mailto:contact@wulab.tech" aria-label="Email" class="social-link">
-            <span>📧</span>
+          <a href="https://github.com/KaikiDeishuuu/MIXZ/issues" aria-label="GitHub issues" class="social-link">
+            <span>↗</span>
           </a>
         </div>
       </div>
@@ -61,8 +57,7 @@ const year = new Date().getFullYear();
     
     <div class="footer-bottom">
       <div class="footer-bottom__content">
-        <span class="footer-copyright">&copy; {year} MIXZ · Wu Lab</span>
-        {buildInfo && <span class="footer-build">{buildInfo}</span>}
+        <span class="footer-copyright">&copy; {year} MIXZ · KaikiDeishuuu</span>
         <span class="footer-status">
           <span class="status-indicator"></span>
           <span>系统运行正常</span>

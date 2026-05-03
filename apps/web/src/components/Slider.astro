@@ -1,0 +1,236 @@
+---
+interface Props {
+  class?: string;
+  itemMinW?: string;
+}
+
+const { class: className = '', itemMinW = '280px' } = Astro.props;
+const id = `slider-${Math.random().toString(36).substring(2, 9)}`;
+---
+<div class:list={["slider-wrapper", className]} id={id} style={`--item-min-w: ${itemMinW}`}>
+  <div class="slider-track" data-slider-track>
+    <slot />
+  </div>
+</div>
+
+<script is:inline>
+(function() {
+  const initSliders = () => {
+    document.querySelectorAll('.slider-wrapper').forEach((wrapper) => {
+      if (wrapper.dataset.sliderInit) return;
+      wrapper.dataset.sliderInit = 'true';
+      
+      const track = wrapper.querySelector('.slider-track');
+      
+      if (!track) return;
+      
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      let didDrag = false;
+      let lastX = 0;
+      let lastTime = 0;
+      let velocity = 0;
+      let inertiaFrame = 0;
+      
+      const updateMasks = () => {
+        const tolerance = Math.ceil(track.clientWidth) + 2;
+        
+        if (track.scrollLeft > 0) {
+          wrapper.classList.add('has-left-mask');
+        } else {
+          wrapper.classList.remove('has-left-mask');
+        }
+        
+        if (track.scrollLeft + tolerance < track.scrollWidth) {
+          wrapper.classList.add('has-right-mask');
+        } else {
+          wrapper.classList.remove('has-right-mask');
+        }
+      };
+
+      track.addEventListener('scroll', updateMasks, { passive: true });
+      window.addEventListener('resize', updateMasks, { passive: true });
+      
+      requestAnimationFrame(updateMasks);
+      setTimeout(updateMasks, 300);
+
+      const stopInertia = () => {
+        if (inertiaFrame) {
+          cancelAnimationFrame(inertiaFrame);
+          inertiaFrame = 0;
+        }
+      };
+
+      const startInertia = () => {
+        stopInertia();
+        const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+        const friction = 0.92;
+        const minVelocity = 0.18;
+
+        const step = () => {
+          if (Math.abs(velocity) < minVelocity) {
+            inertiaFrame = 0;
+            return;
+          }
+
+          const nextScroll = track.scrollLeft + velocity;
+          if (nextScroll <= 0 || nextScroll >= maxScroll) {
+            track.scrollLeft = Math.min(maxScroll, Math.max(0, nextScroll));
+            inertiaFrame = 0;
+            return;
+          }
+
+          track.scrollLeft = nextScroll;
+          velocity *= friction;
+          inertiaFrame = requestAnimationFrame(step);
+        };
+
+        inertiaFrame = requestAnimationFrame(step);
+      };
+
+      const endDrag = () => {
+        if (!isDown) return;
+        isDown = false;
+        track.classList.remove('active');
+        if (didDrag) startInertia();
+      };
+
+      // Mouse drag to scroll
+      track.addEventListener('mousedown', (e) => {
+        stopInertia();
+        isDown = true;
+        didDrag = false;
+        track.classList.add('active');
+        startX = e.pageX - track.offsetLeft;
+        scrollLeft = track.scrollLeft;
+        lastX = e.pageX;
+        lastTime = performance.now();
+        velocity = 0;
+      });
+      
+      track.addEventListener('mouseleave', endDrag);
+      
+      track.addEventListener('mouseup', endDrag);
+      
+      track.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - track.offsetLeft;
+        const walk = (x - startX) * 0.92;
+        const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+        let nextScroll = scrollLeft - walk;
+        if (nextScroll < 0) nextScroll *= 0.35;
+        if (nextScroll > maxScroll) nextScroll = maxScroll + (nextScroll - maxScroll) * 0.35;
+        if (Math.abs(walk) > 6) didDrag = true;
+        track.scrollLeft = nextScroll;
+
+        const now = performance.now();
+        const dt = Math.max(16, now - lastTime);
+        velocity = ((lastX - e.pageX) / dt) * 16 * 0.82;
+        lastX = e.pageX;
+        lastTime = now;
+      });
+
+      track.addEventListener('click', (e) => {
+        if (!didDrag) return;
+        e.preventDefault();
+        e.stopPropagation();
+        window.setTimeout(() => {
+          didDrag = false;
+        }, 120);
+      }, true);
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSliders, { once: true });
+  } else {
+    initSliders();
+  }
+})();
+</script>
+
+<style is:global>
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  --mask-width: 36px;
+}
+
+.slider-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(var(--item-min-w, 280px), 1fr);
+  gap: var(--space-md);
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: var(--space-xs); /* Scrollbar compensation */
+  /* Allow shadow bleeding slightly */
+  margin: 0 calc(-1 * var(--space-md));
+  padding: var(--space-md);
+  width: calc(100% + var(--space-md) * 2);
+  cursor: grab;
+  -webkit-mask-image: none;
+  mask-image: none;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mouse grab state */
+.slider-track.active {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+  cursor: grabbing;
+}
+.slider-track.active > * {
+  pointer-events: none;
+}
+.slider-track > * {
+  scroll-snap-align: start;
+}
+
+.slider-wrapper.has-left-mask.has-right-mask .slider-track {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black var(--mask-width),
+    black calc(100% - var(--mask-width)),
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black var(--mask-width),
+    black calc(100% - var(--mask-width)),
+    transparent
+  );
+}
+
+.slider-wrapper.has-left-mask:not(.has-right-mask) .slider-track {
+  -webkit-mask-image: linear-gradient(to right, transparent, black var(--mask-width));
+  mask-image: linear-gradient(to right, transparent, black var(--mask-width));
+}
+
+.slider-wrapper.has-right-mask:not(.has-left-mask) .slider-track {
+  -webkit-mask-image: linear-gradient(to right, black calc(100% - var(--mask-width)), transparent);
+  mask-image: linear-gradient(to right, black calc(100% - var(--mask-width)), transparent);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .slider-track {
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+}
+</style>

@@ -10,11 +10,25 @@ export const summaries = batchSummaries as Record<string, { batch_id: string; su
 const latestId = summary.latest_batch_id;
 const batchModules = import.meta.glob('../../../../site/data/articles/batches/*.json', { eager: true, import: 'default' });
 
-export const batches = Object.values(batchModules)
+export function normalizeBatchId(value?: string): string {
+  return String(value || '').trim().replaceAll('_', ' ').replace(/\s+/g, ' ');
+}
+
+const rawBatches = Object.values(batchModules)
   .map((value) => value as BatchPayload)
   .sort((a, b) => String(b.crawl_time || b.batch_id).localeCompare(String(a.crawl_time || a.batch_id)));
 
-export const latest = (batches.find((batch) => batch.batch_id === latestId) || batches[0]) as BatchPayload;
+const seenBatchKeys = new Set<string>();
+export const batches = rawBatches.filter((batch) => {
+  const key = normalizeBatchId(batch.batch_id);
+  if (seenBatchKeys.has(key)) {
+    return false;
+  }
+  seenBatchKeys.add(key);
+  return true;
+});
+
+export const latest = (batches.find((batch) => normalizeBatchId(batch.batch_id) === normalizeBatchId(latestId)) || batches[0]) as BatchPayload;
 
 /**
  * Get summary for a batch, or find the most recent batch with a summary
@@ -44,12 +58,14 @@ export function archiveBatchHref(batchId: string): string {
 }
 
 export function articleBatchIds(article: Article): string[] {
-  return Array.from(new Set([
+  const rawIds = [
     ...(article.seen_batch_ids || []),
     article.first_seen_batch_id,
     article.last_seen_batch_id,
     article.crawl_batch_id,
-  ].filter(Boolean) as string[]));
+  ].filter(Boolean) as string[];
+
+  return Array.from(new Set(rawIds.flatMap((id) => [id, normalizeBatchId(id)])));
 }
 
 export function paperSlug(article: Article): string {
