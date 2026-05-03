@@ -3,8 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import EmptyState from '../components/EmptyState.astro';
 import BatchCard from '../components/BatchCard.astro';
+import Slider from '../components/Slider.astro';
 import { latest, summary, batches, formatDateTime, journalList, archiveBatchHref, archiveJournalHref, getBatchSummary } from '../lib/data';
-import { formatBatchLabel } from '../lib/formatters';
+import { formatBatchLabel, formatBatchShort } from '../lib/formatters.ts';
 
 const latestNew = latest.new_articles || latest.articles.filter((article) => article.is_new_in_batch);
 const seenAgain = latest.seen_again_articles || latest.articles.filter((article) => !article.is_new_in_batch);
@@ -14,12 +15,17 @@ const recentBatches = batches.slice(0, 8);
 // Get batch summary - current batch or most recent with new articles
 const batchSummary = getBatchSummary(latest.batch_id);
 const summaryBatchLabel = batchSummary ? formatBatchLabel(batchSummary.batch_id) : null;
+const latestBatchLabel = formatBatchLabel(summary.latest_batch_id || latest.batch_id);
+const latestBatchShort = formatBatchShort(summary.latest_batch_id || latest.batch_id);
 ---
 <BaseLayout title="MIXZ Latest Batch" description="MIXZ biomedical imaging literature monitor">
   <section class="hero">
     <p class="eyebrow">Biomedical imaging literature monitor</p>
-    <h1>Latest batch: {summary.latest_batch_id}</h1>
-    <p>本页由 Astro 从后端导出的 JSON 静态生成；SQLite 仍然是唯一事实源。</p>
+    <div class="hero-title-row">
+      <h1>Latest literature snapshot</h1>
+      <span class="batch-chip">{latestBatchShort}</span>
+    </div>
+    <p class="hero-subtitle">最近批次 · {latestBatchLabel}</p>
     <div class="stat-grid">
       <div><strong>{summary.total_articles}</strong><span>总文章</span></div>
       <div><strong>{summary.total_batches}</strong><span>总批次</span></div>
@@ -77,9 +83,9 @@ const summaryBatchLabel = batchSummary ? formatBatchLabel(batchSummary.batch_id)
       </div>
       <span>{seenAgain.length} 篇</span>
     </div>
-    <div class="article-list">
+    <Slider class="history-slider" itemMinW="320px">
       {seenAgain.slice(0, 30).map((article) => <ArticleCard article={article} />)}
-    </div>
+    </Slider>
   </section>
 
   <section class="split">
@@ -97,12 +103,15 @@ const summaryBatchLabel = batchSummary ? formatBatchLabel(batchSummary.batch_id)
       </ul>
     </div>
     <div class="panel">
-      <h2>Recent batches</h2>
-      <div class="batch-list">
+      <div class="section-heading">
+        <h2>Recent batches</h2>
+        <a href={archiveBatchHref(recentBatches[0]?.batch_id || latest.batch_id)} class="section-action">按最新批次筛选</a>
+      </div>
+      <Slider class="recent-batches-slider" itemMinW="280px">
         {recentBatches.map((batch) => (
           <BatchCard batch={batch} variant="compact" />
         ))}
-      </div>
+      </Slider>
     </div>
   </section>
 </BaseLayout>
