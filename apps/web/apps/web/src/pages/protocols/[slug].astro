@@ -3,15 +3,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import { marked } from 'marked';
 import { protocols } from '../../lib/protocols';
-import { extractHeadings, injectHeadingIds } from '../../lib/heading-anchors';
 
 export function getStaticPaths() {
   return protocols.map((protocol) => ({ params: { slug: protocol.slug }, props: { protocol } }));
 }
 
 const { protocol } = Astro.props;
-const headings = extractHeadings(protocol.markdown);
-const protocolHtml = injectHeadingIds(marked.parse(protocol.markdown, { async: false }) as string, headings);
+
+// Simple marked configuration - just parse the markdown
+const protocolHtml = marked.parse(protocol.markdown, { async: false });
 ---
 
 <BaseLayout title={`${protocol.title} · MIXZ`} description={protocol.description}>

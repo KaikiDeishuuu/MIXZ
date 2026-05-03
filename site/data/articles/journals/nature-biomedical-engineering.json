@@ -39,9 +39,9 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-04-30_090001",
@@ -49,11 +49,12 @@
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Label-free"
@@ -61,15 +62,21 @@
       "tags": [
         "nature",
         "Nature Biomedical Engineering",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-biomedical-engineering",
       "search_blob": "label-free tissue nir-ii autofluorescence imaging for visualization of human liver malignancy nature biomedical engineering haisheng he wenwei zhu han miao shangfeng wang zunguo du hongxin zhang jiang ming ben shi hao wang jianping qi yong fan wei wu dongyuan zhao lun-xiu qin fan zhang 暂无公开摘要 label-free 10.1038/s41551-025-01593-4 https://doi.org/10.1038/s41551-025-01593-4",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 15
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",

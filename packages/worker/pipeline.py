@@ -221,7 +221,18 @@ def sync_production_database() -> None:
 def build_and_deploy_astro_site() -> None:
     """Build Astro from exported JSON and deploy the static artifact to Nginx root."""
     root = Path(__file__).resolve().parents[2]
-    subprocess.run(["npm", "--prefix", "apps/web", "run", "build"], cwd=root, check=True)
+    npm = shutil.which("npm")
+    if npm is None:
+        # Cron sessions often do not source nvm, so PATH may not include the Node toolchain.
+        # Fall back to the standard nvm install location used in this workspace.
+        nvm_npm = Path.home() / ".nvm" / "versions" / "node"
+        if nvm_npm.exists():
+            candidates = sorted(nvm_npm.glob("*/bin/npm"))
+            if candidates:
+                npm = str(candidates[-1])
+    if npm is None:
+        raise FileNotFoundError("npm not found; ensure Node.js is installed or nvm is initialized")
+    subprocess.run([npm, "--prefix", "apps/web", "run", "build"], cwd=root, check=True)
     subprocess.run(["/bin/bash", "scripts/deploy_astro_site.sh"], cwd=root, check=True)
 
 

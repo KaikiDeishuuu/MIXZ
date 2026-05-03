@@ -1,14 +1,30 @@
 {
-  "latest_batch_id": "2026-05-02_190001",
-  "latest_crawl_time": "2026-05-02T19:00:01+08:00",
-  "latest_crawl_date": "2026-05-02",
+  "latest_batch_id": "2026-05-03_090001",
+  "latest_crawl_time": "2026-05-03T09:00:01+08:00",
+  "latest_crawl_date": "2026-05-03",
   "latest_batch_article_count": 30,
   "latest_batch_journal_count": 9,
   "latest_batch_new_article_count": 0,
   "latest_batch_seen_again_count": 30,
   "total_articles": 181,
-  "total_batches": 26,
+  "total_batches": 21,
   "dates": [
+    {
+      "date": "2026-05-03",
+      "batch_count": 1,
+      "article_count": 30,
+      "journals": [
+        "ACS Nano",
+        "Analytical Chemistry",
+        "Biosensors and Bioelectronics",
+        "Nature Biomedical Engineering",
+        "Nature Biotechnology",
+        "Nature Communications",
+        "Nature Methods",
+        "Nature Photonics",
+        "Science Advances"
+      ]
+    },
     {
       "date": "2026-05-02",
       "batch_count": 2,
@@ -71,45 +87,6 @@
         "Nature Communications",
         "Nature Methods",
         "Nature Photonics",
-        "Science Advances"
-      ]
-    },
-    {
-      "date": "2026-04-28",
-      "batch_count": 2,
-      "article_count": 60,
-      "journals": [
-        "ACS Nano",
-        "Analytical Chemistry",
-        "Biosensors and Bioelectronics",
-        "IEEE Transactions on Biomedical Engineering",
-        "Nature Communications",
-        "Science Advances"
-      ]
-    },
-    {
-      "date": "2026-04-27",
-      "batch_count": 2,
-      "article_count": 60,
-      "journals": [
-        "ACS Nano",
-        "Analytical Chemistry",
-        "Biosensors and Bioelectronics",
-        "IEEE Transactions on Biomedical Engineering",
-        "Nature Communications",
-        "Science Advances"
-      ]
-    },
-    {
-      "date": "2026-04-26",
-      "batch_count": 2,
-      "article_count": 60,
-      "journals": [
-        "ACS Nano",
-        "Analytical Chemistry",
-        "Biosensors and Bioelectronics",
-        "IEEE Transactions on Biomedical Engineering",
-        "Nature Communications",
         "Science Advances"
       ]
     },
@@ -228,47 +205,47 @@
     {
       "name": "Nature Communications",
       "article_count": 46,
-      "latest_crawl_date": "2026-05-02"
+      "latest_crawl_date": "2026-05-03"
     },
     {
       "name": "Analytical Chemistry",
       "article_count": 41,
-      "latest_crawl_date": "2026-05-02"
+      "latest_crawl_date": "2026-05-03"
     },
     {
       "name": "Nature Methods",
       "article_count": 28,
-      "latest_crawl_date": "2026-05-02"
+      "latest_crawl_date": "2026-05-03"
     },
     {
       "name": "ACS Nano",
       "article_count": 19,
-      "latest_crawl_date": "2026-05-02"
+      "latest_crawl_date": "2026-05-03"
     },
     {
       "name": "Science Advances",
       "article_count": 17,
-      "latest_crawl_date": "2026-05-02"
+      "latest_crawl_date": "2026-05-03"
     },
     {
       "name": "Nature Photonics",
       "article_count": 9,
-      "latest_crawl_date": "2026-05-02"
+      "latest_crawl_date": "2026-05-03"
     },
     {
       "name": "Biosensors and Bioelectronics",
       "article_count": 6,
-      "latest_crawl_date": "2026-05-02"
+      "latest_crawl_date": "2026-05-03"
     },
     {
       "name": "Nature Biotechnology",
       "article_count": 6,
-      "latest_crawl_date": "2026-05-02"
+      "latest_crawl_date": "2026-05-03"
     },
     {
       "name": "Nature Biomedical Engineering",
       "article_count": 5,
-      "latest_crawl_date": "2026-05-02"
+      "latest_crawl_date": "2026-05-03"
     },
     {
       "name": "IEEE Transactions on Biomedical Engineering",

@@ -1,0 +1,134 @@
+---
+interface Props {
+  label?: string;
+  openLabel?: string;
+  closeLabel?: string;
+  defaultOpen?: boolean;
+  class?: string;
+  id?: string;
+}
+
+const {
+  label = '展开',
+  openLabel = '收起',
+  closeLabel = '展开',
+  defaultOpen = false,
+  class: className = '',
+  id = `theme-disclosure-${Math.random().toString(36).slice(2, 10)}`
+} = Astro.props;
+---
+<div
+  class:list={['theme-disclosure', className]}
+  data-disclosure
+  data-open={defaultOpen ? 'true' : 'false'}
+  data-label={label}
+  data-open-label={openLabel}
+  data-close-label={closeLabel}
+>
+  <button
+    type="button"
+    class="theme-disclosure__trigger"
+    aria-expanded={defaultOpen ? 'true' : 'false'}
+    aria-controls={id}
+    data-disclosure-trigger
+  >
+    <span class="theme-disclosure__label" data-disclosure-label>{defaultOpen ? openLabel : label}</span>
+    <span class="theme-disclosure__meta" aria-hidden="true">
+      <span class="theme-disclosure__chip" data-disclosure-chip>{defaultOpen ? '−' : '+'}</span>
+      <span class="theme-disclosure__chevron" aria-hidden="true">▸</span>
+    </span>
+  </button>
+
+  <div
+    id={id}
+    class="theme-disclosure__panel"
+    aria-hidden={defaultOpen ? 'false' : 'true'}
+    data-disclosure-panel
+  >
+    <div class="theme-disclosure__inner" data-disclosure-inner>
+      <slot />
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  const initThemeDisclosures = () => {
+    document.querySelectorAll('[data-disclosure]').forEach((root) => {
+      if (root.dataset.disclosureInit === 'true') return;
+      root.dataset.disclosureInit = 'true';
+
+      const trigger = root.querySelector('[data-disclosure-trigger]');
+      const panel = root.querySelector('[data-disclosure-panel]');
+      const inner = root.querySelector('[data-disclosure-inner]');
+      const labelEl = root.querySelector('[data-disclosure-label]');
+      const chip = root.querySelector('[data-disclosure-chip]');
+      const openLabelText = root.dataset.openLabel || '收起';
+      const closeLabelText = root.dataset.closeLabel || '展开';
+
+      if (!(trigger instanceof HTMLButtonElement) || !(panel instanceof HTMLElement) || !(inner instanceof HTMLElement)) return;
+
+      const measure = () => `${inner.scrollHeight}px`;
+
+      const syncStaticState = (open) => {
+        root.dataset.open = open ? 'true' : 'false';
+        trigger.setAttribute('aria-expanded', String(open));
+        panel.setAttribute('aria-hidden', String(!open));
+        if (labelEl instanceof HTMLElement) labelEl.textContent = open ? openLabelText : closeLabelText;
+        if (chip instanceof HTMLElement) chip.textContent = open ? '−' : '+';
+      };
+
+      const syncHeight = () => {
+        panel.style.height = root.dataset.open === 'true' ? measure() : '0px';
+      };
+
+      const openPanel = () => {
+        syncStaticState(true);
+        panel.style.height = '0px';
+        requestAnimationFrame(() => {
+          panel.style.height = measure();
+        });
+      };
+
+      const closePanel = () => {
+        syncStaticState(false);
+        panel.style.height = measure();
+        requestAnimationFrame(() => {
+          panel.style.height = '0px';
+        });
+      };
+
+      const expandedOnLoad = root.dataset.open === 'true';
+      panel.style.overflow = 'hidden';
+      panel.style.height = expandedOnLoad ? measure() : '0px';
+      syncStaticState(expandedOnLoad);
+
+      if ('ResizeObserver' in window) {
+        const observer = new ResizeObserver(() => {
+          if (root.dataset.open === 'true') syncHeight();
+        });
+        observer.observe(inner);
+      }
+
+      panel.addEventListener('transitionend', (event) => {
+        if (event.propertyName !== 'height') return;
+        if (root.dataset.open === 'true') {
+          panel.style.height = measure();
+        }
+      });
+
+      trigger.addEventListener('click', () => {
+        if (root.dataset.open === 'true') {
+          closePanel();
+        } else {
+          openPanel();
+        }
+      });
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeDisclosures, { once: true });
+  } else {
+    initThemeDisclosures();
+  }
+</script>

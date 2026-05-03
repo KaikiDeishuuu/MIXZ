@@ -37,9 +37,9 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-04-30_090001",
@@ -47,11 +47,12 @@
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Three-dimensional"
@@ -59,15 +60,21 @@
       "tags": [
         "nature",
         "Nature Photonics",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-photonics",
       "search_blob": "three-dimensional super-resolution imaging with suppressed background via digital array modulation microscopy nature photonics sijie li rui jin mengqi lu ning zhang meng zhang yunfei wei zhan zhang shirui guo yu-hui zhang fengchao wang hui gong qingming luo jing yuan 暂无公开摘要 three-dimensional 10.1038/s41566-026-01869-4 https://doi.org/10.1038/s41566-026-01869-4",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 7
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -154,20 +161,21 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Stimulated"
@@ -175,15 +183,21 @@
       "tags": [
         "nature",
         "Nature Photonics",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-photonics",
       "search_blob": "stimulated brillouin scattering microscopy with a high-peak-power 780-nm pulsed laser system nature photonics yun qi shuai yao zi-xuan du jin-rui zhang cuiyun zhou xiaohu fu huan li ting mi yu-han chen yu-fan wang yun luo xuyan he jing nan yanjie zhang lin sun peng xia shi-qing cai jiu-lin du jingjing xie wei-biao chen fan yang stimulated brillouin scattering microscopy enables all-optical, non-contact, high-spatial-resolution mechanical imaging with high specificity. recent advances in quasi-continuous-wave stimulated brillouin scattering have substantially reduced the required laser power. however, the pixel dwell time remains limited to 20 ms, and further reductions without compromising resolution, precision or specificity are challenging. here we address this limitation by developing a frequency-doubled pulsed fibre laser system operating at 780 nm, delivering a peak power of 267 w. to mitigate the high-intensity noise intrinsic to amplified fibre lasers, we implement a high-performance noise cancellation system based on auto-balanced detection. as a result, we achieve a pixel dwell time as short as 200 µs for full spectral acquisition, which is two orders of magnitude faster than previous stimulated brillouin scattering implementations, and maintain an average power of 30 mw. we demonstrate high-speed, high-specificity and high-sensitivity brillouin imaging of live single cells, organoids, zebrafish larvae and ovarian follicles with subcellular details. furthermore, we capture the in vivo biomechanical dynamics of rapid cell divisions during the early embryo development of caenorhabditis elegans in a living worm. a high-peak-power low-duty-cycle pulsed fibre laser enables stimulated brillouin scattering microscopy with pixel dwell times as low as 0.2 ms and spatial resolution as low as 500 nm and 2 μm in the lateral and axial directions, respectively. stimulated 10.1038/s41566-025-01697-y https://doi.org/10.1038/s41566-025-01697-y",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 28
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",

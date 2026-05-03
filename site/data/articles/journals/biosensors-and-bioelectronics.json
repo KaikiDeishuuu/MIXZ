@@ -33,31 +33,26 @@
       "first_seen_date": "2026-04-21",
       "first_seen_time": "2026-04-21T11:43:02+08:00",
       "first_seen_batch_id": "2026-04-21 11:43:02",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-21 11:43:02",
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-04-30_090001",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "other",
       "keywords": [
         "Graphene"
@@ -65,15 +60,21 @@
       "tags": [
         "other",
         "Biosensors and Bioelectronics",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-21T11:43:02+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "biosensors-and-bioelectronics",
       "search_blob": "graphene hybrid nanoprobes for targeted microbial sensing and ultralow-energy, deep-tissue, noninvasive multiphoton imaging in the nir-i/ii region biosensors and bioelectronics wen-shuo kuo yen-sung lin chia-yuan chang jiu-yao wang pei-chi chen shih-wen tseng chiao-yun lin chan-chi chang shang-rung wu nitrogen (n) doping and amino functionalization markedly enhance the electron-donating capacity of graphene quantum dots (gqds), thereby improving charge-transfer efficiency in amino-n-gqds and yielding substantially superior photophysical performance compared with amino-free n-gqds and n-free amino-gqds. further optimization was achieved through conjugation of amino-n-gqds with sulfur- and nitrogen-rich polymers, polystyrene sulfonate and polyethylenimine, resulting in amino-n-gqd-polymer nanohybrids with significantly improved optical behavior. these hybrid nanostructures exhibited high quantum yields, excellent photostability, negligible reactive oxygen species generation, and strong two-photon luminescence, positioning them as promising contrast agents for nonlinear bioimaging. to enable molecular specificity, antibody functionalization was incorporated. when conjugated with anti-lipopolysaccharide or anti-tasa antibodies, the nanohybrids selectively targeted escherichia coli (e. coli) and bacillus subtilis (b. subtilis), generating bright fluorescence, strong signal intensity, and high signal-to-noise ratios under two-photon excitation. using a custom-built ti:sapphire laser system operating at 970 nm (near-infrared-ii region), imaging depths of up to 270 μm were achieved with ultralow excitation energies, 42.96 nj pixel-1 for e. coli and 35.14 nj pixel-1 for b. subtilis, acquired over 100 scans (total exposure = 0.666 s). the nanohybrids produced two-photon luminescence using only 1/49 and 1/36 of the energy required for cellular autofluorescence, corresponding to ∼2401- and ∼1296-fold signal enhancements, respectively. this remarkable efficiency supports deep, noninvasive imaging and underscores the potential of amino-n-gqd-polymer nanohybrids as versatile near-infrared-i/ii-responsive probes for next-generation biomedical imaging applications. graphene 10.1016/j.bios.2026.118506 https://doi.org/10.1016/j.bios.2026.118506",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 1
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -114,42 +115,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 29
         },
         {
@@ -337,12 +302,6 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01"
       ],
       "crawl_date": "2026-04-29",
@@ -368,42 +327,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 30
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 30
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 30
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 30
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 30
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 30
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 30
         },
         {

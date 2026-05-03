@@ -4,23 +4,44 @@ interface Props {
 }
 const { currentPath = '/' } = Astro.props;
 const navLinks = [
-  { href: '/', label: 'Latest' },
-  { href: '/archive', label: 'Archive' },
-  { href: '/protocols', label: 'Protocols' },
-  { href: '/api/stats', label: 'API' },
+  { href: '/', label: 'Latest', icon: '🔥' },
+  { href: '/archive', label: 'Archive', icon: '📚' },
+  { href: '/protocols', label: 'Protocols', icon: '🧪' },
+  { href: '/api/stats', label: 'API', icon: '⚡' },
 ];
+const showSearch = currentPath.startsWith('/archive');
 ---
+
 <header class="site-header">
-  <a class="brand" href="/">MIXZ</a>
-  <nav aria-label="Primary navigation">
-    {navLinks.map(({ href, label }) => (
-      <a
-        href={href}
-        class:list={['nav-link', { active: currentPath === href || (href !== '/' && currentPath.startsWith(href)) }]}
-        aria-current={currentPath === href ? 'page' : undefined}
-      >
-        {label}
-      </a>
-    ))}
-  </nav>
+  <div class="header-container">
+    <a class="brand" href="/">
+      <span class="brand-icon">🔬</span>
+      <span class="brand-text">MIXZ</span>
+      <span class="brand-badge">Beta</span>
+    </a>
+    
+    <nav aria-label="Primary navigation">
+      {navLinks.map(({ href, label, icon }) => (
+        <a
+          href={href}
+          class:list={[
+            'nav-link',
+            { active: currentPath === href || (href !== '/' && currentPath.startsWith(href)) }
+          ]}
+          aria-current={currentPath === href ? 'page' : undefined}
+        >
+          <span class="nav-link__icon">{icon}</span>
+          <span class="nav-link__label">{label}</span>
+        </a>
+      ))}
+    </nav>
+    
+    {showSearch && (
+      <div class="header-actions">
+        <button class="search-toggle" aria-label="Search" onclick="document.querySelector('.search-input')?.focus()">
+          <span>🔍</span>
+        </button>
+      </div>
+    )}
+  </div>
 </header>

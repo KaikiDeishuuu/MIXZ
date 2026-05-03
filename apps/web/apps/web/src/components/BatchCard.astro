@@ -1,15 +1,13 @@
 ---
-import { formatDateTime } from '../lib/data';
 import { formatBatchLabel, formatBatchShort, getRelativeTime } from '../lib/formatters';
 import type { BatchPayload } from '../types';
 
 interface Props {
   batch: BatchPayload;
   variant?: 'compact' | 'full';
-  showArticles?: boolean;
 }
 
-const { batch, variant = 'compact', showArticles = false } = Astro.props;
+const { batch, variant = 'compact' } = Astro.props;
 const articleCount = batch.article_count ?? batch.articles?.length ?? 0;
 const newCount = batch.new_articles_count ?? batch.new_articles?.length ?? 0;
 const seenCount = batch.seen_again_count ?? (batch.seen_again_articles?.length ?? 0);
@@ -17,7 +15,7 @@ const href = `/batches/${batch.batch_id}.html`;
 
 const batchLabel = formatBatchLabel(batch.batch_id);
 const batchShort = formatBatchShort(batch.batch_id);
-const relativeTime = getRelativeTime(batch.crawl_time || batch.crawl_date);
+const relativeTime = getRelativeTime(batch.crawl_time || batch.crawl_date || '');
 ---
 
 <article class:list={['batch-card', `batch-card--${variant}`]}>
@@ -63,7 +61,7 @@ const relativeTime = getRelativeTime(batch.crawl_time || batch.crawl_date);
     
     {variant === 'full' && batch.journals && batch.journals.length > 0 && (
       <div class="batch-card__journals">
-        {batch.journals.slice(0, 5).map((j) => (
+        {batch.journals.slice(0, 5).map((j: string) => (
           <span class="journal-tag">{j}</span>
         ))}
         {batch.journals.length > 5 && (

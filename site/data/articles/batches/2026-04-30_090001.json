@@ -1570,27 +1570,22 @@
       "first_seen_date": "2026-04-21",
       "first_seen_time": "2026-04-21T11:43:02+08:00",
       "first_seen_batch_id": "2026-04-21 11:43:02",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-21 11:43:02",
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-04-30_090001",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -1605,12 +1600,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-21T11:43:02+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "biosensors-and-bioelectronics",
       "search_blob": "graphene hybrid nanoprobes for targeted microbial sensing and ultralow-energy, deep-tissue, noninvasive multiphoton imaging in the nir-i/ii region biosensors and bioelectronics wen-shuo kuo yen-sung lin chia-yuan chang jiu-yao wang pei-chi chen shih-wen tseng chiao-yun lin chan-chi chang shang-rung wu nitrogen (n) doping and amino functionalization markedly enhance the electron-donating capacity of graphene quantum dots (gqds), thereby improving charge-transfer efficiency in amino-n-gqds and yielding substantially superior photophysical performance compared with amino-free n-gqds and n-free amino-gqds. further optimization was achieved through conjugation of amino-n-gqds with sulfur- and nitrogen-rich polymers, polystyrene sulfonate and polyethylenimine, resulting in amino-n-gqd-polymer nanohybrids with significantly improved optical behavior. these hybrid nanostructures exhibited high quantum yields, excellent photostability, negligible reactive oxygen species generation, and strong two-photon luminescence, positioning them as promising contrast agents for nonlinear bioimaging. to enable molecular specificity, antibody functionalization was incorporated. when conjugated with anti-lipopolysaccharide or anti-tasa antibodies, the nanohybrids selectively targeted escherichia coli (e. coli) and bacillus subtilis (b. subtilis), generating bright fluorescence, strong signal intensity, and high signal-to-noise ratios under two-photon excitation. using a custom-built ti:sapphire laser system operating at 970 nm (near-infrared-ii region), imaging depths of up to 270 μm were achieved with ultralow excitation energies, 42.96 nj pixel-1 for e. coli and 35.14 nj pixel-1 for b. subtilis, acquired over 100 scans (total exposure = 0.666 s). the nanohybrids produced two-photon luminescence using only 1/49 and 1/36 of the energy required for cellular autofluorescence, corresponding to ∼2401- and ∼1296-fold signal enhancements, respectively. this remarkable efficiency supports deep, noninvasive imaging and underscores the potential of amino-n-gqd-polymer nanohybrids as versatile near-infrared-i/ii-responsive probes for next-generation biomedical imaging applications. graphene 10.1016/j.bios.2026.118506 https://doi.org/10.1016/j.bios.2026.118506",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 1
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -1651,42 +1652,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 29
         },
         {
@@ -1745,25 +1710,20 @@
       "first_seen_date": "2026-04-24",
       "first_seen_time": "2026-04-24T09:00:01+08:00",
       "first_seen_batch_id": "2026-04-24 09:00:01",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-04-30_090001",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -1778,12 +1738,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-24T09:00:01+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "acs-nano",
       "search_blob": "ai in atomic force microscopy: advancing biological nanoscale imaging and autonomous discovery acs nano seungmin lee seokbeom roh hyowon woo gyudo lee hyo gi jung ki-baek lee hakho lee dae sung yoon jeong hoon lee atomic force microscopy (afm) enables label-free nanoscale imaging and nanomechanical profiling but remains constrained by low throughput, operator dependence, and variability in data interpretation. artificial intelligence (ai) transforms afm into a scalable and adaptive platform. initially applied in materials science for super-resolution imaging, tip deconvolution, segmentation, and force-curve analysis, ai approaches are now being extended to biological afm. these methods support robust denoising of soft matter maps, automated recognition of heterogeneous structures, and three-dimensional reconstruction of biomolecular assemblies. this review provides an end-to-end workflow of ai-enabled afm─from probe optimization and adaptive control to multimodal data integration─highlighting advances relevant to mechanobiology and biomedical engineering. by surveying studies with amyloid fibrils, extracellular vesicles, membranes, and living cells, we show how ai-afm convergence enhances reproducibility, throughput, and clinical utility. ai-driven afm is poised to enable disease modeling, therapeutic screening, and precision diagnostics, establishing itself as a next-generation tool for biomedical discovery. ai 10.1021/acsnano.6c02895 https://doi.org/10.1021/acsnano.6c02895",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 2
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -1824,42 +1790,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 1
         },
         {
@@ -1910,9 +1840,9 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-04-30_090001",
@@ -1920,7 +1850,8 @@
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -1935,12 +1866,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-photonics",
       "search_blob": "three-dimensional super-resolution imaging with suppressed background via digital array modulation microscopy nature photonics sijie li rui jin mengqi lu ning zhang meng zhang yunfei wei zhan zhang shirui guo yu-hui zhang fengchao wang hui gong qingming luo jing yuan 暂无公开摘要 three-dimensional 10.1038/s41566-026-01869-4 https://doi.org/10.1038/s41566-026-01869-4",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 7
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -2021,9 +1958,9 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-04-30_090001",
@@ -2031,7 +1968,8 @@
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -2046,12 +1984,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-biomedical-engineering",
       "search_blob": "label-free tissue nir-ii autofluorescence imaging for visualization of human liver malignancy nature biomedical engineering haisheng he wenwei zhu han miao shangfeng wang zunguo du hongxin zhang jiang ming ben shi hao wang jianping qi yong fan wei wu dongyuan zhao lun-xiu qin fan zhang 暂无公开摘要 label-free 10.1038/s41551-025-01593-4 https://doi.org/10.1038/s41551-025-01593-4",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 15
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -2126,9 +2070,9 @@
       "first_seen_date": "2026-04-15",
       "first_seen_time": "2026-04-15T22:23:33+08:00",
       "first_seen_batch_id": "2026-04-15 22:23:33",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-15 22:23:33",
         "2026-04-16 09:00:01",
@@ -2138,19 +2082,14 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-04-30_090001",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -2165,12 +2104,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-15T22:23:33+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "science-advances",
       "search_blob": "flips: genetically encoded molecular biosensors for functional imaging of cell signaling by linear dichroism microscopy science advances paul miclea vendula nagy-marková robin van den eynde wim vandenberg alina sakhi alexey bondar jitka myšková peter dedecker josef lazar genetically encoded fluorescent biosensors convert specific biomolecular events into optically detectable signals. however, imaging biomolecular processes often requires modifying the proteins involved, and many molecular processes are still to be imaged. here, we present a biosensor design that uses a hitherto overlooked detection principle: directionality of optical properties of fluorescent proteins. the biosensors (termed flips) offer an extremely simple design, high sensitivity, multiplexing capability, ratiometric readout, and other advantages, without requiring modifications to their targets. we demonstrate the sensor performance by real-time imaging activity of g protein–coupled receptors (gpcrs), g proteins, arrestins, and other membrane-associated proteins, as well as by identifying a previously undescribed, pronounced, endocytosis-associated conformational change in a gpcr–β-arrestin complex. in combination with an original tri-scanning linear dichroism confocal microscope, flips allow unparalleled imaging of activity of nonmodified, endogenously expressed g proteins. thus, flips establish a powerful molecular platform for imaging cell signaling, allowing numerous future developments and insights. flips: 10.1126/sciadv.adz5662 https://doi.org/10.1126/sciadv.adz5662",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 16
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -2211,42 +2156,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 17
         },
         {
@@ -2331,9 +2240,9 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-04-30_090001",
@@ -2341,7 +2250,8 @@
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -2356,12 +2266,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-biotechnology",
       "search_blob": "isotropic, aberration-corrected light sheet microscopy for rapid high-resolution imaging of cleared tissue nature biotechnology mostafa aakhte gesine f. müller lennart roos joe li torben göpel kurt r. weiss aleyna m. diniz jan wenzel markus schwaninger tobias moser jan huisken abstract light-sheet microscopy is ideal for imaging large and cleared tissues, but achieving a high isotropic resolution for a centimeter-sized sample is limited by slow and often aberrated, axially scanned light sheets. here, we introduce a compact, high-speed light-sheet fluorescence microscope achieving 850 nm isotropic resolution across cleared samples up to 1 cm³ and refractive indices ranging from 1.33 to 1.56. using off-the-shelf optics, we combine an air objective and a meniscus lens with an axially swept light sheet to achieve diffraction-limited resolution and aberration correction. the effective field of view is increased by twofold by correcting the field curvature of the light sheet using a concave mirror in the remote focusing unit. adapting the light sheet’s motion with a closed-loop feedback enhances the imaging speed by tenfold, reaching 100 frames per second while maintaining resolution and field of view. we benchmark the system performance across scales, from subcellular structure up to centimeter scale, using various clearing methods. isotropic, 10.1038/s41587-025-02882-8 https://doi.org/10.1038/s41587-025-02882-8",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 21
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -3959,27 +3875,22 @@
       "first_seen_date": "2026-04-21",
       "first_seen_time": "2026-04-21T11:43:02+08:00",
       "first_seen_batch_id": "2026-04-21 11:43:02",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-21 11:43:02",
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-04-30_090001",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -3994,12 +3905,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-21T11:43:02+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "biosensors-and-bioelectronics",
       "search_blob": "graphene hybrid nanoprobes for targeted microbial sensing and ultralow-energy, deep-tissue, noninvasive multiphoton imaging in the nir-i/ii region biosensors and bioelectronics wen-shuo kuo yen-sung lin chia-yuan chang jiu-yao wang pei-chi chen shih-wen tseng chiao-yun lin chan-chi chang shang-rung wu nitrogen (n) doping and amino functionalization markedly enhance the electron-donating capacity of graphene quantum dots (gqds), thereby improving charge-transfer efficiency in amino-n-gqds and yielding substantially superior photophysical performance compared with amino-free n-gqds and n-free amino-gqds. further optimization was achieved through conjugation of amino-n-gqds with sulfur- and nitrogen-rich polymers, polystyrene sulfonate and polyethylenimine, resulting in amino-n-gqd-polymer nanohybrids with significantly improved optical behavior. these hybrid nanostructures exhibited high quantum yields, excellent photostability, negligible reactive oxygen species generation, and strong two-photon luminescence, positioning them as promising contrast agents for nonlinear bioimaging. to enable molecular specificity, antibody functionalization was incorporated. when conjugated with anti-lipopolysaccharide or anti-tasa antibodies, the nanohybrids selectively targeted escherichia coli (e. coli) and bacillus subtilis (b. subtilis), generating bright fluorescence, strong signal intensity, and high signal-to-noise ratios under two-photon excitation. using a custom-built ti:sapphire laser system operating at 970 nm (near-infrared-ii region), imaging depths of up to 270 μm were achieved with ultralow excitation energies, 42.96 nj pixel-1 for e. coli and 35.14 nj pixel-1 for b. subtilis, acquired over 100 scans (total exposure = 0.666 s). the nanohybrids produced two-photon luminescence using only 1/49 and 1/36 of the energy required for cellular autofluorescence, corresponding to ∼2401- and ∼1296-fold signal enhancements, respectively. this remarkable efficiency supports deep, noninvasive imaging and underscores the potential of amino-n-gqd-polymer nanohybrids as versatile near-infrared-i/ii-responsive probes for next-generation biomedical imaging applications. graphene 10.1016/j.bios.2026.118506 https://doi.org/10.1016/j.bios.2026.118506",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 1
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -4040,42 +3957,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 29
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 29
         },
         {
@@ -4134,25 +4015,20 @@
       "first_seen_date": "2026-04-24",
       "first_seen_time": "2026-04-24T09:00:01+08:00",
       "first_seen_batch_id": "2026-04-24 09:00:01",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-04-30_090001",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -4167,12 +4043,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-24T09:00:01+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "acs-nano",
       "search_blob": "ai in atomic force microscopy: advancing biological nanoscale imaging and autonomous discovery acs nano seungmin lee seokbeom roh hyowon woo gyudo lee hyo gi jung ki-baek lee hakho lee dae sung yoon jeong hoon lee atomic force microscopy (afm) enables label-free nanoscale imaging and nanomechanical profiling but remains constrained by low throughput, operator dependence, and variability in data interpretation. artificial intelligence (ai) transforms afm into a scalable and adaptive platform. initially applied in materials science for super-resolution imaging, tip deconvolution, segmentation, and force-curve analysis, ai approaches are now being extended to biological afm. these methods support robust denoising of soft matter maps, automated recognition of heterogeneous structures, and three-dimensional reconstruction of biomolecular assemblies. this review provides an end-to-end workflow of ai-enabled afm─from probe optimization and adaptive control to multimodal data integration─highlighting advances relevant to mechanobiology and biomedical engineering. by surveying studies with amyloid fibrils, extracellular vesicles, membranes, and living cells, we show how ai-afm convergence enhances reproducibility, throughput, and clinical utility. ai-driven afm is poised to enable disease modeling, therapeutic screening, and precision diagnostics, establishing itself as a next-generation tool for biomedical discovery. ai 10.1021/acsnano.6c02895 https://doi.org/10.1021/acsnano.6c02895",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 2
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -4213,42 +4095,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 1
         },
         {
@@ -4299,9 +4145,9 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-04-30_090001",
@@ -4309,7 +4155,8 @@
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -4324,12 +4171,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-photonics",
       "search_blob": "three-dimensional super-resolution imaging with suppressed background via digital array modulation microscopy nature photonics sijie li rui jin mengqi lu ning zhang meng zhang yunfei wei zhan zhang shirui guo yu-hui zhang fengchao wang hui gong qingming luo jing yuan 暂无公开摘要 three-dimensional 10.1038/s41566-026-01869-4 https://doi.org/10.1038/s41566-026-01869-4",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 7
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -4410,9 +4263,9 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-04-30_090001",
@@ -4420,7 +4273,8 @@
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -4435,12 +4289,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-biomedical-engineering",
       "search_blob": "label-free tissue nir-ii autofluorescence imaging for visualization of human liver malignancy nature biomedical engineering haisheng he wenwei zhu han miao shangfeng wang zunguo du hongxin zhang jiang ming ben shi hao wang jianping qi yong fan wei wu dongyuan zhao lun-xiu qin fan zhang 暂无公开摘要 label-free 10.1038/s41551-025-01593-4 https://doi.org/10.1038/s41551-025-01593-4",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 15
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -4515,9 +4375,9 @@
       "first_seen_date": "2026-04-15",
       "first_seen_time": "2026-04-15T22:23:33+08:00",
       "first_seen_batch_id": "2026-04-15 22:23:33",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-15 22:23:33",
         "2026-04-16 09:00:01",
@@ -4527,19 +4387,14 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-04-30_090001",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -4554,12 +4409,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-15T22:23:33+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "science-advances",
       "search_blob": "flips: genetically encoded molecular biosensors for functional imaging of cell signaling by linear dichroism microscopy science advances paul miclea vendula nagy-marková robin van den eynde wim vandenberg alina sakhi alexey bondar jitka myšková peter dedecker josef lazar genetically encoded fluorescent biosensors convert specific biomolecular events into optically detectable signals. however, imaging biomolecular processes often requires modifying the proteins involved, and many molecular processes are still to be imaged. here, we present a biosensor design that uses a hitherto overlooked detection principle: directionality of optical properties of fluorescent proteins. the biosensors (termed flips) offer an extremely simple design, high sensitivity, multiplexing capability, ratiometric readout, and other advantages, without requiring modifications to their targets. we demonstrate the sensor performance by real-time imaging activity of g protein–coupled receptors (gpcrs), g proteins, arrestins, and other membrane-associated proteins, as well as by identifying a previously undescribed, pronounced, endocytosis-associated conformational change in a gpcr–β-arrestin complex. in combination with an original tri-scanning linear dichroism confocal microscope, flips allow unparalleled imaging of activity of nonmodified, endogenously expressed g proteins. thus, flips establish a powerful molecular platform for imaging cell signaling, allowing numerous future developments and insights. flips: 10.1126/sciadv.adz5662 https://doi.org/10.1126/sciadv.adz5662",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 16
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -4600,42 +4461,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 17
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 17
         },
         {
@@ -4720,9 +4545,9 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-04-30_090001",
@@ -4730,7 +4555,8 @@
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
       "crawl_date": "2026-04-30",
       "crawl_time": "2026-04-30T09:00:01+08:00",
@@ -4745,12 +4571,18 @@
         "batch:2026-04-30_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-biotechnology",
       "search_blob": "isotropic, aberration-corrected light sheet microscopy for rapid high-resolution imaging of cleared tissue nature biotechnology mostafa aakhte gesine f. müller lennart roos joe li torben göpel kurt r. weiss aleyna m. diniz jan wenzel markus schwaninger tobias moser jan huisken abstract light-sheet microscopy is ideal for imaging large and cleared tissues, but achieving a high isotropic resolution for a centimeter-sized sample is limited by slow and often aberrated, axially scanned light sheets. here, we introduce a compact, high-speed light-sheet fluorescence microscope achieving 850 nm isotropic resolution across cleared samples up to 1 cm³ and refractive indices ranging from 1.33 to 1.56. using off-the-shelf optics, we combine an air objective and a meniscus lens with an axially swept light sheet to achieve diffraction-limited resolution and aberration correction. the effective field of view is increased by twofold by correcting the field curvature of the light sheet using a concave mirror in the remote focusing unit. adapting the light sheet’s motion with a closed-loop feedback enhances the imaging speed by tenfold, reaching 100 frames per second while maintaining resolution and field of view. we benchmark the system performance across scales, from subcellular structure up to centimeter scale, using various clearing methods. isotropic, 10.1038/s41587-025-02882-8 https://doi.org/10.1038/s41587-025-02882-8",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 21
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",

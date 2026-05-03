@@ -30,19 +30,20 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Adaptive"
@@ -50,15 +51,21 @@
       "tags": [
         "nature",
         "Nature Methods",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-methods",
       "search_blob": "adaptive optical correction for in vivo two-photon fluorescence microscopy with neural fields nature methods iksung kang hyeonggeon kim ryan natan qinrong zhang stella x. yu na ji 暂无公开摘要 adaptive 10.1038/s41592-026-03053-6 https://doi.org/10.1038/s41592-026-03053-6",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 4
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -131,19 +138,20 @@
       "first_seen_date": "2026-04-13",
       "first_seen_time": "2026-04-13T09:00:00+08:00",
       "first_seen_batch_id": "2026-04-13 09:00",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-13 09:00",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Integration"
@@ -151,15 +159,21 @@
       "tags": [
         "nature",
         "Nature Methods",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-13T09:00:00+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-methods",
       "search_blob": "integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via dbitplus nature methods archibald enninful zhaojun zhang dmytro klymyshyn matthew ingalls mingyu yang hailing zong zhiliang bai negin farzad graham su alev baysoy jungmin nam yao lu shuozhen bao siyan deng nancy r. zhang oliver braubach mina l. xu zongming ma rong fan abstract spatially mapping the transcriptome and proteome in the same tissue section can profoundly advance our understanding of cellular heterogeneity and function. here we present deterministic barcoding in tissue sequencing plus (dbitplus), an integrative multimodal spatial omics approach combining sequencing-based spatial transcriptomics and multiplexed protein imaging on the same section, enabling both single-cell-resolution cell typing and transcriptome-wide interrogation of biological pathways. dbitplus utilizes spatial barcoding and rnase h-mediated cdna retrieval, preserving tissue architecture for multiplexed protein imaging. we developed computational pipelines to integrate these modalities, allowing imaging-guided deconvolution to generate single-cell-resolved spatial transcriptome atlases. we demonstrate dbitplus across diverse samples including frozen mouse embryos, and formalin-fixed paraffin-embedded human lymph nodes and lymphoma tissues, highlighting its compatibility with challenging clinical specimens. dbitplus uncovered mechanisms of lymphomagenesis, progression and transformation in human lymphomas. thus, dbitplus is a unified workflow for spatially resolved single-cell atlasing and unbiased exploration of biological mechanisms in a cell-by-cell manner at transcriptome scale. integration 10.1038/s41592-025-02948-0 https://doi.org/10.1038/s41592-025-02948-0",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 17
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -219,19 +233,20 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "AI-empowered"
@@ -239,15 +254,21 @@
       "tags": [
         "nature",
         "Nature Methods",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-methods",
       "search_blob": "ai-empowered super-resolution microscopy: a revolution in nanoscale cellular imaging nature methods sen li xiangjie meng bo zhou wenfeng tian liangyi chen yang zhang 暂无公开摘要 ai-empowered 10.1038/s41592-025-02871-4 https://doi.org/10.1038/s41592-025-02871-4",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 19
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -317,18 +338,19 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Bio-friendly"
@@ -336,15 +358,21 @@
       "tags": [
         "nature",
         "Nature Methods",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-methods",
       "search_blob": "bio-friendly and high-precision super-resolution imaging through self-supervised reconstruction structured illumination microscopy nature methods jiahao liu xue dong huaide lu tao liu wei liu xinyao hu quan meng amin jiang tao jiang xiaohan geng haosen liu jun cheng edmund y. lam yan-jun liu shan tan dong li 暂无公开摘要 bio-friendly 10.1038/s41592-025-02966-y https://doi.org/10.1038/s41592-025-02966-y",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 20
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -412,18 +440,19 @@
       "first_seen_date": "2026-04-29",
       "first_seen_time": "2026-04-29T11:39:42+08:00",
       "first_seen_batch_id": "2026-04-29_113942",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-29_113942",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Kilohertz"
@@ -431,15 +460,21 @@
       "tags": [
         "nature",
         "Nature Methods",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-29T11:39:42+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-methods",
       "search_blob": "kilohertz volumetric imaging of in vivo dynamics using squeezed light field microscopy nature methods zhaoqiang wang ruixuan zhao daniel a. wagenaar diego espino liron sheintuch ohr benshlomo wenjun kang enbo zhu calvin k. lee william c. schmidt aryan pammar jing wang gerard c. l. wong rongguang liang sungmoo lee michael z. lin madhuvanthi kannan peyman golshani tzung k. hsiai liang gao 暂无公开摘要 kilohertz 10.1038/s41592-025-02843-8 https://doi.org/10.1038/s41592-025-02843-8",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 24
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",

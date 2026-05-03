@@ -5,25 +5,69 @@ interface Props {
 const { buildInfo = '' } = Astro.props;
 const year = new Date().getFullYear();
 ---
+
 <footer class="site-footer">
-  <div class="footer-content">
-    <div class="footer-brand">
-      <span class="footer-logo">MIXZ</span>
-      <span class="footer-tagline">Biomedical Imaging Literature Monitor</span>
+  <div class="footer-container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="footer-logo__icon">🔬</span>
+          <span class="footer-logo__text">MIXZ</span>
+        </div>
+        <p class="footer-tagline">Biomedical Imaging Literature Monitor</p>
+        <p class="footer-description">
+          自动追踪生物医学成像领域的最新文献，每日更新。
+        </p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-section__title">导航</h3>
+        <ul class="footer-links">
+          <li><a href="/">最新批次</a></li>
+          <li><a href="/archive">文献归档</a></li>
+          <li><a href="/protocols">实验方案</a></li>
+          <li><a href="/api/stats">API 文档</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-section__title">技术栈</h3>
+        <ul class="footer-tech">
+          <li><span class="tech-badge">Astro</span></li>
+          <li><span class="tech-badge">SQLite</span></li>
+          <li><span class="tech-badge">Python</span></li>
+          <li><span class="tech-badge">Nginx</span></li>
+        </ul>
+        <p class="footer-note">
+          静态生成，无需 API 存活
+        </p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-section__title">关于</h3>
+        <p class="footer-about">
+          MIXZ 是一个开源的文献监控工具，专注于生物医学成像领域。
+        </p>
+        <div class="footer-social">
+          <a href="https://github.com/wulab" aria-label="GitHub" class="social-link">
+            <span>💻</span>
+          </a>
+          <a href="mailto:contact@wulab.tech" aria-label="Email" class="social-link">
+            <span>📧</span>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="/">Latest</a>
-      <a href="/archive">Archive</a>
-      <a href="/protocols">Protocols</a>
-      <a href="/api/stats">API</a>
+    
+    <div class="footer-bottom">
+      <div class="footer-bottom__content">
+        <span class="footer-copyright">&copy; {year} MIXZ · Wu Lab</span>
+        {buildInfo && <span class="footer-build">{buildInfo}</span>}
+        <span class="footer-status">
+          <span class="status-indicator"></span>
+          <span>系统运行正常</span>
+        </span>
+      </div>
     </div>
-    <div class="footer-meta">
-      <span>SQLite → JSON → Astro static site</span>
-      <span>静态页面不依赖 API 存活</span>
-      {buildInfo && <span class="build-info">{buildInfo}</span>}
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>&copy; {year} MIXZ</span>
   </div>
 </footer>

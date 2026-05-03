@@ -29,9 +29,9 @@
       "first_seen_date": "2026-04-15",
       "first_seen_time": "2026-04-15T22:23:33+08:00",
       "first_seen_batch_id": "2026-04-15 22:23:33",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-15 22:23:33",
         "2026-04-16 09:00:01",
@@ -41,19 +41,14 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "A"
@@ -61,15 +56,21 @@
       "tags": [
         "nature",
         "Nature Communications",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-15T22:23:33+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-communications",
       "search_blob": "a foundation model for multi-task cross-distribution restoration of fluorescence microscopy images nature communications qiqi lu xiuli liu qianjin feng shaoqun zeng shenghua cheng deep learning has demonstrated remarkable abilities in restoring fluorescence microscopy images degraded by noise, blur, or undersampling. however, most existing models are task-specific and trained on limited, homogeneously distributed data, which restricts their generalizability and practicality. here, we present fluoresfm, a foundation model for multi-task and cross-distribution fluorescence microscopy image restoration in a unified model. fluoresfm leverages textual prior information to adapt to specific tasks and data distributions. trained on datasets across three tasks (image denoising, deconvolution, and super-resolution) and over 20 biological structures, fluoresfm demonstrates superior restoration performance and enhanced generalization across datasets with varied biological structures and imaging conditions. through fine-tuning with only a single sample, fluoresfm can further improve its performance on unseen data, achieving results comparable to conventional models trained on hundreds of samples, and be easily adapted to additional tasks, including 3d image restoration, surface projection, isotropic reconstruction, and super-resolution with various scale factors. moreover, the performance of existing cell/organelle segmentation models can be enhanced using the high-quality images restored by fluoresfm. a 10.1038/s41467-026-70307-4 https://doi.org/10.1038/s41467-026-70307-4",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 10
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -86,42 +87,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 23
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 23
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 23
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 23
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 23
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 23
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 23
         },
         {
@@ -204,9 +169,9 @@
       "first_seen_date": "2026-04-15",
       "first_seen_time": "2026-04-15T22:23:33+08:00",
       "first_seen_batch_id": "2026-04-15 22:23:33",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-15 22:23:33",
         "2026-04-16 09:00:01",
@@ -216,19 +181,14 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Dual"
@@ -236,15 +196,21 @@
       "tags": [
         "nature",
         "Nature Communications",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-15T22:23:33+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-communications",
       "search_blob": "dual deconvolution in multiphoton structured illumination microscopy for deep-tissue super-resolution imaging nature communications sumin lim sungsam kang jin hee hong young-ho jin kalpak gupta moonseok kim suhyun kim wonshik choi seokchan yoon imaging in thick biological tissues is often degraded by sample-induced aberrations, which reduce resolution and contrast, particularly in super-resolution techniques. while hardware-based adaptive optics (ao) using wavefront shaping can correct these aberrations, their complexity and cost hinder widespread adoption. here, we present a computational ao framework for multiphoton structured illumination microscopy, enabling deep-tissue super-resolution imaging with minimal hardware modifications. by replacing the photodetector with a camera from the conventional laser-scanning multiphoton microscope, we capture a sequence of scanned images. using virtual structured illumination, we develop a dual deconvolution algorithm that independently corrects excitation and emission aberrations, recovering an aberration-free object spectrum with an extended spatial frequency bandwidth. we experimentally validate this framework through two-photon super-resolution imaging, achieving a lateral resolution of 130 nm-one-fourth of the emission wavelength-at a depth of 180 μm in thick mouse brain tissue, where conventional deconvolution fails to maintain super-resolution capability. this approach provides a cost-effective and accessible alternative to hardware-based ao, expanding the potential for high-resolution deep-tissue imaging in biological research. dual 10.1038/s41467-026-69798-y https://doi.org/10.1038/s41467-026-69798-y",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 12
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -261,42 +227,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 24
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 24
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 24
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 24
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 24
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 24
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 24
         },
         {
@@ -377,9 +307,9 @@
       "first_seen_date": "2026-04-15",
       "first_seen_time": "2026-04-15T22:23:33+08:00",
       "first_seen_batch_id": "2026-04-15 22:23:33",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-15 22:23:33",
         "2026-04-16 09:00:01",
@@ -389,18 +319,13 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Fluorescence-free"
@@ -408,15 +333,21 @@
       "tags": [
         "nature",
         "Nature Communications",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-15T22:23:33+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-communications",
       "search_blob": "fluorescence-free single-molecule microscopy via electronic resonance stimulated raman scattering nature communications sumin oh yunji eom ha yeon kim ayushi tripathi sungnam park han young woo sang-hee shim vibrational spectroscopy is a powerful tool for spectral imaging of biological samples, thanks to its narrow bandwidth (10 cm⁻¹) compared to fluorescence. single-molecule vibrational spectroscopy has been demonstrated with near-field amplification as in surface-enhanced raman spectroscopy or fluorescence detection as in stimulated raman excited fluorescence and bond-selective fluorescence-detected infrared-excited spectro-microscopy. however, these methods often require elaborate sample preparation or sometimes generate background signals when unintended processes lead to fluorescence emission. in response to these issues, we developed electronic resonance stimulated raman scattering (er-srs) to achieve single-molecule sensitivity in far-field vibrational microscopy without relying on fluorescence detection. er-srs has encountered difficulties due to large electronic backgrounds. to overcome this, we employed raman-amplified nonfluorescent molecular probe (ranmp) alongside our synchronously pumped, independently tunable double optical parametric oscillators for effective optimization of the signal-to-background ratio. the optimization of probe and light source allowed us to successfully detect er-srs signal from single particles in solution and from single molecules embedded in polymer matrix. er-srs combined with ranmp provides single-molecule sensitivity without fluorescence detection, enabling applications in biological and chemical imaging, particularly in multiplexed imaging. fluorescence-free 10.1038/s41467-026-69348-6 https://doi.org/10.1038/s41467-026-69348-6",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 13
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -427,42 +358,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 25
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 25
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 25
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 25
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 25
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 25
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 25
         },
         {
@@ -541,9 +436,9 @@
       "first_seen_date": "2026-04-15",
       "first_seen_time": "2026-04-15T22:23:33+08:00",
       "first_seen_batch_id": "2026-04-15 22:23:33",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-15 22:23:33",
         "2026-04-16 09:00:01",
@@ -553,18 +448,13 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Atomic-scale"
@@ -572,15 +462,21 @@
       "tags": [
         "nature",
         "Nature Communications",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-15T22:23:33+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-communications",
       "search_blob": "atomic-scale imaging and charge state manipulation of nv centers by scanning tunneling microscopy nature communications arjun raghavan seokjin bae nazar delegan f. joseph heremans vidya madhavan nitrogen-vacancy (nv) centers in diamond are among the most promising solid-state qubit candidates, owing to their exceptionally long spin coherence times, efficient spin-photon coupling, room-temperature operation, and steadily advancing fabrication and integration techniques. despite significant progress in the field, atomic-scale characterization and control of individual nv centers have remained elusive. in this work, we utilize a conductive graphene capping layer to enable direct imaging and manipulation of nv⁻ defects via scanning tunneling microscopy (stm). by investigating over 40 individual nv⁻ centers, we identify their spectroscopic signatures and spatial configurations. our di/dv conductance spectra reveal the ground state resonance approximately 300 mev below the fermi level and density-of-states maps uncover a two-lobed wavefunction aligned along the [111] crystallographic direction. remarkably, we demonstrate the ability to manipulate the charge state of the nv centers from nv⁻ to nv⁰ through stm tip-induced gating. this work represents a significant advance in the atomic-scale imaging, spectroscopic characterization, and charge-state manipulation of nv centers, potentially paving the way for future quantum device development. atomic-scale 10.1038/s41467-026-68323-5 https://doi.org/10.1038/s41467-026-68323-5",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 14
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -591,42 +487,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 26
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 26
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 26
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 26
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 26
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 26
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 26
         },
         {
@@ -707,9 +567,9 @@
       "first_seen_date": "2026-04-15",
       "first_seen_time": "2026-04-15T22:23:33+08:00",
       "first_seen_batch_id": "2026-04-15 22:23:33",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-15 22:23:33",
         "2026-04-16 09:00:01",
@@ -719,18 +579,13 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "Neural"
@@ -738,15 +593,21 @@
       "tags": [
         "nature",
         "Nature Communications",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-15T22:23:33+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-communications",
       "search_blob": "neural phase microscopy with metasurface optics for real-time and nanoscale quantitative phase imaging nature communications gun-yeal lee changhyun kim manu gopakumar youngjin kim byoungho lee yoonchan jeong gordon wetzstein quantitative phase imaging (qpi) enables non-invasive analysis of transparent specimens across biomedicine, materials science, and neuroscience. however, conventional hardware relies on complex architectures with multi-shot acquisition that preclude compact, real-time operation, while phase-retrieval software often yields degraded image quality, is environmentally sensitive, and runs slowly. here, we introduce a compact, fast, high-resolution qpi platform that addresses these challenges by integrating nanophotonic metasurfaces with artificial intelligence (ai). our metasurface optics simplifies the optical architecture by replacing bulky optics and modulators, enabling single-shot acquisition and a drastic reduction in form factor. we develop physics-informed ai models that correct optical aberrations, compensate for imperfections in nanofabrication and alignment, and restore nanoscale quantitative phase information in real-time. the system achieves nanoscale resolution better than 840 nm at 74 hz within a single, thin optical layer. our unique combination of nanophotonic hardware and ai algorithms advances qpi technology towards portable, precise, real-time phase imaging. neural 10.1038/s41467-025-68151-z https://doi.org/10.1038/s41467-025-68151-z",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 18
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -757,42 +618,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 27
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 27
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 27
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 27
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 27
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 27
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 27
         },
         {
@@ -873,9 +698,9 @@
       "first_seen_date": "2026-04-15",
       "first_seen_time": "2026-04-15T22:23:33+08:00",
       "first_seen_batch_id": "2026-04-15 22:23:33",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-15 22:23:33",
         "2026-04-16 09:00:01",
@@ -885,18 +710,13 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "nature",
       "keywords": [
         "A"
@@ -904,15 +724,21 @@
       "tags": [
         "nature",
         "Nature Communications",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-15T22:23:33+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "nature-communications",
       "search_blob": "a bayesian approach towards atomically-precise localization in fluorescence microscopy nature communications yuqin duan qiushi gu hanfeng wang yong hu kevin c. chen matthew e. trusheim dirk r. englund super-resolution microscopy has revolutionized the imaging of complex physical and biological systems by surpassing the abbe diffraction limit. recent advancements, particularly in single-molecule localization microscopy, have pushed localization below nanometer precision, by applying prior knowledge of correlated fluorescence emission from single emitters. however, achieving a refinement from 1 nm to 1 ångström demands a hundred-fold increase in collected photon signal. this quadratic resource scaling imposes a fundamental barrier in single-molecule localization microscopy, where the intense photon collection is challenged by photo-bleaching, prolonged integration times, and inherent practical constraints. here, we break this limit by harnessing the periodic nature of the atomic lattice structure. applying this discrete grid imaging technique (digit) in a quantum emitter system, we observe an exponential collapse of localization uncertainty once surpassing the host crystal's atomic lattice constant. we further applied digit to a large-scale quantum emitter array, enabling parallel positioning of each emitter through wide-field imaging. collectively, these advancements establish digit as a competitive tool for achieving unprecedented, precise measurements, ultimately paving the way to direct optical resolution of crystal and atomic features within quantum and biological systems. a 10.1038/s41467-025-64083-w https://doi.org/10.1038/s41467-025-64083-w",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 23
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -923,42 +749,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 28
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 28
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 28
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 28
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 28
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 28
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 28
         },
         {

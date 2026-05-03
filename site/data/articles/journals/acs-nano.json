@@ -33,29 +33,24 @@
       "first_seen_date": "2026-04-24",
       "first_seen_time": "2026-04-24T09:00:01+08:00",
       "first_seen_batch_id": "2026-04-24 09:00:01",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-04-30_090001",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "acs",
       "keywords": [
         "AI"
@@ -63,15 +58,21 @@
       "tags": [
         "acs",
         "ACS Nano",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-24T09:00:01+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "acs-nano",
       "search_blob": "ai in atomic force microscopy: advancing biological nanoscale imaging and autonomous discovery acs nano seungmin lee seokbeom roh hyowon woo gyudo lee hyo gi jung ki-baek lee hakho lee dae sung yoon jeong hoon lee atomic force microscopy (afm) enables label-free nanoscale imaging and nanomechanical profiling but remains constrained by low throughput, operator dependence, and variability in data interpretation. artificial intelligence (ai) transforms afm into a scalable and adaptive platform. initially applied in materials science for super-resolution imaging, tip deconvolution, segmentation, and force-curve analysis, ai approaches are now being extended to biological afm. these methods support robust denoising of soft matter maps, automated recognition of heterogeneous structures, and three-dimensional reconstruction of biomolecular assemblies. this review provides an end-to-end workflow of ai-enabled afm─from probe optimization and adaptive control to multimodal data integration─highlighting advances relevant to mechanobiology and biomedical engineering. by surveying studies with amyloid fibrils, extracellular vesicles, membranes, and living cells, we show how ai-afm convergence enhances reproducibility, throughput, and clinical utility. ai-driven afm is poised to enable disease modeling, therapeutic screening, and precision diagnostics, establishing itself as a next-generation tool for biomedical discovery. ai 10.1021/acsnano.6c02895 https://doi.org/10.1021/acsnano.6c02895",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 2
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -112,42 +113,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 1
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 1
         },
         {
@@ -193,9 +158,9 @@
       "first_seen_date": "2026-04-15",
       "first_seen_time": "2026-04-15T22:07:57+08:00",
       "first_seen_batch_id": "2026-04-15 22:07",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-15 22:07",
         "2026-04-15 22:23:33",
@@ -206,22 +171,17 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "acs",
       "keywords": [
         "Flexible"
@@ -229,15 +189,21 @@
       "tags": [
         "acs",
         "ACS Nano",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-15T22:07:57+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "acs-nano",
       "search_blob": "flexible fitting to infer atomistic-precision models of large-amplitude conformational dynamics in biomolecules from high-speed atomic force microscopy imaging acs nano romain amyot osamu miyashita xuan wu kazusa takeda noriyuki kodera hiroki konno florence tama holger flechsig high-speed atomic force microscopy (hs-afm) experiments allow direct observation of biomolecular dynamics at the single-molecule level, acquiring a large amount of topographic imaging data that visualizes changes in the molecular surface during functional activity over an extended period of time. since images have no atomistic resolution, a major challenge has been to develop post-experimental computational methods to infer atomistic information from measurements. the recently developed nmff-afm flexible fitting method provides a computationally efficient approach promising to infer atomistic-precision models of conformational dynamics from resolution-limited afm imaging data. we report the software integration of this method into the well-established bioafmviewer platform and demonstrate its first applications to experimental hs-afm imaging data. to facilitate applications, we developed a direct workflow from raw experimental afm data to the visualization and analysis of fitting results. the presented applications to experimental data of a single protein domain, a protein complex, and a megadalton-sized protein filament demonstrate the versatility of nmff-afm modeling to reproduce large-amplitude conformational motions of biomolecular dynamics from hs-afm imaging. as a first step toward automated large-scale analysis of afm imaging data, we furthermore demonstrate reconstruction of an atomistic molecular movie of protein dynamics, involving large-amplitude conformational transitions, from a measured hs-afm movie sequence. implementation of flexible fitting within the stand-alone user-friendly interactive bioafmviewer software provides the opportunity for a broad range of applications to facilitate the understanding of resolution-limited hs-afm measurements. flexible 10.1021/acsnano.5c10073 https://doi.org/10.1021/acsnano.5c10073",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 25
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -272,42 +238,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 2
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 2
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 2
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 2
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 2
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 2
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 2
         },
         {
@@ -395,30 +325,25 @@
       "first_seen_date": "2026-04-21",
       "first_seen_time": "2026-04-21T11:43:02+08:00",
       "first_seen_batch_id": "2026-04-21 11:43:02",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-21 11:43:02",
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-04-30_190001",
         "2026-05-01_090002",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "acs",
       "keywords": [
         "Multiphoton"
@@ -426,15 +351,21 @@
       "tags": [
         "acs",
         "ACS Nano",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-21T11:43:02+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "acs-nano",
       "search_blob": "multiphoton luminescence imaging: a label-free tool for visualizing the long-term fate of gold nanoparticles in tissue acs nano sean burkitt olga e. eremina anthony mouchawar augusta fernando elijah edmondson stephan stern carolyn marks cristina zavaleta gold nanoparticles (aunps) are increasingly used in applications across the biomedical domain, yet their long-term biodistribution and biocompatibility remain poorly understood. conventional brightfield microscopy imaging techniques often fail to detect aunps due to optical diffraction limits and lack of chromogenic contrast. understanding the biodistribution and ultimate fate of these nonbiodegradable nps is crucial for further development of aunp-based therapeutics and diagnostics. here, we present a label-free multiphoton luminescence (mpl) imaging workflow that enables sensitive detection of aunps in liver histology sections, even 1 year after intravenous (iv) administration. mpl imaging exploits the intrinsic nonlinear optical properties of aunps to generate broadband emission under ultrafast pulsed laser excitation, enabling subcellular localization without exogenous labels while having the ability to rapidly image entire organ sections. the intrinsic, distinct broadband mpl emission produced by gold allows us to study these nps in their biological context without extrinsic labels while also faithfully representing the surrounding tissue architecture via autofluorescence and second harmonic generation. we demonstrate that mpl imaging detects up to 98% more aunp-positive regions than brightfield microscopy in challenging low-dose (1 nm) conditions and requires no modification of standard histology workflows. correlative imaging with sem-eds confirms high spatial specificity (auc = 0.955) of mpl for aunp localization. dose-dependent retention patterns were observed across liver tissue, and mpl analysis showed strong correlation with icp-ms quantification. importantly, histological and immunohistochemical analyses (masson's trichrome, cd3, and tunel) revealed no significant fibrosis, immune activation, or apoptosis in liver tissue at either low (1 nm) or high (10 nm) doses at 1 year post iv administration. these findings establish mpl imaging as a robust, label-free tool for long-term tracking of aunps in biological tissue and highlight its potential for improving biodistribution and safety assessments. multiphoton 10.1021/acsnano.5c05069 https://doi.org/10.1021/acsnano.5c05069",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 26
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -469,42 +400,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 3
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 3
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 3
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 3
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 3
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 3
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 3
         },
         {
@@ -559,9 +454,9 @@
       "first_seen_date": "2026-04-15",
       "first_seen_time": "2026-04-15T22:07:57+08:00",
       "first_seen_batch_id": "2026-04-15 22:07",
-      "last_seen_date": "2026-05-02",
-      "last_seen_time": "2026-05-02T19:00:01+08:00",
-      "last_seen_batch_id": "2026-05-02_190001",
+      "last_seen_date": "2026-05-03",
+      "last_seen_time": "2026-05-03T09:00:01+08:00",
+      "last_seen_batch_id": "2026-05-03_090001",
       "seen_batch_ids": [
         "2026-04-15 22:07",
         "2026-04-15 22:23:33",
@@ -572,20 +467,15 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01",
         "2026-05-01_190001",
         "2026-05-02_090001",
-        "2026-05-02_190001"
+        "2026-05-02_190001",
+        "2026-05-03_090001"
       ],
-      "crawl_date": "2026-05-02",
-      "crawl_time": "2026-05-02T19:00:01+08:00",
-      "crawl_batch_id": "2026-05-02_190001",
+      "crawl_date": "2026-05-03",
+      "crawl_time": "2026-05-03T09:00:01+08:00",
+      "crawl_batch_id": "2026-05-03_090001",
       "source": "acs",
       "keywords": [
         "Exploring"
@@ -593,15 +483,21 @@
       "tags": [
         "acs",
         "ACS Nano",
-        "batch:2026-05-02_190001"
+        "batch:2026-05-03_090001"
       ],
       "created_at": "2026-04-15T22:07:57+08:00",
-      "updated_at": "2026-05-02T19:00:01+08:00",
+      "updated_at": "2026-05-03T09:00:01+08:00",
       "is_new_in_batch": false,
       "abstract_source": "legacy",
       "journal_slug": "acs-nano",
       "search_blob": "exploring the subcellular localization and degradation of spherical nucleic acids using fluorescence lifetime imaging microscopy acs nano steven narum jiahui zhang binh l. n. vo joseph nicolas mancuso khalid salaita spherical nucleic acids (snas) are a powerful class of nucleic acids with broad applications that span from diagnostic sensors to nanoflares and gene therapeutic agents. snas accomplish these varied tasks by taking advantage of the programmability of nucleic acids coupled with enhanced multivalent interactions and improved cellular delivery. nonetheless, the intracellular trafficking of snas remains poorly understood, as conflicting claims in the literature suggest rapid endosomal entrapment and degradation in some cases, while others suggest sna stability and cytoplasmic escape. one of the challenges in this area is that some of the prior literature claims rely on intensity-based fluorescence measurements, which are indirect and prone to artifacts. here, we demonstrate the use of fluorescence lifetime imaging microscopy (flim) as a tool to provide additional insight into the sna intracellular fate. we specifically employ flim to investigate monothiol and dithiol anchored gold nanoparticle conjugates as well as phosphorothioate backbone-modified snas which allow us to characterize the initial stages of sna degradation within cells. our work shows that internalized snas lose up to 20% of their nucleic acids within 24 h depending on dnase ii-activity and thiol-displacement in model cell lines. exploring 10.1021/acsnano.5c00177 https://doi.org/10.1021/acsnano.5c00177",
       "crawl_history": [
+        {
+          "batch_id": "2026-05-03_090001",
+          "crawl_time": "2026-05-03T09:00:01+08:00",
+          "crawl_date": "2026-05-03",
+          "rank_in_batch": 30
+        },
         {
           "batch_id": "2026-05-02_190001",
           "crawl_time": "2026-05-02T19:00:01+08:00",
@@ -624,42 +520,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 4
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 4
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 4
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 4
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 4
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 4
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 4
         },
         {
@@ -762,12 +622,6 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01"
       ],
       "crawl_date": "2026-04-29",
@@ -793,42 +647,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 5
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 5
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 5
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 5
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 5
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 5
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 5
         },
         {
@@ -932,12 +750,6 @@
         "2026-04-23 19:00:01",
         "2026-04-24 09:00:01",
         "2026-04-25 19:00:02",
-        "2026-04-26 09:00:02",
-        "2026-04-26 19:00:01",
-        "2026-04-27 09:00:01",
-        "2026-04-27 19:00:01",
-        "2026-04-28 09:00:01",
-        "2026-04-28 19:00:01",
         "2026-04-29 09:00:01"
       ],
       "crawl_date": "2026-04-29",
@@ -963,42 +775,6 @@
           "batch_id": "2026-04-29 09:00:01",
           "crawl_time": "2026-04-29T09:00:01+08:00",
           "crawl_date": "2026-04-29",
-          "rank_in_batch": 6
-        },
-        {
-          "batch_id": "2026-04-28 19:00:01",
-          "crawl_time": "2026-04-28T19:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 6
-        },
-        {
-          "batch_id": "2026-04-28 09:00:01",
-          "crawl_time": "2026-04-28T09:00:01+08:00",
-          "crawl_date": "2026-04-28",
-          "rank_in_batch": 6
-        },
-        {
-          "batch_id": "2026-04-27 19:00:01",
-          "crawl_time": "2026-04-27T19:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 6
-        },
-        {
-          "batch_id": "2026-04-27 09:00:01",
-          "crawl_time": "2026-04-27T09:00:01+08:00",
-          "crawl_date": "2026-04-27",
-          "rank_in_batch": 6
-        },
-        {
-          "batch_id": "2026-04-26 19:00:01",
-          "crawl_time": "2026-04-26T19:00:01+08:00",
-          "crawl_date": "2026-04-26",
-          "rank_in_batch": 6
-        },
-        {
-          "batch_id": "2026-04-26 09:00:02",
-          "crawl_time": "2026-04-26T09:00:02+08:00",
-          "crawl_date": "2026-04-26",
           "rank_in_batch": 6
         },
         {

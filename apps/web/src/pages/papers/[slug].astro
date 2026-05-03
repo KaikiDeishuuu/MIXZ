@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
+import ThemeDisclosure from '../../components/ThemeDisclosure.astro';
 import { articles, paperSlug, formatDateTime, articleBatchIds } from '../../lib/data';
 export function getStaticPaths() {
   return articles.map((article) => ({ params: { slug: paperSlug(article).replace(/\.html$/, '') }, props: { article } }));
@@ -39,14 +40,19 @@ const observationHistory = (article.crawl_history?.length ? article.crawl_histor
     </aside>
   </section>
   {observationHistory.length > 0 && (
-    <section class="panel">
-      <h2>Observation history</h2>
+    <ThemeDisclosure label="查看观察历史" openLabel="收起观察历史" closeLabel="查看观察历史" class="paper-disclosure">
       <ul class="simple-list linked-list">
         {observationHistory.map((item) => (
           <li><a href={`/archive?batch=${encodeURIComponent(item.batch_id)}`}><span>{item.batch_id}</span><strong>{formatDateTime(item.crawl_time)}</strong></a></li>
         ))}
       </ul>
-    </section>
+    </ThemeDisclosure>
   )}
-  {related.length > 0 && <section class="panel"><h2>Related in {article.journal}</h2>{related.map((item) => <ArticleCard article={item} />)}</section>}
+  {related.length > 0 && (
+    <ThemeDisclosure label={`展开同刊相关文献（${related.length}）`} openLabel={`收起同刊相关文献（${related.length}）`} closeLabel={`展开同刊相关文献（${related.length}）`} class="paper-disclosure">
+      <div class="related-disclosure-list">
+        {related.map((item) => <ArticleCard article={item} />)}
+      </div>
+    </ThemeDisclosure>
+  )}
 </BaseLayout>

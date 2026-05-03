@@ -1,0 +1,60 @@
+---
+import { extractHeadings } from '../lib/heading-anchors';
+
+interface Props {
+  markdown: string;
+}
+
+const { markdown } = Astro.props;
+const headings = extractHeadings(markdown);
+---
+
+{headings.length > 0 && (
+  <aside class="toc" aria-label="Table of contents">
+    <div class="toc-header">
+      <span class="toc-icon">📑</span>
+      <h2 class="toc-title">目录</h2>
+    </div>
+    <nav class="toc-nav">
+      <ul class="toc-list">
+        {headings.map((heading) => (
+          <li class:list={['toc-item', `toc-item--level-${heading.level}`]}>
+            <a href={`#${heading.id}`} class="toc-link">
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </aside>
+)}
+
+<script>
+  // Highlight active section on scroll
+  document.addEventListener('DOMContentLoaded', () => {
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const sections = Array.from(tocLinks).map(link => {
+      const id = link.getAttribute('href')?.slice(1);
+      return id ? document.getElementById(id) : null;
+    }).filter(Boolean);
+
+    function updateActiveToc() {
+      const scrollPos = window.scrollY + 100;
+      
+      let activeIndex = 0;
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
+        if (section && section.offsetTop <= scrollPos) {
+          activeIndex = i;
+        }
+      }
+      
+      tocLinks.forEach((link, i) => {
+        link.classList.toggle('active', i === activeIndex);
+      });
+    }
+    
+    window.addEventListener('scroll', updateActiveToc, { passive: true });
+    updateActiveToc();
+  });
+</script>

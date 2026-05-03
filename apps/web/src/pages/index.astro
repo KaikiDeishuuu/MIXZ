@@ -3,12 +3,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import EmptyState from '../components/EmptyState.astro';
 import BatchCard from '../components/BatchCard.astro';
-import { latest, summary, batches, formatDateTime, journalList, archiveBatchHref, archiveJournalHref } from '../lib/data';
+import { latest, summary, batches, formatDateTime, journalList, archiveBatchHref, archiveJournalHref, getBatchSummary } from '../lib/data';
+import { formatBatchLabel } from '../lib/formatters';
 
 const latestNew = latest.new_articles || latest.articles.filter((article) => article.is_new_in_batch);
 const seenAgain = latest.seen_again_articles || latest.articles.filter((article) => !article.is_new_in_batch);
 const journals = journalList().slice(0, 10);
 const recentBatches = batches.slice(0, 8);
+
+// Get batch summary - current batch or most recent with new articles
+const batchSummary = getBatchSummary(latest.batch_id);
+const summaryBatchLabel = batchSummary ? formatBatchLabel(batchSummary.batch_id) : null;
 ---
 <BaseLayout title="MIXZ Latest Batch" description="MIXZ biomedical imaging literature monitor">
   <section class="hero">
@@ -36,6 +41,21 @@ const recentBatches = batches.slice(0, 8);
       </div>
       <a href="/archive" class="section-action">查看完整 archive</a>
     </div>
+    
+    {batchSummary && (
+      <div class="batch-summary">
+        {latestNew.length === 0 && summaryBatchLabel && (
+          <p class="batch-summary__note">
+            💡 本批次无新文章，以下是最近批次（{summaryBatchLabel}）的总结：
+          </p>
+        )}
+        <div class="batch-summary__content">
+          <span class="batch-summary__icon">✨</span>
+          <p>{batchSummary.summary}</p>
+        </div>
+      </div>
+    )}
+    
     {latestNew.length > 0 ? (
       <div class="article-list">
         {latestNew.map((article) => <ArticleCard article={article} />)}
@@ -78,16 +98,11 @@ const recentBatches = batches.slice(0, 8);
     </div>
     <div class="panel">
       <h2>Recent batches</h2>
-      <ul class="simple-list linked-list">
+      <div class="batch-list">
         {recentBatches.map((batch) => (
-          <li>
-            <a href={`/batches/${batch.batch_id}.html`}>
-              <span>{batch.batch_id}</span>
-              <strong>{batch.article_count || batch.articles?.length || 0}</strong>
-            </a>
-          </li>
+          <BatchCard batch={batch} variant="compact" />
         ))}
-      </ul>
+      </div>
     </div>
   </section>
 </BaseLayout>
